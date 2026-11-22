@@ -106,3 +106,15 @@ test("mismo código de barras en Olímpica y Jumbo (15IRH10) sigue saliendo como
   assert.equal(p.veredicto, "mas_barato");
   assert.equal(p.ganador, "Olímpica");
 });
+
+test("parecido pero no igual: se muestra como 'similar' con sus diferencias, sin veredicto", () => {
+  const f = leerFalabella("Falabella", html([fala("Portátil IdeaPad Slim 3 | Intel Core 5 | 8GB de RAM | 512GB SSD | Pantalla 14 pulgadas", "LENOVO",
+    "https://www.falabella.com.co/falabella-co/product/73637637/port-14-ip-slim3-core5-8gb-512gb", "FALABELLA_COLOMBIA", "Falabella", [["internetPrice", "1.899.900"]])]));
+  const o = leerVtex("Olímpica", "https://www.olimpica.com", [vtex("Computador Portátil Lenovo IdeaPad Slim 3 15,6 Pulgadas AMD Ryzen 5 512 GB SSD 8 GB RAM", "Lenovo", "x", 2099400, null, "1", "Olimpica", "196804839998")]);
+  const fal = compararOfertas([...f, ...o]).find(p => p.tiendas[0].tienda === "Falabella");
+  assert.equal(fal.veredicto, "una_tienda");
+  assert.equal(fal.similares.length, 1);
+  assert.equal(fal.similares[0].tienda, "Olímpica");
+  assert.ok(fal.similares[0].diferencias.some(d => d.startsWith("procesador")));
+  assert.ok(fal.similares[0].diferencias.some(d => d.startsWith("pantalla")));
+});

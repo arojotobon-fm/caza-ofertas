@@ -103,7 +103,7 @@ export function compararOfertas(ofertas) {
   const grupos = {};
   pubs.forEach((p, i) => (grupos[raiz(i)] ||= []).push(p));
 
-  return Object.values(grupos).map(items => {
+  const productos = Object.values(grupos).map(items => {
     const propias = items.filter(o => o.propio && o.precio > 0);
     const externas = items.filter(o => !o.propio && o.precio > 0).sort((a, b) => a.precio - b.precio);
     const mejor = {};   // mejor precio de contado por grupo empresarial (solo la tienda, no terceros)
@@ -122,6 +122,28 @@ export function compararOfertas(ofertas) {
     const maxHoy = Math.max(...tiendas.map(t => t.precio));
     r.antesInflado = tiendas.length >= 2 ? tiendas.filter(t => t.precio_antes && t.precio_antes > maxHoy * 1.15)
       .map(t => ({ tienda: t.tienda, antes: t.precio_antes, descuentoAnunciado: Math.round((1 - t.precio / t.precio_antes) * 100) })) : [];
+    r._specs = base.specs; r._palabras = palabras(base.nombre);
     return r;
   });
+  // Parecidos: misma marca y nombre muy parecido, pero NO confirmados como la misma referencia.
+  // Se muestran aparte, sin veredicto, con las diferencias que se alcanzan a ver, para que la persona revise.
+  for (const p of productos) {
+    p.similares = productos.filter(q => q !== p && q.tiendas.length && q.marca === p.marca &&
+        !q.tiendas.some(t => p.tiendas.some(u => u.tienda === t.tienda && u.link === t.link)) && parecido(p._palabras, q._palabras) >= 0.5)
+      .slice(0, 3).map(q => ({ nombre: q.nombre, tienda: q.tiendas[0].tienda, precio: q.tiendas[0].precio, link: q.tiendas[0].link, diferencias: diferencias(p._specs, q._specs) }));
+  }
+  productos.forEach(p => { delete p._specs; delete p._palabras; });
+  return productos;
+}
+
+// Para "parecido" solo cuentan las palabras del nombre comercial (IDEAPAD, SLIM, CRISPI…), no las especificaciones ni la marca.
+const VACIAS = new Set(("DE LA EL Y CON PARA EN SIN LOS LAS UN UNA COMPUTADOR PORTATIL PANTALLA PULGADAS RAM SSD HDD INTEL CORE AMD RYZEN " +
+  "WINDOWS NEGRO NEGRA BLANCO BLANCA GRIS AZUL ROJO VERDE PLATEADO DIGITAL LITROS ALMACENAMIENTO TACTIL TOUCH " + MARCAS.join(" ")).split(" "));
+const palabras = n => new Set(normTexto(n).split(/[^A-Z0-9]+/).filter(w => w.length > 2 && !/\d/.test(w) && !VACIAS.has(w)));
+const parecido = (a, b) => { const i = [...a].filter(w => b.has(w)).length; return i < 2 ? 0 : i / Math.min(a.size, b.size); };
+const NOMBRE_SPEC = { pantalla_pulgadas: ["pantalla", v => String(v).replace(".", ",") + '"'], ram_gb: ["RAM", v => v + " GB"],
+  almacenamiento_gb: ["almacenamiento", v => v + " GB"], capacidad_l: ["capacidad", v => String(v).replace(".", ",") + " L"], cpu: ["procesador", v => v === "INTEL" ? "Intel" : v === "AMD" ? "AMD" : v] };
+function diferencias(a, b) {
+  return Object.entries(NOMBRE_SPEC).filter(([k]) => a[k] != null && b[k] != null && a[k] !== b[k])
+    .map(([k, [nom, f]]) => `${nom}: ${f(a[k])} vs ${f(b[k])}`);
 }
