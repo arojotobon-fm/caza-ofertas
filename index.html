@@ -98,6 +98,21 @@
   .stores a{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.18);color:#fff;text-decoration:none;border-radius:999px;padding:8px 14px;font-size:14px;font-weight:600}
   .stores a:hover{background:#fff;color:var(--ink)}
 
+  .cond{display:inline-block;background:#FFF1C2;color:#7A5200;border-radius:8px;padding:3px 8px;font-size:12px;font-weight:700}
+  .comm{font-size:12.5px;border-radius:10px;padding:7px 9px;line-height:1.35}
+  .comm.ok{background:var(--verde-bg);color:var(--verde)}
+  .comm.warn{background:var(--ambar-bg);color:var(--ambar)}
+  .comm.bad{background:var(--rojo-bg);color:var(--rojo);font-weight:600}
+  .card.gone{opacity:.55}
+  .card.gone .media{filter:grayscale(1)}
+  .vote{display:flex;gap:6px;flex-wrap:wrap;align-items:center;font-size:12.5px;color:var(--muted)}
+  .vote button{font:inherit;font-size:12.5px;font-weight:600;border:1px solid var(--line);background:#fff;border-radius:10px;padding:6px 9px;cursor:pointer}
+  .vote button:hover{border-color:var(--ink)}
+  .vote .pform{display:none;gap:6px;width:100%}
+  .vote .pform.on{display:flex}
+  .vote input{flex:1;min-width:0;font:inherit;font-size:13px;border:1px solid var(--line);border-radius:10px;padding:6px 8px}
+  .switch{display:inline-flex;align-items:center;gap:8px;font-size:14px;font-weight:600;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:10px 14px;cursor:pointer}
+  .waze{background:var(--card);border:1px dashed var(--ink);border-radius:var(--radio);padding:14px 16px;font-size:14px;margin:0 0 18px}
   footer{padding:30px 0 50px;color:var(--muted);font-size:13px;border-top:1px solid var(--line);margin-top:20px}
   footer p{margin:0 0 8px;max-width:820px}
 
@@ -120,6 +135,7 @@
       <div><b>Precio real</b>Comparo el mismo modelo en varias tiendas. El "antes" que muestra la tienda no cuenta.</div>
       <div><b>Hora de verificación</b>Cada oferta dice cuándo la revisé. Las ofertas cambian rápido.</div>
       <div><b>¿Sigue vigente?</b>Toca "Ver en la tienda" y confirma precio y stock antes de pagar.</div>
+      <div><b>Reporta como en Waze</b>Si fuiste a la tienda, dinos si la oferta sigue o ya no. Tu reporte avisa a los demás al instante.</div>
     </div>
   </div>
 </div>
@@ -128,6 +144,8 @@
   <div class="sec-head">
     <div><h2>Top de hoy</h2><p>Solo entran ofertas con ahorro real de 8% o más frente a otras tiendas. Si hay pocas, es porque las demás tiendas tienen el mismo precio.</p></div>
   </div>
+  <div class="waze">👥 <b>Tú también actualizas esta página:</b> después de abrir una oferta, toca <b>✅ Sigue</b> o <b>❌ Ya no</b>. Si 2 o más personas reportan que ya no está, la oferta sale del top hasta que la vuelva a verificar.</div>
+  <label class="switch" style="margin-bottom:16px"><input type="checkbox" id="noCard"> Solo ofertas sin tarjeta de la tienda</label>
   <div class="grid" id="topGrid"></div>
 </div></section>
 
@@ -201,7 +219,8 @@ function card(p, rank){
   const [lab, cls] = LABELS[p.clasificacion] || LABELS.justo;
   const stale = hoursAgo(p.verificado) > STALE_HOURS;
   const pct = realPct(p);
-  return `<article class="card ${stale?"stale":""}">
+  const cs = community(p);
+  return `<article class="card ${stale?"stale":""} ${cs.gone?"gone":""}" data-id="${p.id}">
     <div class="media">
       ${rank ? `<span class="rank">#${rank}</span>` : ""}
       <span class="tag ${cls}">${lab}</span>
@@ -209,19 +228,65 @@ function card(p, rank){
       <div class="ph" ${p.img ? "" : 'style="display:block"'}>${esc(p.marca || p.nombre)}</div>
     </div>
     <div class="body">
-      <div class="store">${esc(p.tienda)}${p.condicion ? " · " + esc(p.condicion) : ""}</div>
+      <div class="store">${esc(p.tienda)}</div>
+      ${p.condicion ? `<div><span class="cond">💳 Solo pagando ${esc(p.condicion.replace(/^con /,"con "))}</span></div>` : ""}
       <h3 class="name">${esc(p.nombre)}</h3>
       <div class="price"><b>${cop(p.precio)}</b>${p.precio_antes ? `<s>${cop(p.precio_antes)}</s>` : ""}</div>
       ${p.precio_ref ? `<div class="real">Precio de mercado ${cop(p.precio_ref)} · ahorro real <strong>${pct.toFixed(0)}%</strong></div>` : `<div class="real">Precio de tienda, aún sin comparar</div>`}
       ${p.nota ? `<div class="note">${esc(p.nota)}</div>` : ""}
       <div class="when"><span class="dot ${stale?"old":""}"></span>Verificado ${ago(p.verificado)}</div>
+      ${cs.html}
       <div class="stale-msg">Puede haber cambiado. Revisa antes de comprar.</div>
       <a class="btn" href="${esc(p.link)}" target="_blank" rel="noopener nofollow">¿Sigue vigente? Ver en la tienda</a>
+      ${voteBox(p)}
     </div>
   </article>`;
 }
 
-let DATA = [], SHOW = 40;
+let DATA = [], SHOW = 40, REP = {};
+function voted(id){ try { return JSON.parse(localStorage.getItem("votos")||"{}")[id]; } catch(e){ return null; } }
+function markVoted(id,v){ try { const o = JSON.parse(localStorage.getItem("votos")||"{}"); o[id]=v; localStorage.setItem("votos", JSON.stringify(o)); } catch(e){} }
+function community(p){
+  const r = REP[p.id]; if (!r) return {gone:false, html:""};
+  const since = new Date(p.verificado).getTime();
+  const si = (r.si||[]).filter(t=>t>since), no = (r.no||[]).filter(x=>x[0]>since);
+  if (!si.length && !no.length) return {gone:false, html:""};
+  const lastNo = no.length ? Math.max(...no.map(x=>x[0])) : 0, lastSi = si.length ? Math.max(...si) : 0;
+  const seen = no.map(x=>x[1]).filter(Boolean);
+  const seenTxt = seen.length ? ` Precio que vieron: ${cop(seen[seen.length-1])}.` : "";
+  if (no.length >= 2 && no.length > si.length)
+    return {gone:true, html:`<div class="comm bad">❌ ${no.length} personas reportaron que ya no está a este precio (último reporte ${ago(new Date(lastNo).toISOString())}).${seenTxt}</div>`};
+  if (no.length && lastNo > lastSi)
+    return {gone:false, html:`<div class="comm warn">⚠️ ${no.length} reporte de cambio ${ago(new Date(lastNo).toISOString())}.${seenTxt} Confírmalo en la tienda.</div>`};
+  return {gone:false, html:`<div class="comm ok">✅ ${si.length} ${si.length===1?"persona confirmó":"personas confirmaron"} que sigue (${ago(new Date(lastSi).toISOString())})</div>`};
+}
+function voteBox(p){
+  const v = voted(p.id);
+  if (v) return `<div class="vote">Gracias por tu reporte 🙌</div>`;
+  return `<div class="vote" data-vote="${p.id}">¿Fuiste a la tienda?
+    <button data-v="si">✅ Sigue</button><button data-v="no">❌ Ya no / cambió</button>
+    <div class="pform"><input type="number" inputmode="numeric" placeholder="¿Qué precio viste? (opcional)"><button data-v="send">Enviar</button></div></div>`;
+}
+document.addEventListener("click", async e => {
+  const b = e.target.closest(".vote button"); if (!b) return;
+  const box = b.closest(".vote"), id = box.dataset.vote, v = b.dataset.v;
+  if (v === "no") { box.querySelector(".pform").classList.add("on"); box.querySelector("input").focus(); return; }
+  const voto = v === "send" ? "no" : "si";
+  const precio = voto === "no" ? box.querySelector("input").value : null;
+  box.innerHTML = "Enviando…";
+  try {
+    const r = await fetch("/api/reportes", {method:"POST", headers:{"content-type":"application/json"}, body: JSON.stringify({id, voto, precio})});
+    const j = await r.json().catch(()=>({}));
+    markVoted(id, voto);
+    box.innerHTML = j.ok ? "Gracias por tu reporte 🙌 Ya lo ven los demás." : (j.msg || "No se pudo enviar. Intenta más tarde.");
+    if (j.ok) { const now = Date.now(); REP[id] = REP[id] || {si:[],no:[]}; voto==="si" ? REP[id].si.push(now) : REP[id].no.push([now, +precio||null]); setTimeout(renderTop, 1200); }
+  } catch(err) { box.innerHTML = "No se pudo enviar. Revisa tu conexión."; }
+});
+function renderTop(){
+  const noCard = $("#noCard").checked;
+  const top = DATA.filter(p=>p.top && !community(p).gone && (!noCard || !p.condicion)).sort((a,b)=>(a.rank||99)-(b.rank||99)).slice(0,20);
+  $("#topGrid").innerHTML = top.length ? top.map((p,i)=>card(p,i+1)).join("") : `<div class="empty">${noCard ? "Hoy casi todos los descuentos reales piden la tarjeta de la tienda. Quita el filtro para verlos." : "Estoy actualizando el top. Vuelve en un rato."}</div>`;
+}
 function renderAll(reset){
   if (reset !== false) SHOW = 40;
   const q = norm($("#q").value).trim();
@@ -243,13 +308,16 @@ function renderStores(){
     `<a href="${q ? esc(f(q)) : "#tiendas"}" ${q ? 'target="_blank" rel="noopener nofollow"' : ""}>${n}</a>`).join("");
 }
 
-fetch("data/ofertas.json?v=" + Date.now()).then(r=>r.json()).then(d=>{
+Promise.all([
+  fetch("data/ofertas.json?v=" + Date.now()).then(r=>r.json()),
+  fetch("/api/reportes").then(r=>r.ok?r.json():{}).catch(()=>({}))
+]).then(([d, rep])=>{
+  REP = rep || {};
   DATA = d.productos || [];
   const old = hoursAgo(d.actualizado) > STALE_HOURS;
   $("#stamp").textContent = "Última actualización: " + fmtDate(d.actualizado);
   if (old) $("#stampDot").classList.add("old");
-  const top = DATA.filter(p=>p.top).sort((a,b)=>(a.rank||99)-(b.rank||99)).slice(0,20);
-  $("#topGrid").innerHTML = top.length ? top.map((p,i)=>card(p,i+1)).join("") : `<div class="empty">Estoy actualizando el top. Vuelve en un rato.</div>`;
+  renderTop();
   [...new Set(DATA.map(p=>p.categoria).filter(Boolean))].sort().forEach(c=>$("#fCat").insertAdjacentHTML("beforeend",`<option>${esc(c)}</option>`));
   [...new Set(DATA.map(p=>p.tienda).filter(Boolean))].sort().forEach(c=>$("#fStore").insertAdjacentHTML("beforeend",`<option>${esc(c)}</option>`));
   renderAll();
@@ -257,6 +325,9 @@ fetch("data/ofertas.json?v=" + Date.now()).then(r=>r.json()).then(d=>{
 
 ["q","fCat","fStore","fSort"].forEach(id=>$("#"+id).addEventListener("input",()=>renderAll()));
 $("#more").addEventListener("click",()=>{ SHOW += 40; renderAll(false); });
+$("#noCard").addEventListener("change", renderTop);
+// refresca los reportes de la comunidad cada 2 minutos sin recargar
+setInterval(()=>fetch("/api/reportes").then(r=>r.ok?r.json():null).then(j=>{ if(j){ REP=j; renderTop(); } }).catch(()=>{}), 120000);
 $("#ext").addEventListener("input",renderStores);
 renderStores();
 </script>
