@@ -59,10 +59,11 @@ export function especificaciones(nombre) {
 const ESTRICTAS = ["pantalla_pulgadas", "ram_gb", "almacenamiento_gb", "capacidad_l", "es_combo", "condicion_producto", "cpu"];
 
 export function mismoProducto(a, b) {
-  if (!a.marca || a.marca !== b.marca) return false;
-  // Código de barras (EAN) igual = mismo producto; distinto = otra referencia o color. Sin EAN, se usa el código de modelo.
+  // Código de barras (EAN) igual = mismo producto, aunque una tienda no diga la marca (p. ej. Flamingo);
+  // distinto = otra referencia o color. Sin EAN, se exige la misma marca y el mismo código de modelo.
   const eanIgual = a.ean && b.ean && a.ean === b.ean;
   if (a.ean && b.ean && !eanIgual) return false;
+  if (!eanIgual && (!a.marca || a.marca !== b.marca)) return false;
   if (!eanIgual && ![...a.codigos].some(c => b.codigos.has(c))) return false;
   for (const k of ESTRICTAS) {
     const va = a.specs[k], vb = b.specs[k];

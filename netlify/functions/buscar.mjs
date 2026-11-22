@@ -12,10 +12,13 @@ const json = (data, status = 200, cache = true) => new Response(JSON.stringify(d
 
 async function consultar(t, q) {
   const ctrl = new AbortController(), timer = setTimeout(() => ctrl.abort(), 7000);
-  try {
-    const r = await fetch(t.url(q), { signal: ctrl.signal, headers: { "user-agent": UA, "accept-language": "es-CO,es;q=0.9", accept: "text/html,application/json;q=0.9,*/*;q=0.8" } });
+  const traer = async url => {
+    const r = await fetch(url, { signal: ctrl.signal, headers: { "user-agent": UA, "accept-language": "es-CO,es;q=0.9", accept: "text/html,application/json;q=0.9,*/*;q=0.8" } });
     if (!r.ok && r.status !== 206) throw new Error("HTTP " + r.status);
-    return { tienda: t.tienda, ok: true, ofertas: t.leer(await r.text()) };
+    return r.text();
+  };
+  try {
+    return { tienda: t.tienda, ok: true, ofertas: t.buscar ? await t.buscar(q, traer) : t.leer(await traer(t.url(q))) };
   } catch (e) {
     return { tienda: t.tienda, ok: false, motivo: e.name === "AbortError" ? "no respondió a tiempo" : "no pudimos consultarla" };
   } finally { clearTimeout(timer); }

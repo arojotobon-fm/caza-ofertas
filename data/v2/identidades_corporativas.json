@@ -335,6 +335,39 @@
           "motivo": "Tiene marketplace. Solo se valida la oferta del vendedor 'Cencosud - Colombia' (sellerId 1); los demás son vendedores externos."
         }
       ]
+    },
+    {
+      "id": "almacenes-flamingo",
+      "razon_social": "Almacenes Flamingo S.A.",
+      "nit": "890.914.526-4",
+      "grupo_empresarial": "flamingo",
+      "alias": [
+        {
+          "nombre": "Flamingo",
+          "tipo": "marca_comercial",
+          "comercio_id": "flamingo",
+          "evidencia": [
+            {
+              "fuente": "https://portalhistorico.ramajudicial.gov.co (auto 24-114)",
+              "texto": "ALMACENES FLAMINGO S.A., identificada con NIT 890914526-4",
+              "fecha": "2026-11-22"
+            }
+          ]
+        },
+        {
+          "nombre": "Almacenes Flamingo",
+          "tipo": "nombre_vendedor_en_sitio",
+          "comercio_id": "flamingo",
+          "evidencia": [
+            {
+              "fuente": "https://www.flamingo.com.co (API pública de la tienda Shopify)",
+              "texto": "Productos propios: vendor 'Almacenes Flamingo'; productos de terceros: otro vendor y etiqueta 'MARKETPLACE'.",
+              "fecha": "2026-11-22"
+            }
+          ]
+        }
+      ],
+      "canales": []
     }
   ]
 }

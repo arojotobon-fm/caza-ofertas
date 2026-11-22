@@ -32,6 +32,27 @@ export function leerFalabella(tienda, html) {
   }).filter(o => o.precio > 0);
 }
 
+// Flamingo (Shopify con marketplace): el buscador da la lista; la ficha .js de cada producto da
+// el vendedor, el código de barras y los precios (en centavos). Solo es "propio" lo que vende "Almacenes Flamingo".
+export function leerFlamingo(pj, base = "https://www.flamingo.com.co") {
+  const v = (pj.variants || []).find(x => x.available) || (pj.variants || [])[0];
+  if (!v || !v.available) return null;
+  const precio = Math.round(v.price / 100), cap = Math.round((v.compare_at_price || 0) / 100);
+  return { tienda: "Flamingo", nombre: pj.title, marca: "", link: `${base}/products/${pj.handle}`,
+    img: pj.featured_image ? (String(pj.featured_image).startsWith("//") ? "https:" + pj.featured_image : pj.featured_image) : "",
+    precio, precio_tarjeta: null, precio_antes: cap > precio ? cap : null, vendedor: pj.vendor,
+    propio: pj.vendor === "Almacenes Flamingo" && !(pj.tags || []).includes("MARKETPLACE"),
+    ean: v.barcode ? String(v.barcode).replace(/^0+/, "") : null, modelo: v.sku && /[a-z]/i.test(v.sku) && /\d/.test(v.sku) ? v.sku : "" };
+}
+const FLAMINGO = { tienda: "Flamingo", base: "https://www.flamingo.com.co",
+  // Consulta en dos pasos: buscador + ficha de cada resultado (en paralelo).
+  async buscar(q, traer) {
+    const s = JSON.parse(await traer(`${this.base}/search/suggest.json?q=${encodeURIComponent(q)}&resources[type]=product&resources[limit]=10`));
+    const handles = ((s.resources || {}).results || {}).products?.map(p => p.handle) || [];
+    const fichas = await Promise.all(handles.map(h => traer(`${this.base}/products/${h}.js`).then(t => JSON.parse(t)).catch(() => null)));
+    return fichas.filter(Boolean).map(pj => leerFlamingo(pj, this.base)).filter(Boolean);
+  } };
+
 const VTEX = (tienda, base) => ({ tienda, url: q => `${base}/api/catalog_system/pub/products/search?ft=${encodeURIComponent(q)}&_from=0&_to=29`,
   leer: (txt) => leerVtex(tienda, base, JSON.parse(txt)) });
 export const TIENDAS = [
@@ -39,4 +60,5 @@ export const TIENDAS = [
   VTEX("Olímpica", "https://www.olimpica.com"),
   VTEX("Jumbo", "https://www.jumbocolombia.com"),
   { tienda: "Falabella", url: q => `https://www.falabella.com.co/falabella-co/search?Ntt=${encodeURIComponent(q)}`, leer: txt => leerFalabella("Falabella", txt) },
+  FLAMINGO,
 ];

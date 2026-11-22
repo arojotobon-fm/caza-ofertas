@@ -2,7 +2,7 @@
 // Lee el producto en su tienda, busca la MISMA referencia en las otras tiendas, revisa nuestro historial
 // y responde: oferta_real | dudosa | precio_inflado | insuficiente, siempre con las pruebas.
 import { createHash } from "node:crypto";
-import { TIENDAS } from "./lib/tiendas.mjs";
+import { TIENDAS, leerFlamingo } from "./lib/tiendas.mjs";
 import { compararOfertas, normTexto } from "./lib/comparar.mjs";
 import { verificar } from "./lib/verificar.mjs";
 import { TIENDA_POR_HOST, SE_PUEDE_LEER, leerFichaFalabella, leerFichaVtex, urlFichaVtex } from "./lib/producto.mjs";
@@ -41,19 +41,21 @@ export default async (req) => {
   const u = new URL(req.url), url = (u.searchParams.get("url") || "").trim();
   let host; try { host = new URL(url).host; } catch { return resp({ ok: false, msg: "Pega el enlace completo del producto (empieza por https://)." }, 400, false); }
   const tienda = TIENDA_POR_HOST[host];
-  if (!tienda) return resp({ ok: false, msg: "Todavía no revisamos esa tienda. Por ahora: Falabella, Olímpica y Jumbo." }, 422, false);
+  if (!tienda) return resp({ ok: false, msg: "Todavía no revisamos esa tienda. Por ahora: Falabella, Olímpica, Jumbo y Flamingo." }, 422, false);
   if (!SE_PUEDE_LEER.has(tienda)) return resp({ ok: false, msg: `Por ahora ${tienda} no nos deja leer sus productos desde aquí. Escribe el nombre y la referencia del producto en el buscador.` }, 422, false);
 
   let origen;
   try {
-    origen = tienda === "Falabella" ? leerFichaFalabella(await traer(url), url)
+    origen = tienda === "Flamingo" ? leerFlamingo(await traer(`https://www.flamingo.com.co/products/${new URL(url).pathname.split("/products/")[1].split("/")[0]}.js`, "json"))
+      : tienda === "Falabella" ? leerFichaFalabella(await traer(url), url)
       : leerFichaVtex(tienda, BASE[tienda], await traer(urlFichaVtex(BASE[tienda], url), "json"), url);
-  } catch { return resp({ ok: false, msg: `No pudimos leer ese producto en ${tienda}. Revisa el enlace o intenta en un minuto.` }, 502, false); }
+    if (!origen) throw new Error("sin precio");
+  } catch { return resp({ ok: false, msg: `No pudimos leer ese producto en ${tienda} (puede estar agotado). Revisa el enlace o intenta en un minuto.` }, 502, false); }
 
   // Buscar la misma referencia en las tiendas: con el modelo si lo hay, si no con el nombre.
   const q = origen.modelo ? `${origen.marca} ${origen.modelo}` : normTexto(origen.nombre).split(" ").slice(0, 6).join(" ");
   const consultas = await Promise.all(TIENDAS.map(async t => {
-    try { return { tienda: t.tienda, ok: true, ofertas: t.leer(await traer(t.url(q), "text", 7000)) }; }
+    try { return { tienda: t.tienda, ok: true, ofertas: t.buscar ? await t.buscar(q, u => traer(u, "text", 7000)) : t.leer(await traer(t.url(q), "text", 7000)) }; }
     catch { return { tienda: t.tienda, ok: false, ofertas: [] }; } }));
   const ofertas = [origen, ...consultas.flatMap(c => c.ofertas).filter(o => limpio(o.link) !== limpio(origen.link))];
   const grupos = compararOfertas(ofertas);

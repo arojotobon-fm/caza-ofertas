@@ -806,7 +806,7 @@ const STORES = [
   ["Jumbo",         q => "https://www.jumbocolombia.com/" + encodeURIComponent(q) + "?_q=" + encodeURIComponent(q) + "&map=ft"],
   ["Amazon",        q => "https://www.amazon.com/s?k=" + encodeURIComponent(q)],
 ];
-const STORE_COLOR = {"Falabella":"#6B8E23","Alkosto":"#1F4E9E","Éxito":"#C99A00","Ktronix":"#D9480F","Homecenter":"#C2410C","Jumbo":"#15803D","Olímpica":"#B91C1C","Mercado Libre":"#B59A00","Amazon":"#334155"};
+const STORE_COLOR = {"Falabella":"#6B8E23","Alkosto":"#1F4E9E","Éxito":"#C99A00","Ktronix":"#D9480F","Homecenter":"#C2410C","Jumbo":"#15803D","Olímpica":"#B91C1C","Mercado Libre":"#B59A00","Amazon":"#334155","Flamingo":"#C2185B"};
 const LABELS = {
   gangazo:["GANGAZO","t-gangazo"], buena:["BUENA OFERTA","t-buena"], justo:["PRECIO JUSTO","t-justo"],
   vitrina:["DESCUENTO DE VITRINA","t-vitrina"], error:["POSIBLE ERROR DE PRECIO","t-error"], sin:["SIN COMPARAR","t-sin"]
@@ -1248,7 +1248,7 @@ const ESTADO = {
   precio_inflado: ["🔴 ¡Cazamos una mentira!", "Precio anterior inflado: el “antes” que anuncia la tienda no tiene respaldo. Mira las pruebas."],
   insuficiente: ["⚪ No hay pruebas suficientes.", "No encontramos evidencia para decir si el descuento es real o no. Preferimos decírtelo a adivinar."],
 };
-const LEIBLES = ["Falabella", "Olímpica", "Jumbo"];
+const LEIBLES = ["Falabella", "Olímpica", "Jumbo", "Flamingo"];
 async function verificarEnlace(url){
   const sec = $("#buscador"); sec.hidden = false;
   $("#bzHead").textContent = "Verificador de descuentos";
@@ -1298,7 +1298,7 @@ async function buscarEnVivo(q){
   const sec = $("#buscador"); sec.hidden = false;
   $("#bzHead").textContent = "Buscador inteligente";
   $("#bzTitulo").innerHTML = `Buscando <mark>${esc(q)}</mark> en las tiendas, en este momento…`;
-  $("#bzEstado").innerHTML = ""; $("#bzGrid").innerHTML = `<div class="empty">Consultando Éxito, Falabella, Olímpica y Jumbo…</div>`;
+  $("#bzEstado").innerHTML = ""; $("#bzGrid").innerHTML = `<div class="empty">Consultando Éxito, Falabella, Olímpica, Jumbo y Flamingo…</div>`;
   sec.scrollIntoView({ behavior: "smooth", block: "start" });
   let j;
   try { const r = await fetch("/api/buscar?q=" + encodeURIComponent(q)); j = await r.json(); if (!r.ok) throw new Error(j.msg || r.status); }

@@ -124,3 +124,22 @@ test("buscador: empate en el primer lugar no es 'más barato' (Remington D5000)"
   const [p] = compararOfertas([...mk("Jumbo", 109900, "74590"), ...mk("Falabella", 109900, "74590"), ...mk("Olímpica", 169900, "74590")]);
   assert.equal(p.veredicto, "igual");
 });
+
+test("Flamingo: solo es de la tienda lo que vende 'Almacenes Flamingo'; precios en centavos; marketplace aparte", async () => {
+  const { leerFlamingo } = await import("../../netlify/functions/lib/tiendas.mjs");
+  const propio = leerFlamingo({ title: "FREIDORA ESENCIAL EZ122856-S", handle: "freidora-esencial-ez122856-s", vendor: "Almacenes Flamingo", tags: [],
+    variants: [{ available: true, price: 21990000, compare_at_price: 29990000, barcode: "07704353459647", sku: "EZ122856-S" }] });
+  assert.deepEqual([propio.precio, propio.precio_antes, propio.propio, propio.ean], [219900, 299900, true, "7704353459647"]);
+  const tercero = leerFlamingo({ title: "Freidora de Aire Haceb 4.2 litros Negra", handle: "x", vendor: "Virtual Muebles", tags: ["MARKETPLACE"],
+    variants: [{ available: true, price: 25990000, compare_at_price: 48990000, barcode: "7704353459647" }] });
+  assert.equal(tercero.propio, false);
+  assert.equal(leerFlamingo({ title: "x", handle: "x", vendor: "Almacenes Flamingo", variants: [{ available: false, price: 100 }] }), null);
+});
+
+test("mismo código de barras une productos aunque una tienda no diga la marca (Flamingo)", () => {
+  const f = { tienda: "Flamingo", nombre: "FREIDORA AIRE 4.2L NEGRA", marca: "", link: "https://www.flamingo.com.co/products/a", precio: 259900, propio: true, ean: "7704353459647" };
+  const j = { tienda: "Jumbo", nombre: "Freidora de Aire Haceb 4.2 L", marca: "HACEB", link: "https://www.jumbocolombia.com/b/p", precio: 299900, propio: true, ean: "7704353459647" };
+  const [g] = compararOfertas([f, j]);
+  assert.equal(g.n, 2);
+  assert.equal(g.veredicto, "mas_barato");
+});

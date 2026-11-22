@@ -3,8 +3,8 @@ import { leerVtex } from "./tiendas.mjs";
 const num = v => Number(String(v ?? "").replace(/[^\d]/g, "")) || 0;
 
 export const TIENDA_POR_HOST = { "www.falabella.com.co": "Falabella", "www.olimpica.com": "Olímpica", "www.jumbocolombia.com": "Jumbo",
-  "www.exito.com": "Éxito", "tienda.exito.com": "Éxito", "www.alkosto.com": "Alkosto", "www.ktronix.com": "Ktronix", "www.homecenter.com.co": "Homecenter" };
-export const SE_PUEDE_LEER = new Set(["Falabella", "Olímpica", "Jumbo"]);
+  "www.exito.com": "Éxito", "tienda.exito.com": "Éxito", "www.alkosto.com": "Alkosto", "www.ktronix.com": "Ktronix", "www.homecenter.com.co": "Homecenter", "www.flamingo.com.co": "Flamingo", "flamingo.com.co": "Flamingo" };
+export const SE_PUEDE_LEER = new Set(["Falabella", "Olímpica", "Jumbo", "Flamingo"]);
 
 export function leerFichaFalabella(html, url) {
   const m = String(html).match(/<script id="__NEXT_DATA__" type="application\/json"[^>]*>([\s\S]*?)<\/script>/);
