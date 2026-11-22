@@ -1,4 +1,4 @@
-# PRUEBA ÚNICA (22 nov 2026): Flamingo en el buscador y el Verificador desde un servidor. No publica ni toca main.
+# PRUEBA ÚNICA (22 nov 2026, corrida 2 con enlaces fijos): Flamingo en el buscador y el Verificador desde un servidor. No publica ni toca main.
 name: Prueba de Flamingo
 on:
   push:

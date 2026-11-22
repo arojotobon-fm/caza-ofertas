@@ -8,7 +8,8 @@ for (const q of ["freidora de aire", "ps5 slim", "televisor challenger 43", "lav
   const j = await r.json();
   out.buscador[q] = { tiendas: j.tiendas, productos: (j.productos || []).slice(0, 8).map(p => ({ v: p.veredicto, n: p.n, nombre: p.nombre, tiendas: p.tiendas.map(t => [t.tienda, t.precio, t.ean || null, t.link]), ext: p.externas.length })) };
 }
-const links = Object.values(out.buscador).flatMap(b => b.productos.flatMap(p => p.tiendas.filter(t => t[0] === "Flamingo").map(t => t[3]))).slice(0, 8);
+const links = ["https://www.flamingo.com.co/products/freidora-esencial-ez122856-s", "https://www.flamingo.com.co/products/freidora-aire-max",
+  "https://www.flamingo.com.co/products/televisor-challenger-43-43kg90-led-fhd-smart-tv", "https://www.flamingo.com.co/products/freidora-de-aire-haceb-4-2-litros-negra"];
 for (const url of links) {
   const r = await verificar(new Request("https://cazadoresdeofertas.netlify.app/api/verificar?url=" + encodeURIComponent(url)));
   const j = await r.json();
