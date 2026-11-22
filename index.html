@@ -616,7 +616,7 @@ const STORES = [
   ["Éxito",         q => "https://www.exito.com/s?q=" + encodeURIComponent(q)],
   ["Olímpica",      q => "https://www.olimpica.com/" + encodeURIComponent(q) + "?_q=" + encodeURIComponent(q) + "&map=ft"],
   ["Homecenter",    q => "https://www.homecenter.com.co/homecenter-co/search?Ntt=" + encodeURIComponent(q)],
-  ["Jumbo",         q => "https://www.tiendasjumbo.co/" + encodeURIComponent(q) + "?_q=" + encodeURIComponent(q) + "&map=ft"],
+  ["Jumbo",         q => "https://www.jumbocolombia.com/" + encodeURIComponent(q) + "?_q=" + encodeURIComponent(q) + "&map=ft"],
   ["Amazon",        q => "https://www.amazon.com/s?k=" + encodeURIComponent(q)],
 ];
 const STORE_COLOR = {"Falabella":"#6B8E23","Alkosto":"#1F4E9E","Éxito":"#C99A00","Ktronix":"#D9480F","Homecenter":"#C2410C","Jumbo":"#15803D","Olímpica":"#B91C1C","Mercado Libre":"#B59A00","Amazon":"#334155"};
@@ -716,7 +716,7 @@ function card(p, rank){
    2. Solo precios de contado: nada de comparar un precio con tarjeta contra uno de contado.
    3. Comparación con 2 comercios independientes = "limitada"; 3 o más = "completa".
    Alkosto, Ktronix y Alkomprar cuentan como un solo comercio.                                    */
-const GRUPO = {"Alkosto":"colcomercio","Ktronix":"colcomercio","Alkomprar":"colcomercio"};
+const GRUPO = {"Alkosto":"colcomercio","Ktronix":"colcomercio","Alkomprar":"colcomercio","Falabella":"falabella","Homecenter":"falabella","Jumbo":"cencosud","Olímpica":"olimpica","Éxito":"grupo-exito"};
 const grupoDe = t => GRUPO[t] || t;
 let BYLINK = {};
 const esExterno = p => /Vendedor externo/i.test(p && p.nota || "");
@@ -761,10 +761,16 @@ function lineaComparacion(p, i){
   if (i.ahorro < 0) return `${precioOtro} · aquí está ${cop(d)} más caro`;
   return `Cuesta lo mismo ${otro}`;
 }
+// Un solo puesto por producto: si dos tiendas del mismo grupo (Alkosto y Ktronix) o varias tiendas con el mismo
+// precio comparten la misma comparación, se muestra una sola vez.
+const claveRadar = i => Object.entries(i.rows.reduce((m, r) => { const g = grupoDe(r.tienda); if (!(g in m) || r.precio < m[g]) m[g] = r.precio; return m; }, {})).sort().join("|");
 function topList(){
+  const vistos = new Set();
   return DATA.map(p => [p, radarInfo(p)])
     .filter(([p, i]) => i && i.pct > 0 && !community(p).gone)
-    .sort((a, b) => b[1].pct - a[1].pct).slice(0, 20).map(([p]) => p);
+    .sort((a, b) => b[1].pct - a[1].pct)
+    .filter(([p, i]) => { const k = claveRadar(i); if (vistos.has(k)) return false; vistos.add(k); return true; })
+    .slice(0, 20).map(([p]) => p);
 }
 function renderRadar(){
   const real = topList().length;

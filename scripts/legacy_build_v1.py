@@ -6,6 +6,8 @@ def argumentos():
     ap.add_argument("--fecha", required=True, help="Fecha y hora real de la lectura, AAAA-MM-DDTHH:MM:SS-05:00")
     ap.add_argument("--salida", required=True, help="Directorio aislado de salida")
     ap.add_argument("--historial-base")
+    ap.add_argument("--hora-tienda", action="append", default=[],
+                    help="Hora real de lectura de una tienda, p. ej. Jumbo=2026-11-22T09:41:00-05:00 (si no, se usa --fecha)")
     ap.add_argument("--chequeo", action="append", default=[],
                     help="Revisión de fichas (data/v2/chequeos/*.json). Solo valida al vendedor si es del mismo día de la lectura.")
     return ap.parse_args()
@@ -18,6 +20,13 @@ os.makedirs(SALIDA, exist_ok=True)
 if "T" not in ARGS.fecha:
     raise SystemExit("--fecha debe incluir la hora real de la lectura, por ejemplo 2026-11-22T02:03:00-05:00")
 NOW = datetime.datetime.fromisoformat(ARGS.fecha).isoformat()
+HORA_TIENDA = {}
+for _h in ARGS.hora_tienda:
+    _t, _v = _h.split("=", 1)
+    _v = datetime.datetime.fromisoformat(_v).isoformat()
+    if _v[:10] != NOW[:10]:
+        raise SystemExit(f"La hora de {_t} ({_v}) no es del mismo día de la actualización ({NOW[:10]})")
+    HORA_TIENDA[_t] = _v
 SUB = {"freidora":"Electrodomésticos","licuadora":"Electrodomésticos","cafetera":"Electrodomésticos","aspiradora":"Hogar",
        "televisor":"Televisores","audifonos":"Tecnología","parlante":"Tecnología","smartwatch":"Tecnología","celular":"Celulares",
        "portatil":"Tecnología","tablet":"Tecnología","consola":"Videojuegos","lego":"Juguetes","secador":"Belleza y cuidado"}
@@ -63,6 +72,14 @@ def human_slug(url):
 # Solo si: el canal está validado y vigente en identidades_corporativas.json, la ficha se revisó el MISMO día de la
 # lectura de precios y la revisión no encontró otro vendedor, banner, sección especial ni error.
 TIENDA_COMERCIO = {"Alkosto": "alkosto", "Ktronix": "ktronix", "Alkomprar": "alkomprar"}
+# Grupos empresariales: nunca se compara una tienda con otra del mismo grupo (decisión 22 nov 2026).
+GRUPO = {"Alkosto": "colcomercio", "Ktronix": "colcomercio", "Alkomprar": "colcomercio",
+         "Falabella": "falabella", "Homecenter": "falabella", "Éxito": "grupo-exito", "Olímpica": "olimpica", "Jumbo": "cencosud"}
+grupo = lambda t: GRUPO.get(t, t)
+# Vendedor propio de cada tienda (nombre exacto que muestra la tienda): cualquier otro es vendedor externo.
+VENDEDOR_PROPIO = {"Falabella": {"Falabella"}, "Alkosto": {"Alkosto"}, "Ktronix": {"Ktronix"}, "Éxito": {"Exito", "Éxito"},
+                   "Olímpica": {"Olimpica", "Olímpica"}, "Jumbo": {"Cencosud - Colombia"}}
+es_propio = lambda it: (it.get("vendedor") or "") in VENDEDOR_PROPIO.get(it["tienda"], set())
 FICHAS_OK = {}
 _ident = json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "data", "v2", "identidades_corporativas.json"), encoding="utf-8"))
 _canales = {c["comercio_id"]: c for i in _ident["identidades"] for c in i.get("canales", [])}
@@ -85,25 +102,43 @@ for q, name, brand, price, antes, cmr, path, img, seller, rating, rev in json.lo
                       link="https://www.falabella.com.co/falabella-co/product/" + path,
                       img=("https://media.falabella.com.co/falabellaCO/%s/width=400,height=400,quality=80,format=webp,fit=pad" % img) if img else None,
                       vendedor="Falabella" if seller == 1 else seller, rating=rating, reviews=rev))
-# Alkosto: [q, name, prices, path, img, rating, reviews]
-for q, name, ps, path, img, rating, rev in json.load(open(os.path.join(RESP, "crudo-alk_rows.json"), encoding="utf-8")):
-    if not ps or not path: continue
-    if not name or not re.match(r"[A-Za-z0-9ÁÉÍÓÚáéíóú]", name):
-        name = human_slug(path)
-    brand = ""
-    m = re.search(r"\b([A-Z][A-Z\+&]{1,}(?: [A-Z]{2,})?)\b", name)
-    if m: brand = m.group(1).title()
-    dist = sorted(set(ps))
-    if len(dist) >= 3:   # [precio Tarjeta Alkosto, precio cualquier medio, antes]
-        price, card = dist[1], dist[0]
-    elif len(dist) == 2: price, card = dist[0], None
-    else: price, card = dist[0], None
-    items.append(dict(tienda="Alkosto", q=q, nombre=name, marca=brand, precio=price,
-                      precio_antes=max(ps) if max(ps) > price else None, tarjeta=card, tarjeta_nombre="Tarjeta Alkosto",
-                      link="https://www.alkosto.com" + path,
-                      img=("https://cdn.dam.alkosto.com/products/" + img.replace("?w=310", "?w=400")) if img else None,
-                      vendedor="Alkosto", rating=rating, reviews=rev,
-                      nota_hoy=False))
+# Corbeta (Alkosto, Ktronix): [q, name, prices, path, img, rating, reviews]
+CORBETA = [("Alkosto", "crudo-alk_rows.json", "https://www.alkosto.com", "https://cdn.dam.alkosto.com/products/"),
+           ("Ktronix", "crudo-ktr_rows.json", "https://www.ktronix.com", "https://cdn.dam.ktronix.com/products/")]
+for _tienda, _archivo, _dom, _cdn in CORBETA:
+    _ruta = os.path.join(RESP, _archivo)
+    if not os.path.exists(_ruta):
+        continue
+    for q, name, ps, path, img, rating, rev in json.load(open(_ruta, encoding="utf-8")):
+        if not ps or not path: continue
+        if not name or not re.match(r"[A-Za-z0-9ÁÉÍÓÚáéíóú]", name):
+            name = human_slug(path)
+        brand = ""
+        m = re.search(r"\b([A-Z][A-Z\+&]{1,}(?: [A-Z]{2,})?)\b", name)
+        if m: brand = m.group(1).title()
+        dist = sorted(set(ps))
+        if len(dist) >= 3:   # [precio Tarjeta Alkosto, precio cualquier medio, antes]
+            price, card = dist[1], dist[0]
+        elif len(dist) == 2: price, card = dist[0], None
+        else: price, card = dist[0], None
+        items.append(dict(tienda=_tienda, q=q, nombre=name, marca=brand, precio=price,
+                          precio_antes=max(ps) if max(ps) > price else None, tarjeta=card, tarjeta_nombre="Tarjeta Alkosto",
+                          link=_dom + path,
+                          img=(_cdn + img.replace("?w=310", "?w=400")) if img else None,
+                          vendedor=_tienda, rating=rating, reviews=rev,
+                          nota_hoy=False))
+# VTEX (Olímpica, Jumbo): [q, name, brand, price, listPrice, path, img, seller, rating, reviews]
+# El precio es el de la oferta del vendedor indicado (la tienda o un tercero), leído de la API pública de la tienda.
+VTEX = [("Olímpica", "crudo-oli_rows.json", "https://www.olimpica.com"), ("Jumbo", "crudo-jum_rows.json", "https://www.jumbocolombia.com")]
+for _tienda, _archivo, _dom in VTEX:
+    _ruta = os.path.join(RESP, _archivo)
+    if not os.path.exists(_ruta):
+        continue
+    for q, name, brand, price, lista, path, img, seller, rating, rev in json.load(open(_ruta, encoding="utf-8")):
+        if not price or not path: continue
+        items.append(dict(tienda=_tienda, q=q, nombre=name, marca=(brand or "").title() if brand and len(brand) < 25 else "",
+                          precio=price, precio_antes=lista if lista and lista > price else None, tarjeta=None, tarjeta_nombre=None,
+                          link=_dom + path, img=img, vendedor=(seller or "").strip(), rating=rating, reviews=rev))
 # Exito: [q, l0, l1, prices, path, img, seller, rating, reviews]
 for q, l0, l1, ps, path, img, seller, rating, rev in json.load(open(os.path.join(RESP, "crudo-exi_rows.json"), encoding="utf-8")):
     if not ps or not path: continue
@@ -179,19 +214,19 @@ def exacta(a, b):
 for it in items:
     others = []
     for o in items:
-        if o is it or o["tienda"] == it["tienda"]: continue
+        if o is it or grupo(o["tienda"]) == grupo(it["tienda"]): continue
         if o["categoria"] == it["categoria"] and same_model(it["modelos"], o["modelos"]) and same_brand(it, o) and exacta(it, o):
             others.append(o)
     # keep one (cheapest) per other store
     best = {}
     for o in others:
-        if o["tienda"] not in best or o["precio"] < best[o["tienda"]]["precio"]:
-            best[o["tienda"]] = o
+        if grupo(o["tienda"]) not in best or o["precio"] < best[grupo(o["tienda"])]["precio"]:
+            best[grupo(o["tienda"])] = o
     it["match"] = list(best.values())
 
 def label(pct, it):
     low = (it.get("rating") is not None and it.get("rating") < 4 and (it.get("reviews") or 0) >= 3)
-    reliable = not low and ((it["vendedor"] in ("Falabella", "Alkosto", "Exito", "Éxito")) or (it.get("rating") or 0) >= 4.3)
+    reliable = not low and (es_propio(it) or (it.get("rating") or 0) >= 4.3)
     if pct > 50: return "error"
     if pct >= 30 and reliable: return "gangazo"
     if pct >= 15: return "buena"
@@ -203,12 +238,13 @@ extra = []
 for it in items:
     rec = dict(nombre=it["nombre"], marca=it["marca"], categoria=it["categoria"], sub=SUB.get(it["q"], "Otros"), tienda=it["tienda"],
                precio=it["precio"], precio_antes=it["precio_antes"], link=it["link"], img=it["img"],
-               verificado=NOW, top=False)
+               verificado=HORA_TIENDA.get(it["tienda"], NOW), top=False)
     _cid = TIENDA_COMERCIO.get(it["tienda"])
-    if _cid and FICHAS_OK.get((_cid, it["link"].replace("https://www.alkosto.com", ""))):
-        rec["vendedor_validado_en"] = FICHAS_OK[(_cid, it["link"].replace("https://www.alkosto.com", ""))]
+    _path = re.sub(r"^https?://[^/]+", "", it["link"])
+    if _cid and FICHAS_OK.get((_cid, _path)):
+        rec["vendedor_validado_en"] = FICHAS_OK[(_cid, _path)]
     notes = []
-    if it["vendedor"] and it["vendedor"] not in ("Falabella", "Alkosto", "Exito", "Éxito"):
+    if it["vendedor"] and not es_propio(it):
         notes.append("Vendedor externo: " + it["vendedor"] + ".")
     if it["match"]:
         ref = statistics.median([o["precio"] for o in it["match"]])

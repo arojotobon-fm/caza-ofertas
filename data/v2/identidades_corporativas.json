@@ -231,6 +231,110 @@
           "revalidar_antes_de": null
         }
       ]
+    },
+    {
+      "id": "olimpica",
+      "razon_social": "Supertiendas y Droguerías Olímpica S.A.",
+      "nit": "890.107.487-3",
+      "grupo_empresarial": "olimpica",
+      "alias": [
+        {
+          "nombre": "Olímpica",
+          "tipo": "marca_comercial",
+          "comercio_id": "olimpica",
+          "evidencia": [
+            {
+              "fuente": "https://www.olimpica.com (API pública del catálogo)",
+              "texto": "Vendedor propio del sitio: sellerId 1, sellerName 'Olimpica'",
+              "fecha": "2026-11-22"
+            }
+          ]
+        },
+        {
+          "nombre": "Olimpica",
+          "tipo": "nombre_vendedor_en_sitio",
+          "comercio_id": "olimpica",
+          "evidencia": [
+            {
+              "fuente": "https://www.olimpica.com (API pública del catálogo)",
+              "texto": "sellerId 1 = 'Olimpica'",
+              "fecha": "2026-11-22"
+            }
+          ]
+        },
+        {
+          "nombre": "Olímpica S.A.",
+          "tipo": "denominacion_alterna",
+          "comercio_id": null,
+          "evidencia": [
+            {
+              "fuente": "https://www.ramajudicial.gov.co (acción popular 2020-291)",
+              "texto": "SUPERTIENDAS Y DROGUERIAS OLIMPICA S.A.-OLIMPICA S.A. Identificada con NIT 890.107.487-3",
+              "fecha": "2026-11-22"
+            }
+          ]
+        }
+      ],
+      "canales": [
+        {
+          "comercio_id": "olimpica",
+          "nivel_evidencia": "publicacion",
+          "estado": "por_publicacion",
+          "motivo": "Tiene marketplace. Cada oferta trae su vendedor en la API pública: solo se valida la oferta del vendedor 'Olimpica' (sellerId 1); los demás son vendedores externos."
+        }
+      ]
+    },
+    {
+      "id": "cencosud-colombia",
+      "razon_social": "Cencosud Colombia S.A.",
+      "nit": "900.155.107-1",
+      "grupo_empresarial": "cencosud",
+      "alias": [
+        {
+          "nombre": "Jumbo",
+          "tipo": "marca_comercial",
+          "comercio_id": "jumbo",
+          "evidencia": [
+            {
+              "fuente": "https://www.jumbocolombia.com/institucional/terminos-y-condiciones",
+              "texto": "CENCOSUD COLOMBIA S.A., identificada con el NIT. 900.155.107-1 debe entenderse como CENCOSUD y/o JUMBO.",
+              "fecha": "2026-11-22"
+            }
+          ]
+        },
+        {
+          "nombre": "Cencosud - Colombia",
+          "tipo": "nombre_vendedor_en_sitio",
+          "comercio_id": "jumbo",
+          "evidencia": [
+            {
+              "fuente": "https://www.jumbocolombia.com (API pública del catálogo)",
+              "texto": "Vendedor propio del sitio: sellerId 1, sellerName 'Cencosud - Colombia'",
+              "fecha": "2026-11-22"
+            }
+          ]
+        },
+        {
+          "nombre": "Metro",
+          "tipo": "marca_comercial",
+          "comercio_id": null,
+          "evidencia": [
+            {
+              "fuente": "BBVA, términos campaña Jumbo-Metro",
+              "texto": "Almacenes Jumbo y Metro ... www.tiendasjumbo.co o www.tiendasmetro.co",
+              "fecha": "2026-11-22"
+            }
+          ]
+        }
+      ],
+      "canales": [
+        {
+          "comercio_id": "jumbo",
+          "nivel_evidencia": "publicacion",
+          "estado": "por_publicacion",
+          "motivo": "Tiene marketplace. Solo se valida la oferta del vendedor 'Cencosud - Colombia' (sellerId 1); los demás son vendedores externos."
+        }
+      ]
     }
   ]
 }

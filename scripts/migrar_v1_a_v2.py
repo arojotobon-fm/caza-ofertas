@@ -34,7 +34,8 @@ P = lambda *a: os.path.join(ROOT, *a)  # noqa: E731
 RESP = P("data", "respaldo", "2026-11-21")
 OUT = P("data", "v2")
 ORIGEN = "v1-2026-11-21"
-COMERCIO_ID = {"Falabella": "falabella", "Alkosto": "alkosto", "Éxito": "exito"}
+COMERCIO_ID = {"Falabella": "falabella", "Alkosto": "alkosto", "Éxito": "exito", "Ktronix": "ktronix",
+               "Olímpica": "olimpica", "Jumbo": "jumbo"}
 # Referencias con duda de equivalencia (decisión 21 nov: DuraPro y AF141LAA fuera hasta revisión humana).
 REFERENCIAS_EN_REVISION = [re.compile(r"BLBD\s*-?\s*210", re.I), re.compile(r"AF141LAA", re.I)]
 FUENTE_CRUDA = "lectura del listado de la tienda (respaldo crudo)"
@@ -97,6 +98,18 @@ def main():
         dist = sorted(set(ps or []))
         crudo["https://www.alkosto.com" + path] = {"vendedor": None, "tarjeta": dist[0] if len(dist) >= 3 else None,
                                                    "tarjeta_nombre": "Tarjeta Alkosto"}
+    if os.path.exists(os.path.join(RESP, "crudo-ktr_rows.json")):
+        for q, name, ps, path, img, rating, rev in load(os.path.join(RESP, "crudo-ktr_rows.json")):
+            if not path:
+                continue
+            dist = sorted(set(ps or []))
+            crudo["https://www.ktronix.com" + path] = {"vendedor": None, "tarjeta": dist[0] if len(dist) >= 3 else None,
+                                                       "tarjeta_nombre": "Tarjeta Alkosto"}
+    for _archivo, _dom in (("crudo-oli_rows.json", "https://www.olimpica.com"), ("crudo-jum_rows.json", "https://www.jumbocolombia.com")):
+        if os.path.exists(os.path.join(RESP, _archivo)):
+            for q, name, brand, price, lista, path, img, seller, rating, rev in load(os.path.join(RESP, _archivo)):
+                if path:
+                    crudo[_dom + path] = {"vendedor": (seller or "").strip() or None, "tarjeta": None, "tarjeta_nombre": None}
     for q, l0, l1, ps, path, img, seller, rating, rev in load(os.path.join(RESP, "crudo-exi_rows.json")):
         if not path:
             continue

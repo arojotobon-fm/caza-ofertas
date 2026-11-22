@@ -6,6 +6,18 @@
   "estado_revision": "pendiente"
  },
  {
+  "publicacion_a": "d75eaf7b54ec",
+  "publicacion_b": "139d0debd705",
+  "motivo": "código parecido (AF141~AF141LAA); revisar si es la misma referencia",
+  "estado_revision": "pendiente"
+ },
+ {
+  "publicacion_a": "7a4c2f2d0b18",
+  "publicacion_b": "4d77f4f2125d",
+  "motivo": "mismo código SL401, pero falta confirmar: capacidad_l",
+  "estado_revision": "pendiente"
+ },
+ {
   "publicacion_a": "4c61fc5c4823",
   "publicacion_b": "bf826b9e2cf6",
   "motivo": "mismo código FN101GY, pero falta confirmar: capacidad_l",
@@ -18,7 +30,31 @@
   "estado_revision": "pendiente"
  },
  {
+  "publicacion_a": "22201822f0ce",
+  "publicacion_b": "4d77f4f2125d",
+  "motivo": "código parecido (SL401LAA~SL401); revisar si es la misma referencia",
+  "estado_revision": "pendiente"
+ },
+ {
   "publicacion_a": "41aad106cac2",
+  "publicacion_b": "d16308d44a7e",
+  "motivo": "código parecido (AF141LAA~AF141); revisar si es la misma referencia",
+  "estado_revision": "pendiente"
+ },
+ {
+  "publicacion_a": "95296ead32b0",
+  "publicacion_b": "4d77f4f2125d",
+  "motivo": "código parecido (SL401LAA~SL401); revisar si es la misma referencia",
+  "estado_revision": "pendiente"
+ },
+ {
+  "publicacion_a": "39582d70a24e",
+  "publicacion_b": "bf826b9e2cf6",
+  "motivo": "mismo código FN101GY, pero falta confirmar: capacidad_l",
+  "estado_revision": "pendiente"
+ },
+ {
+  "publicacion_a": "139d0debd705",
   "publicacion_b": "d16308d44a7e",
   "motivo": "código parecido (AF141LAA~AF141); revisar si es la misma referencia",
   "estado_revision": "pendiente"
@@ -43,6 +79,12 @@
  },
  {
   "publicacion_a": "be8e079728ae",
+  "publicacion_b": "7f65b87dce59",
+  "motivo": "mismo código BLBD210GB, pero falta confirmar: capacidad_l",
+  "estado_revision": "pendiente"
+ },
+ {
+  "publicacion_a": "be8e079728ae",
   "publicacion_b": "e8eeb47c2667",
   "motivo": "mismo código BLBD210GB, pero falta confirmar: capacidad_l",
   "estado_revision": "pendiente"
@@ -50,6 +92,12 @@
  {
   "publicacion_a": "cc653e2ed5b5",
   "publicacion_b": "40cf89bc96d7",
+  "motivo": "código parecido (BLBD210~BLBD210GB); revisar si es la misma referencia",
+  "estado_revision": "pendiente"
+ },
+ {
+  "publicacion_a": "cc653e2ed5b5",
+  "publicacion_b": "7f65b87dce59",
   "motivo": "código parecido (BLBD210~BLBD210GB); revisar si es la misma referencia",
   "estado_revision": "pendiente"
  },
@@ -67,8 +115,68 @@
  },
  {
   "publicacion_a": "597edfd989ed",
+  "publicacion_b": "0b2177c1fd1c",
+  "motivo": "código parecido (AFBD423B~AFBD42); revisar si es la misma referencia",
+  "estado_revision": "pendiente"
+ },
+ {
+  "publicacion_a": "597edfd989ed",
+  "publicacion_b": "1e9277f0e48d",
+  "motivo": "código parecido (AFBD423B~AFBD423BDLA); revisar si es la misma referencia",
+  "estado_revision": "pendiente"
+ },
+ {
+  "publicacion_a": "597edfd989ed",
   "publicacion_b": "970e6901bfd6",
   "motivo": "código parecido (AFBD423B~AFBD423BDLA); revisar si es la misma referencia",
+  "estado_revision": "pendiente"
+ },
+ {
+  "publicacion_a": "76fc84f4da36",
+  "publicacion_b": "0e03d9879a00",
+  "motivo": "código parecido (AFBD42~AFBD423B); revisar si es la misma referencia",
+  "estado_revision": "pendiente"
+ },
+ {
+  "publicacion_a": "0b2177c1fd1c",
+  "publicacion_b": "0e03d9879a00",
+  "motivo": "código parecido (AFBD42~AFBD423B); revisar si es la misma referencia",
+  "estado_revision": "pendiente"
+ },
+ {
+  "publicacion_a": "0e03d9879a00",
+  "publicacion_b": "1e9277f0e48d",
+  "motivo": "código parecido (AFBD423B~AFBD423BDLA); revisar si es la misma referencia",
+  "estado_revision": "pendiente"
+ },
+ {
+  "publicacion_a": "0e03d9879a00",
+  "publicacion_b": "970e6901bfd6",
+  "motivo": "código parecido (AFBD423B~AFBD423BDLA); revisar si es la misma referencia",
+  "estado_revision": "pendiente"
+ },
+ {
+  "publicacion_a": "2826d7e64ced",
+  "publicacion_b": "2a0bb1a17c8f",
+  "motivo": "mismo código U300, pero falta confirmar: ram_gb",
+  "estado_revision": "pendiente"
+ },
+ {
+  "publicacion_a": "f459e9fffa9e",
+  "publicacion_b": "2a0bb1a17c8f",
+  "motivo": "mismo código U300, pero falta confirmar: ram_gb",
+  "estado_revision": "pendiente"
+ },
+ {
+  "publicacion_a": "19e831615441",
+  "publicacion_b": "19abb84bafb1",
+  "motivo": "mismo código SLIM3, pero falta confirmar: pantalla_pulgadas",
+  "estado_revision": "pendiente"
+ },
+ {
+  "publicacion_a": "3b93ccaf6d1d",
+  "publicacion_b": "2a6b59f6ee06",
+  "motivo": "mismo código 14DQ3502LA, pero falta confirmar: pantalla_pulgadas, ram_gb",
   "estado_revision": "pendiente"
  },
  {
@@ -84,8 +192,20 @@
   "estado_revision": "pendiente"
  },
  {
+  "publicacion_a": "016928a23dbe",
+  "publicacion_b": "088af6ae38ca",
+  "motivo": "mismo código EAS41, pero falta confirmar: capacidad_l",
+  "estado_revision": "pendiente"
+ },
+ {
   "publicacion_a": "4934fcf5b921",
   "publicacion_b": "b0344a2e6cd8",
+  "motivo": "código parecido (D31A110F~D31A110); revisar si es la misma referencia",
+  "estado_revision": "pendiente"
+ },
+ {
+  "publicacion_a": "4934fcf5b921",
+  "publicacion_b": "b029e0a6b099",
   "motivo": "código parecido (D31A110F~D31A110); revisar si es la misma referencia",
   "estado_revision": "pendiente"
  },
@@ -93,6 +213,18 @@
   "publicacion_a": "b0344a2e6cd8",
   "publicacion_b": "32505d85ffef",
   "motivo": "código parecido (D31A110~D31A110F); revisar si es la misma referencia",
+  "estado_revision": "pendiente"
+ },
+ {
+  "publicacion_a": "b029e0a6b099",
+  "publicacion_b": "32505d85ffef",
+  "motivo": "código parecido (D31A110~D31A110F); revisar si es la misma referencia",
+  "estado_revision": "pendiente"
+ },
+ {
+  "publicacion_a": "f2136c3da06b",
+  "publicacion_b": "00d84d534552",
+  "motivo": "código parecido (HYLED4326~HYLED4326QG); revisar si es la misma referencia",
   "estado_revision": "pendiente"
  }
 ]

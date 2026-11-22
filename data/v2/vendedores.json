@@ -1398,6 +1398,50 @@
   "publicaciones": 2
  },
  {
+  "id": "d7caef2e76",
+  "nombre": "Homecenter",
+  "comercio_id": "falabella",
+  "tipo": "distribuidor_autorizado",
+  "estado_validacion": "pendiente",
+  "metodo_validacion": null,
+  "validado_en": null,
+  "motivo": "Empresa identificada (Sodimac Colombia S.A.) vendiendo en un marketplace ajeno: requiere comprobar la autorización comercial para esta publicación.",
+  "nivel_evidencia": "publicacion",
+  "revalidar_antes_de": null,
+  "vendedor_real": {
+   "razon_social": "Sodimac Colombia S.A.",
+   "nit": "800.242.106-2"
+  },
+  "evidencias": [
+   {
+    "texto_listado": "Homecenter",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
+    "fecha": "2026-11-22T02:03:00-05:00"
+   },
+   {
+    "texto_listado": "Homecenter",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
+    "fecha": "2026-11-22T02:03:00-05:00"
+   },
+   {
+    "texto_listado": "Homecenter",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
+    "fecha": "2026-11-22T02:03:00-05:00"
+   },
+   {
+    "texto_listado": "Homecenter",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
+    "fecha": "2026-11-22T02:03:00-05:00"
+   },
+   {
+    "texto_listado": "Homecenter",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
+    "fecha": "2026-11-22T02:03:00-05:00"
+   }
+  ],
+  "publicaciones": 10
+ },
+ {
   "id": "b233a7d030",
   "nombre": "Falabella",
   "comercio_id": "falabella",
@@ -1863,47 +1907,6 @@
    }
   ],
   "publicaciones": 1
- },
- {
-  "id": "d7caef2e76",
-  "nombre": "Homecenter",
-  "comercio_id": "falabella",
-  "tipo": "tercero_marketplace",
-  "estado_validacion": "rechazado",
-  "metodo_validacion": null,
-  "validado_en": null,
-  "motivo": "Vendedor externo de marketplace: excluido de ofertas aprobadas (política 3.2).",
-  "nivel_evidencia": "publicacion",
-  "revalidar_antes_de": null,
-  "vendedor_real": null,
-  "evidencias": [
-   {
-    "texto_listado": "Homecenter",
-    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T02:03:00-05:00"
-   },
-   {
-    "texto_listado": "Homecenter",
-    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T02:03:00-05:00"
-   },
-   {
-    "texto_listado": "Homecenter",
-    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T02:03:00-05:00"
-   },
-   {
-    "texto_listado": "Homecenter",
-    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T02:03:00-05:00"
-   },
-   {
-    "texto_listado": "Homecenter",
-    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T02:03:00-05:00"
-   }
-  ],
-  "publicaciones": 10
  },
  {
   "id": "5efa6eb84d",
@@ -2801,5 +2804,1291 @@
    }
   ],
   "publicaciones": 6
+ },
+ {
+  "id": "baf3b54ab4",
+  "nombre": "Cencosud - Colombia",
+  "comercio_id": "jumbo",
+  "tipo": "retailer",
+  "estado_validacion": "validado",
+  "metodo_validacion": "automatica_coincidencia_exacta",
+  "validado_en": "2026-11-22T09:41:36-05:00",
+  "motivo": "El listado identifica a 'Cencosud - Colombia', alias documentado de Cencosud Colombia S.A., dueña del comercio.",
+  "nivel_evidencia": "publicacion",
+  "revalidar_antes_de": null,
+  "vendedor_real": {
+   "razon_social": "Cencosud Colombia S.A.",
+   "nit": "900.155.107-1"
+  },
+  "evidencias": [
+   {
+    "texto_listado": "Cencosud - Colombia",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
+    "fecha": "2026-11-22T09:41:36-05:00"
+   },
+   {
+    "texto_listado": "Cencosud - Colombia",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
+    "fecha": "2026-11-22T09:41:36-05:00"
+   },
+   {
+    "texto_listado": "Cencosud - Colombia",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
+    "fecha": "2026-11-22T09:41:36-05:00"
+   },
+   {
+    "texto_listado": "Cencosud - Colombia",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
+    "fecha": "2026-11-22T09:41:36-05:00"
+   },
+   {
+    "texto_listado": "Cencosud - Colombia",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
+    "fecha": "2026-11-22T09:41:36-05:00"
+   }
+  ],
+  "publicaciones": 196
+ },
+ {
+  "id": "acc4395f51",
+  "nombre": "E-BRANDS",
+  "comercio_id": "jumbo",
+  "tipo": "tercero_marketplace",
+  "estado_validacion": "rechazado",
+  "metodo_validacion": null,
+  "validado_en": null,
+  "motivo": "Vendedor externo de marketplace: excluido de ofertas aprobadas (política 3.2).",
+  "nivel_evidencia": "publicacion",
+  "revalidar_antes_de": null,
+  "vendedor_real": null,
+  "evidencias": [
+   {
+    "texto_listado": "E-BRANDS",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
+    "fecha": "2026-11-22T09:41:36-05:00"
+   },
+   {
+    "texto_listado": "E-BRANDS",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
+    "fecha": "2026-11-22T09:41:36-05:00"
+   }
+  ],
+  "publicaciones": 2
+ },
+ {
+  "id": "81960fd62c",
+  "nombre": "Merpes",
+  "comercio_id": "jumbo",
+  "tipo": "tercero_marketplace",
+  "estado_validacion": "rechazado",
+  "metodo_validacion": null,
+  "validado_en": null,
+  "motivo": "Vendedor externo de marketplace: excluido de ofertas aprobadas (política 3.2).",
+  "nivel_evidencia": "publicacion",
+  "revalidar_antes_de": null,
+  "vendedor_real": null,
+  "evidencias": [
+   {
+    "texto_listado": "Merpes",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
+    "fecha": "2026-11-22T09:41:36-05:00"
+   },
+   {
+    "texto_listado": "Merpes",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
+    "fecha": "2026-11-22T09:41:36-05:00"
+   },
+   {
+    "texto_listado": "Merpes",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
+    "fecha": "2026-11-22T09:41:36-05:00"
+   },
+   {
+    "texto_listado": "Merpes",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
+    "fecha": "2026-11-22T09:41:36-05:00"
+   },
+   {
+    "texto_listado": "Merpes",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
+    "fecha": "2026-11-22T09:41:36-05:00"
+   }
+  ],
+  "publicaciones": 23
+ },
+ {
+  "id": "70e1fe0cee",
+  "nombre": "SmartBuy",
+  "comercio_id": "jumbo",
+  "tipo": "tercero_marketplace",
+  "estado_validacion": "rechazado",
+  "metodo_validacion": null,
+  "validado_en": null,
+  "motivo": "Vendedor externo de marketplace: excluido de ofertas aprobadas (política 3.2).",
+  "nivel_evidencia": "publicacion",
+  "revalidar_antes_de": null,
+  "vendedor_real": null,
+  "evidencias": [
+   {
+    "texto_listado": "SmartBuy",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
+    "fecha": "2026-11-22T09:41:36-05:00"
+   }
+  ],
+  "publicaciones": 1
+ },
+ {
+  "id": "30da6631ab",
+  "nombre": "amlcomercializadora",
+  "comercio_id": "jumbo",
+  "tipo": "tercero_marketplace",
+  "estado_validacion": "rechazado",
+  "metodo_validacion": null,
+  "validado_en": null,
+  "motivo": "Vendedor externo de marketplace: excluido de ofertas aprobadas (política 3.2).",
+  "nivel_evidencia": "publicacion",
+  "revalidar_antes_de": null,
+  "vendedor_real": null,
+  "evidencias": [
+   {
+    "texto_listado": "amlcomercializadora",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
+    "fecha": "2026-11-22T09:41:36-05:00"
+   },
+   {
+    "texto_listado": "amlcomercializadora",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
+    "fecha": "2026-11-22T09:41:36-05:00"
+   },
+   {
+    "texto_listado": "amlcomercializadora",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
+    "fecha": "2026-11-22T09:41:36-05:00"
+   },
+   {
+    "texto_listado": "amlcomercializadora",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
+    "fecha": "2026-11-22T09:41:36-05:00"
+   },
+   {
+    "texto_listado": "amlcomercializadora",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
+    "fecha": "2026-11-22T09:41:36-05:00"
+   }
+  ],
+  "publicaciones": 50
+ },
+ {
+  "id": "fd92debdbe",
+  "nombre": "cambiossystems",
+  "comercio_id": "jumbo",
+  "tipo": "tercero_marketplace",
+  "estado_validacion": "rechazado",
+  "metodo_validacion": null,
+  "validado_en": null,
+  "motivo": "Vendedor externo de marketplace: excluido de ofertas aprobadas (política 3.2).",
+  "nivel_evidencia": "publicacion",
+  "revalidar_antes_de": null,
+  "vendedor_real": null,
+  "evidencias": [
+   {
+    "texto_listado": "cambiossystems",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
+    "fecha": "2026-11-22T09:41:36-05:00"
+   },
+   {
+    "texto_listado": "cambiossystems",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
+    "fecha": "2026-11-22T09:41:36-05:00"
+   },
+   {
+    "texto_listado": "cambiossystems",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
+    "fecha": "2026-11-22T09:41:36-05:00"
+   }
+  ],
+  "publicaciones": 3
+ },
+ {
+  "id": "ffec066c7d",
+  "nombre": "easycolombia",
+  "comercio_id": "jumbo",
+  "tipo": "tercero_marketplace",
+  "estado_validacion": "rechazado",
+  "metodo_validacion": null,
+  "validado_en": null,
+  "motivo": "Vendedor externo de marketplace: excluido de ofertas aprobadas (política 3.2).",
+  "nivel_evidencia": "publicacion",
+  "revalidar_antes_de": null,
+  "vendedor_real": null,
+  "evidencias": [
+   {
+    "texto_listado": "easycolombia",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
+    "fecha": "2026-11-22T09:41:36-05:00"
+   },
+   {
+    "texto_listado": "easycolombia",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
+    "fecha": "2026-11-22T09:41:36-05:00"
+   },
+   {
+    "texto_listado": "easycolombia",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
+    "fecha": "2026-11-22T09:41:36-05:00"
+   },
+   {
+    "texto_listado": "easycolombia",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
+    "fecha": "2026-11-22T09:41:36-05:00"
+   },
+   {
+    "texto_listado": "easycolombia",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
+    "fecha": "2026-11-22T09:41:36-05:00"
+   }
+  ],
+  "publicaciones": 16
+ },
+ {
+  "id": "f8399fd724",
+  "nombre": "electroluxco",
+  "comercio_id": "jumbo",
+  "tipo": "tercero_marketplace",
+  "estado_validacion": "rechazado",
+  "metodo_validacion": null,
+  "validado_en": null,
+  "motivo": "Vendedor externo de marketplace: excluido de ofertas aprobadas (política 3.2).",
+  "nivel_evidencia": "publicacion",
+  "revalidar_antes_de": null,
+  "vendedor_real": null,
+  "evidencias": [
+   {
+    "texto_listado": "electroluxco",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
+    "fecha": "2026-11-22T09:41:36-05:00"
+   },
+   {
+    "texto_listado": "electroluxco",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
+    "fecha": "2026-11-22T09:41:36-05:00"
+   },
+   {
+    "texto_listado": "electroluxco",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
+    "fecha": "2026-11-22T09:41:36-05:00"
+   },
+   {
+    "texto_listado": "electroluxco",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
+    "fecha": "2026-11-22T09:41:36-05:00"
+   },
+   {
+    "texto_listado": "electroluxco",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
+    "fecha": "2026-11-22T09:41:36-05:00"
+   }
+  ],
+  "publicaciones": 6
+ },
+ {
+  "id": "4100b3a273",
+  "nombre": "mobilecomercial",
+  "comercio_id": "jumbo",
+  "tipo": "tercero_marketplace",
+  "estado_validacion": "rechazado",
+  "metodo_validacion": null,
+  "validado_en": null,
+  "motivo": "Vendedor externo de marketplace: excluido de ofertas aprobadas (política 3.2).",
+  "nivel_evidencia": "publicacion",
+  "revalidar_antes_de": null,
+  "vendedor_real": null,
+  "evidencias": [
+   {
+    "texto_listado": "mobilecomercial",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
+    "fecha": "2026-11-22T09:41:36-05:00"
+   },
+   {
+    "texto_listado": "mobilecomercial",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
+    "fecha": "2026-11-22T09:41:36-05:00"
+   },
+   {
+    "texto_listado": "mobilecomercial",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
+    "fecha": "2026-11-22T09:41:36-05:00"
+   }
+  ],
+  "publicaciones": 3
+ },
+ {
+  "id": "b37dafda5a",
+  "nombre": "moreproducts",
+  "comercio_id": "jumbo",
+  "tipo": "tercero_marketplace",
+  "estado_validacion": "rechazado",
+  "metodo_validacion": null,
+  "validado_en": null,
+  "motivo": "Vendedor externo de marketplace: excluido de ofertas aprobadas (política 3.2).",
+  "nivel_evidencia": "publicacion",
+  "revalidar_antes_de": null,
+  "vendedor_real": null,
+  "evidencias": [
+   {
+    "texto_listado": "moreproducts",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
+    "fecha": "2026-11-22T09:41:36-05:00"
+   },
+   {
+    "texto_listado": "moreproducts",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
+    "fecha": "2026-11-22T09:41:36-05:00"
+   },
+   {
+    "texto_listado": "moreproducts",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
+    "fecha": "2026-11-22T09:41:36-05:00"
+   },
+   {
+    "texto_listado": "moreproducts",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
+    "fecha": "2026-11-22T09:41:36-05:00"
+   },
+   {
+    "texto_listado": "moreproducts",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
+    "fecha": "2026-11-22T09:41:36-05:00"
+   }
+  ],
+  "publicaciones": 6
+ },
+ {
+  "id": "cde39999db",
+  "nombre": "mueblesrta",
+  "comercio_id": "jumbo",
+  "tipo": "tercero_marketplace",
+  "estado_validacion": "rechazado",
+  "metodo_validacion": null,
+  "validado_en": null,
+  "motivo": "Vendedor externo de marketplace: excluido de ofertas aprobadas (política 3.2).",
+  "nivel_evidencia": "publicacion",
+  "revalidar_antes_de": null,
+  "vendedor_real": null,
+  "evidencias": [
+   {
+    "texto_listado": "mueblesrta",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
+    "fecha": "2026-11-22T09:41:36-05:00"
+   }
+  ],
+  "publicaciones": 1
+ },
+ {
+  "id": "904558bb47",
+  "nombre": "pepegangastilotex",
+  "comercio_id": "jumbo",
+  "tipo": "tercero_marketplace",
+  "estado_validacion": "rechazado",
+  "metodo_validacion": null,
+  "validado_en": null,
+  "motivo": "Vendedor externo de marketplace: excluido de ofertas aprobadas (política 3.2).",
+  "nivel_evidencia": "publicacion",
+  "revalidar_antes_de": null,
+  "vendedor_real": null,
+  "evidencias": [
+   {
+    "texto_listado": "pepegangastilotex",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
+    "fecha": "2026-11-22T09:41:36-05:00"
+   }
+  ],
+  "publicaciones": 1
+ },
+ {
+  "id": "e77029ef80",
+  "nombre": "tgelectronicsco",
+  "comercio_id": "jumbo",
+  "tipo": "tercero_marketplace",
+  "estado_validacion": "rechazado",
+  "metodo_validacion": null,
+  "validado_en": null,
+  "motivo": "Vendedor externo de marketplace: excluido de ofertas aprobadas (política 3.2).",
+  "nivel_evidencia": "publicacion",
+  "revalidar_antes_de": null,
+  "vendedor_real": null,
+  "evidencias": [
+   {
+    "texto_listado": "tgelectronicsco",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
+    "fecha": "2026-11-22T09:41:36-05:00"
+   },
+   {
+    "texto_listado": "tgelectronicsco",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
+    "fecha": "2026-11-22T09:41:36-05:00"
+   }
+  ],
+  "publicaciones": 2
+ },
+ {
+  "id": "cb3c86e83a",
+  "nombre": "Ambiente Gourmet",
+  "comercio_id": "jumbo",
+  "tipo": "tienda_oficial_fabricante",
+  "estado_validacion": "pendiente",
+  "metodo_validacion": null,
+  "validado_en": null,
+  "motivo": "Posible tienda oficial del fabricante: requiere validación humana de su oficialidad.",
+  "nivel_evidencia": "publicacion",
+  "revalidar_antes_de": null,
+  "vendedor_real": null,
+  "evidencias": [
+   {
+    "texto_listado": "Ambiente Gourmet",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
+    "fecha": "2026-11-22T09:41:36-05:00"
+   },
+   {
+    "texto_listado": "Ambiente Gourmet",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
+    "fecha": "2026-11-22T09:41:36-05:00"
+   },
+   {
+    "texto_listado": "Ambiente Gourmet",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
+    "fecha": "2026-11-22T09:41:36-05:00"
+   },
+   {
+    "texto_listado": "Ambiente Gourmet",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
+    "fecha": "2026-11-22T09:41:36-05:00"
+   },
+   {
+    "texto_listado": "Ambiente Gourmet",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
+    "fecha": "2026-11-22T09:41:36-05:00"
+   }
+  ],
+  "publicaciones": 5
+ },
+ {
+  "id": "3d72bd5f07",
+  "nombre": "bertolini",
+  "comercio_id": "jumbo",
+  "tipo": "tienda_oficial_fabricante",
+  "estado_validacion": "pendiente",
+  "metodo_validacion": null,
+  "validado_en": null,
+  "motivo": "Posible tienda oficial del fabricante: requiere validación humana de su oficialidad.",
+  "nivel_evidencia": "publicacion",
+  "revalidar_antes_de": null,
+  "vendedor_real": null,
+  "evidencias": [
+   {
+    "texto_listado": "bertolini",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
+    "fecha": "2026-11-22T09:41:36-05:00"
+   }
+  ],
+  "publicaciones": 1
+ },
+ {
+  "id": "desconocido@ktronix",
+  "nombre": null,
+  "comercio_id": "ktronix",
+  "tipo": null,
+  "estado_validacion": "pendiente",
+  "metodo_validacion": null,
+  "validado_en": null,
+  "motivo": "No se pudo leer la ficha del producto: no se puede determinar quién vende.",
+  "nivel_evidencia": null,
+  "revalidar_antes_de": null,
+  "vendedor_real": null,
+  "evidencias": [
+   {
+    "chequeo_ficha": {
+     "status": 200,
+     "has_main": false,
+     "banner_txt": "",
+     "banner_img": "",
+     "seller_text": null,
+     "special": false,
+     "error": null,
+     "fecha": "2026-11-22",
+     "fuente": "data/v2/chequeos/ktronix-2026-11-22.json"
+    }
+   }
+  ],
+  "publicaciones": 1
+ },
+ {
+  "id": "colombiana-de-comercio@ktronix",
+  "nombre": "Colombiana de Comercio S.A.",
+  "comercio_id": "ktronix",
+  "tipo": "retailer",
+  "estado_validacion": "validado",
+  "metodo_validacion": "evidencia_corporativa_del_canal",
+  "validado_en": "2026-11-22",
+  "motivo": "La ficha no indica otro vendedor, el banner principal está vacío y es producto nuevo de venta ordinaria; el contrato del canal nombra a la razón social como proveedor.",
+  "nivel_evidencia": "canal_corporativo",
+  "revalidar_antes_de": null,
+  "vendedor_real": {
+   "razon_social": "Colombiana de Comercio S.A.",
+   "nit": "890.900.943-1"
+  },
+  "evidencias": [
+   {
+    "canal": {
+     "fuente": "https://www.ktronix.com/contrato-compraventa",
+     "seccion": "Portafolio de productos",
+     "texto": "Colombiana de Comercio S.A. es el proveedor de los productos y servicios indicados en los canales digitales, salvo que se indique lo contrario en el banner principal del producto, estos corresponden a una selección especial de referencias que no necesariamente coinciden con el portafolio de las demás tiendas de Colombiana de Comercio.",
+     "fecha_verificacion": "2026-11-22"
+    },
+    "chequeo_ficha": {
+     "status": 200,
+     "has_main": true,
+     "banner_txt": "",
+     "banner_img": "",
+     "seller_text": null,
+     "special": false,
+     "error": null,
+     "fecha": "2026-11-22",
+     "fuente": "data/v2/chequeos/ktronix-2026-11-22.json"
+    }
+   },
+   {
+    "canal": {
+     "fuente": "https://www.ktronix.com/contrato-compraventa",
+     "seccion": "Portafolio de productos",
+     "texto": "Colombiana de Comercio S.A. es el proveedor de los productos y servicios indicados en los canales digitales, salvo que se indique lo contrario en el banner principal del producto, estos corresponden a una selección especial de referencias que no necesariamente coinciden con el portafolio de las demás tiendas de Colombiana de Comercio.",
+     "fecha_verificacion": "2026-11-22"
+    },
+    "chequeo_ficha": {
+     "status": 200,
+     "has_main": true,
+     "banner_txt": "",
+     "banner_img": "",
+     "seller_text": null,
+     "special": false,
+     "error": null,
+     "fecha": "2026-11-22",
+     "fuente": "data/v2/chequeos/ktronix-2026-11-22.json"
+    }
+   },
+   {
+    "canal": {
+     "fuente": "https://www.ktronix.com/contrato-compraventa",
+     "seccion": "Portafolio de productos",
+     "texto": "Colombiana de Comercio S.A. es el proveedor de los productos y servicios indicados en los canales digitales, salvo que se indique lo contrario en el banner principal del producto, estos corresponden a una selección especial de referencias que no necesariamente coinciden con el portafolio de las demás tiendas de Colombiana de Comercio.",
+     "fecha_verificacion": "2026-11-22"
+    },
+    "chequeo_ficha": {
+     "status": 200,
+     "has_main": true,
+     "banner_txt": "",
+     "banner_img": "",
+     "seller_text": null,
+     "special": false,
+     "error": null,
+     "fecha": "2026-11-22",
+     "fuente": "data/v2/chequeos/ktronix-2026-11-22.json"
+    }
+   },
+   {
+    "canal": {
+     "fuente": "https://www.ktronix.com/contrato-compraventa",
+     "seccion": "Portafolio de productos",
+     "texto": "Colombiana de Comercio S.A. es el proveedor de los productos y servicios indicados en los canales digitales, salvo que se indique lo contrario en el banner principal del producto, estos corresponden a una selección especial de referencias que no necesariamente coinciden con el portafolio de las demás tiendas de Colombiana de Comercio.",
+     "fecha_verificacion": "2026-11-22"
+    },
+    "chequeo_ficha": {
+     "status": 200,
+     "has_main": true,
+     "banner_txt": "",
+     "banner_img": "",
+     "seller_text": null,
+     "special": false,
+     "error": null,
+     "fecha": "2026-11-22",
+     "fuente": "data/v2/chequeos/ktronix-2026-11-22.json"
+    }
+   },
+   {
+    "canal": {
+     "fuente": "https://www.ktronix.com/contrato-compraventa",
+     "seccion": "Portafolio de productos",
+     "texto": "Colombiana de Comercio S.A. es el proveedor de los productos y servicios indicados en los canales digitales, salvo que se indique lo contrario en el banner principal del producto, estos corresponden a una selección especial de referencias que no necesariamente coinciden con el portafolio de las demás tiendas de Colombiana de Comercio.",
+     "fecha_verificacion": "2026-11-22"
+    },
+    "chequeo_ficha": {
+     "status": 200,
+     "has_main": true,
+     "banner_txt": "",
+     "banner_img": "",
+     "seller_text": null,
+     "special": false,
+     "error": null,
+     "fecha": "2026-11-22",
+     "fuente": "data/v2/chequeos/ktronix-2026-11-22.json"
+    }
+   }
+  ],
+  "publicaciones": 326
+ },
+ {
+  "id": "3e3d50dc1d",
+  "nombre": "Olimpica",
+  "comercio_id": "olimpica",
+  "tipo": "retailer",
+  "estado_validacion": "validado",
+  "metodo_validacion": "automatica_coincidencia_exacta",
+  "validado_en": "2026-11-22T09:41:13-05:00",
+  "motivo": "El listado identifica a 'Olimpica', alias documentado de Supertiendas y Droguerías Olímpica S.A., dueña del comercio.",
+  "nivel_evidencia": "publicacion",
+  "revalidar_antes_de": null,
+  "vendedor_real": {
+   "razon_social": "Supertiendas y Droguerías Olímpica S.A.",
+   "nit": "890.107.487-3"
+  },
+  "evidencias": [
+   {
+    "texto_listado": "Olimpica",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
+    "fecha": "2026-11-22T09:41:13-05:00"
+   },
+   {
+    "texto_listado": "Olimpica",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
+    "fecha": "2026-11-22T09:41:13-05:00"
+   },
+   {
+    "texto_listado": "Olimpica",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
+    "fecha": "2026-11-22T09:41:13-05:00"
+   },
+   {
+    "texto_listado": "Olimpica",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
+    "fecha": "2026-11-22T09:41:13-05:00"
+   },
+   {
+    "texto_listado": "Olimpica",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
+    "fecha": "2026-11-22T09:41:13-05:00"
+   }
+  ],
+  "publicaciones": 38
+ },
+ {
+  "id": "cf0b5cb300",
+  "nombre": "52 bits",
+  "comercio_id": "olimpica",
+  "tipo": "tercero_marketplace",
+  "estado_validacion": "rechazado",
+  "metodo_validacion": null,
+  "validado_en": null,
+  "motivo": "Vendedor externo de marketplace: excluido de ofertas aprobadas (política 3.2).",
+  "nivel_evidencia": "publicacion",
+  "revalidar_antes_de": null,
+  "vendedor_real": null,
+  "evidencias": [
+   {
+    "texto_listado": "52 bits",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
+    "fecha": "2026-11-22T09:41:13-05:00"
+   },
+   {
+    "texto_listado": "52 bits",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
+    "fecha": "2026-11-22T09:41:13-05:00"
+   },
+   {
+    "texto_listado": "52 bits",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
+    "fecha": "2026-11-22T09:41:13-05:00"
+   },
+   {
+    "texto_listado": "52 bits",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
+    "fecha": "2026-11-22T09:41:13-05:00"
+   },
+   {
+    "texto_listado": "52 bits",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
+    "fecha": "2026-11-22T09:41:13-05:00"
+   }
+  ],
+  "publicaciones": 55
+ },
+ {
+  "id": "ea13d5a476",
+  "nombre": "AML Comercializadora",
+  "comercio_id": "olimpica",
+  "tipo": "tercero_marketplace",
+  "estado_validacion": "rechazado",
+  "metodo_validacion": null,
+  "validado_en": null,
+  "motivo": "Vendedor externo de marketplace: excluido de ofertas aprobadas (política 3.2).",
+  "nivel_evidencia": "publicacion",
+  "revalidar_antes_de": null,
+  "vendedor_real": null,
+  "evidencias": [
+   {
+    "texto_listado": "AML Comercializadora",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
+    "fecha": "2026-11-22T09:41:13-05:00"
+   },
+   {
+    "texto_listado": "AML Comercializadora",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
+    "fecha": "2026-11-22T09:41:13-05:00"
+   },
+   {
+    "texto_listado": "AML Comercializadora",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
+    "fecha": "2026-11-22T09:41:13-05:00"
+   },
+   {
+    "texto_listado": "AML Comercializadora",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
+    "fecha": "2026-11-22T09:41:13-05:00"
+   },
+   {
+    "texto_listado": "AML Comercializadora",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
+    "fecha": "2026-11-22T09:41:13-05:00"
+   }
+  ],
+  "publicaciones": 74
+ },
+ {
+  "id": "e56f8049a8",
+  "nombre": "Comercializadora MKP",
+  "comercio_id": "olimpica",
+  "tipo": "tercero_marketplace",
+  "estado_validacion": "rechazado",
+  "metodo_validacion": null,
+  "validado_en": null,
+  "motivo": "Vendedor externo de marketplace: excluido de ofertas aprobadas (política 3.2).",
+  "nivel_evidencia": "publicacion",
+  "revalidar_antes_de": null,
+  "vendedor_real": null,
+  "evidencias": [
+   {
+    "texto_listado": "Comercializadora MKP",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
+    "fecha": "2026-11-22T09:41:13-05:00"
+   },
+   {
+    "texto_listado": "Comercializadora MKP",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
+    "fecha": "2026-11-22T09:41:13-05:00"
+   }
+  ],
+  "publicaciones": 2
+ },
+ {
+  "id": "1eafb54911",
+  "nombre": "Estilo Net",
+  "comercio_id": "olimpica",
+  "tipo": "tercero_marketplace",
+  "estado_validacion": "rechazado",
+  "metodo_validacion": null,
+  "validado_en": null,
+  "motivo": "Vendedor externo de marketplace: excluido de ofertas aprobadas (política 3.2).",
+  "nivel_evidencia": "publicacion",
+  "revalidar_antes_de": null,
+  "vendedor_real": null,
+  "evidencias": [
+   {
+    "texto_listado": "Estilo Net",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
+    "fecha": "2026-11-22T09:41:13-05:00"
+   },
+   {
+    "texto_listado": "Estilo Net",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
+    "fecha": "2026-11-22T09:41:13-05:00"
+   },
+   {
+    "texto_listado": "Estilo Net",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
+    "fecha": "2026-11-22T09:41:13-05:00"
+   },
+   {
+    "texto_listado": "Estilo Net",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
+    "fecha": "2026-11-22T09:41:13-05:00"
+   },
+   {
+    "texto_listado": "Estilo Net",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
+    "fecha": "2026-11-22T09:41:13-05:00"
+   }
+  ],
+  "publicaciones": 13
+ },
+ {
+  "id": "291c48b57d",
+  "nombre": "Ganga Colombia",
+  "comercio_id": "olimpica",
+  "tipo": "tercero_marketplace",
+  "estado_validacion": "rechazado",
+  "metodo_validacion": null,
+  "validado_en": null,
+  "motivo": "Vendedor externo de marketplace: excluido de ofertas aprobadas (política 3.2).",
+  "nivel_evidencia": "publicacion",
+  "revalidar_antes_de": null,
+  "vendedor_real": null,
+  "evidencias": [
+   {
+    "texto_listado": "Ganga Colombia",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
+    "fecha": "2026-11-22T09:41:13-05:00"
+   },
+   {
+    "texto_listado": "Ganga Colombia",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
+    "fecha": "2026-11-22T09:41:13-05:00"
+   },
+   {
+    "texto_listado": "Ganga Colombia",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
+    "fecha": "2026-11-22T09:41:13-05:00"
+   },
+   {
+    "texto_listado": "Ganga Colombia",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
+    "fecha": "2026-11-22T09:41:13-05:00"
+   },
+   {
+    "texto_listado": "Ganga Colombia",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
+    "fecha": "2026-11-22T09:41:13-05:00"
+   }
+  ],
+  "publicaciones": 5
+ },
+ {
+  "id": "8347f7cf62",
+  "nombre": "Giftronic04",
+  "comercio_id": "olimpica",
+  "tipo": "tercero_marketplace",
+  "estado_validacion": "rechazado",
+  "metodo_validacion": null,
+  "validado_en": null,
+  "motivo": "Vendedor externo de marketplace: excluido de ofertas aprobadas (política 3.2).",
+  "nivel_evidencia": "publicacion",
+  "revalidar_antes_de": null,
+  "vendedor_real": null,
+  "evidencias": [
+   {
+    "texto_listado": "Giftronic04",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
+    "fecha": "2026-11-22T09:41:13-05:00"
+   },
+   {
+    "texto_listado": "Giftronic04",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
+    "fecha": "2026-11-22T09:41:13-05:00"
+   },
+   {
+    "texto_listado": "Giftronic04",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
+    "fecha": "2026-11-22T09:41:13-05:00"
+   }
+  ],
+  "publicaciones": 3
+ },
+ {
+  "id": "d14fa20f9b",
+  "nombre": "Grupo Electro M",
+  "comercio_id": "olimpica",
+  "tipo": "tercero_marketplace",
+  "estado_validacion": "rechazado",
+  "metodo_validacion": null,
+  "validado_en": null,
+  "motivo": "Vendedor externo de marketplace: excluido de ofertas aprobadas (política 3.2).",
+  "nivel_evidencia": "publicacion",
+  "revalidar_antes_de": null,
+  "vendedor_real": null,
+  "evidencias": [
+   {
+    "texto_listado": "Grupo Electro M",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
+    "fecha": "2026-11-22T09:41:13-05:00"
+   },
+   {
+    "texto_listado": "Grupo Electro M",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
+    "fecha": "2026-11-22T09:41:13-05:00"
+   },
+   {
+    "texto_listado": "Grupo Electro M",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
+    "fecha": "2026-11-22T09:41:13-05:00"
+   },
+   {
+    "texto_listado": "Grupo Electro M",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
+    "fecha": "2026-11-22T09:41:13-05:00"
+   },
+   {
+    "texto_listado": "Grupo Electro M",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
+    "fecha": "2026-11-22T09:41:13-05:00"
+   }
+  ],
+  "publicaciones": 13
+ },
+ {
+  "id": "c1a695c6b1",
+  "nombre": "JD MARKET SAS",
+  "comercio_id": "olimpica",
+  "tipo": "tercero_marketplace",
+  "estado_validacion": "rechazado",
+  "metodo_validacion": null,
+  "validado_en": null,
+  "motivo": "Vendedor externo de marketplace: excluido de ofertas aprobadas (política 3.2).",
+  "nivel_evidencia": "publicacion",
+  "revalidar_antes_de": null,
+  "vendedor_real": null,
+  "evidencias": [
+   {
+    "texto_listado": "JD MARKET SAS",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
+    "fecha": "2026-11-22T09:41:13-05:00"
+   },
+   {
+    "texto_listado": "JD MARKET SAS",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
+    "fecha": "2026-11-22T09:41:13-05:00"
+   },
+   {
+    "texto_listado": "JD MARKET SAS",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
+    "fecha": "2026-11-22T09:41:13-05:00"
+   },
+   {
+    "texto_listado": "JD MARKET SAS",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
+    "fecha": "2026-11-22T09:41:13-05:00"
+   },
+   {
+    "texto_listado": "JD MARKET SAS",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
+    "fecha": "2026-11-22T09:41:13-05:00"
+   }
+  ],
+  "publicaciones": 6
+ },
+ {
+  "id": "d956d9d4fd",
+  "nombre": "More Products",
+  "comercio_id": "olimpica",
+  "tipo": "tercero_marketplace",
+  "estado_validacion": "rechazado",
+  "metodo_validacion": null,
+  "validado_en": null,
+  "motivo": "Vendedor externo de marketplace: excluido de ofertas aprobadas (política 3.2).",
+  "nivel_evidencia": "publicacion",
+  "revalidar_antes_de": null,
+  "vendedor_real": null,
+  "evidencias": [
+   {
+    "texto_listado": "More Products",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
+    "fecha": "2026-11-22T09:41:13-05:00"
+   },
+   {
+    "texto_listado": "More Products",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
+    "fecha": "2026-11-22T09:41:13-05:00"
+   },
+   {
+    "texto_listado": "More Products",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
+    "fecha": "2026-11-22T09:41:13-05:00"
+   },
+   {
+    "texto_listado": "More Products",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
+    "fecha": "2026-11-22T09:41:13-05:00"
+   },
+   {
+    "texto_listado": "More Products",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
+    "fecha": "2026-11-22T09:41:13-05:00"
+   }
+  ],
+  "publicaciones": 9
+ },
+ {
+  "id": "229effa7b1",
+  "nombre": "QuieroMac",
+  "comercio_id": "olimpica",
+  "tipo": "tercero_marketplace",
+  "estado_validacion": "rechazado",
+  "metodo_validacion": null,
+  "validado_en": null,
+  "motivo": "Vendedor externo de marketplace: excluido de ofertas aprobadas (política 3.2).",
+  "nivel_evidencia": "publicacion",
+  "revalidar_antes_de": null,
+  "vendedor_real": null,
+  "evidencias": [
+   {
+    "texto_listado": "QuieroMac",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
+    "fecha": "2026-11-22T09:41:13-05:00"
+   }
+  ],
+  "publicaciones": 1
+ },
+ {
+  "id": "7ba4682220",
+  "nombre": "Tecnología Moderna",
+  "comercio_id": "olimpica",
+  "tipo": "tercero_marketplace",
+  "estado_validacion": "rechazado",
+  "metodo_validacion": null,
+  "validado_en": null,
+  "motivo": "Vendedor externo de marketplace: excluido de ofertas aprobadas (política 3.2).",
+  "nivel_evidencia": "publicacion",
+  "revalidar_antes_de": null,
+  "vendedor_real": null,
+  "evidencias": [
+   {
+    "texto_listado": "Tecnología Moderna",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
+    "fecha": "2026-11-22T09:41:13-05:00"
+   },
+   {
+    "texto_listado": "Tecnología Moderna",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
+    "fecha": "2026-11-22T09:41:13-05:00"
+   },
+   {
+    "texto_listado": "Tecnología Moderna",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
+    "fecha": "2026-11-22T09:41:13-05:00"
+   },
+   {
+    "texto_listado": "Tecnología Moderna",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
+    "fecha": "2026-11-22T09:41:13-05:00"
+   },
+   {
+    "texto_listado": "Tecnología Moderna",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
+    "fecha": "2026-11-22T09:41:13-05:00"
+   }
+  ],
+  "publicaciones": 6
+ },
+ {
+  "id": "0578fa028d",
+  "nombre": "Tecnotienda",
+  "comercio_id": "olimpica",
+  "tipo": "tercero_marketplace",
+  "estado_validacion": "rechazado",
+  "metodo_validacion": null,
+  "validado_en": null,
+  "motivo": "Vendedor externo de marketplace: excluido de ofertas aprobadas (política 3.2).",
+  "nivel_evidencia": "publicacion",
+  "revalidar_antes_de": null,
+  "vendedor_real": null,
+  "evidencias": [
+   {
+    "texto_listado": "Tecnotienda",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
+    "fecha": "2026-11-22T09:41:13-05:00"
+   },
+   {
+    "texto_listado": "Tecnotienda",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
+    "fecha": "2026-11-22T09:41:13-05:00"
+   },
+   {
+    "texto_listado": "Tecnotienda",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
+    "fecha": "2026-11-22T09:41:13-05:00"
+   },
+   {
+    "texto_listado": "Tecnotienda",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
+    "fecha": "2026-11-22T09:41:13-05:00"
+   },
+   {
+    "texto_listado": "Tecnotienda",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
+    "fecha": "2026-11-22T09:41:13-05:00"
+   }
+  ],
+  "publicaciones": 35
+ },
+ {
+  "id": "487ddd00b2",
+  "nombre": "Tiendas Paradox",
+  "comercio_id": "olimpica",
+  "tipo": "tercero_marketplace",
+  "estado_validacion": "rechazado",
+  "metodo_validacion": null,
+  "validado_en": null,
+  "motivo": "Vendedor externo de marketplace: excluido de ofertas aprobadas (política 3.2).",
+  "nivel_evidencia": "publicacion",
+  "revalidar_antes_de": null,
+  "vendedor_real": null,
+  "evidencias": [
+   {
+    "texto_listado": "Tiendas Paradox",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
+    "fecha": "2026-11-22T09:41:13-05:00"
+   },
+   {
+    "texto_listado": "Tiendas Paradox",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
+    "fecha": "2026-11-22T09:41:13-05:00"
+   },
+   {
+    "texto_listado": "Tiendas Paradox",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
+    "fecha": "2026-11-22T09:41:13-05:00"
+   },
+   {
+    "texto_listado": "Tiendas Paradox",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
+    "fecha": "2026-11-22T09:41:13-05:00"
+   },
+   {
+    "texto_listado": "Tiendas Paradox",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
+    "fecha": "2026-11-22T09:41:13-05:00"
+   }
+  ],
+  "publicaciones": 5
+ },
+ {
+  "id": "e030a56173",
+  "nombre": "colmetecno",
+  "comercio_id": "olimpica",
+  "tipo": "tercero_marketplace",
+  "estado_validacion": "rechazado",
+  "metodo_validacion": null,
+  "validado_en": null,
+  "motivo": "Vendedor externo de marketplace: excluido de ofertas aprobadas (política 3.2).",
+  "nivel_evidencia": "publicacion",
+  "revalidar_antes_de": null,
+  "vendedor_real": null,
+  "evidencias": [
+   {
+    "texto_listado": "colmetecno",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
+    "fecha": "2026-11-22T09:41:13-05:00"
+   },
+   {
+    "texto_listado": "colmetecno",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
+    "fecha": "2026-11-22T09:41:13-05:00"
+   },
+   {
+    "texto_listado": "colmetecno",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
+    "fecha": "2026-11-22T09:41:13-05:00"
+   },
+   {
+    "texto_listado": "colmetecno",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
+    "fecha": "2026-11-22T09:41:13-05:00"
+   },
+   {
+    "texto_listado": "colmetecno",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
+    "fecha": "2026-11-22T09:41:13-05:00"
+   }
+  ],
+  "publicaciones": 5
+ },
+ {
+  "id": "a5d110aa14",
+  "nombre": "megaccesorios",
+  "comercio_id": "olimpica",
+  "tipo": "tercero_marketplace",
+  "estado_validacion": "rechazado",
+  "metodo_validacion": null,
+  "validado_en": null,
+  "motivo": "Vendedor externo de marketplace: excluido de ofertas aprobadas (política 3.2).",
+  "nivel_evidencia": "publicacion",
+  "revalidar_antes_de": null,
+  "vendedor_real": null,
+  "evidencias": [
+   {
+    "texto_listado": "megaccesorios",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
+    "fecha": "2026-11-22T09:41:13-05:00"
+   },
+   {
+    "texto_listado": "megaccesorios",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
+    "fecha": "2026-11-22T09:41:13-05:00"
+   },
+   {
+    "texto_listado": "megaccesorios",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
+    "fecha": "2026-11-22T09:41:13-05:00"
+   },
+   {
+    "texto_listado": "megaccesorios",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
+    "fecha": "2026-11-22T09:41:13-05:00"
+   },
+   {
+    "texto_listado": "megaccesorios",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
+    "fecha": "2026-11-22T09:41:13-05:00"
+   }
+  ],
+  "publicaciones": 20
+ },
+ {
+  "id": "b3bd20add3",
+  "nombre": "Home Elements",
+  "comercio_id": "olimpica",
+  "tipo": "tienda_oficial_fabricante",
+  "estado_validacion": "pendiente",
+  "metodo_validacion": null,
+  "validado_en": null,
+  "motivo": "Posible tienda oficial del fabricante: requiere validación humana de su oficialidad.",
+  "nivel_evidencia": "publicacion",
+  "revalidar_antes_de": null,
+  "vendedor_real": null,
+  "evidencias": [
+   {
+    "texto_listado": "Home Elements",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
+    "fecha": "2026-11-22T09:41:13-05:00"
+   },
+   {
+    "texto_listado": "Home Elements",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
+    "fecha": "2026-11-22T09:41:13-05:00"
+   },
+   {
+    "texto_listado": "Home Elements",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
+    "fecha": "2026-11-22T09:41:13-05:00"
+   },
+   {
+    "texto_listado": "Home Elements",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
+    "fecha": "2026-11-22T09:41:13-05:00"
+   },
+   {
+    "texto_listado": "Home Elements",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
+    "fecha": "2026-11-22T09:41:13-05:00"
+   }
+  ],
+  "publicaciones": 12
  }
 ]

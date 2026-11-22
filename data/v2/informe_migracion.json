@@ -1,73 +1,88 @@
 {
  "origen": "v1-2026-11-22",
- "registros_v1": 898,
- "publicaciones_v2": 881,
- "variantes_tarjeta_v1_convertidas_en_precio": 17,
- "ids_v1_mapeados": 898,
+ "registros_v1": 1842,
+ "publicaciones_v2": 1826,
+ "variantes_tarjeta_v1_convertidas_en_precio": 16,
+ "ids_v1_mapeados": 1842,
  "precios": {
-  "contado": 881,
-  "tarjeta": 386
+  "contado": 1826,
+  "tarjeta": 502
  },
  "publicaciones_por_estado": {
-  "rechazado": 214,
-  "validado": 638,
-  "pendiente": 29
+  "rechazado": 570,
+  "validado": 1198,
+  "pendiente": 58
  },
  "publicaciones_por_motivo": {
-  "Vendedor externo de marketplace: excluido de ofertas aprobadas (política 3.2).": 214,
-  "vendedor validado: automatica_coincidencia_exacta (nivel publicacion)": 310,
+  "Vendedor externo de marketplace: excluido de ofertas aprobadas (política 3.2).": 570,
+  "vendedor validado: automatica_coincidencia_exacta (nivel publicacion)": 544,
   "Se presenta como distribuidor: requiere comprobar la autorización comercial y la identidad para esta publicación.": 2,
-  "Posible tienda oficial del fabricante: requiere validación humana de su oficialidad.": 27,
-  "vendedor validado: evidencia_corporativa_del_canal (nivel canal_corporativo)": 328
+  "Posible tienda oficial del fabricante: requiere validación humana de su oficialidad.": 45,
+  "Empresa identificada (Sodimac Colombia S.A.) vendiendo en un marketplace ajeno: requiere comprobar la autorización comercial para esta publicación.": 10,
+  "vendedor validado: evidencia_corporativa_del_canal (nivel canal_corporativo)": 654,
+  "No se pudo leer la ficha del producto: no se puede determinar quién vende.": 1
  },
  "publicaciones_por_comercio_y_estado": {
-  "falabella/rechazado": 115,
+  "falabella/rechazado": 105,
   "falabella/validado": 179,
-  "falabella/pendiente": 24,
+  "falabella/pendiente": 34,
   "alkosto/validado": 328,
+  "ktronix/validado": 326,
+  "ktronix/pendiente": 1,
+  "olimpica/rechazado": 252,
+  "olimpica/pendiente": 12,
+  "olimpica/validado": 38,
+  "jumbo/rechazado": 114,
+  "jumbo/validado": 196,
+  "jumbo/pendiente": 6,
   "exito/validado": 131,
   "exito/rechazado": 99,
   "exito/pendiente": 5
  },
  "vendedores_por_tipo": {
-  "tercero_marketplace": 87,
-  "retailer": 3,
-  "distribuidor_autorizado": 1,
-  "tienda_oficial_fabricante": 9
+  "tercero_marketplace": 113,
+  "retailer": 6,
+  "distribuidor_autorizado": 2,
+  "tienda_oficial_fabricante": 12,
+  "desconocido": 1
  },
- "productos_referencia": 817,
- "productos_en_varias_tiendas": 34,
+ "productos_referencia": 1606,
+ "productos_en_varias_tiendas": 134,
  "vendedores_por_estado": {
-  "rechazado": 87,
-  "validado": 3,
-  "pendiente": 10
+  "rechazado": 113,
+  "validado": 6,
+  "pendiente": 15
  },
  "vendedores_validados_automaticamente": [
+  "Cencosud - Colombia@jumbo (automatica_coincidencia_exacta)",
   "Colombiana de Comercio S.A.@alkosto (evidencia_corporativa_del_canal)",
+  "Colombiana de Comercio S.A.@ktronix (evidencia_corporativa_del_canal)",
   "Exito@exito (automatica_coincidencia_exacta)",
-  "Falabella@falabella (automatica_coincidencia_exacta)"
+  "Falabella@falabella (automatica_coincidencia_exacta)",
+  "Olimpica@olimpica (automatica_coincidencia_exacta)"
  ],
  "publicaciones_por_nivel_evidencia": {
-  "publicacion": 310,
-  "canal_corporativo": 328
+  "publicacion": 544,
+  "canal_corporativo": 654
  },
- "publicaciones_elegibles_publico": 638,
+ "publicaciones_elegibles_publico": 1198,
  "referencias_por_estado": {
-  "sin_verificar": 767,
+  "sin_verificar": 1455,
   "en_revision": 5,
-  "agrupada_automatica": 45
+  "agrupada_automatica": 146
  },
  "comparaciones_tecnicas": {
-  "limitada": 22,
-  "completa": 4
+  "limitada": 35,
+  "completa": 6,
+  "sin_comparacion": 89
  },
  "comparaciones_publicas": {
-  "sin_comparacion": 5,
-  "limitada": 18,
-  "completa": 3
+  "sin_comparacion": 95,
+  "limitada": 31,
+  "completa": 4
  },
- "filas_aptas_radar": 47,
- "pares_candidatos_para_revision": 16,
- "observaciones_historial": 1736,
+ "filas_aptas_radar": 98,
+ "pares_candidatos_para_revision": 38,
+ "observaciones_historial": 2681,
  "errores_verificacion": []
 }
