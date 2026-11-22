@@ -13,6 +13,8 @@ export function verificar(origen, grupo, historial = [], hoy = new Date().toISOS
   const hist = historial.filter(h => h.fecha < hoy && h.precio > 0).sort((a, b) => a.fecha.localeCompare(b.fecha));
   const diasHist = hist.length ? Math.round((Date.parse(hoy) - Date.parse(hist[0].fecha)) / DIA) : 0;
   let inflado = false, senalDebil = false;
+  // Quién anuncia el precio: la tienda misma o un vendedor externo dentro de ella (nunca culpar a quien no es).
+  const quien = origen.propio ? origen.tienda : `${origen.vendedor || "Un vendedor externo"} (vendedor externo dentro de ${origen.tienda})`;
 
   // 1. ¿Inflaron el precio? (a) contra el mercado de hoy
   if (origen.precio_antes && otras.length) {
@@ -21,7 +23,7 @@ export function verificar(origen, grupo, historial = [], hoy = new Date().toISOS
       // Para "¡Cazamos una mentira!" basta con el mercado solo si al menos DOS tiendas más lo confirman.
       // Con una sola tienda la señal es débil: queda como prueba y el veredicto baja a "dudoso".
       if (otras.length >= 2) inflado = true; else senalDebil = true;
-      pruebas.push({ tipo: "antes_mercado", signo: "-", texto: `${origen.tienda} dice que antes costaba ${cop(origen.precio_antes)}, pero hoy ninguna de las otras tiendas que consultamos lo cobra a ese precio (la más cara lo tiene en ${cop(maxOtras)}).` });
+      pruebas.push({ tipo: "antes_mercado", signo: "-", texto: `${quien} dice que antes costaba ${cop(origen.precio_antes)}, pero hoy ninguna de las otras tiendas que consultamos lo cobra a ese precio (la más cara lo tiene en ${cop(maxOtras)}).` });
     }
   }
   // (b) contra nuestro propio historial
@@ -30,7 +32,7 @@ export function verificar(origen, grupo, historial = [], hoy = new Date().toISOS
     const maxHist = Math.max(...ult30.map(h => h.precio));
     if (origen.precio_antes > maxHist * 1.05) {
       inflado = true;
-      pruebas.push({ tipo: "antes_historial", signo: "-", texto: `En los últimos ${Math.min(diasHist, 30)} días nunca lo vimos a ${cop(origen.precio_antes)} en ${origen.tienda}: el precio más alto que registramos fue ${cop(maxHist)}.` });
+      pruebas.push({ tipo: "antes_historial", signo: "-", texto: `En los últimos ${Math.min(diasHist, 30)} días nunca lo vimos a ${cop(origen.precio_antes)} con ${origen.propio ? origen.tienda : origen.vendedor}: el precio más alto que registramos fue ${cop(maxHist)}.` });
     }
   }
   // (c) subida justo antes del "descuento"

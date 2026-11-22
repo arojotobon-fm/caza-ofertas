@@ -91,3 +91,11 @@ test("¡Oferta real! con evidencia: más barato y el 'antes' lo cobra otra tiend
   assert.equal(r.estado, "oferta_real");
   assert.ok(r.pruebas.some(p => p.tipo === "antes_respaldo" && p.signo === "+"));
 });
+
+test("si lo vende un tercero, la prueba nombra al vendedor, no a la tienda (Challenger 43KG90 de PUNTONET en Flamingo)", () => {
+  const o = of("Flamingo", 995900, { precio_antes: 1294900, propio: false, vendedor: "PUNTONET" });
+  const r = verificar(o, grupo(of("Olímpica", 899900), of("Jumbo", 899900)), [], HOY);
+  assert.equal(r.estado, "precio_inflado");
+  const p = r.pruebas.find(x => x.tipo === "antes_mercado").texto;
+  assert.ok(p.startsWith("PUNTONET (vendedor externo dentro de Flamingo) dice"));
+});

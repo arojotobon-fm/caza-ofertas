@@ -1263,6 +1263,7 @@ async function verificarEnlace(url){
     precio_inflado: ["cazamos-mentira", "¡Cazamos una mentira! Este descuento no es real"], insuficiente: ["sin-pruebas", "No hay pruebas suficientes para confirmar el descuento"] };
   let sello = SELLO[j.estado];
   if (j.estado === "dudosa" && !o.precio_antes) { [tit, txt] = ["🟡 ¡Ojo, revisa antes de comprar!", "Las pruebas no muestran que esta sea la mejor opción hoy."]; sello = null; }
+  if (j.estado === "precio_inflado" && !o.propio) txt = `Precio anterior inflado: el “antes” que anuncia ${o.vendedor || "el vendedor externo"} (vendedor externo dentro de ${o.tienda}) no tiene respaldo. Mira las pruebas.`;
   if (j.estado === "oferta_real" && !o.precio_antes) { [tit, txt] = ["🟢 ¡Más barato aquí!", "No anuncia descuento, pero la misma referencia está más barata que en las otras tiendas que revisamos."]; sello = null; }
   const desc = o.precio_antes ? Math.round((1 - o.precio / o.precio_antes) * 100) : 0;
   $("#bzTitulo").innerHTML = `Verificamos <mark>${esc(o.tienda)}</mark> contra las otras tiendas, ahora mismo.`;
