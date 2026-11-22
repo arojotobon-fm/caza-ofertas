@@ -37,7 +37,7 @@ ORIGEN = "v1-2026-11-21"
 COMERCIO_ID = {"Falabella": "falabella", "Alkosto": "alkosto", "Éxito": "exito"}
 # Referencias con duda de equivalencia (decisión 21 nov: DuraPro y AF141LAA fuera hasta revisión humana).
 REFERENCIAS_EN_REVISION = [re.compile(r"BLBD\s*-?\s*210", re.I), re.compile(r"AF141LAA", re.I)]
-FUENTE_CRUDA = "lectura del listado de la tienda (respaldo crudo 2026-11-21)"
+FUENTE_CRUDA = "lectura del listado de la tienda (respaldo crudo)"
 
 
 def h(*parts, n=12):
@@ -59,23 +59,30 @@ def dump(name, data):
 
 
 def main():
-    global OUT
+    global OUT, RESP, ORIGEN, FUENTE_CRUDA
     ap = argparse.ArgumentParser()
     ap.add_argument("--salida", default=OUT)
     ap.add_argument("--chequeo", action="append", default=[])
+    ap.add_argument("--respaldo-dir", default=RESP)
+    ap.add_argument("--catalogo-v1", default=P("data", "ofertas.json"))
+    ap.add_argument("--historial-v1", default=P("data", "historial.json"))
+    ap.add_argument("--origen", default=ORIGEN)
     ap.add_argument("--fecha-verificacion",
                     default=datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=-5))).date().isoformat(),  # hora de Colombia
                     help="Fecha real de esta actualización (AAAA-MM-DD); no reutiliza chequeos de otros días.")
     args = ap.parse_args()
     OUT = args.salida
+    RESP = os.path.abspath(args.respaldo_dir)
+    ORIGEN = args.origen
+    FUENTE_CRUDA = "lectura del listado de la tienda (respaldo crudo " + os.path.basename(RESP) + ")"
     identidades = cargar_identidades()
     chequeos = {}
     for ruta in args.chequeo:
         c = load(ruta)
         for path, ficha in c["fichas"].items():
             chequeos[(c["comercio_id"], path)] = dict(ficha, fecha=c["fecha"], fuente=os.path.relpath(ruta, ROOT))
-    v1 = load(P("data", "ofertas.json"))
-    hist_v1 = load(P("data", "historial.json"))
+    v1 = load(args.catalogo_v1)
+    hist_v1 = load(args.historial_v1)
     com = load(P("data", "v2", "comercios.json"))
     comercios = {c["id"]: c for c in com["comercios"]}
 
@@ -153,7 +160,7 @@ def main():
         if ev.get("tarjeta") and ev["tarjeta"] < r["precio"]:
             precios.append({"id": h(r["id"], "tarjeta"), "publicacion_id": r["id"], "condicion": "tarjeta",
                             "detalle": ev["tarjeta_nombre"], "monto": ev["tarjeta"], "precio_anunciado_antes": None,
-                            "verificado_en": r["verificado"], "fuente": "respaldo crudo 2026-11-21"})
+                            "verificado_en": r["verificado"], "fuente": "respaldo crudo " + os.path.basename(RESP)})
         norm_pubs.append({"id": r["id"], "marca": marca, "codigos": model_codes(r["nombre"]), "specs": sp,
                           "categoria": r.get("categoria")})
 
