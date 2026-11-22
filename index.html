@@ -4,9 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Cazadores de Ofertas · ¡No pagues de más!</title>
-<meta name="description" content="¡No pagues de más! Comparamos el mismo producto en varias tiendas de Colombia y te mostramos dónde está más barato. Los cazadores avisan si el precio cambió.">
+<meta name="description" content="No cazamos descuentos. Cazamos la verdad detrás de los precios. Investigamos si las promociones son reales o si inflaron el precio anterior.">
 <meta property="og:title" content="Cazadores de Ofertas">
-<meta property="og:description" content="¡No pagues de más! Te mostramos dónde está más barato, comparando el mismo producto en varias tiendas.">
+<meta property="og:description" content="Investigamos los precios para descubrir descuentos reales y promociones engañosas.">
 <meta property="og:image" content="https://cazadoresdeofertas.netlify.app/img/logo.webp">
 <link rel="icon" href="img/favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -480,6 +480,12 @@ footer p{margin:0 0 8px;max-width:900px;text-align:justify}
   .perks{grid-template-columns:1fr}
   .community{flex-direction:column;text-align:center}
 }
+
+/* Ajuste de experiencia aprobado: buscador e investigación primero; sin vitrinas ni catálogos públicos. */
+#radar,#comparador,#tiendas{display:none!important}
+#destacada{display:none!important}
+#topGrid,#allGrid{display:none!important}
+#radarCard .radar-row{cursor:default}
 </style>
 </head>
 <body>
@@ -530,8 +536,6 @@ footer p{margin:0 0 8px;max-width:900px;text-align:justify}
   <nav class="mainnav" aria-label="Principal">
     <a href="#inicio" class="on"><svg class="ico"><use href="#i-home"/></svg>Inicio</a>
     <a href="#verificador" data-verificar><svg class="ico"><use href="#i-shield"/></svg>Verificador</a>
-    <a href="#radar"><svg class="ico"><use href="#i-target"/></svg>¿Está barato?</a>
-    <a href="#comparador"><svg class="ico"><use href="#i-search"/></svg>Comparador</a>
     <a href="#historico"><svg class="ico"><use href="#i-bars"/></svg>Histórico</a>
     <a href="#" data-cuentas><svg class="ico"><use href="#i-calc"/></svg>¡Hagamos cuentas!</a>
     <a href="#favoritos" class="solo-ico" aria-label="Mis favoritos" title="Mis favoritos"><svg class="ico"><use href="#i-heart"/></svg></a>
@@ -544,7 +548,7 @@ footer p{margin:0 0 8px;max-width:900px;text-align:justify}
   <div class="wrap">
     <div class="hero-copy">
       <h1><span class="hl">No cazamos</span> descuentos.<br>Cazamos la verdad<br>detrás de los precios.</h1>
-      <p>Pega el enlace del producto o escribe su nombre. Te decimos si el descuento es real, si inflaron el precio anterior o si en otra tienda está más barato.</p>
+      <p>Escribe el producto que quieres investigar. Comprobamos sus precios y te mostramos las pruebas: oferta real, descuento engañoso o información insuficiente.</p>
       <form class="searchbar" id="heroSearch" role="search">
         <svg class="ico"><use href="#i-search"/></svg>
         <input id="hq" type="search" placeholder="Pega el enlace o escribe el producto" autocomplete="off" aria-label="Enlace o nombre del producto">
@@ -553,12 +557,12 @@ footer p{margin:0 0 8px;max-width:900px;text-align:justify}
       <div class="stamp"><span class="dot" id="stampDot"></span><span id="stamp">Cargando…</span></div>
     </div>
     <div></div>
-    <aside class="radar" id="radarCard" aria-label="¿Está barato hoy?">
+    <aside class="radar" id="radarCard" aria-label="Nuestra forma de investigar">
       <svg class="spark" viewBox="0 0 110 46"><defs><linearGradient id="sg" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#14B8B8" stop-opacity=".35"/><stop offset="1" stop-color="#14B8B8" stop-opacity="0"/></linearGradient></defs><path d="M0 40 L14 34 L26 37 L40 26 L54 30 L68 18 L82 22 L96 8 L110 4 L110 46 L0 46Z" fill="url(#sg)"/><path d="M0 40 L14 34 L26 37 L40 26 L54 30 L68 18 L82 22 L96 8 L110 4" fill="none" stroke="#14B8B8" stroke-width="2.5" stroke-linejoin="round"/></svg>
-      <div class="radar-head"><svg class="ico big"><use href="#i-target"/></svg><div><h3>¿Está barato hoy?</h3><p>Lo que encontramos hoy en las tiendas que revisamos</p></div></div>
-      <a class="radar-row" href="#radar" data-radar="real"><svg class="ico" style="color:var(--verde)"><use href="#i-bag"/></svg><span id="rReal">— Más baratos que en otras tiendas</span><svg class="ico chev"><use href="#i-chev"/></svg></a>
-      <a class="radar-row" href="#comparador" data-radar="justo"><svg class="ico" style="color:#F05A28"><use href="#i-flame"/></svg><span id="rJusto">— Mismo precio en varias tiendas</span><svg class="ico chev"><use href="#i-chev"/></svg></a>
-      <a class="radar-row" href="#comparador" data-radar="sin"><svg class="ico" style="color:var(--dorado-2)"><use href="#i-alert"/></svg><span id="rFalso">— Sin comparar</span><svg class="ico chev"><use href="#i-chev"/></svg></a>
+      <div class="radar-head"><svg class="ico big"><use href="#i-shield"/></svg><div><h3>Primero, las pruebas</h3><p>No publicamos una oferta sin verificarla</p></div></div>
+      <div class="radar-row"><svg class="ico" style="color:var(--verde)"><use href="#i-check"/></svg><span id="rReal">Oferta real: evidencia comprobable</span></div>
+      <div class="radar-row"><svg class="ico" style="color:var(--rojo)"><use href="#i-alert"/></svg><span id="rJusto">¡Cazamos una mentira!: precio anterior inflado</span></div>
+      <div class="radar-row"><svg class="ico" style="color:var(--dorado-2)"><use href="#i-search"/></svg><span id="rFalso">Si no hay pruebas, lo decimos</span></div>
     </aside>
   </div>
 </div>
@@ -592,7 +596,7 @@ footer p{margin:0 0 8px;max-width:900px;text-align:justify}
 
   <div class="duo">
     <div class="panel" id="destacada">
-      <div class="panel-title"><svg class="ico"><use href="#i-bolt"/></svg>Aquí lo encuentras más barato</div>
+      <div class="panel-title"><svg class="ico"><use href="#i-bolt"/></svg>Investigaciones verificadas</div>
       <div id="featBox"><div class="empty">Cargando…</div></div>
     </div>
     <div class="panel" id="historico">
@@ -615,8 +619,8 @@ footer p{margin:0 0 8px;max-width:900px;text-align:justify}
       <svg class="ico rh-target" aria-hidden="true"><use href="#i-target"/></svg>
       <span class="rh-div" aria-hidden="true"></span>
       <div class="rh-text">
-        <h2>¿Está barato hoy? Mira dónde <mark>cuesta menos</mark></h2>
-        <p>Aquí solo aparece un producto cuando lo encontramos <mark>exactamente igual</mark> en otra tienda y aquí cuesta menos. <a class="rh-link" href="#como-comparamos">Así comparamos</a></p>
+        <h2>El Radar busca <mark>la verdad detrás del precio</mark></h2>
+        <p>Los productos no se publican como catálogo. Primero se investigan; después mostramos el veredicto y sus pruebas.</p>
       </div>
       <svg class="rh-bag" viewBox="0 0 120 120" aria-hidden="true">
         <g stroke="#FFC400" stroke-width="5" stroke-linecap="round" fill="none"><path d="M14 36 26 42M22 18l9 13M40 8l3 15"/></g>
@@ -631,17 +635,26 @@ footer p{margin:0 0 8px;max-width:900px;text-align:justify}
     <div><b>Únete a los Cazadores que reportan</b><span>¿Lo viste en la tienda? Toca <strong>Sigue a ese precio</strong> o <strong>Ya no / cambió el precio</strong>. Si 2 o más cazadores avisan que ya no está, lo sacamos de la lista hasta volver a revisarlo.</span></div>
   </div>
   <label class="switch" style="display:none"><input type="checkbox" id="noCard"> Solo precios sin tarjeta de la tienda</label>
-  <div class="grid" id="topGrid"></div>
+  <div class="editorial-grid" id="topGrid">
+    <article class="panel editorial-panel">
+      <div class="panel-title">Selección semanal · 15 investigaciones</div>
+      <div class="empty">Estamos aplicando los criterios de evidencia. Solo aparecerán productos con referencia identificada, precios comprobados y veredicto sustentado. No rellenamos cupos.</div>
+    </article>
+    <article class="panel editorial-panel">
+      <div class="panel-title">Más barato en otra tienda · mínimo 5</div>
+      <div class="empty">Esta selección mostrará únicamente la misma referencia comprobada en otra tienda, con precios vigentes y evidencia comparable.</div>
+    </article>
+  </div>
 </div></section>
 
-<section id="comparador"><div class="wrap">
+<section id="comparador" hidden><div class="wrap">
   <div class="radar-panel compact">
     <div class="radar-hero">
       <svg class="ico rh-target" aria-hidden="true"><use href="#i-search"/></svg>
       <span class="rh-div" aria-hidden="true"></span>
       <div class="rh-text">
-        <h2><mark>Comparador</mark></h2>
-        <p>Busca por marca, producto, categoría o tienda en <mark>todo lo que hemos revisado</mark>.</p>
+        <h2><mark>Investigación de precios</mark></h2>
+        <p>La comparación entre tiendas es una herramienta interna para sustentar cada veredicto, no un catálogo público.</p>
       </div>
     </div>
   </div>
@@ -680,10 +693,10 @@ footer p{margin:0 0 8px;max-width:900px;text-align:justify}
   <div class="grid" id="favGrid"></div>
 </div></section>
 
-<section id="tiendas"><div class="wrap">
+<section id="tiendas" hidden><div class="wrap">
   <div class="all">
-    <h2>¿No está en la lista? Búscalo en todas las tiendas</h2>
-    <p>Escribe el producto y abre la búsqueda directo en cada tienda.</p>
+    <h2>Investiga un producto</h2>
+    <p>Usa el buscador principal para solicitar una investigación. No te enviaremos a búsquedas externas tienda por tienda.</p>
     <input id="ext" type="search" placeholder="Ej: PlayStation 5, Nintendo Switch, airpods…" aria-label="Buscar en todas las tiendas">
     <div class="stores" id="stores"></div>
   </div>
@@ -1126,27 +1139,16 @@ function lineaComparacion(p, i){
 // Un solo puesto por producto: si dos tiendas del mismo grupo (Alkosto y Ktronix) o varias tiendas con el mismo
 // precio comparten la misma comparación, se muestra una sola vez.
 const claveRadar = i => Object.entries(i.rows.reduce((m, r) => { const g = grupoDe(r.tienda); if (!(g in m) || r.precio < m[g]) m[g] = r.precio; return m; }, {})).sort().join("|");
-function topList(){
-  const vistos = new Set();
-  return DATA.map(p => [p, radarInfo(p)])
-    .filter(([p, i]) => valeLaPena(i) && !community(p).gone)
-    .sort((a, b) => b[1].pct - a[1].pct)
-    .filter(([p, i]) => { const k = claveRadar(i); if (vistos.has(k)) return false; vistos.add(k); return true; })
-    .slice(0, 20).map(([p]) => p);
-}
+function topList(){ return []; }
 function renderRadar(){
-  const real = topList().length;
-  const infos = DATA.map(radarInfo);
-  const justo = infos.filter(i => i && i.ahorro === 0).length;
-  const vit = DATA.filter((p, k) => !infos[k]).length;
-  $("#rReal").textContent = real + (real===1?" más barato que en otras tiendas":" más baratos que en otras tiendas");
-  $("#rJusto").textContent = justo + " con el mismo precio en varias tiendas";
-  $("#rFalso").textContent = vit + " sin comparar";
+  $("#rReal").textContent = "Solo publicamos ofertas con pruebas comprobables";
+  $("#rJusto").textContent = "La misma referencia y condición de pago";
+  $("#rFalso").textContent = "Si no hay evidencia, no hay veredicto";
 }
 function featured(){ return topList()[0]; }
 function renderFeatured(){
   const p = featured();
-  if (!p) { $("#featBox").innerHTML = `<div class="empty">Hoy no encontramos un producto más barato aquí que en las otras tiendas que revisamos. Preferimos no mostrarte algo que no podemos comprobar.</div>`; $("#histBox").innerHTML = ""; return; }
+  if (!p) { $("#featBox").innerHTML = `<div class="empty">Las investigaciones verificadas aparecerán aquí cuando tengan referencia exacta, comparación válida y pruebas suficientes. No publicamos resultados incompletos.</div>`; $("#histBox").innerHTML = `<div class="hist-empty">El historial se conserva. Busca un producto concreto para consultar los precios que hemos registrado.</div>`; return; }
   const info = radarInfo(p), pct = info.pct, ahorro = info.ahorro, fav = favs().includes(p.id);
   const claim = p.precio_antes ? Math.round((p.precio_antes - p.precio)/p.precio_antes*100) : 0;
   const rows = info.rows;
@@ -1197,8 +1199,8 @@ function renderHistory(p){
 
 /* ---------- listas ---------- */
 function renderTop(){
-  const top = topList();
-  $("#topGrid").innerHTML = top.length ? top.map((p,i)=>card(p,i+1)).join("") : `<div class="empty">Hoy no encontramos productos más baratos aquí que en las otras tiendas que revisamos.</div>`;
+  // La portada no convierte el catálogo automático en selección editorial.
+  // Las fichas se publican únicamente cuando pasan revisión y evidencia.
   renderRadar(); renderFeatured();
 }
 function renderAll(reset){
@@ -1328,7 +1330,20 @@ if (matchMedia("(max-width:600px)").matches) $("#hq").placeholder = "Enlace o pr
 $("#heroSearch").addEventListener("submit", e => { e.preventDefault(); const q = $("#hq").value.trim(); if (q.length < 3) return;
   if (/^https?:\/\//i.test(q)) { verificarEnlace(q); return; }
   $("#q").value = q; $("#fCat").value = ""; renderAll(); buscarEnVivo(q); });
-document.querySelectorAll(".cat[data-sub]").forEach(b => b.addEventListener("click", () => { $("#fCat").value = $("#fCat").value === b.dataset.sub ? "" : b.dataset.sub; renderAll(); document.getElementById("comparador").scrollIntoView(); }));
+document.querySelectorAll(".cat[data-sub]").forEach(b => b.addEventListener("click", () => {
+  const active = b.classList.contains("on");
+  document.querySelectorAll(".cat[data-sub]").forEach(x => x.classList.remove("on"));
+  if (active) {
+    $("#hq").placeholder = "Pega el enlace o escribe el producto";
+    $("#hq").focus();
+    return;
+  }
+  b.classList.add("on");
+  const category = b.textContent.trim();
+  $("#hq").placeholder = "Escribe el producto de " + category;
+  $("#hq").focus();
+  document.getElementById("heroSearch").scrollIntoView({behavior:"smooth",block:"center"});
+}));
 document.querySelectorAll("[data-radar]").forEach(a => a.addEventListener("click", () => { const r = a.dataset.radar; if (r !== "real") { $("#fClass").value = r; renderAll(); } }));
 ["q","fCat","fStore","fClass","fSort"].forEach(id=>$("#"+id).addEventListener("input",()=>renderAll()));
 $("#more").addEventListener("click",()=>{ SHOW += 40; renderAll(false); });

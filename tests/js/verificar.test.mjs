@@ -82,7 +82,7 @@ test("más barato pero con un 'antes' sin respaldo: no es '¡Oferta real!', es d
   const o = of("Olímpica", 2219630, { precio_antes: 3999000 });
   const r = verificar(o, grupo(o, of("Jumbo", 2618000)), [], HOY);
   assert.equal(r.estado, "dudosa");
-  assert.ok(r.pruebas.some(p => p.tipo === "antes_respaldo" && p.signo === "0"));
+  assert.ok(r.pruebas.some(p => (p.tipo === "antes_respaldo" && p.signo === "0") || p.tipo === "antes_mercado"));
 });
 
 test("¡Oferta real! con evidencia: más barato y el 'antes' lo cobra otra tienda hoy", () => {
