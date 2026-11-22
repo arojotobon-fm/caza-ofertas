@@ -156,8 +156,21 @@ section{padding:30px 0}
 .rh-text h2{font-family:var(--head);font-size:clamp(28px,3.6vw,44px);font-weight:900;color:var(--petroleo);line-height:1.08;letter-spacing:-.015em;margin:0}
 .rh-text h2 mark{background:var(--turquesa-soft);color:var(--petroleo);border-radius:14px;padding:0 .22em;box-decoration-break:clone;-webkit-box-decoration-break:clone}
 .rh-text p{margin:10px 0 0;font-size:17px;color:var(--muted)}
-.rh-text p mark{background:var(--turquesa-bg);color:var(--petroleo);font-weight:800;border-radius:8px;padding:1px 6px}
+.rh-text p mark{background:var(--turquesa-bg);color:var(--petroleo);font-weight:800;border-radius:6px;padding:0 3px}
 .rh-bag{width:118px;height:118px;flex:none;filter:drop-shadow(0 8px 14px rgba(11,53,64,.18))}
+.radar-panel.compact{padding:24px 28px 34px}
+.radar-panel.compact::before{width:150px;height:58px;opacity:.8}
+.radar-panel.compact::after{height:26px;opacity:.75}
+.radar-panel.compact .radar-hero{margin-bottom:0}
+.radar-panel.compact .rh-target{width:48px;height:48px}
+.radar-panel.compact .rh-div{min-height:54px}
+.radar-panel.compact .rh-text h2{font-size:clamp(26px,3vw,36px)}
+.aviso-card{display:flex;gap:16px;align-items:center;background:#fff;border-radius:22px;padding:18px 20px;box-shadow:0 10px 24px rgba(11,53,64,.08),0 6px 0 var(--turquesa)}
+.aviso-card .r-ico{display:inline-flex;align-items:center;justify-content:center;flex:none;width:52px;height:52px;border-radius:16px;background:var(--turquesa-soft);color:var(--petroleo)}
+.aviso-card .r-ico .ico{width:28px;height:28px}
+.aviso-card b{font-family:var(--head);font-size:19px;font-weight:900;color:var(--petroleo)}
+.aviso-card b mark{background:var(--turquesa-soft);color:var(--petroleo);border-radius:8px;padding:0 6px}
+.aviso-card p{margin:4px 0 0;color:var(--ink);opacity:.82;font-size:15px}
 .reglas{position:relative;z-index:1;list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
 .reglas li{--acento:var(--petroleo);background:#fff;border-radius:22px;padding:18px 16px 18px;box-shadow:0 10px 24px rgba(11,53,64,.08),0 6px 0 var(--acento)}
 .reglas li.r2{--acento:var(--turquesa)}
@@ -472,10 +485,16 @@ footer p{margin:0 0 8px;max-width:900px}
 </div></section>
 
 <section id="comparador"><div class="wrap">
-  <div class="sec-head"><div>
-    <h2><svg class="ico"><use href="#i-search"/></svg>Comparador</h2>
-    <p>Busca por marca, producto, categoría o tienda en todo lo que hemos revisado.</p>
-  </div></div>
+  <div class="radar-panel compact">
+    <div class="radar-hero">
+      <svg class="ico rh-target" aria-hidden="true"><use href="#i-search"/></svg>
+      <span class="rh-div" aria-hidden="true"></span>
+      <div class="rh-text">
+        <h2><mark>Comparador</mark></h2>
+        <p>Busca por marca, producto, categoría o tienda en <mark>todo lo que hemos revisado</mark>.</p>
+      </div>
+    </div>
+  </div>
   <div class="tools">
     <input id="q" type="search" placeholder="Ej: Samsung, freidora, audífonos, Alkosto…" autocomplete="off" aria-label="Buscar en el comparador">
     <select id="fCat" aria-label="Categoría"><option value="">Todas las categorías</option></select>
@@ -498,10 +517,16 @@ footer p{margin:0 0 8px;max-width:900px}
 </div></section>
 
 <section id="favoritos"><div class="wrap">
-  <div class="sec-head"><div>
-    <h2><svg class="ico"><use href="#i-heart"/></svg>Mis favoritos</h2>
-    <p>Se guardan en este celular o computador, sin crear cuenta. Vuelve después para ver si bajaron.</p>
-  </div></div>
+  <div class="radar-panel compact">
+    <div class="radar-hero">
+      <svg class="ico rh-target" aria-hidden="true"><use href="#i-heart"/></svg>
+      <span class="rh-div" aria-hidden="true"></span>
+      <div class="rh-text">
+        <h2>Mis <mark>favoritos</mark></h2>
+        <p>Se guardan en este celular o computador, <mark>sin crear cuenta</mark>. Vuelve después para ver si bajaron.</p>
+      </div>
+    </div>
+  </div>
   <div class="grid" id="favGrid"></div>
 </div></section>
 
@@ -515,9 +540,9 @@ footer p{margin:0 0 8px;max-width:900px}
 </div></section>
 
 <section id="alertas" style="padding-top:0"><div class="wrap">
-  <div class="panel" style="display:flex;gap:14px;align-items:center">
-    <svg class="ico" style="width:34px;height:34px;color:var(--turquesa-2)"><use href="#i-bell"/></svg>
-    <div><b style="font-family:var(--head);font-size:18px">Alertas de precio: muy pronto</b><div style="color:var(--muted);font-size:14.5px">Mientras tanto, guarda tus productos en <a href="#favoritos">Mis favoritos</a> y revisa el radar cada día.</div></div>
+  <div class="aviso-card">
+    <span class="r-ico"><svg class="ico"><use href="#i-bell"/></svg></span>
+    <div><b>Alertas de precio: <mark>muy pronto</mark></b><p>Mientras tanto, guarda tus productos en <a href="#favoritos">Mis favoritos</a> y revisa el radar cada día.</p></div>
   </div>
 </div></section>
 
