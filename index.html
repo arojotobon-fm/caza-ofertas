@@ -147,6 +147,7 @@
   </div>
   <div class="count" id="count"></div>
   <div class="grid" id="allGrid"></div>
+  <button id="more" class="btn" style="display:none;max-width:320px;margin:20px auto 0;border:0;cursor:pointer;font:inherit;font-weight:600"></button>
 </div></section>
 
 <section id="tiendas"><div class="wrap">
@@ -220,8 +221,9 @@ function card(p, rank){
   </article>`;
 }
 
-let DATA = [];
-function renderAll(){
+let DATA = [], SHOW = 40;
+function renderAll(reset){
+  if (reset !== false) SHOW = 40;
   const q = norm($("#q").value).trim();
   const cat = $("#fCat").value, st = $("#fStore").value, sort = $("#fSort").value;
   let list = DATA.filter(p =>
@@ -229,8 +231,10 @@ function renderAll(){
     (!q || q.split(/\s+/).every(w => norm([p.nombre,p.marca,p.tienda,p.categoria].join(" ")).includes(w))));
   list.sort(sort==="low" ? (a,b)=>a.precio-b.precio : sort==="new" ? (a,b)=>new Date(b.verificado)-new Date(a.verificado) : (a,b)=>realPct(b)-realPct(a));
   $("#count").textContent = list.length + " producto" + (list.length===1?"":"s");
-  $("#allGrid").innerHTML = list.length ? list.map(p=>card(p)).join("") :
+  $("#allGrid").innerHTML = list.length ? list.slice(0, SHOW).map(p=>card(p)).join("") :
     `<div class="empty">No lo tengo revisado todavía. Búscalo abajo en todas las tiendas 👇</div>`;
+  $("#more").style.display = list.length > SHOW ? "block" : "none";
+  $("#more").textContent = "Ver más (" + (list.length - SHOW) + " restantes)";
   if (!list.length && q) { $("#ext").value = $("#q").value; renderStores(); }
 }
 function renderStores(){
@@ -251,7 +255,8 @@ fetch("data/ofertas.json?v=" + Date.now()).then(r=>r.json()).then(d=>{
   renderAll();
 }).catch(()=>{ $("#stamp").textContent = "No se pudieron cargar las ofertas. Recarga la página."; });
 
-["q","fCat","fStore","fSort"].forEach(id=>$("#"+id).addEventListener("input",renderAll));
+["q","fCat","fStore","fSort"].forEach(id=>$("#"+id).addEventListener("input",()=>renderAll()));
+$("#more").addEventListener("click",()=>{ SHOW += 40; renderAll(false); });
 $("#ext").addEventListener("input",renderStores);
 renderStores();
 </script>
