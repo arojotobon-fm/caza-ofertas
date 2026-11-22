@@ -1,0 +1,1250 @@
+[
+ {
+  "url": "https://www.falabella.com.co/falabella-co/product/148261731/Freidora-de-Aire-6L-Innovo+-Airfryer-con-Moldes-y-Set-de-Cuchillos",
+  "tienda": "Falabella",
+  "status": 200,
+  "ms": 2583,
+  "estado": "insuficiente",
+  "msg": null,
+  "origen": {
+   "nombre": "Freidora de Aire 6 L Innovo+ con Moldes y Set de Cuchillos",
+   "modelo": "Freidora de Aire 6L Innovo Airfryer con Moldes y Set de Cuchillos",
+   "precio": 189900,
+   "antes": 271900,
+   "propio": false
+  },
+  "tiendas": [],
+  "pruebas": [
+   "0 No encontramos la misma referencia en otra tienda para comparar.",
+   "0 Llevamos 1 día siguiendo este precio; necesitamos 30 para decir si es una oferta histórica.",
+   "- Lo vende GRUPO COMERCIA dentro de Falabella, no la tienda misma."
+  ],
+  "consultadas": [
+   {
+    "tienda": "Éxito",
+    "ok": false
+   },
+   {
+    "tienda": "Olímpica",
+    "ok": true
+   },
+   {
+    "tienda": "Jumbo",
+    "ok": true
+   },
+   {
+    "tienda": "Falabella",
+    "ok": true
+   }
+  ]
+ },
+ {
+  "url": "https://www.falabella.com.co/falabella-co/product/73208365/Audifonos-Apple-con-Cable,-Conector-Tipo-C-MYQY3AM-A",
+  "tienda": "Falabella",
+  "status": 200,
+  "ms": 1422,
+  "estado": "insuficiente",
+  "msg": null,
+  "origen": {
+   "nombre": "Audífonos Apple con Cable, Conector Tipo C MYQY3AM/A",
+   "modelo": "MYQY3AM/A",
+   "precio": 99900,
+   "antes": 129900,
+   "propio": true
+  },
+  "tiendas": [
+   [
+    "Falabella",
+    "Audífonos Apple con Cable, Conector Tipo C MYQY3AM/A",
+    99900,
+    null
+   ]
+  ],
+  "pruebas": [
+   "0 No encontramos la misma referencia en otra tienda para comparar.",
+   "0 Llevamos 1 día siguiendo este precio; necesitamos 30 para decir si es una oferta histórica."
+  ],
+  "consultadas": [
+   {
+    "tienda": "Éxito",
+    "ok": false
+   },
+   {
+    "tienda": "Olímpica",
+    "ok": true
+   },
+   {
+    "tienda": "Jumbo",
+    "ok": true
+   },
+   {
+    "tienda": "Falabella",
+    "ok": true
+   }
+  ]
+ },
+ {
+  "url": "https://www.falabella.com.co/falabella-co/product/132628084/Reloj-Garmin-Vivoactive-5-Marfil",
+  "tienda": "Falabella",
+  "status": 200,
+  "ms": 1375,
+  "estado": "insuficiente",
+  "msg": null,
+  "origen": {
+   "nombre": "Reloj Garmin Vivoactive 5 Marfil",
+   "modelo": "",
+   "precio": 849000,
+   "antes": 1599000,
+   "propio": false
+  },
+  "tiendas": [],
+  "pruebas": [
+   "0 No encontramos la misma referencia en otra tienda para comparar.",
+   "0 Llevamos 1 día siguiendo este precio; necesitamos 30 para decir si es una oferta histórica.",
+   "- Lo vende Macrocell dentro de Falabella, no la tienda misma."
+  ],
+  "consultadas": [
+   {
+    "tienda": "Éxito",
+    "ok": false
+   },
+   {
+    "tienda": "Olímpica",
+    "ok": true
+   },
+   {
+    "tienda": "Jumbo",
+    "ok": true
+   },
+   {
+    "tienda": "Falabella",
+    "ok": true
+   }
+  ]
+ },
+ {
+  "url": "https://www.falabella.com.co/falabella-co/product/73778251/samsung-galaxy-s26-fe-512gb-negro",
+  "tienda": "Falabella",
+  "status": 200,
+  "ms": 1285,
+  "estado": "insuficiente",
+  "msg": null,
+  "origen": {
+   "nombre": "Celular Galaxy S26 FE I 512GB I 5G I 8GB RAM",
+   "modelo": "Galaxy S26 FE",
+   "precio": 3299900,
+   "antes": 5249900,
+   "propio": true
+  },
+  "tiendas": [
+   [
+    "Falabella",
+    "Celular Galaxy S26 FE I 512GB I 5G I 8GB RAM",
+    3299900,
+    null
+   ]
+  ],
+  "pruebas": [
+   "0 No encontramos la misma referencia en otra tienda para comparar.",
+   "0 Llevamos 1 día siguiendo este precio; necesitamos 30 para decir si es una oferta histórica."
+  ],
+  "consultadas": [
+   {
+    "tienda": "Éxito",
+    "ok": false
+   },
+   {
+    "tienda": "Olímpica",
+    "ok": true
+   },
+   {
+    "tienda": "Jumbo",
+    "ok": true
+   },
+   {
+    "tienda": "Falabella",
+    "ok": true
+   }
+  ]
+ },
+ {
+  "url": "https://www.falabella.com.co/falabella-co/product/73530576/televisor-hisense-65-pulgadas-4k-uhd-led-65q6qv",
+  "tienda": "Falabella",
+  "status": 200,
+  "ms": 898,
+  "estado": "insuficiente",
+  "msg": null,
+  "origen": {
+   "nombre": "Combo Televisor Hisense + Barra | 65 Pulgadas | Hi-QLED 4K | 65Q6QV | Barra de Sonido HS1000",
+   "modelo": "65Q6QV",
+   "precio": 2099900,
+   "antes": 5249900,
+   "propio": true
+  },
+  "tiendas": [
+   [
+    "Falabella",
+    "Combo Televisor Hisense + Barra | 65 Pulgadas | Hi-QLED 4K | 65Q6QV | Barra de Sonido HS1000",
+    2099900,
+    null
+   ]
+  ],
+  "pruebas": [
+   "0 No encontramos la misma referencia en otra tienda para comparar.",
+   "0 Llevamos 1 día siguiendo este precio; necesitamos 30 para decir si es una oferta histórica."
+  ],
+  "consultadas": [
+   {
+    "tienda": "Éxito",
+    "ok": false
+   },
+   {
+    "tienda": "Olímpica",
+    "ok": true
+   },
+   {
+    "tienda": "Jumbo",
+    "ok": true
+   },
+   {
+    "tienda": "Falabella",
+    "ok": true
+   }
+  ]
+ },
+ {
+  "url": "https://www.falabella.com.co/falabella-co/product/118653400/licuadora-profesional-1000w-ninja-crushing-tech-bl610",
+  "tienda": "Falabella",
+  "status": 200,
+  "ms": 1109,
+  "estado": "insuficiente",
+  "msg": null,
+  "origen": {
+   "nombre": "Licuadora Profesional 1000W Ninja Crushing TECH BL610",
+   "modelo": "BL610",
+   "precio": 349900,
+   "antes": 449900,
+   "propio": false
+  },
+  "tiendas": [],
+  "pruebas": [
+   "0 No encontramos la misma referencia en otra tienda para comparar.",
+   "0 Llevamos 1 día siguiendo este precio; necesitamos 30 para decir si es una oferta histórica.",
+   "- Lo vende Homecenter dentro de Falabella, no la tienda misma."
+  ],
+  "consultadas": [
+   {
+    "tienda": "Éxito",
+    "ok": false
+   },
+   {
+    "tienda": "Olímpica",
+    "ok": true
+   },
+   {
+    "tienda": "Jumbo",
+    "ok": true
+   },
+   {
+    "tienda": "Falabella",
+    "ok": true
+   }
+  ]
+ },
+ {
+  "url": "https://www.falabella.com.co/falabella-co/product/883613028/Multiestilizador-Ula-Revolution-Incluye-8-Accesorios-y-Estuche-Alisa,-Seca-y-Ondula",
+  "tienda": "Falabella",
+  "status": 200,
+  "ms": 1490,
+  "estado": "insuficiente",
+  "msg": null,
+  "origen": {
+   "nombre": "Cepillo Secador Multistyler Revolution 8 En 1 Ula",
+   "modelo": "Revolution",
+   "precio": 419900,
+   "antes": 499900,
+   "propio": true
+  },
+  "tiendas": [
+   [
+    "Falabella",
+    "Cepillo Secador Multistyler Revolution 8 En 1 Ula",
+    419900,
+    null
+   ]
+  ],
+  "pruebas": [
+   "0 No encontramos la misma referencia en otra tienda para comparar.",
+   "0 Todavía no tenemos historial de este precio."
+  ],
+  "consultadas": [
+   {
+    "tienda": "Éxito",
+    "ok": false
+   },
+   {
+    "tienda": "Olímpica",
+    "ok": true
+   },
+   {
+    "tienda": "Jumbo",
+    "ok": true
+   },
+   {
+    "tienda": "Falabella",
+    "ok": true
+   }
+  ]
+ },
+ {
+  "url": "https://www.falabella.com.co/falabella-co/product/126299105/Nintendo-switch-oled-64-gb-blanca.",
+  "tienda": "Falabella",
+  "status": 200,
+  "ms": 2496,
+  "estado": "insuficiente",
+  "msg": null,
+  "origen": {
+   "nombre": "Nintendo switch oled 64 gb blanca.",
+   "modelo": "Oled",
+   "precio": 1569900,
+   "antes": 2299900,
+   "propio": false
+  },
+  "tiendas": [],
+  "pruebas": [
+   "0 No encontramos la misma referencia en otra tienda para comparar.",
+   "0 Todavía no tenemos historial de este precio.",
+   "- Lo vende rxggames dentro de Falabella, no la tienda misma."
+  ],
+  "consultadas": [
+   {
+    "tienda": "Éxito",
+    "ok": false
+   },
+   {
+    "tienda": "Olímpica",
+    "ok": true
+   },
+   {
+    "tienda": "Jumbo",
+    "ok": true
+   },
+   {
+    "tienda": "Falabella",
+    "ok": true
+   }
+  ]
+ },
+ {
+  "url": "https://www.falabella.com.co/falabella-co/product/73730347/airpods-5-carga-inalambrica",
+  "tienda": "Falabella",
+  "status": 200,
+  "ms": 1655,
+  "estado": "insuficiente",
+  "msg": null,
+  "origen": {
+   "nombre": "Audífonos AirPods 5 Carga Inalambrica",
+   "modelo": "AirPods 5 Carga inalambrica",
+   "precio": 679900,
+   "antes": null,
+   "propio": true
+  },
+  "tiendas": [
+   [
+    "Falabella",
+    "Audífonos AirPods 5 Carga Inalambrica",
+    679900,
+    null
+   ]
+  ],
+  "pruebas": [
+   "0 No encontramos la misma referencia en otra tienda para comparar.",
+   "0 Llevamos 1 día siguiendo este precio; necesitamos 30 para decir si es una oferta histórica."
+  ],
+  "consultadas": [
+   {
+    "tienda": "Éxito",
+    "ok": false
+   },
+   {
+    "tienda": "Olímpica",
+    "ok": true
+   },
+   {
+    "tienda": "Jumbo",
+    "ok": true
+   },
+   {
+    "tienda": "Falabella",
+    "ok": true
+   }
+  ]
+ },
+ {
+  "url": "https://www.falabella.com.co/falabella-co/product/73644570/spkr-ls-ultra-soundbar-wht",
+  "tienda": "Falabella",
+  "status": 200,
+  "ms": 781,
+  "estado": "insuficiente",
+  "msg": null,
+  "origen": {
+   "nombre": "Barra de Sonido Bose Lifestyle Ultra Blanca 120V",
+   "modelo": "17817863216",
+   "precio": 5099900,
+   "antes": null,
+   "propio": true
+  },
+  "tiendas": [
+   [
+    "Falabella",
+    "Barra de Sonido Bose Lifestyle Ultra Blanca 120V",
+    5099900,
+    null
+   ]
+  ],
+  "pruebas": [
+   "0 No encontramos la misma referencia en otra tienda para comparar.",
+   "0 Todavía no tenemos historial de este precio."
+  ],
+  "consultadas": [
+   {
+    "tienda": "Éxito",
+    "ok": false
+   },
+   {
+    "tienda": "Olímpica",
+    "ok": true
+   },
+   {
+    "tienda": "Jumbo",
+    "ok": true
+   },
+   {
+    "tienda": "Falabella",
+    "ok": true
+   }
+  ]
+ },
+ {
+  "url": "https://www.olimpica.com/freidora-de-aire-tezzio-4l-1002352525/p",
+  "tienda": "Olímpica",
+  "status": 200,
+  "ms": 2262,
+  "estado": "insuficiente",
+  "msg": null,
+  "origen": {
+   "nombre": "Freidora de Aire Tezzio 4L",
+   "modelo": "",
+   "precio": 188900,
+   "antes": 269900,
+   "propio": false
+  },
+  "tiendas": [],
+  "pruebas": [
+   "0 No encontramos la misma referencia en otra tienda para comparar.",
+   "0 Todavía no tenemos historial de este precio.",
+   "- Lo vende More Products dentro de Olímpica, no la tienda misma."
+  ],
+  "consultadas": [
+   {
+    "tienda": "Éxito",
+    "ok": false
+   },
+   {
+    "tienda": "Olímpica",
+    "ok": true
+   },
+   {
+    "tienda": "Jumbo",
+    "ok": true
+   },
+   {
+    "tienda": "Falabella",
+    "ok": true
+   }
+  ]
+ },
+ {
+  "url": "https://www.olimpica.com/audifonos-jbl-soundgear-clip-bluetooth-negro-1002409768/p",
+  "tienda": "Olímpica",
+  "status": 200,
+  "ms": 1393,
+  "estado": "insuficiente",
+  "msg": null,
+  "origen": {
+   "nombre": "Audifonos JBL Soundgear Clip Bluetooth Negro",
+   "modelo": "",
+   "precio": 375900,
+   "antes": 584900,
+   "propio": false
+  },
+  "tiendas": [],
+  "pruebas": [
+   "0 No encontramos la misma referencia en otra tienda para comparar.",
+   "0 Todavía no tenemos historial de este precio.",
+   "- Lo vende Comercializadora MKP dentro de Olímpica, no la tienda misma."
+  ],
+  "consultadas": [
+   {
+    "tienda": "Éxito",
+    "ok": false
+   },
+   {
+    "tienda": "Olímpica",
+    "ok": true
+   },
+   {
+    "tienda": "Jumbo",
+    "ok": true
+   },
+   {
+    "tienda": "Falabella",
+    "ok": true
+   }
+  ]
+ },
+ {
+  "url": "https://www.olimpica.com/parlante-inalambrico-con-conexion-bluetooth-1002381290/p",
+  "tienda": "Olímpica",
+  "status": 200,
+  "ms": 1277,
+  "estado": "insuficiente",
+  "msg": null,
+  "origen": {
+   "nombre": "Parlante Inalambrico Con Conexion Bluetooth",
+   "modelo": "IZ20000102763",
+   "precio": 142900,
+   "antes": 285800,
+   "propio": false
+  },
+  "tiendas": [],
+  "pruebas": [
+   "0 No encontramos la misma referencia en otra tienda para comparar.",
+   "0 Todavía no tenemos historial de este precio.",
+   "- Lo vende AML Comercializadora dentro de Olímpica, no la tienda misma."
+  ],
+  "consultadas": [
+   {
+    "tienda": "Éxito",
+    "ok": false
+   },
+   {
+    "tienda": "Olímpica",
+    "ok": true
+   },
+   {
+    "tienda": "Jumbo",
+    "ok": true
+   },
+   {
+    "tienda": "Falabella",
+    "ok": true
+   }
+  ]
+ },
+ {
+  "url": "https://www.olimpica.com/microfono-condensador-de-cable-para-celular-o-computadora-1002342370/p",
+  "tienda": "Olímpica",
+  "status": 200,
+  "ms": 2041,
+  "estado": "insuficiente",
+  "msg": null,
+  "origen": {
+   "nombre": "Microfono Condensador De Cable Para Celular o Computadora",
+   "modelo": "IZ20000631007",
+   "precio": 61900,
+   "antes": 123800,
+   "propio": false
+  },
+  "tiendas": [],
+  "pruebas": [
+   "0 No encontramos la misma referencia en otra tienda para comparar.",
+   "0 Todavía no tenemos historial de este precio.",
+   "- Lo vende AML Comercializadora dentro de Olímpica, no la tienda misma."
+  ],
+  "consultadas": [
+   {
+    "tienda": "Éxito",
+    "ok": false
+   },
+   {
+    "tienda": "Olímpica",
+    "ok": true
+   },
+   {
+    "tienda": "Jumbo",
+    "ok": true
+   },
+   {
+    "tienda": "Falabella",
+    "ok": true
+   }
+  ]
+ },
+ {
+  "url": "https://www.olimpica.com/televisor-led-visivo-smart-50--webos-d60-vtl-u5060t4-1002417446/p",
+  "tienda": "Olímpica",
+  "status": 200,
+  "ms": 1669,
+  "estado": "insuficiente",
+  "msg": null,
+  "origen": {
+   "nombre": "Televisor Led Visivo Smart 50\" WEBOS D60 VTL-U5060T4",
+   "modelo": "",
+   "precio": 1662900,
+   "antes": 2328060,
+   "propio": false
+  },
+  "tiendas": [],
+  "pruebas": [
+   "0 No encontramos la misma referencia en otra tienda para comparar.",
+   "0 Todavía no tenemos historial de este precio.",
+   "- Lo vende megaccesorios dentro de Olímpica, no la tienda misma."
+  ],
+  "consultadas": [
+   {
+    "tienda": "Éxito",
+    "ok": false
+   },
+   {
+    "tienda": "Olímpica",
+    "ok": false
+   },
+   {
+    "tienda": "Jumbo",
+    "ok": false
+   },
+   {
+    "tienda": "Falabella",
+    "ok": true
+   }
+  ]
+ },
+ {
+  "url": "https://www.olimpica.com/sopladora-aspiradora-400w-1002410255/p",
+  "tienda": "Olímpica",
+  "status": 200,
+  "ms": 1222,
+  "estado": "insuficiente",
+  "msg": null,
+  "origen": {
+   "nombre": "Sopladora/Aspiradora 400W",
+   "modelo": "",
+   "precio": 76415,
+   "antes": 89900,
+   "propio": false
+  },
+  "tiendas": [],
+  "pruebas": [
+   "0 No encontramos la misma referencia en otra tienda para comparar.",
+   "0 Todavía no tenemos historial de este precio.",
+   "- Lo vende More Products dentro de Olímpica, no la tienda misma."
+  ],
+  "consultadas": [
+   {
+    "tienda": "Éxito",
+    "ok": false
+   },
+   {
+    "tienda": "Olímpica",
+    "ok": true
+   },
+   {
+    "tienda": "Jumbo",
+    "ok": true
+   },
+   {
+    "tienda": "Falabella",
+    "ok": true
+   }
+  ]
+ },
+ {
+  "url": "https://www.olimpica.com/cepillo-secador-keratina-alisa-moldea-voluminizador-1002368565/p",
+  "tienda": "Olímpica",
+  "status": 200,
+  "ms": 1564,
+  "estado": "insuficiente",
+  "msg": null,
+  "origen": {
+   "nombre": "Cepillo Secador Keratina Alisa Moldea Voluminizador",
+   "modelo": "",
+   "precio": 36900,
+   "antes": 54900,
+   "propio": false
+  },
+  "tiendas": [],
+  "pruebas": [
+   "0 No encontramos la misma referencia en otra tienda para comparar.",
+   "0 Todavía no tenemos historial de este precio.",
+   "- Lo vende 52 bits dentro de Olímpica, no la tienda misma."
+  ],
+  "consultadas": [
+   {
+    "tienda": "Éxito",
+    "ok": false
+   },
+   {
+    "tienda": "Olímpica",
+    "ok": true
+   },
+   {
+    "tienda": "Jumbo",
+    "ok": true
+   },
+   {
+    "tienda": "Falabella",
+    "ok": true
+   }
+  ]
+ },
+ {
+  "url": "https://www.olimpica.com/mini-consola-super-nintendo-620-juegos-clasicos-1002257757/p",
+  "tienda": "Olímpica",
+  "status": 200,
+  "ms": 1889,
+  "estado": "insuficiente",
+  "msg": null,
+  "origen": {
+   "nombre": "Super Nintendo + 620 Juegos Clásicos",
+   "modelo": "IZ20000353104",
+   "precio": 108900,
+   "antes": 217800,
+   "propio": false
+  },
+  "tiendas": [],
+  "pruebas": [
+   "0 No encontramos la misma referencia en otra tienda para comparar.",
+   "0 Todavía no tenemos historial de este precio.",
+   "- Lo vende AML Comercializadora dentro de Olímpica, no la tienda misma."
+  ],
+  "consultadas": [
+   {
+    "tienda": "Éxito",
+    "ok": false
+   },
+   {
+    "tienda": "Olímpica",
+    "ok": true
+   },
+   {
+    "tienda": "Jumbo",
+    "ok": true
+   },
+   {
+    "tienda": "Falabella",
+    "ok": true
+   }
+  ]
+ },
+ {
+  "url": "https://www.olimpica.com/megafryer-max-freidora-de-aire-8-litros-1002383984/p",
+  "tienda": "Olímpica",
+  "status": 200,
+  "ms": 1927,
+  "estado": "insuficiente",
+  "msg": null,
+  "origen": {
+   "nombre": "Megafryer Max Freidora de Aire 8 Litros",
+   "modelo": "",
+   "precio": 784900,
+   "antes": null,
+   "propio": false
+  },
+  "tiendas": [],
+  "pruebas": [
+   "0 No encontramos la misma referencia en otra tienda para comparar.",
+   "0 Todavía no tenemos historial de este precio.",
+   "- Lo vende Home Elements dentro de Olímpica, no la tienda misma."
+  ],
+  "consultadas": [
+   {
+    "tienda": "Éxito",
+    "ok": false
+   },
+   {
+    "tienda": "Olímpica",
+    "ok": true
+   },
+   {
+    "tienda": "Jumbo",
+    "ok": true
+   },
+   {
+    "tienda": "Falabella",
+    "ok": true
+   }
+  ]
+ },
+ {
+  "url": "https://www.olimpica.com/freidora-de-aire-8-litros---megafryer-classic-1002405088/p",
+  "tienda": "Olímpica",
+  "status": 200,
+  "ms": 1959,
+  "estado": "insuficiente",
+  "msg": null,
+  "origen": {
+   "nombre": "Freidora de Aire 8 Litros - Megafryer Classic",
+   "modelo": "",
+   "precio": 669900,
+   "antes": null,
+   "propio": false
+  },
+  "tiendas": [],
+  "pruebas": [
+   "0 No encontramos la misma referencia en otra tienda para comparar.",
+   "0 Todavía no tenemos historial de este precio.",
+   "- Lo vende Home Elements dentro de Olímpica, no la tienda misma."
+  ],
+  "consultadas": [
+   {
+    "tienda": "Éxito",
+    "ok": false
+   },
+   {
+    "tienda": "Olímpica",
+    "ok": true
+   },
+   {
+    "tienda": "Jumbo",
+    "ok": true
+   },
+   {
+    "tienda": "Falabella",
+    "ok": true
+   }
+  ]
+ },
+ {
+  "url": "https://www.jumbocolombia.com/freidora-de-aire-tezzio-4l-20103157/p",
+  "tienda": "Jumbo",
+  "status": 200,
+  "ms": 151,
+  "estado": "insuficiente",
+  "msg": null,
+  "origen": {
+   "nombre": "Freidora de Aire Tezzio 4L",
+   "modelo": "",
+   "precio": 188900,
+   "antes": 269900,
+   "propio": false
+  },
+  "tiendas": [],
+  "pruebas": [
+   "0 No encontramos la misma referencia en otra tienda para comparar.",
+   "0 Todavía no tenemos historial de este precio.",
+   "- Lo vende moreproducts dentro de Jumbo, no la tienda misma."
+  ],
+  "consultadas": [
+   {
+    "tienda": "Éxito",
+    "ok": false
+   },
+   {
+    "tienda": "Olímpica",
+    "ok": true
+   },
+   {
+    "tienda": "Jumbo",
+    "ok": true
+   },
+   {
+    "tienda": "Falabella",
+    "ok": true
+   }
+  ]
+ },
+ {
+  "url": "https://www.jumbocolombia.com/audifonos-gaming-con-sonido-hifi-20133740/p",
+  "tienda": "Jumbo",
+  "status": 200,
+  "ms": 1155,
+  "estado": "insuficiente",
+  "msg": null,
+  "origen": {
+   "nombre": "Audifonos Gaming Con Sonido HIFI",
+   "modelo": "",
+   "precio": 99900,
+   "antes": 199800,
+   "propio": false
+  },
+  "tiendas": [],
+  "pruebas": [
+   "0 No encontramos la misma referencia en otra tienda para comparar.",
+   "0 Todavía no tenemos historial de este precio.",
+   "- Lo vende amlcomercializadora dentro de Jumbo, no la tienda misma."
+  ],
+  "consultadas": [
+   {
+    "tienda": "Éxito",
+    "ok": false
+   },
+   {
+    "tienda": "Olímpica",
+    "ok": true
+   },
+   {
+    "tienda": "Jumbo",
+    "ok": true
+   },
+   {
+    "tienda": "Falabella",
+    "ok": true
+   }
+  ]
+ },
+ {
+  "url": "https://www.jumbocolombia.com/parlante-jbl-go-4-rojo-20136921/p",
+  "tienda": "Jumbo",
+  "status": 200,
+  "ms": 1651,
+  "estado": "insuficiente",
+  "msg": null,
+  "origen": {
+   "nombre": "Parlante JBL Go 4 Rojo",
+   "modelo": "",
+   "precio": 219900,
+   "antes": 249900,
+   "propio": false
+  },
+  "tiendas": [],
+  "pruebas": [
+   "0 No encontramos la misma referencia en otra tienda para comparar.",
+   "0 Todavía no tenemos historial de este precio.",
+   "- Lo vende Merpes dentro de Jumbo, no la tienda misma."
+  ],
+  "consultadas": [
+   {
+    "tienda": "Éxito",
+    "ok": false
+   },
+   {
+    "tienda": "Olímpica",
+    "ok": true
+   },
+   {
+    "tienda": "Jumbo",
+    "ok": true
+   },
+   {
+    "tienda": "Falabella",
+    "ok": true
+   }
+  ]
+ },
+ {
+  "url": "https://www.jumbocolombia.com/reloj-inteligente-esenses-pantalla-amoled-36-32-mm-sw-iron-negro-3735241/p",
+  "tienda": "Jumbo",
+  "status": 200,
+  "ms": 1527,
+  "estado": "insuficiente",
+  "msg": null,
+  "origen": {
+   "nombre": "Reloj Inteligente Esenses pantalla Amoled 36.32 mm SW-IRON Negro",
+   "modelo": "",
+   "precio": 249900,
+   "antes": 349900,
+   "propio": true
+  },
+  "tiendas": [
+   [
+    "Jumbo",
+    "Reloj Inteligente Esenses pantalla Amoled 36.32 mm SW-IRON Negro",
+    249900,
+    "7707409107844"
+   ]
+  ],
+  "pruebas": [
+   "0 No encontramos la misma referencia en otra tienda para comparar.",
+   "0 Todavía no tenemos historial de este precio."
+  ],
+  "consultadas": [
+   {
+    "tienda": "Éxito",
+    "ok": false
+   },
+   {
+    "tienda": "Olímpica",
+    "ok": true
+   },
+   {
+    "tienda": "Jumbo",
+    "ok": true
+   },
+   {
+    "tienda": "Falabella",
+    "ok": true
+   }
+  ]
+ },
+ {
+  "url": "https://www.jumbocolombia.com/mezclador-portatil-de-teteros-recargable-20103015/p",
+  "tienda": "Jumbo",
+  "status": 200,
+  "ms": 2532,
+  "estado": "insuficiente",
+  "msg": null,
+  "origen": {
+   "nombre": "Mezclador Portatil De Teteros Recargable",
+   "modelo": "",
+   "precio": 70900,
+   "antes": 141800,
+   "propio": false
+  },
+  "tiendas": [],
+  "pruebas": [
+   "0 No encontramos la misma referencia en otra tienda para comparar.",
+   "0 Todavía no tenemos historial de este precio.",
+   "- Lo vende amlcomercializadora dentro de Jumbo, no la tienda misma."
+  ],
+  "consultadas": [
+   {
+    "tienda": "Éxito",
+    "ok": false
+   },
+   {
+    "tienda": "Olímpica",
+    "ok": true
+   },
+   {
+    "tienda": "Jumbo",
+    "ok": true
+   },
+   {
+    "tienda": "Falabella",
+    "ok": true
+   }
+  ]
+ },
+ {
+  "url": "https://www.jumbocolombia.com/licuadora-oster-profesional-1500-wtts-xtreme-mix/p",
+  "tienda": "Jumbo",
+  "status": 200,
+  "ms": 1528,
+  "estado": "insuficiente",
+  "msg": null,
+  "origen": {
+   "nombre": "Licuadora oster profesional 1500 wtts xtreme-mix",
+   "modelo": "",
+   "precio": 559900,
+   "antes": 760900,
+   "propio": true
+  },
+  "tiendas": [
+   [
+    "Jumbo",
+    "Licuadora oster profesional 1500 wtts xtreme-mix",
+    559900,
+    "53891175685"
+   ]
+  ],
+  "pruebas": [
+   "0 No encontramos la misma referencia en otra tienda para comparar.",
+   "0 Todavía no tenemos historial de este precio."
+  ],
+  "consultadas": [
+   {
+    "tienda": "Éxito",
+    "ok": false
+   },
+   {
+    "tienda": "Olímpica",
+    "ok": true
+   },
+   {
+    "tienda": "Jumbo",
+    "ok": true
+   },
+   {
+    "tienda": "Falabella",
+    "ok": true
+   }
+  ]
+ },
+ {
+  "url": "https://www.jumbocolombia.com/secador-remington-d-5000/p",
+  "tienda": "Jumbo",
+  "status": 200,
+  "ms": 1450,
+  "estado": "oferta_real",
+  "msg": null,
+  "origen": {
+   "nombre": "Secador Remington D5000",
+   "modelo": "",
+   "precio": 109900,
+   "antes": 169900,
+   "propio": true
+  },
+  "tiendas": [
+   [
+    "Jumbo",
+    "Secador Remington D5000",
+    109900,
+    "74590508604"
+   ],
+   [
+    "Falabella",
+    "Secador de Cabello 1875W Ideal para Viaje, D5000",
+    109900,
+    null
+   ],
+   [
+    "Olímpica",
+    "Secador De Cabello Remington Compacto De Viaje, Cerámica + Iones Y Turmalina 1875 W, D5000-110F",
+    169900,
+    "74590508604"
+   ]
+  ],
+  "pruebas": [
+   "+ Es $30.000 (21,4 %) más barato que en Falabella, Olímpica, con la misma referencia.",
+   "0 Todavía no tenemos historial de este precio."
+  ],
+  "consultadas": [
+   {
+    "tienda": "Éxito",
+    "ok": false
+   },
+   {
+    "tienda": "Olímpica",
+    "ok": true
+   },
+   {
+    "tienda": "Jumbo",
+    "ok": true
+   },
+   {
+    "tienda": "Falabella",
+    "ok": true
+   }
+  ]
+ },
+ {
+  "url": "https://www.jumbocolombia.com/mini-consola-game-boy-recargable-400-juegos-clasicos-20133777/p",
+  "tienda": "Jumbo",
+  "status": 200,
+  "ms": 1668,
+  "estado": "insuficiente",
+  "msg": null,
+  "origen": {
+   "nombre": "Mini Consola Game Boy Recargable 400 Juegos Clasicos",
+   "modelo": "",
+   "precio": 77900,
+   "antes": 155800,
+   "propio": false
+  },
+  "tiendas": [],
+  "pruebas": [
+   "0 No encontramos la misma referencia en otra tienda para comparar.",
+   "0 Todavía no tenemos historial de este precio.",
+   "- Lo vende amlcomercializadora dentro de Jumbo, no la tienda misma."
+  ],
+  "consultadas": [
+   {
+    "tienda": "Éxito",
+    "ok": false
+   },
+   {
+    "tienda": "Olímpica",
+    "ok": true
+   },
+   {
+    "tienda": "Jumbo",
+    "ok": true
+   },
+   {
+    "tienda": "Falabella",
+    "ok": true
+   }
+  ]
+ },
+ {
+  "url": "https://www.jumbocolombia.com/molde-krea-silicona-cuadrado-freidora-de-aire-393187/p",
+  "tienda": "Jumbo",
+  "status": 200,
+  "ms": 3349,
+  "estado": "insuficiente",
+  "msg": null,
+  "origen": {
+   "nombre": "Molde Krea Silicona Cuadrado Freidora de Aire",
+   "modelo": "",
+   "precio": 38490,
+   "antes": null,
+   "propio": true
+  },
+  "tiendas": [
+   [
+    "Jumbo",
+    "Molde Krea Silicona Cuadrado Freidora de Aire",
+    38490,
+    "7800155445687"
+   ]
+  ],
+  "pruebas": [
+   "0 No encontramos la misma referencia en otra tienda para comparar.",
+   "0 Todavía no tenemos historial de este precio."
+  ],
+  "consultadas": [
+   {
+    "tienda": "Éxito",
+    "ok": false
+   },
+   {
+    "tienda": "Olímpica",
+    "ok": true
+   },
+   {
+    "tienda": "Jumbo",
+    "ok": true
+   },
+   {
+    "tienda": "Falabella",
+    "ok": true
+   }
+  ]
+ },
+ {
+  "url": "https://www.jumbocolombia.com/banda-samsung-smartband-galaxy-fit-3-plateado-3610860/p",
+  "tienda": "Jumbo",
+  "status": 200,
+  "ms": 2352,
+  "estado": "insuficiente",
+  "msg": null,
+  "origen": {
+   "nombre": "Banda Samsung Smartband Galaxy Fit 3 Plateado",
+   "modelo": "",
+   "precio": 299900,
+   "antes": null,
+   "propio": true
+  },
+  "tiendas": [
+   [
+    "Jumbo",
+    "Banda Samsung Smartband Galaxy Fit 3 Plateado",
+    299900,
+    "8806095369464"
+   ]
+  ],
+  "pruebas": [
+   "0 No encontramos la misma referencia en otra tienda para comparar.",
+   "0 Todavía no tenemos historial de este precio."
+  ],
+  "consultadas": [
+   {
+    "tienda": "Éxito",
+    "ok": false
+   },
+   {
+    "tienda": "Olímpica",
+    "ok": true
+   },
+   {
+    "tienda": "Jumbo",
+    "ok": true
+   },
+   {
+    "tienda": "Falabella",
+    "ok": true
+   }
+  ]
+ }
+]
