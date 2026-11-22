@@ -28,3 +28,26 @@ Lista para próximas actualizaciones (se publican por bloques para ahorrar créd
 ## Decisiones aplazadas
 - [ ] API oficial de Mercado Libre (registro gratuito de desarrollador; revisar condiciones).
 - [ ] Programas de afiliados (Falabella, Éxito, Alkosto, Amazon) y aviso de comisión en la página.
+
+## Hoja de ruta después del Black Friday (aprobada 22 nov 2026)
+Fuente: `docs/ESPECIFICACION_COMPARADOR_MULTITIENDA.md` (comparador simétrico multitienda). Se hace **por etapas**, respetando `PRINCIPIOS.md`.
+Las cifras de tráfico de ese documento no están verificadas: no se guardan como datos del proyecto sin fuente comprobada.
+
+### Etapa A — Costo total real (primero)
+- [ ] **Envío**: costo, tiempo de entrega y recogida en tienda por publicación; el ahorro se calcula con envío incluido.
+- [ ] **Instalación**: cobros adicionales en electrodomésticos y muebles.
+- [ ] **Garantía y devoluciones**: si es del fabricante o de la tienda, y condiciones de devolución.
+
+### Etapa B — Mercado Libre, solo tiendas oficiales verificadas
+- [ ] Revisar condiciones de la API oficial de Mercado Libre (registro de desarrollador).
+- [ ] Admitir solo tiendas oficiales verificadas una por una (identidad, NIT y nombre del vendedor), igual que Corbeta, Olímpica, Jumbo y Flamingo.
+
+### Etapas siguientes (cada una con aprobación)
+- [ ] 5 rangos de precio en celulares.
+- [ ] Calzado y belleza con tiendas oficiales verificadas (Adidas, Samsung, Cruz Verde…), una por una.
+- [ ] Marketplaces internacionales (Amazon, Temu, AliExpress, Shein) solo cuando podamos calcular el costo total en pesos (dólares, envío e impuestos de importación).
+- [ ] Permitir que la persona elija qué comercios comparar en cada categoría.
+
+### Decisiones ya tomadas sobre ese documento
+- Disponibilidad: no se guarda inventario, pero solo se comparan publicaciones **disponibles al momento** (evita "ofertas" que no se pueden comprar).
+- ¡Hagamos Cuentas! es una herramienta complementaria, no un veredicto.
