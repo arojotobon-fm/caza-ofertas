@@ -1,0 +1,2581 @@
+{
+ "_nota": "Revisión de las fichas de producto de Alkosto (22 nov 2026), leída desde el navegador de Ana Marcela en el dominio alkosto.com. Se leyó el HTML de cada ficha y se analizó con DOMParser. Una ficha se verificó además en la página ya renderizada (AF141LAA) con el mismo resultado.",
+ "fecha": "2026-11-22",
+ "comercio_id": "alkosto",
+ "metodo": {
+  "banner_principal": ".new-container__main-product__mini-banner (texto e imágenes)",
+  "texto_vendedor": "/(vendido (y despachado )?por|vendedor|proveedor|aliado comercial|marketplace|despachado por)/i dentro de .new-container__main-product",
+  "seccion_especial": "/(reacondicionad|exhibición|open box|usado|segunda mano|outlet)/i en el título H1 y la ruta de categorías"
+ },
+ "resumen": {
+  "fichas": 320,
+  "leidas_200": 320,
+  "banner_con_contenido": 0,
+  "texto_de_otro_vendedor": 0,
+  "seccion_especial": 0,
+  "errores": 0,
+  "categorias_distintas": 31
+ },
+ "fichas": {
+  "/freidora-aire-oster-6-litros-digital-diamondforce-con/p/053891175913": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/freidora-aire-kalley-63-litros-k-maf6-negro/p/7700149140027": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/freidora-aire-imusa-easy-fry-mega-compact-75-litros-panel/p/3168430393714": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/freidora-aire-imusa-mega-mecanica-75l-negra/p/3045380027770": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/freidora-aire-black-decker-42-litros-afbd42-3b-negro/p/050875005716": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/freidora-aire-black-decker-80-litros-afbd82-1bdla-negro/p/050875004504": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/freidora-aire-oster-75-litros-digital-diamondforce-con/p/053891176002": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/freidora-aire-kalley-35litros-k-maf35-negro/p/7705946806725": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/freidora-aire-kalley-45-litros-k-maf45-negro/p/7700149140010": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/freidora-aire-kalley-6-litros-vidrio-k-mafv6-gris/p/7705946482257": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/freidora-aire-oster-4-litros-digital-diamondforce-negra/p/053891175944": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/freidora-aire-imusa-max-5l-digital-negra-lanzamiento/p/7702073245809": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/freidora-aire-ninja-crispi-fn101gy-14-38-litros-gris/p/622356662574": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/freidora-aire-oster-ultracrisp-xl-10-litros-8-en-1/p/053891181877": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/freidora-aire-black-decker-42-litros-afbd42-digital-negro/p/050875003835": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/freidora-aire-oster-6-litros-manual-recubrimiento/p/053891175920": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/freidora-aire-ninja-945-litros-doublestack-doble-canasta/p/622356320610": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/freidora-aire-ninja-crispi-fn101laagy-14-38-litros-azul/p/622356356121": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/freidora-aire-ninja-crispi-pro-57-litros-24-litros/p/622356705530": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/freidora-aire-oster-4-litros-manual-diamondforce-negra/p/053891175937": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/freidora-aire-imusa-esencial-32l-manual-negra/p/3045380020665": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/freidora-aire-ninja-pro-47-litros-af141laa-negro/p/622356309844": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/freidora-aire-oster-38-litros-manual-recubrimiento/p/053891178068": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/freidora-aire-kalley-75-litros-k-maf75-negro/p/7705946474665": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/freidora-aire-haceb-6-litros-gris-negro/p/7704353459661": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/audifonos-panasonic-bluetooth-deportivos-open-ear/p/5025232974511": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/audifonos-realmeinalambricos-bluetooth-in-ear-tws/p/6941764483811": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/audifonos-panasonic-bluetooth-deportivos-open-ear/p/5025232974528": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/audifonos-redmi-inalambricos-bluetooth-in-ear-buds-6-play/p/6941812791240": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/audifonos-jbl-inalambricos-bluetooth-in-ear-tws-wave-buds2/p/1200130015373": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/audifonos-redmi-inalambricos-bluetooth-in-ear-buds-8-lite/p/6932554471897": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/audifonos-honor-inalambricos-bluetooth-in-earbuds-a-pro/p/6936520886296": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/audifonos-sony-inalambricos-bluetooth-in-ear-manos-libres/p/027242923638": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/audifonos-sony-inalambricos-bluetooth-in-ear-deportivos/p/027242930339": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/audifonos-huawei-inalambricos-bluetooth-open-ear-freeclip/p/6942103178733": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/audifonos-esenses-inalambricos-bluetooth-deportivos-open/p/7707409108575": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/audifonos-huawei-inalambricos-bluetooth-in-ear-freebuds-se/p/6942103173936": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/audifonos-jbl-inalambricos-bluetooth-open-ear-tws/p/1200130023033": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/audifonos-redmi-inalambricos-bluetooth-in-ear-tws-buds-8/p/6932554464233": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/audifonos-kalley-inalambricos-bluetooth-in-ear-k-air/p/7705946480512": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/audifonos-redmi-inalambricos-bluetooth-in-ear-buds-6-play/p/6941812791295": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/audifonos-huawei-inalambricos-bluetooth-open-ear-freeclip/p/6942103169434": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/audifonos-huawei-inalambricos-bluetooth-in-ear-freebuds-se/p/6942103183492": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/audifonos-huawei-inalambricos-bluetooth-deportivos-in-ear/p/6942103164781": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/audifonos-sony-inalambricos-bluetooth-in-ear-wf-c710n/p/027242931770": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/audifonos-sony-inalambricos-bluetooth-in-ear-wf1000xm6/p/027242933460": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/audifonos-huawei-inalambricos-bluetooth-deportivos-open/p/6942103147425": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/audifonos-honor-inalambricos-bluetooth-in-earbuds-a-pro/p/6936520886265": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/audifonos-soundcore-inalambricos-bluetooth-in-ear-p25i/p/194644126155": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/audifonos-redmi-inalambricos-bluetooth-in-ear-buds-8-lite/p/6932554471927": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/parlante-bluetooth-soundlink-micro-blanco/p/017817836111": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/parlante-kalley-bluetooth-k-p5-5w-negro/p/7705946477871": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/parlante-marshall-bluetooth-acton-iii-15w-negro/p/7340055385060": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/parlante-jbl-inalambrico-bluetooth-boombox-4-200w-naranja/p/1200130035388": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/parlante-jbl-inalambrico-bluetooth-go-essential2-31w-rojo/p/1200130026058": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/parlante-jbl-inalambrico-bluetooth-flip-7-35w-azul/p/1200130019371": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/parlante-vta-inalambrico-bluetooth-duett-80w-auxiliar/p/7702271829689": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/parlante-vta-inalambrico-bluetooth-mixer-60w-auxiliar/p/7702271822284": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/parlante-jbl-inalambrico-bluetooth-xtreme5-90w-negro/p/1200130033711": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/parlante-jbl-inalambrico-bluetooth-charge-6-45w-negro/p/1200130019463": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/parlante-jbl-inalambrico-bluetooth-go5-48w-negro/p/1200130034640": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/parlante-jbl-inalambrico-bluetooth-clip5-7w-negro/p/1200130010262": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/parlante-kalley-inalambrico-bluetooth-puerto-usb-puerto/p/7705946477048": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/parlante-jbl-inalambrico-bluetooth-clip5-7w-azul/p/1200130010279": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/parlante-jbl-inalambrico-bluetooth-flip-7-35w-rosado/p/1200130019418": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/parlante-jbl-inalambrico-bluetooth-flip-7-35w-rojo/p/1200130019388": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/parlante-jbl-inalambrico-bluetooth-go-essential2-31w-azul/p/1200130026041": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/parlante-jbl-inalambrico-bluetooth-go-essential2-31w-negro/p/1200130026034": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/parlante-jbl-inalambrico-bluetooth-go5-48w-rosado/p/1200130034701": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/kit-parlante-vta-inalambrico-bluetooth-carga-solar-sound-3/p/7702271935076": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/parlante-jbl-inalambrico-bluetooth-go5-48w-azul/p/1200130034657": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/parlante-jbl-inalambrico-bluetooth-charge-6-45w-azul/p/1200130019487": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/parlante-vta-inalambrico-bluetooth-brezza-16w-puerto-micro/p/7702271829450": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/parlante-vta-inalambrico-bluetooth-rhythm-30w-puerto-micro/p/7702271823540": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/parlante-vta-inalambrico-bluetooth-vers-15w-puerto-micro/p/7702271822048": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/reloj-kalley-k-swnx-4648-mm-negro-mate/p/7705946476782": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/reloj-huawei-watch-gt7-pro-46mm-negro-huawei-freebuds-se-3/p/7709480762813": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/reloj-garmin-forerunner-55-bl/p/753759279615": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/reloj-redmi-watch-6-active-47mm-negro/p/6932554406103": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/reloj-samsung-galaxy-watch-8-44-mm-gris-oscuro/p/8806097416364": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/combo-reloj-kalley-k-csw/p/7705946476850": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/reloj-samsung-galaxy-watch-ultra-2-47-mm-negro-banda/p/8806099522636": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/reloj-huawei-watch-gt7-pro-46mm-verde-huawei-freebuds-se-3/p/7709480762882": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/reloj-kalley-k-swn4-36mm-negro-azul/p/7705946479516": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/reloj-huawei-watch-gt6-pro-46mm-negro-obsidiana/p/6942103168765": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/reloj-kalley-k-swrx-4648-mm-rosado-mate/p/7705946476799": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/reloj-honor-watch-choice-2i-464-mm-negro/p/6977887510080": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/reloj-redmi-watch-6-lite-50mm-negro/p/6932554406042": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/reloj-huawei-watch-gt7-41mm-azul-huawei-freebuds-se-2/p/7709098520416": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/reloj-huawei-watch-fit-4-46-mm-negro-mate/p/6942103155345": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/reloj-samsung-galaxy-watch-8-40-mm-gris-oscuro/p/8806097416845": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/reloj-huawei-watch-gt7-41mm-rosa-huawei-freebuds-se-2/p/7709551398095": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/reloj-redmi-watch-6-active-47mm-gris/p/6932554406059": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/reloj-huawei-watch-fit-4-46-mm-lila/p/6942103155352": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/reloj-huawei-watch-d2-4623-mm-negro/p/6942103131790": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/reloj-kalley-k-swr4-35mm-rosado-blanco/p/7705946479523": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/reloj-esenses-sw-iron-amoled-3632-mm-negro-audifonos/p/7707409104706": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/reloj-samsung-galaxy-watch-8-40-mm-plateado/p/8806097416760": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/reloj-huawei-watch-gt7-46mm-negro-huawei-freebuds-se-2/p/7709551398057": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/reloj-huawei-watch-gt7-pro-46mm-amarillo-huawei-freebuds/p/7709480762899": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/celular-samsung-galaxy-a27-256gb-5g-negro-ram-8gb-bateria/p/8806099361082": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/celular-samsung-galaxy-a27-256gb-5g-azul-ram-8gb-bateria/p/8806099361136": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/celular-samsung-galaxy-s25-256gb-5g-azul-naval-ram-12gb/p/8806095869018": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/celular-samsung-galaxy-s25-ultra-256gb-5g-negro-titanio/p/8806095872247": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/celular-samsung-galaxy-a17-256gb-4g-negro-ram-8gb-bateria/p/8806097667063": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/celular-samsung-galaxy-a07-128gb-4g-negro-ram-4gb-bateria/p/8806097661498": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/celular-samsung-galaxy-a57-256gb-5g-azul-oscuro-ram-8gb/p/8806099057299": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/celular-samsung-galaxy-a57-256gb-5g-morado-ram-8gb-bateria/p/8806099057206": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/celular-samsung-galaxy-a17-256gb-4g-azul-claro-ram-8gb/p/8806097666554": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/celular-samsung-galaxy-s26-fe-256gb-5g-pistacho-ram-8gb/p/8806099417819": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/celular-samsung-galaxy-s26-fe-256gb-5g-negro-ram-8gb/p/8806099417697": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/celular-samsung-galaxy-a57-256gb-5g-gris-ram-8gb-bateria/p/8806099057626": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/celular-samsung-galaxy-a07-128gb-4g-morado-claro-ram-4gb/p/8806097661153": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/celular-samsung-galaxy-s26-fe-256gb-5g-violeta-ram-8gb/p/8806099417574": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/celular-samsung-galaxy-a07-128gb-4g-verde-ram-4gb-bateria/p/8806097661849": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/celular-samsung-galaxy-s25-256gb-5g-azul-cielo-ram-12gb/p/8806095868288": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/celular-samsung-galaxy-a37-256gb-5g-gris-ram-8gb-bateria/p/8806099056223": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/celular-samsung-galaxy-a57-256gb-5g-azul-claro-ram-8gb/p/8806099057947": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/celular-samsung-galaxy-s25-256gb-5g-plateado-ram-12gb/p/8806095868684": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/celular-samsung-galaxy-a17-256gb-4g-gris-ram-8gb-bateria/p/8806097668565": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/celular-samsung-galaxy-s26-ultra-512gb-5g-morado-ram-12gb/p/8806097885184": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/celular-samsung-galaxy-a37-256gb-5g-verde-oscuro-ram-8gb/p/8806099056407": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/celular-samsung-galaxy-s25-fe-256gb-5g-negro-ram-8gb/p/8806097671763": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/celular-samsung-galaxy-s25-fe-256gb-5g-azul-hielo-ram-8gb/p/8806097671602": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/celular-samsung-galaxy-s26-ultra-512gb-5g-negro-ram-12gb/p/8806097885306": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/computador-portatil-acer-aspire-lite-156-pulgadas-5634/p/4711474986160": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/computador-portatil-lenovo-ideapad-slim-3-14-pulgadas-oled/p/199276486547": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/computador-portatil-asus-vivobook-go-156-pulgadas-e1504ta/p/4711636576710": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/computador-portatil-hp-15-pulgadas-fc0287la-amd-ryzen-7/p/199642458734": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/computador-portatil-hp-15-pulgadas-fd1151la-tactil-intel/p/826581474418": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/computador-portatil-asus-vivobook-156-pulgadas-x1504ma/p/4711636625630": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/computador-portatil-asus-vivobook-16-x1607ca-intel-core/p/4711636618045": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/computador-portatil-lenovo-idepad-slim-3-156-pulgadas/p/199276612137": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/computador-portatil-hp-15-pulgadas-fd0131la-tactil-intel/p/198990787213": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/computador-portatil-acer-aspire-156-pulgadas-r5tw-amd/p/4711474986115": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/computador-portatil-asus-vivobook-156-pulgadas-x1504ma/p/4711636619851": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/computador-portatil-acer-aspire-156-pulgadas-r251-amd/p/4711474986085": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/computador-portatil-lenovo-156-pulgadas-ideapad-slim-3-amd/p/196804839974": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/computador-portatil-acer-aspire-14-pulgadas-30cl-intel/p/4711474459503": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/computador-portatil-lenovo-ideapad-slim-3-153-pulgadas/p/198155958762": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/computador-portatil-hp-14-pulgadas-dq6213la-intel-celeron/p/199764881830": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/computador-portatil-lenovo-ideapad-slim-3-14-pulgadas-oled/p/199276692870": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/computador-portatil-asus-vivobook-s-14-pulgadas-s5406a/p/4711636595759": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/computador-portatil-acer-travelmate-14-pulgadas-586g-intel/p/4711121995538": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/computador-portatil-lenovo-ideapad-slim-3-156-pulgadas/p/828132113647": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/computador-portatil-lenovo-ideapad-slim-3-153-pulgadas/p/199273970094": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/computador-portatil-lenovo-14-pulgadas-yoga-slim-7-intel/p/199273234035": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/computador-portatil-hp-15-pulgadas-fc0353la-amd-ryzen-5/p/821844146996": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/computador-portatil-2-en-1-lenovo-ideapad-5-14-pulgadas/p/199276735805": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/computador-portatil-lenovo-ideapad-slim-3-156-pulgadas-amd/p/199271606797": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/tv-kalley-60-pulgadas-1524-cm-60gq400-4k-uhd-qled-smart-tv/p/7705946474559": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/tv-tcl-55-pulgadas-139-cm-55t6c-4k-uhd-qled-tv-smart-tv/p/6937574879524": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/tv-tcl-98-pulgadas-2489-cm-98p8l-4k-uhd-qd-miniled-smart/p/6937574851803": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/tv-lg-58-pulgadas-147-cm-58nu850bpsd-nano-4k-uhd-led-smart/p/8806096940624": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/tv-lg-70-pulgadas-177-cm-70nu850bpsd-nano-4k-uhd-led-smart/p/8806096846483": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/tv-tcl-50-pulgadas-127-cm-50s5k-fhd-qled-smart-tv-google/p/6937574810107": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/tv-samsung-55-pulgadas-1397-cm-55u8000h-4k-uhd-led-crystal/p/8806097977766": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/tv-kalley-55-pulgadas-138-cm-55g315a-4k-uhd-max-led-smart/p/7705946481526": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/tv-challenger-55-pulgadas-139-cm-55tg2770-4k-uhd-led-smart/p/7705191047652": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/tv-kalley-43-pulgadas-108-cm-43gq200a-fhd-qled-smart-tv/p/7705946481403": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/tv-samsung-75-pulgadas-1905-cm-75m80h-4k-uhd-mini-led/p/8806097999195": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/tv-samsung-65-pulgadas-1651-cm-65m75h-4k-uhd-mini-led/p/8806099320263": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/tv-samsung-65-pulgadas-1651-cm-65u8000h-4k-uhd-led-crystal/p/8806097978336": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/tv-tcl-65-pulgadas-165-cm-65p7l-4k-uhd-qled-tv-smart-tv/p/6937574837555": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/tv-samsung-55-pulgadas-1397-cm-55m75h-4k-uhd-mini-led/p/8806099320256": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/tv-lg-55-pulgadas-139-cm-55qned70bsa-4k-uhd-qned-mini-led/p/8806096940617": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/tv-kalley-50-pulgadas-126-cm-50g315a-4k-uhd-max-led-smart/p/7705946481519": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/tv-challenger-43-pulgadas-108-cm-43kg90-fhd-led-smart-tv/p/7705191046365": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/tv-kalley-40-pulgadas-1004-cm-40gq200-fhd-qled-smart-tv/p/7705946480314": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/tv-kalley-70-pulgadas-177-cm-70gq405-4k-uhd-qled-smart-tv/p/7705946479738": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/tv-lg-55-pulgadas-139-cm-55qned80bsg-4k-uhd-qned-mini-led/p/8806096729786": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/tv-hyundai-50-pulgadas-127cm-hyled5030qg-4k-uhd-qled-barra/p/7707138008214": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/tv-samsung-70-pulgadas-1778-cm-70u8500h-4k-uhd-led-crystal/p/8806097953401": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/tv-kalley-55-pulgadas-139-cm-55gq405-4k-uhd-qled-smart-tv/p/7705946479714": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/tv-hyundai-60-pulgadas-1524cm-hyled6005qg-4k-uhd-qled/p/7707138062209": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/licuadora-ninja-clasica-be200laa-negra/p/622356304917": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/licuadora-ninja-profesional-bl610-negro/p/622356536820": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/licuadora-oster-vortex-plus-motor-1200-watts-vaso-vidrio/p/053891181129": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/licuadora-oster-clasica-blst4655-700w-plateado/p/053891140294": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/licuadora-black-decker-durapro-blbd210gb-negro/p/050875820029": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/licuadora-imusa-infiny-force-10-velocidades-vaso-vidrio/p/7702073108562": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/licuadora-ninja-detect-pro-tb-301-negra/p/622356603713": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/licuadora-bn801-tecnologia-auto-iq-ninja-5-funciones/p/622356561914": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/licuadora-imusa-powermix-glass-5-velocidades-funcion-pulso/p/7702073283856": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/licuadora-black-decker-ice-crush-125-litros-bl2209gbb/p/050875005938": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/licuadora-imusa-infiny-force-xl-12-velocidades-vaso-vidrio/p/7702073221568": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/licuadora-oster-xtreme-mix-profesional-negro/p/053891175685": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/licuadora-imusa-ultraforce-2-velocidades-vaso-vidrio-22/p/7702073342409": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/licuadora-kalley-k-lpv40-blanco/p/7701023115827": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/licuadora-kalley-k-b15mav-acero-inoxidable/p/7701023282819": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/licuadora-ninja-portatil-inalambrica-blast-max-gris/p/622356651295": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/licuadora-imusa-ultraforce-8-velocidades-1000-watts-vaso/p/7702073034823": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/licuadora-profesional-imusa-ultraforce-2x-negra-picatodo/p/3016667292617": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/licuadora-oster-touch-screen-reversible-1000w-vaso/p/053891169264": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/licuadora-kitchenaid-pure-power-2-litros-gris/p/883049925554": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/licuadora-oster-xpert-textura-niquelada/p/053891143066": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/licuadora-universal-l50886-15-litros-300-watts-vital-glass/p/7702561508867": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/licuadora-oster-2174280-600w-negro/p/053891168441": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/licuadora-kalley-cromada-125-litros-k-lc-plateada/p/7705946475921": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/licuadora-mano-kalley-k-lim-negra/p/7700149249836": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/aspiradora-robotica-trapeadora-kalley-k-marb-2-en-1-negro/p/7700149168397": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/aspiradora-robotica-trapeador-xiaomi-mi-robot-vacuum-s40/p/6932554446970": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/aspiradora-robotica-trapeadora-xiaomi-robot-vacuum-h50-us/p/6932554469085": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/aspiradora-robotica-trapeadora-electrolux-4-en-1-erb62/p/7909569501672": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/aspiradora-robotica-kalley-k-marg-2-en-1-negro/p/7705946481250": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/aspiradora-robotica-trapeadora-xiaomi-robot-vacuum-h40-us/p/6932554432409": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/aspiradora-robotica-trapeadora-xiaomi-robot-vacuum-s40c-us/p/6941812701843": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/aspiradora-robotica-trapeadora-electrolux-4-en-1-con/p/7909569491522": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/aspiradora-robotica-trapeadora-xiaomi-robot-vacuum-s40-us/p/6932554440923": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/aspiradora-robotica-trapeadora-samsung-2-en-1-vr3mb77312k/p/8806095452272": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/aspiradora-robotica-karcher-rvc-1-blanca/p/7891374302011": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/aspiradora-robotica-samsung-robotica-2-en-1-vr05r5050wk/p/8806092876972": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/aspiradora-electrolux-robotica-pure-i-92-negro/p/7896347184304": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/aspiradora-electrolux-trapeadora-robot-4-en-1-erb44-azul/p/7909569491454": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/aspiradora-xiaomi-mi-robot-vacuum-e5-blanco/p/6941812769454": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/combo-karcher-hidrolavadora-k4-aspiradora-robot-rcv1/p/4039784362970": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/bloques-armar-lego-city-moto-acrobatica-fuego/p/673419346948": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/set-4-cuchillos-bloque-madera-afilador-imusa-talent/p/7702073611956": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/arco-futbol-umbro-mini-lega/p/7707118708844": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/piscina-inflable-bestway-big-lagoon-familiar-262-x-157-x/p/6942138913217": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/rompecabezas-ronda-obras-arte-mona-lisa-leonardo-da-vinci/p/000673124294": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/muneca-monster-high-lagoona-con-accesorios/p/194735069798": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/peluche-simba-adulto-disney-rey-leon/p/7453008119947": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/peluche-mufasa-disney-rey-leon/p/7453008116847": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/peluche-simba-bebe-disney-rey-leon/p/7453008116816": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/peluche-reditoys-leoncito-soft/p/6922011224791": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/figura-accion-dc-comics-superman-legacy-30-cm/p/681147068759": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/peluche-animales-linzy-toys-disfrazado-leon-marino-38-cm/p/619470645033": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/peluche-nala-disney-rey-leon/p/7453008119954": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/rompecabezas-ronda-leon-56-piezas/p/683828625626": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/figura-accion-marvel-comandante-rogers-legends-series/p/5010993978212": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/tablet-lenovo-11-pulgadas-idea-tab-8gb-128gb-wifi-gris/p/198157015135": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/tablet-lenovo-10-pulgadas-tab-10-128gb-wifi-gris/p/198154998615": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/computador-all-in-one-lenovo-ideacentre-aio-238-pulgadas/p/199272292906": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/computador-all-in-one-lenovo-238-pulgadas-a100-intel-core/p/199273239696": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/tablet-lenovo-121-pulgadas-idea-tab-plus-256gb-wifi--gris/p/199271877722": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/computador-all-in-one-lenovo-238-pulgadas-a100-intel-n100/p/199273239672": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/secador-cabello-remington-ac9140-prothermaluxe-blanco/p/074590544572": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/secador-cabello-remington-sapphire-luxe-d5805-azul-marino/p/074590557671": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/secador-cabello-remington-one-d31a-110-negro/p/074590557299": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/secador-cabello-gama-tempo-3d-blue/p/8023277156579": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/secador-cabello-remington-keratine-ac8820-oro-rosa/p/074590549843": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/secador-cabello-philips-bhc010-plegable-rosado/p/8710103749592": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/secador-cabello-remington-gloss-ac9350-morado/p/074590558739": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/secador-cabello-remington-airvive-morado/p/074590558692": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/secador-cabello-remington-colageno-biotina-d26a-110f-gris/p/074590557145": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/secador-cabello-remington-d5000-negro/p/074590508604": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/secador-cabello-gama-tempo-avocado/p/8023277156593": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/secador-cabello-almond-allure-remington-d4807-rosado/p/074590560275": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/secador-cabello-remington-aguacate-macadamia-d13a-negro/p/074590553468": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/secador-cabello-remington-ac8607-verde/p/074590552119": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/secador-cabello-remington-botanicals-d27a-verde/p/074590556803": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/secador-cabello-gama-5d-marula-rosado/p/8023277135710": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/secador-cabello-one-remington-ec6077-gris/p/074590560039": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/secador-cabello-conair-650al-con-infusion-hialuronica-azul/p/074108501189": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/secador-cabello-conair-2-en-1-antifrizz-free-flex-756l/p/074108490278": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/secador-cabello-coco-remington-d5901-rosado/p/074590556988": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/plancha-cabello-remington-s8599-keratina-dorado/p/074590517804": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/multiestilizador-gama-uniq-flow-x-6-acc-gris/p/8023277178595": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/cepillo-multiestilizador-remington-keratina-aceite-argan/p/074590558333": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/cepillo-wet2style-remington-as15a-rosado/p/074590555318": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/plancha-cabello-remington-protherma-rosado/p/074590544541": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/consola-ps5-estandar-1tb-hw-2115-1-control-inalambrico/p/711719023937": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/consola-ps5-digital-825-gb-hw-2115-1-control-inalambrico/p/711719023760": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/consola-nintendo-switch-2-mario-kart-world-bundle/p/045496886752": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/consola-nintendo-switch-modelo-oled-blanco-negro-juego/p/045496885496": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/consola-asus-7-rog-xbox-ally-rc73ya-amd-z2-a-ram-16gb/p/4711636158688": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/consola-nintendo-switch-con-joy-con-azul-negro-rojo-neon/p/045496885380": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/consola-nintendo-switch-2-ea-sports-fc-27-digital/p/045496886981": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/consolas-asus-74-rog-xbox-ally-x20-rc74xa-ai-z2-extreme/p/4711636746595": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/consola-lenovo-legion-go-8-pulgadas-amd-z2-go-ram-16gb/p/198157043251": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/reproductor-remoto-playstation-portal-consola-ps5/p/711719579823": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/unidad-disco-playstation-consola-ps5-digital-slim-blanco/p/711719579106": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/base-vertical-ps5-consola-slim-negro-plateado/p/711719578918": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/cafetera-expreso-ninja-luxe-es601-plateado/p/622356635165": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/cafetera-expreso-krups-coffee-crush-experience-automatica/p/010942229599": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/cafetera-basica-kalley-10-tazas-k-cn10-negro/p/7700149296885": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/cafetera-expreso-kalley-k-ex-negra/p/7705946997089": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/cafetera-percoladora-hamilton-beach-45-tazas-doble/p/040094405183": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/cafetera-black-decker-termica-12-tazas-cm2046s-negro/p/050875828247": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/cafetera-imusa-programable-filtro-14-tazas-grand-cafe/p/3045380029361": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/cafetera-expreso-krups-essential-negra/p/010942219569": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/cafetera-oster-12-tazas-2217256-negro/p/053891178648": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/cafetera-imusa-cafe-city-6-tazas-negra/p/3016661146749": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/cafetera-kalley-12-tazas-k-cm500k-negro/p/7701023046640": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/cafetera-expreso-oster-vapor-espresso-cappuccino-negra/p/053891175142": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/cafetera-expreso-krups-evidence-one-negra/p/010942227182": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/cafetera-kalley-digital-12-tazas-k-mcd-negro/p/7705946978873": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/cafetera-expreso-black-decker-em0412-cafe-crema-plateado/p/050875005839": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/cafetera-black-decker-5-tazas-cm0701b-negro/p/050875828520": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/cafetera-black-decker-12-tazas-cm0322-negro/p/050875005273": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/cafetera-oster-bvstdc4403-programable-12-tazas-con/p/053891174602": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/cafetera-oster-5-tazas-2217254-negro/p/053891178594": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/cafetera-black-decker-12-tazas-cm0021-negro/p/050875005242": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/cafetera-expreso-imusa-subito-4-tazas-negro/p/3016661177682": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/cafetera-kalley-10-tazas-digital-k-mcmd-negro/p/7705946475563": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/cafetera-imusa-cafe-city-xl-12-tazas-negra/p/3045380021181": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/cafetera-oster-expreso-perfect-brew-compacta-con-bomba/p/053891176576": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/tablet-samsung-109-pulgadas-tab-s10-lite-128gb-wifi-gris/p/8806097665427": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/tablet-tcl-122-pulgadas-tab-a1-plus-128gb-wifi-azul/p/4894461975047": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/tablet-tcl-122-pulgadas-tab-a1-plus-nxtpaper-256gb-wifi/p/4894827004343": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/tablet-samsung-11-pulgadas-tab-a11-256gb-wifi-gris/p/8806097886808": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/tablet-tcl-101-pulgadas-tab10l-gen4-128gb-wifi-negro/p/4894461847764": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/tablet-samsung-124-pulgadas-s10-256gb-wifi-gris/p/8806095642475": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/tablet-kalley-note-lite-10-pulgadas-128-gb-wifi-negro/p/7705946481489": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/tablet-lenovo-13-pulgadas-idea-tab-pro-gen-2-256gb-wifi/p/199273488537": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/tablet-redmi-11-pulgadas-pad-2-128gb-wifi-gris/p/6932554444525": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/tablet-kalley-11-pulgadas-flextab-256gb-wifi-gris/p/7705946480741": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/tablet-lenovo-87-pulgadas-tab-one-4gb-128gb-lte-gris/p/198156391483": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/tablet-samsung-87-pulgadas-tab-a11-128gb-wifi-gris/p/8806097808077": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/tablet-honor-121-pulgadas-pad-10-256gb-wifi-gris/p/6936520871353": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/tablet-lenovo-87-pulgadas-tab-one-4gb-128gb-wifi-verde/p/198156391339": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/tablet-honor-11-pulgadas-pad-x8b-128gb-wifi-gris/p/6936520890903": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/tablet-tcl-14-pulgadas-tab14-256gb-wifi-color-gris/p/4894461992846": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/tablet-huawei-matepad-se-11-pulgadas-8gb-128gb-wifi-gris-s/p/7708803796368": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/tablet-samsung-109-pulgadas-s10-fe-128gb-azul-claro/p/8806097407690": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/tablet-samsung-galaxy-s12-256gb-wi-fi-gris/p/8806099441371": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/tablet-huawei-115-pulgadas-matepad-se-8gb-256gb-wifi-gris/p/7708803796047": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/tablet-samsung-109-pulgadas-s10-fe-128gb-gris/p/8806097213840": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  },
+  "/tablet-redmi-11-pulgadas-pad-2-256gb-wifi-gris/p/6932554434892": {
+   "status": 200,
+   "has_main": true,
+   "banner_txt": "",
+   "banner_img": "",
+   "seller_text": null,
+   "special": false
+  }
+ }
+}
