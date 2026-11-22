@@ -69,3 +69,13 @@ Las cifras de tráfico de ese documento no están verificadas: no se guardan com
 - [ ] Ajustar el flujo de categorías para que al elegir una categoría enfoque la búsqueda de un producto dentro de ella, sin desplegar listados de catálogo.
 - [ ] Validar visualmente la rama en una vista previa antes de autorizar cualquier publicación.
 - **Regla:** no modificar main, no fusionar ni desplegar a producción sin aprobación expresa de Ana.
+
+
+## Selección editorial semanal de la portada — decisión de Ana (22 nov 2026)
+- [x] Eliminar los contadores públicos de productos «más baratos», «mismo precio» y «sin comparar» como métricas de volumen.
+- [x] No mostrar listados generales ni catálogos de productos. Los productos sin comparación y los de mismo precio quedan fuera de las selecciones públicas.
+- [ ] Mostrar una selección semanal de **15 productos**: gangazos reales demostrables y descuentos inflados demostrables («¡Cazamos una mentira!»). Cada ficha abre el detalle con el producto, el veredicto y las pruebas.
+- [ ] Mostrar una segunda selección semanal de **mínimo 5 productos** cuya misma referencia esté comprobablemente más barata en otra tienda. Cada ficha abre su comparación y evidencia.
+- [ ] Actualizar ambas selecciones una vez por semana. La selección debe ser editorial y revisada; no llenar cupos con productos sin pruebas.
+- **Regla de evidencia:** no llamar «descuento inflado» a un precio solo porque el precio anterior no coincide con otras tiendas. Debe existir respaldo verificable (historial o evidencia equivalente). Si no lo hay, no se publica como mentira.
+- **Regla de publicación:** los conteos de productos iguales o sin comparar no se muestran en portada ni generan secciones públicas.
