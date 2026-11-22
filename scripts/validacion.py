@@ -95,6 +95,9 @@ def validar_por_canal(comercio_id, chequeo, identidades, hoy, condicion_producto
         return dict(base, motivo="No hay evidencia corporativa del canal vigente para este comercio.")
     if not chequeo or chequeo.get("error") or chequeo.get("status") != 200 or not chequeo.get("has_main"):
         return dict(base, motivo="No se pudo leer la ficha del producto: no se puede determinar quién vende.")
+    # La ficha se revisa en cada actualización; no se reutiliza evidencia de días anteriores.
+    if chequeo.get("fecha") != hoy:
+        return dict(base, motivo="La revisión de esta ficha no corresponde a la fecha de actualización; se requiere una lectura nueva.")
     st = chequeo.get("seller_text")
     if st:
         m = re.search(r"(?:vendido\s+(?:y\s+despachado\s+)?por|proveedor:?|vendedor:?)\s+([A-Za-zÁÉÍÓÚáéíóúÑñ0-9 .&+-]{2,60})", st, re.I)
@@ -107,11 +110,9 @@ def validar_por_canal(comercio_id, chequeo, identidades, hoy, condicion_producto
     if (chequeo.get("special") or condicion_producto == "no_nuevo"
             or RX_SECCION_ESPECIAL.search(norm_text((chequeo.get("h1") or "") + " " + " ".join(chequeo.get("crumbs") or [])))):
         return dict(base, revision_individual=True, motivo="Reacondicionado, exhibición o sección especial: requiere revisión individual.")
-    hoy_d = datetime.date.fromisoformat(hoy)
     return {
         "tipo": "retailer", "estado_validacion": "validado", "metodo": METODO_CANAL,
         "nivel_evidencia": NIVEL_CANAL, "validado_en": hoy,
-        "revalidar_antes_de": min(canal["revalidar_antes_de"], (hoy_d + datetime.timedelta(days=90)).isoformat()),
         "vendedor_real": {"razon_social": ident["razon_social"], "nit": ident["nit"]},
         "motivo": "La ficha no indica otro vendedor, el banner principal está vacío y es producto nuevo de venta ordinaria; "
                   "el contrato del canal nombra a la razón social como proveedor.",
