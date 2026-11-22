@@ -174,6 +174,23 @@ section{padding:30px 0}
 .aviso-card b{font-family:var(--head);font-size:19px;font-weight:900;color:var(--petroleo)}
 .aviso-card b mark{background:var(--turquesa-soft);color:var(--petroleo);border-radius:8px;padding:0 6px}
 .aviso-card p{margin:4px 0 0;color:var(--ink);opacity:.82;font-size:15px}
+/* Identidad del proyecto (como "Únete a los Cazadores"): degradado azul petróleo, títulos blancos, resaltado dorado, acento turquesa */
+.radar-panel,.aviso-card{background:linear-gradient(90deg,var(--petroleo),var(--petroleo-3));border:0;box-shadow:var(--sh)}
+.radar-panel::before{filter:brightness(0) invert(1);opacity:.07}
+.radar-panel::after{filter:brightness(0) invert(1);opacity:.09}
+.radar-panel.compact::before{opacity:.07}.radar-panel.compact::after{opacity:.09}
+.rh-target{color:var(--turquesa)}
+.rh-div{background:var(--turquesa);opacity:.9}
+.rh-text h2{color:#fff}
+.rh-text h2 mark{background:none;color:var(--dorado);padding:0}
+.rh-text p{color:#d7ecec}
+.rh-text p mark{background:none;color:#fff;font-weight:800;padding:0}
+.rh-link{color:var(--dorado)}
+.aviso-card .r-ico{background:rgba(255,255,255,.1);color:var(--turquesa)}
+.aviso-card b{color:#fff}
+.aviso-card b mark{background:none;color:var(--dorado);padding:0}
+.aviso-card p{color:#d7ecec;opacity:1}
+.aviso-card a{color:var(--dorado);font-weight:800}
 .reglas{position:relative;z-index:1;list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
 .reglas li{--acento:var(--petroleo);background:#fff;border-radius:18px;padding:12px 14px 12px;box-shadow:0 8px 18px rgba(11,53,64,.07),0 5px 0 var(--acento)}
 .reglas li.r2{--acento:var(--turquesa)}
@@ -466,8 +483,8 @@ footer p{margin:0 0 8px;max-width:900px}
         <p>Aquí solo aparece un producto cuando lo encontramos <mark>exactamente igual</mark> en otra tienda y aquí cuesta menos. <a class="rh-link" href="#como-comparamos">Así comparamos</a></p>
       </div>
       <svg class="rh-bag" viewBox="0 0 120 120" aria-hidden="true">
-        <g stroke="#0E9C9C" stroke-width="5" stroke-linecap="round" fill="none"><path d="M14 36 26 42M22 18l9 13M40 8l3 15"/></g>
-        <path d="M52 40c0-14 9-22 20-22s20 8 20 22" fill="none" stroke="#0B3540" stroke-width="7" stroke-linecap="round"/>
+        <g stroke="#FFC400" stroke-width="5" stroke-linecap="round" fill="none"><path d="M14 36 26 42M22 18l9 13M40 8l3 15"/></g>
+        <path d="M52 40c0-14 9-22 20-22s20 8 20 22" fill="none" stroke="#FFFFFF" stroke-width="7" stroke-linecap="round"/>
         <g transform="rotate(10 72 75)"><rect x="36" y="38" width="72" height="70" rx="10" fill="#0E9C9C"/><rect x="36" y="38" width="72" height="16" rx="8" fill="#14B8B8"/>
         <text x="72" y="96" text-anchor="middle" font-family="Nunito,system-ui,sans-serif" font-weight="900" font-size="38" fill="#fff">%</text></g>
       </svg>
