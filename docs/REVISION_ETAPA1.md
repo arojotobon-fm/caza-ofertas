@@ -15,9 +15,14 @@ Rama: `etapa-1-modelo-datos` (no está publicada; `main` y el sitio no cambiaron
 
 ## Reproducir (opcional, en un computador con Python 3)
 ```
-python3 -m unittest discover -s tests -v      # 37 pruebas: comparador, validación, pendientes, condiciones de pago y datos migrados
+python3 -m unittest discover -s tests -v      # 42 pruebas: comparador, validación, datos migrados y captura selectiva
 python3 scripts/migrar_v1_a_v2.py             # regenera data/v2 y verifica que no se pierda nada
 ```
 
 ## Único cambio visible en la página
 Los textos de las etiquetas ahora son los aprobados: "DESCUENTO DE VITRINA" y "POSIBLE ERROR DE PRECIO". Solo se verán cuando se publique la rama.
+
+
+## Captura selectiva de Alkosto
+
+Se agregó `scripts/captura_selectiva.py` con ejecución protegida por `--capturar`, validación HTTPS del dominio y de las redirecciones, lectura de Schema.org/metadatos y extracción tentativa del campo visible “Código”. Incluye cinco pruebas unitarias. La captura de la ficha probada devolvió campos nulos porque Alkosto carga contenido dinámicamente; por eso el resultado siempre exige revisión humana y no se incorpora automáticamente al catálogo.
