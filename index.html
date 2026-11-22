@@ -297,6 +297,43 @@ section{padding:30px 0}
 .other a,.other div.li{display:flex;gap:8px;align-items:center;font-size:14.5px;padding:3px 0;text-decoration:none;color:var(--ink);cursor:pointer;background:none;border:0;font-family:inherit}
 .other .ico{width:18px;height:18px;color:var(--petroleo)}
 
+/* ---------- Calculadora inteligente de compra ---------- */
+.sim-cta{margin-top:8px;border-top:1px dashed var(--line);padding-top:8px}
+.sim-cta p{margin:0 0 6px;font-size:12.5px;color:var(--muted);line-height:1.35}
+.sim-btn{width:100%;display:flex;align-items:center;justify-content:center;gap:6px;border:2px solid var(--petroleo);background:#fff;color:var(--petroleo);border-radius:12px;padding:8px 10px;font-family:var(--head);font-weight:900;font-size:13px;letter-spacing:.02em;cursor:pointer}
+.sim-btn:hover{background:var(--petroleo);color:#fff}
+.sim-btn .ico{width:16px;height:16px}
+.feat-actions .sim-btn{width:auto;padding:10px 16px}
+.modal-box.sim-box{max-width:780px;text-align:left;padding:0;max-height:calc(100vh - 40px);overflow-y:auto}
+.sim-head{background:linear-gradient(90deg,var(--petroleo),var(--petroleo-3));color:#fff;padding:18px 54px 16px 22px}
+.sim-box .sim-head h3{color:#fff;font-size:22px;margin:0}.sim-box .sim-head h3 mark{background:none;color:var(--dorado)}
+.sim-box .sim-head p{color:#d7ecec;font-size:13.5px;margin:4px 0 0}
+.modal-box.sim-box .modal-x{background:rgba(255,255,255,.12);color:#fff;border-color:rgba(255,255,255,.25)}
+.sim-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:18px;padding:18px 22px}
+.sim-form label{display:block;font-size:13px;font-weight:800;color:var(--petroleo);margin:10px 0 4px;font-family:var(--head)}
+.sim-form label:first-child{margin-top:0}
+.sim-form input,.sim-form select{width:100%;border:1px solid var(--line);border-radius:10px;padding:9px 10px;font:inherit;font-size:14px;background:#fff;color:var(--ink)}
+.sim-form small{display:block;color:var(--muted);font-size:11.5px;margin-top:3px;line-height:1.35}
+.sim-cuotas{display:flex;flex-wrap:wrap;gap:6px}
+.sim-cuotas button{flex:1 0 auto;min-width:44px;border:1px solid var(--line);background:#fff;border-radius:10px;padding:7px 6px;font-weight:800;cursor:pointer;color:var(--petroleo)}
+.sim-cuotas button.on{background:var(--petroleo);color:#fff;border-color:var(--petroleo)}
+.sim-form [hidden]{display:none!important}
+.sim-link{display:block;text-align:left;border:0;background:none;color:var(--turquesa-2);font-weight:800;font-size:12px;padding:0;cursor:pointer;text-decoration:underline;margin-top:4px}
+.sim-form .sim-check{display:flex;gap:8px;align-items:flex-start;font-size:12.5px;font-weight:600;font-family:var(--body);color:var(--ink);margin-top:8px}
+.sim-check input{width:auto;margin-top:2px}
+.sim-res{background:#F4FBFA;border:1px solid #D6EFEC;border-radius:18px;padding:16px;align-self:start}
+.sim-res h4{font-family:var(--head);font-size:16px;font-weight:900;letter-spacing:.04em;color:var(--petroleo);margin:0 0 10px}
+.sim-res dl{margin:0;display:grid;grid-template-columns:1fr auto;gap:6px 10px;font-size:14px}
+.sim-res dt{color:var(--muted)}.sim-res dd{margin:0;font-weight:800;color:var(--ink);text-align:right}
+.sim-res .tot{border-top:1px solid var(--line);padding-top:8px;margin-top:2px;font-size:15px;color:var(--petroleo)}
+.sim-extra{margin-top:12px;background:var(--petroleo);color:#fff;border-radius:14px;padding:12px 14px}
+.sim-extra b{display:block;color:var(--dorado);font-family:var(--head);font-size:22px;font-weight:900}
+.sim-extra span{font-size:13px;color:#d7ecec}
+.sim-box .sim-tip{margin:10px 0 0;font-size:13px;color:var(--ink);line-height:1.45}
+.sim-est{display:inline-block;background:var(--ambar-bg);color:var(--ambar);border-radius:999px;padding:2px 8px;font-size:11px;font-weight:900;margin-left:6px;vertical-align:middle}
+.sim-box .sim-warn{margin:8px 0 0;font-size:12px;color:var(--rojo);font-weight:700}
+.sim-box .sim-legal{padding:0 22px 18px;margin:0;font-size:11.5px;color:var(--muted);line-height:1.45}
+@media (max-width:640px){.sim-grid{grid-template-columns:1fr;padding:14px}.sim-head{padding:16px 50px 14px 16px}.sim-box .sim-legal{padding:0 14px 14px}}
 .modal{position:fixed;inset:0;z-index:80;background:rgba(7,40,49,.7);display:none;align-items:center;justify-content:center;padding:20px}
 .modal.on{display:flex}
 .modal-box{background:#fff;border-radius:var(--r-lg);max-width:380px;width:100%;padding:20px;text-align:center;position:relative;box-shadow:var(--sh-lg)}
@@ -581,6 +618,45 @@ footer p{margin:0 0 8px;max-width:900px}
   <p><b>Importante:</b> los precios y la disponibilidad son de cada tienda y pueden cambiar en cualquier momento. Cazadores de Ofertas no vende productos: solo compara y comparte. Antes de comprar, revisa en la tienda el precio, si hay unidades y con qué medio de pago aplica.</p>
   <p id="como-comparamos"><b>Cómo comparamos:</b> buscamos el mismo producto (misma marca y referencia) en otras tiendas, el mismo día y con el precio que paga cualquier persona, sin tarjeta de la tienda. Los precios con tarjeta, financiados o con plan los mostramos aparte. El precio "antes" que pone la tienda no cuenta para comparar. Solo comparamos las tiendas que revisamos, no todo el mercado. Si solo lo encontramos en 2 tiendas, te lo decimos. Alkosto, Ktronix y Alkomprar son de la misma empresa: las contamos como una sola tienda. Más barato no siempre quiere decir que esté en oferta. Las imágenes y marcas de los productos pertenecen a sus dueños y se muestran desde la tienda que los vende.</p>
 </footer></div>
+<div class="modal" id="simModal" role="dialog" aria-modal="true" aria-labelledby="simTitle">
+  <div class="modal-box sim-box">
+    <button class="modal-x" id="simClose" aria-label="Cerrar">×</button>
+    <div class="sim-head"><h3 id="simTitle">Calculadora <mark>inteligente de compra</mark></h3><p id="simProd"></p></div>
+    <div class="sim-grid">
+      <form class="sim-form" id="simForm" autocomplete="off" onsubmit="return false">
+        <label for="simPrecio">Precio de contado</label>
+        <input id="simPrecio" type="text" inputmode="numeric">
+        <small id="simPrecioNota">Lo tomamos del producto. Puedes cambiarlo.</small>
+        <label for="simEnt">Entidad o tarjeta</label>
+        <select id="simEnt">
+          <option value="">Elige tu tarjeta</option>
+          <option>Bancolombia</option><option>Davivienda</option><option>Nu</option><option>Banco de Bogotá</option><option>BBVA</option>
+          <option data-tienda="Éxito">Tarjeta Éxito</option><option data-tienda="Falabella">Tarjeta Falabella (CMR)</option><option data-tienda="Alkosto,Ktronix">Tarjeta Alkosto</option>
+          <option value="otra">Otra tarjeta</option>
+        </select>
+        <small id="simEntNota">No pedimos números de tarjeta ni claves. Escribe tú las condiciones de tu tarjeta: cada una es distinta.</small>
+        <label class="sim-check" id="simTiendaBox" hidden><input type="checkbox" id="simUsarTienda"><span id="simTiendaTxt"></span></label>
+        <label>Número de cuotas</label>
+        <div class="sim-cuotas" id="simCuotas"><button type="button" data-n="1">1</button><button type="button" data-n="3">3</button><button type="button" data-n="6">6</button><button type="button" data-n="12" class="on">12</button><button type="button" data-n="18">18</button><button type="button" data-n="24">24</button><button type="button" data-n="36">36</button></div>
+        <label class="sim-check" id="simUnaBox" hidden><input type="checkbox" id="simUna"><span>Mi tarjeta cobra intereses en compras a 1 cuota. <em>Muchas no los cobran, pero confírmalo con tu entidad.</em></span></label>
+        <label for="simTasa">Tasa de interés efectiva anual (E.A.) %</label>
+        <input id="simTasa" type="text" inputmode="decimal" placeholder="Ej: 26,5">
+        <small>Búscala en tu extracto o en la app de tu banco.</small>
+        <button type="button" class="sim-link" id="simUsura">Usar el tope legal de noviembre de 2026 (28,34 % E.A.) como peor escenario</button>
+        <label for="simManejo">Cuota de manejo mensual</label>
+        <input id="simManejo" type="text" inputmode="numeric" placeholder="$0">
+        <small>Se suma por cada mes que dure el crédito. Si tu tarjeta no tiene, déjalo en $0.</small>
+        <label for="simSeguro">Seguros mensuales</label>
+        <input id="simSeguro" type="text" inputmode="numeric" placeholder="$0">
+        <label for="simOtros">Otros cargos (una sola vez)</label>
+        <input id="simOtros" type="text" inputmode="numeric" placeholder="$0">
+      </form>
+      <div class="sim-res" id="simRes" aria-live="polite"></div>
+    </div>
+    <p class="sim-legal">Esto es una simulación con cuotas fijas (amortización francesa) a partir de la tasa E.A. que escribas, convertida a tasa mensual: (1 + E.A.)<sup>1/12</sup> − 1. No es asesoría financiera ni una oferta de crédito. Las tasas, la cuota de manejo, los seguros y los cargos dependen de cada entidad y de cada cliente: confírmalos con quien emite tu tarjeta. No guardamos lo que escribes aquí. Tope de usura de noviembre de 2026 para crédito de consumo: 28,34 % E.A. (Superintendencia Financiera, Resolución 1707 de 2026).</p>
+  </div>
+</div>
+
 <div class="modal" id="donModal" role="dialog" aria-modal="true" aria-labelledby="donTitle">
   <div class="modal-box">
     <button class="modal-x" id="donClose" aria-label="Cerrar">×</button>
@@ -662,6 +738,7 @@ function voteBox(p){
 }
 document.addEventListener("click", async e => {
   const f = e.target.closest("[data-fav]"); if (f) { e.preventDefault(); toggleFav(f.dataset.fav); return; }
+  const sb = e.target.closest("[data-sim]"); if (sb) { e.preventDefault(); abrirSimulador(sb.dataset.sim); return; }
   const b = e.target.closest(".vote button"); if (!b) return;
   const box = b.closest(".vote"), id = box.dataset.vote, v = b.dataset.v;
   if (v === "no") { box.querySelector(".pform").classList.add("on"); box.querySelector("input").focus(); return; }
@@ -703,10 +780,100 @@ function card(p, rank){
       <div class="stale-msg">Ojo, este precio puede haber cambiado. Revísalo en la tienda antes de comprar.</div>
       ${cs.html}
       <a class="btn" href="${esc(p.link)}" target="_blank" rel="noopener nofollow">¿Sigue a ese precio? Míralo en la tienda ${I("ext")}</a>
+      <div class="sim-cta"><p>¿Te gustó este producto? ¿Quieres saber cuánto pagarías si lo compras a cuotas?</p><button class="sim-btn" data-sim="${p.id}">${I("bars")}SIMULAR MI COMPRA</button></div>
       ${voteBox(p)}
     </div>
   </article>`;
 }
+
+/* ---------- Calculadora inteligente de compra ----------
+   Solo simula: no guarda datos, no pide información bancaria y no trae tasas de ninguna entidad.
+   Tasa mensual = (1 + E.A.)^(1/12) − 1. Cuota fija = P·i / (1 − (1 + i)^−n).                     */
+const USURA_EA = 28.34, USURA_MES = "noviembre de 2026";
+const SIM = { p: null, n: 12 };
+const numCOP = v => { const d = String(v || "").replace(/[^\d]/g, ""); return d ? parseInt(d, 10) : 0; };
+const numPct = v => { const t = String(v || "").trim().replace(/\s|%/g, "").replace(",", "."); const x = parseFloat(t); return isFinite(x) ? x : NaN; };
+const pct1 = x => x.toLocaleString("es-CO", {minimumFractionDigits: 1, maximumFractionDigits: 1}) + " %";
+function precioTarjetaTienda(p){
+  const m = (p.nota || "").match(/Con (?:tarjeta CMR|Tarjeta Alkosto|tarjeta Éxito): \$([\d.]+)/i);
+  return m ? numCOP(m[1]) : 0;
+}
+function simular({P, n, ea, interes1, manejo, seguro, otros}){
+  const i = Math.pow(1 + ea / 100, 1 / 12) - 1;
+  const sinInteres = (n === 1 && !interes1) || ea === 0;
+  const cuota = sinInteres ? P / n : P * i / (1 - Math.pow(1 + i, -n));
+  const intereses = sinInteres ? 0 : cuota * n - P;
+  const cManejo = manejo * n, cSeguros = seguro * n;
+  const total = P + intereses + cManejo + cSeguros + otros;
+  return { i, cuota, intereses, cManejo, cSeguros, otros, total, extra: total - P, extraPct: P ? (total - P) / P * 100 : 0, sinInteres };
+}
+function abrirSimulador(id){
+  let p = DATA.find(x => x.id === id); if (!p) return;
+  const base = p.condicion ? (DATA.find(x => x.link === p.link && !x.condicion) || p) : p;   // siempre el precio de contado
+  SIM.p = base;
+  $("#simProd").textContent = base.nombre + " · " + base.tienda;
+  $("#simPrecio").value = cop(base.precio);
+  $("#simPrecioNota").textContent = "Precio de contado en " + base.tienda + ", revisado " + ago(base.verificado) + ". Puedes cambiarlo.";
+  $("#simEnt").value = ""; $("#simTasa").value = ""; $("#simManejo").value = ""; $("#simSeguro").value = ""; $("#simOtros").value = "";
+  $("#simUsarTienda").checked = false; $("#simUna").checked = false; SIM.usura = false;
+  $("#simModal").classList.add("on"); calcularSim();
+}
+function calcularSim(){
+  const p = SIM.p; if (!p) return;
+  const ent = $("#simEnt"), opt = ent.options[ent.selectedIndex];
+  const tiendas = (opt && opt.dataset.tienda || "").split(",").filter(Boolean);
+  const pt = tiendas.includes(p.tienda) ? precioTarjetaTienda(p) : 0;
+  $("#simTiendaBox").hidden = !pt;
+  if (pt) $("#simTiendaTxt").textContent = "Usar el precio pagando con esta tarjeta en " + p.tienda + ": " + cop(pt) + " (de contado: " + cop(p.precio) + ")";
+  const usarTienda = pt && $("#simUsarTienda").checked;
+  const P = usarTienda ? pt : numCOP($("#simPrecio").value);
+  $("#simUnaBox").hidden = SIM.n !== 1;
+  const eaTxt = $("#simTasa").value, ea = numPct(eaTxt);
+  const res = $("#simRes");
+  if (!P) { res.innerHTML = `<h4>ASÍ QUEDARÍA TU COMPRA</h4><p class="sim-tip">Escribe el precio para empezar.</p>`; return; }
+  const necesitaTasa = !(SIM.n === 1 && !$("#simUna").checked);
+  if (necesitaTasa && !(ea >= 0)) {
+    res.innerHTML = `<h4>ASÍ QUEDARÍA TU COMPRA</h4><dl><dt>Precio de contado</dt><dd>${cop(P)}</dd><dt>Número de cuotas</dt><dd>${SIM.n}</dd></dl>
+      <p class="sim-tip">Escribe la <b>tasa E.A.</b> de tu tarjeta para ver cuánto pagarías. Si no la sabes, usa el tope legal de ${USURA_MES} como peor escenario.</p>`;
+    return;
+  }
+  const r = simular({P, n: SIM.n, ea: necesitaTasa ? ea : 0, interes1: $("#simUna").checked,
+                     manejo: numCOP($("#simManejo").value), seguro: numCOP($("#simSeguro").value), otros: numCOP($("#simOtros").value)});
+  const estimado = SIM.usura || !$("#simEnt").value;
+  const otrosCargos = r.cManejo + r.cSeguros + r.otros;
+  const tasaTxt = r.sinInteres ? "Sin intereses (1 cuota)" : pct1(ea) + " E.A. · " + (r.i * 100).toLocaleString("es-CO", {minimumFractionDigits: 2, maximumFractionDigits: 2}) + " % mensual";
+  res.innerHTML = `<h4>ASÍ QUEDARÍA TU COMPRA${estimado ? '<span class="sim-est">ESTIMADO</span>' : ""}</h4>
+    <dl>
+      <dt>Precio de contado</dt><dd>${cop(P)}</dd>
+      <dt>Número de cuotas</dt><dd>${SIM.n}${SIM.n === 1 ? " (una sola cuota)" : ""}</dd>
+      <dt>Tasa aplicada</dt><dd>${tasaTxt}</dd>
+      <dt>${SIM.n === 1 ? "Pago" : "Cuota mensual estimada"}</dt><dd>${cop(r.cuota)}</dd>
+      <dt>Intereses</dt><dd>${cop(r.intereses)}</dd>
+      <dt>Cuotas de manejo</dt><dd>${cop(r.cManejo)}</dd>
+      <dt>Seguros y otros cargos</dt><dd>${cop(r.cSeguros + r.otros)}</dd>
+      <dt class="tot">Total que terminarías pagando</dt><dd class="tot">${cop(r.total)}</dd>
+    </dl>
+    ${r.extra > 0 ? `<div class="sim-extra"><b>+${cop(r.extra)}</b><span>pagarías de más por financiarlo: ${pct1(r.extraPct)} más que de contado.</span></div>`
+                  : `<div class="sim-extra"><b>$0 de más</b><span>Con estas condiciones, pagarías lo mismo que de contado.</span></div>`}
+    <p class="sim-tip">${r.extra > 0
+      ? `Si lo pagas de contado, te ahorras <b>${cop(r.extra)}</b>${r.intereses > 0 ? `, de los cuales <b>${cop(r.intereses)}</b> son intereses` : ""}. ${SIM.n > 1 ? "A menos cuotas, menos intereses." : ""}`
+      : `A 1 cuota y sin cargos, no pagas intereses. Revisa que tu tarjeta no cobre nada adicional.`} Es información para comparar, no una recomendación personalizada.</p>
+    ${necesitaTasa && ea > USURA_EA ? `<p class="sim-warn">Ojo: ${pct1(ea)} supera el tope legal de ${USURA_MES} (${pct1(USURA_EA)} E.A.). Revisa el dato con tu entidad.</p>` : ""}`;
+}
+document.addEventListener("DOMContentLoaded", () => {
+  const m = $("#simModal"); if (!m) return;
+  const cerrar = () => m.classList.remove("on");
+  $("#simClose").addEventListener("click", cerrar);
+  m.addEventListener("click", e => { if (e.target === m) cerrar(); });
+  document.addEventListener("keydown", e => { if (e.key === "Escape") cerrar(); });
+  $("#simCuotas").addEventListener("click", e => { const b = e.target.closest("button[data-n]"); if (!b) return;
+    SIM.n = +b.dataset.n; $("#simCuotas").querySelectorAll("button").forEach(x => x.classList.toggle("on", x === b)); calcularSim(); });
+  $("#simUsura").addEventListener("click", () => { $("#simTasa").value = String(USURA_EA).replace(".", ","); SIM.usura = true; calcularSim(); });
+  $("#simTasa").addEventListener("input", () => { SIM.usura = false; calcularSim(); });
+  ["#simPrecio", "#simManejo", "#simSeguro", "#simOtros"].forEach(sel => $(sel).addEventListener("input", calcularSim));
+  ["#simEnt", "#simUsarTienda", "#simUna"].forEach(sel => $(sel).addEventListener("change", calcularSim));
+  ["#simPrecio", "#simManejo", "#simSeguro", "#simOtros"].forEach(sel => $(sel).addEventListener("blur", e => { const v = numCOP(e.target.value); e.target.value = v ? cop(v) : ""; }));
+});
 
 /* ---------- reglas del Radar (corrección urgente, 22 nov) ----------
    1. Fuera vendedores externos (marketplace), también como referencia de comparación.
@@ -799,6 +966,7 @@ function renderFeatured(){
       <div class="feat-actions">
         <button class="btn-out ${fav?"fav-on":""}" data-fav="${p.id}">${I("heart")}${fav?"Guardado":"Guardar"}</button>
         <a class="btn-gold" href="${esc(p.link)}" target="_blank" rel="noopener nofollow">Ver en la tienda ${I("ext")}</a>
+        <button class="sim-btn" data-sim="${p.id}">${I("bars")}SIMULAR MI COMPRA</button>
       </div>
     </div>
     <div class="cmpbox">
