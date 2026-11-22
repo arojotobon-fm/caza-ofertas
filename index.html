@@ -610,6 +610,7 @@ function card(p, rank){
     </div>
     <div class="body">
       <div class="store">${esc(p.tienda)}</div>
+      ${porConfirmar(p) ? `<div><span class="cmpchip lim" title="Todavía no hemos confirmado quién vende este producto en la tienda">Vendedor por confirmar</span></div>` : ""}
       ${p.condicion ? `<div><span class="cond">💳 Solo pagando ${esc(p.condicion)}</span></div>` : ""}
       <h3 class="name">${esc(p.nombre)}</h3>
       <div class="price"><b>${cop(p.precio)}</b>${p.precio_antes ? `<s>${cop(p.precio_antes)}</s>` : ""}</div>
@@ -633,10 +634,18 @@ const GRUPO = {"Alkosto":"colcomercio","Ktronix":"colcomercio","Alkomprar":"colc
 const grupoDe = t => GRUPO[t] || t;
 let BYLINK = {};
 const esExterno = p => /Vendedor externo/i.test(p && p.nota || "");
+// Referencias en revisión humana: no entran al Radar ni como referencia hasta confirmar que son exactamente el mismo producto.
+// BLBD210 vs BLBD210GB (licuadora DuraPro): pendiente de confirmar referencia y especificaciones (decisión 22 nov).
+// AF141LAA vs AF141 (freidora Ninja Pro): mismo caso de código parecido; la publicación AF141LAA no se usa hasta confirmarla.
+const REFERENCIAS_EN_REVISION = [/BLBD\s*-?\s*210/i, /AF141LAA/i];
+const enRevision = p => !!p && REFERENCIAS_EN_REVISION.some(rx => rx.test(p.nombre + " " + p.link));
+// Vendedor sin identificar (hoy: Alkosto). Se muestra, pero marcado como pendiente de validación; nunca como verificado.
+const VENDEDOR_POR_CONFIRMAR = new Set(["Alkosto"]);
+const porConfirmar = p => !!p && VENDEDOR_POR_CONFIRMAR.has(p.tienda);
 const median = a => { const s=[...a].sort((x,y)=>x-y), m=Math.floor(s.length/2); return s.length%2 ? s[m] : (s[m-1]+s[m])/2; };
 function radarInfo(p){
-  if (!p || p.condicion || esExterno(p) || !p.comparativo) return null;
-  const rows = p.comparativo.filter(r => BYLINK[r.link] && !esExterno(BYLINK[r.link]));
+  if (!p || p.condicion || esExterno(p) || enRevision(p) || !p.comparativo) return null;
+  const rows = p.comparativo.filter(r => BYLINK[r.link] && !esExterno(BYLINK[r.link]) && !enRevision(BYLINK[r.link]));
   const best = {};
   rows.forEach(r => { const g = grupoDe(r.tienda); if (!best[g] || r.precio < best[g].precio) best[g] = r; });
   const n = Object.keys(best).length;
@@ -673,6 +682,7 @@ function renderFeatured(){
     <div class="feat-img">${p.img ? `<img src="${esc(p.img)}" alt="" referrerpolicy="no-referrer" onerror="this.replaceWith(Object.assign(document.createElement('b'),{textContent:${JSON.stringify(p.marca||p.nombre).replace(/"/g,'&quot;')}}))">` : `<b>${esc(p.marca||p.nombre)}</b>`}</div>
     <div>
       <div class="store">${esc(p.tienda)}</div>
+      ${porConfirmar(p) ? `<span class="cmpchip lim">Vendedor por confirmar</span>` : ""}
       <h4>${esc(p.nombre)}</h4>
       ${p.precio_antes ? `<div class="oldp" title="Descuento que anuncia la tienda frente a su precio 'antes'"><s>${cop(p.precio_antes)}</s><span class="pill-off">-${claim}%</span><small>anunciado</small></div>` : ""}
       <div class="bigp">${cop(p.precio)}</div>
