@@ -1,6 +1,18 @@
-import json, re, statistics, unicodedata, datetime
+import argparse, json, re, statistics, unicodedata, datetime, os
 
-NOW = datetime.datetime(2026, 11, 21, 22, 40, tzinfo=datetime.timezone(datetime.timedelta(hours=-5))).isoformat()
+def argumentos():
+    ap = argparse.ArgumentParser(description="Construye catálogo v1 desde respaldos crudos, sin tocar producción.")
+    ap.add_argument("--respaldo-dir", required=True)
+    ap.add_argument("--fecha", required=True, help="AAAA-MM-DD")
+    ap.add_argument("--salida", required=True, help="Directorio aislado de salida")
+    ap.add_argument("--historial-base")
+    return ap.parse_args()
+
+ARGS = argumentos()
+RESP = os.path.abspath(ARGS.respaldo_dir)
+SALIDA = os.path.abspath(ARGS.salida)
+os.makedirs(SALIDA, exist_ok=True)
+NOW = datetime.datetime.fromisoformat(ARGS.fecha + "T12:00:00-05:00").isoformat()
 SUB = {"freidora":"Electrodomésticos","licuadora":"Electrodomésticos","cafetera":"Electrodomésticos","aspiradora":"Hogar",
        "televisor":"Televisores","audifonos":"Tecnología","parlante":"Tecnología","smartwatch":"Tecnología","celular":"Celulares",
        "portatil":"Tecnología","tablet":"Tecnología","consola":"Videojuegos","lego":"Juguetes","secador":"Belleza y cuidado"}
@@ -44,7 +56,7 @@ def human_slug(url):
 
 items = []
 # Falabella: [q, name, brand, price, antes, cmr, path, img, seller(1=Falabella), rating, reviews]
-for q, name, brand, price, antes, cmr, path, img, seller, rating, rev in json.load(open("fal_rows.json")):
+for q, name, brand, price, antes, cmr, path, img, seller, rating, rev in json.load(open(os.path.join(RESP, "crudo-fal_rows.json"), encoding="utf-8")):
     if not price: continue
     items.append(dict(tienda="Falabella", q=q, nombre=name, marca=(brand or "").title(), precio=price,
                       precio_antes=antes, tarjeta=cmr, tarjeta_nombre="tarjeta CMR",
@@ -52,7 +64,7 @@ for q, name, brand, price, antes, cmr, path, img, seller, rating, rev in json.lo
                       img=("https://media.falabella.com.co/falabellaCO/%s/width=400,height=400,quality=80,format=webp,fit=pad" % img) if img else None,
                       vendedor="Falabella" if seller == 1 else seller, rating=rating, reviews=rev))
 # Alkosto: [q, name, prices, path, img, rating, reviews]
-for q, name, ps, path, img, rating, rev in json.load(open("alk_rows.json")):
+for q, name, ps, path, img, rating, rev in json.load(open(os.path.join(RESP, "crudo-alk_rows.json"), encoding="utf-8")):
     if not ps or not path: continue
     if not name or not re.match(r"[A-Za-z0-9ÁÉÍÓÚáéíóú]", name):
         name = human_slug(path)
@@ -71,7 +83,7 @@ for q, name, ps, path, img, rating, rev in json.load(open("alk_rows.json")):
                       vendedor="Alkosto", rating=rating, reviews=rev,
                       nota_hoy=False))
 # Exito: [q, l0, l1, prices, path, img, seller, rating, reviews]
-for q, l0, l1, ps, path, img, seller, rating, rev in json.load(open("exi_rows.json")):
+for q, l0, l1, ps, path, img, seller, rating, rev in json.load(open(os.path.join(RESP, "crudo-exi_rows.json"), encoding="utf-8")):
     if not ps or not path: continue
     if l0 in ("Patrocinado", "Producto genérico"):
         name, brand = l1, ""
@@ -214,7 +226,7 @@ import hashlib
 for r in out:
     r.pop("_pct", None); r.pop("_variant", None)
     r["id"] = hashlib.sha1((r["link"] + "|" + (r.get("condicion") or "")).encode()).hexdigest()[:12]
-json.dump({"actualizado": NOW, "productos": out}, open("/home/claude/caza-ofertas/data/ofertas.json", "w"), ensure_ascii=False, indent=0)
+json.dump({"actualizado": NOW, "productos": out}, open(os.path.join(SALIDA, "ofertas.json"), "w", encoding="utf-8"), ensure_ascii=False, indent=0)
 print("total", len(out), "comparados", sum(1 for r in out if r.get("precio_ref")), "top", rank)
 for r in sorted([r for r in out if r["top"]], key=lambda r: r["rank"]):
     print(r["rank"], r["tienda"], r["nombre"][:70], r["precio"], r.get("precio_ref"), r["clasificacion"])
@@ -223,8 +235,8 @@ for r in sorted([r for r in out if r["top"]], key=lambda r: r["rank"]):
 
 # ---- Historial de precios (base para la analítica "cuándo comprar") ----
 import os
-HP = "/home/claude/caza-ofertas/data/historial.json"
-hist = json.load(open(HP)) if os.path.exists(HP) else {}
+HP = os.path.join(SALIDA, "historial.json")
+hist = json.load(open(ARGS.historial_base, encoding="utf-8")) if ARGS.historial_base else {}
 day = NOW[:10]
 for r in out:
     if r.get("condicion"): continue
