@@ -16,7 +16,7 @@ from urllib.request import Request, urlopen
 
 TIENDA = "Alkosto"
 DOMINIOS_PERMITIDOS = {"alkosto.com", "www.alkosto.com"}
-PATRON_CODIGO = re.compile(r"\bCódigo\s*:?\s*</?[^>]*>\s*([A-Z0-9][A-Z0-9._/-]{2,})", re.I)
+PATRON_CODIGO = re.compile(r"\bCódigo\s*:?\s*([A-Z0-9][A-Z0-9._/-]{2,})", re.I)
 
 
 class DatosHTML(HTMLParser):
