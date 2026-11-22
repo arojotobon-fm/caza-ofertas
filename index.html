@@ -47,7 +47,7 @@ h1,h2,h3,h4{font-family:var(--head);letter-spacing:-.01em;margin:0}
 .hero{position:relative;overflow:hidden;background:linear-gradient(100deg,#F2FBFB 0%,#E5F7F7 40%,#C9EFEE 100%)}
 .hero .wrap{position:relative;display:grid;grid-template-columns:minmax(0,600px) minmax(0,1fr) 320px;align-items:stretch;min-height:300px}
 /* Radar de Hoy corrido a la derecha (hacia el margen) para no tapar el rostro de la portada */
-@media (min-width:901px){.hero .radar{transform:translateX(clamp(8px, calc((100vw - 1240px) / 2 + 8px), 110px))}}
+@media (min-width:901px){.hero .radar{transform:translateX(clamp(8px, calc((100vw - 1240px) / 2 + 8px), 110px))}.hero .wrap{min-height:430px}.hero-copy{align-self:center}}
 .hero-photo{position:absolute;inset:0;background:url(img/portada.webp) no-repeat;background-size:auto 116%;background-position:calc(50% + 10px) 0;-webkit-mask-image:linear-gradient(90deg,transparent calc(50% - 160px),#000 calc(50% - 20px),#000 calc(50% + 380px),transparent calc(50% + 440px));mask-image:linear-gradient(90deg,transparent calc(50% - 160px),#000 calc(50% - 20px),#000 calc(50% + 380px),transparent calc(50% + 440px))}
 .hero-copy{position:relative;z-index:2;padding:24px 0 20px}
 .hero h1{font-size:clamp(30px,3.2vw,46px);line-height:1.04;font-weight:900;color:var(--petroleo);max-width:540px}
@@ -424,11 +424,6 @@ footer p{margin:0 0 8px;max-width:900px}
         <input id="hq" type="search" placeholder="¿Qué producto estás buscando?" autocomplete="off" aria-label="Buscar producto">
         <button type="submit">Buscar</button>
       </form>
-      <div class="chips">
-        <span class="chip"><svg class="ico"><use href="#i-tag"/></svg>Mismo producto, varias tiendas</span>
-        <span class="chip"><svg class="ico"><use href="#i-bars"/></svg>Historial de precios</span>
-        <span class="chip"><svg class="ico"><use href="#i-shield"/></svg>Ojo con los descuentos de vitrina</span>
-      </div>
       <div class="stamp"><span class="dot" id="stampDot"></span><span id="stamp">Cargando…</span></div>
     </div>
     <div></div>
