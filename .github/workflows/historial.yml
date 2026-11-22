@@ -1,0 +1,36 @@
+# Lectura diaria automática de precios para el historial de Cazadores de Ofertas.
+# Frecuencia aprobada el 22 nov 2026: 1 vez al día.
+# Guarda en la rama "historial" (no en main): así NO dispara despliegues de Netlify ni gasta créditos.
+name: Historial diario de precios
+on:
+  schedule:
+    - cron: "17 11 * * *"   # 6:17 a. m. hora de Colombia
+  workflow_dispatch: {}
+permissions:
+  contents: write
+concurrency: historial
+jobs:
+  leer-precios:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - name: Traer la rama historial
+        run: |
+          if git ls-remote --exit-code --heads origin historial; then
+            git fetch origin historial:historial
+            git worktree add ../hist historial
+          else
+            git worktree add --detach ../hist
+            cd ../hist && git checkout --orphan historial && git rm -rqf . || true
+          fi
+      - name: Leer precios de hoy
+        run: python3 scripts/historial_diario.py --catalogo data/ofertas.json --historial ../hist/precios.json
+      - name: Guardar en la rama historial
+        run: |
+          cd ../hist
+          printf '[build]\n  ignore = "exit 0"\n' > netlify.toml
+          echo "Historial diario de precios. Lo escribe GitHub Actions; no editar a mano." > README.md
+          git add precios.json netlify.toml README.md
+          git -c user.name="github-actions[bot]" -c user.email="41898282+github-actions[bot]@users.noreply.github.com" commit -m "Historial $(TZ=America/Bogota date +%F)" || exit 0
+          git push origin historial
