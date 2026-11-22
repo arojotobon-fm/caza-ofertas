@@ -205,6 +205,7 @@ import sys as _sys
 _sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from normalizar import canonical_brand as _cb, model_codes as _mc, specs as _sp  # noqa: E402
 from comparador import evaluar_par as _evaluar_par  # noqa: E402
+from taxonomia import aplicar as _taxonomia  # noqa: E402  (categorías aprobadas 22 nov 2026)
 def _norm_item(x):
     return {"marca": _cb(x.get("marca"), x["nombre"]), "codigos": _mc(x["nombre"]), "specs": _sp(x["nombre"]), "categoria": x.get("categoria")}
 def exacta(a, b):
@@ -239,6 +240,7 @@ for it in items:
     rec = dict(nombre=it["nombre"], marca=it["marca"], categoria=it["categoria"], sub=SUB.get(it["q"], "Otros"), tienda=it["tienda"],
                precio=it["precio"], precio_antes=it["precio_antes"], link=it["link"], img=it["img"],
                verificado=HORA_TIENDA.get(it["tienda"], NOW), top=False)
+    _taxonomia(rec)  # grupo, subcat y oculto: lo que no encaja se oculta, no se borra
     _cid = TIENDA_COMERCIO.get(it["tienda"])
     _path = re.sub(r"^https?://[^/]+", "", it["link"])
     if _cid and FICHAS_OK.get((_cid, _path)):

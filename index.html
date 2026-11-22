@@ -88,6 +88,7 @@ h1,h2,h3,h4{font-family:var(--head);letter-spacing:-.01em;margin:0}
 .cats::-webkit-scrollbar{display:none}
 .cat{flex:1 0 96px;background:#fff;border:1px solid var(--line);border-radius:16px;padding:12px 8px;display:flex;flex-direction:column;align-items:center;gap:6px;font-weight:700;font-size:14px;cursor:pointer;color:var(--ink);font-family:var(--body);box-shadow:0 2px 8px rgba(11,53,64,.04)}
 .cat img{width:44px;height:44px;display:block}
+.cat[hidden]{display:none}
 .cat:hover,.cat.on{border-color:var(--turquesa);background:var(--turquesa-bg)}
 .cat.lead{flex:0 0 184px;background:var(--petroleo);color:#fff;border-color:var(--petroleo);flex-direction:row;justify-content:space-between;padding:12px 18px;font-family:var(--head);font-size:18px;font-weight:800;text-align:left;line-height:1.15;cursor:default}
 .cat.lead .ico{color:#fff;width:24px;height:24px}
@@ -488,15 +489,12 @@ footer p{margin:0 0 8px;max-width:900px;text-align:justify}
 <div class="wrap">
   <div class="cats" id="cats">
     <div class="cat lead">Explora por categoría <svg class="ico"><use href="#i-chev"/></svg></div>
-    <button class="cat" data-sub="Tecnología"><img src="img/cat/tecnologia.webp" alt="" width="44" height="44">Tecnología</button>
-    <button class="cat" data-sub="Celulares"><img src="img/cat/celulares.webp" alt="" width="44" height="44">Celulares</button>
-    <button class="cat" data-sub="Televisores"><img src="img/cat/televisores.webp" alt="" width="44" height="44">Televisores</button>
-    <button class="cat" data-sub="Electrodomésticos"><img src="img/cat/electrodomesticos.webp" alt="" width="44" height="44">Electrodomésticos</button>
-    <button class="cat" data-sub="Hogar"><img src="img/cat/hogar.webp" alt="" width="44" height="44">Hogar</button>
-    <button class="cat" data-sub="Belleza y cuidado"><img src="img/cat/belleza.webp" alt="" width="44" height="44">Belleza y cuidado</button>
-    <button class="cat" data-sub="Deportes"><img src="img/cat/deportes.webp" alt="" width="44" height="44">Deportes</button>
-    <button class="cat" data-sub="Videojuegos"><img src="img/cat/videojuegos.webp" alt="" width="44" height="44">Videojuegos</button>
-    <button class="cat" data-sub="Mercado"><img src="img/cat/mercado.webp" alt="" width="44" height="44">Mercado</button>
+    <button class="cat" data-sub="g:Tecnología"><img src="img/cat/tecnologia.webp" alt="" width="44" height="44">Tecnología</button>
+    <button class="cat" data-sub="g:Celulares y accesorios"><img src="img/cat/celulares.webp" alt="" width="44" height="44">Celulares y accesorios</button>
+    <button class="cat" data-sub="s:TV y video"><img src="img/cat/televisores.webp" alt="" width="44" height="44">TV y video</button>
+    <button class="cat" data-sub="g:Electrohogar"><img src="img/cat/electrodomesticos.webp" alt="" width="44" height="44">Electrohogar</button>
+    <button class="cat" data-sub="s:Consolas"><img src="img/cat/videojuegos.webp" alt="" width="44" height="44">Consolas</button>
+    <button class="cat" data-sub="g:Belleza y salud"><img src="img/cat/belleza.webp" alt="" width="44" height="44">Belleza y salud</button>
   </div>
 
   <div class="duo">
@@ -726,6 +724,14 @@ function favs(){ try { return JSON.parse(localStorage.getItem("favs")||"[]"); } 
 function toggleFav(id){ let f = favs(); f = f.includes(id) ? f.filter(x=>x!==id) : [...f, id]; try { localStorage.setItem("favs", JSON.stringify(f)); } catch(e){} renderEverything(); }
 
 /* ---------- reportes de la comunidad ---------- */
+// Categorías aprobadas (22 nov 2026). Grupo → subcategorías, en el orden en que se muestran.
+const TAX_ORDEN = [
+  ["Tecnología", ["Computación","TV y video","Zona gamer","Cámaras y drones","Audio","Smartwatch y anillos","Consolas","Smart home","Movilidad"]],
+  ["Celulares y accesorios", ["Celulares y accesorios"]],
+  ["Electrohogar", ["Refrigeración","Electrodomésticos de cocina","Cocina","Lavado y planchado","Climatización","Tecnobelleza","Aspirado y limpieza"]],
+  ["Tenis y zapatos", ["Zapatos de mujer","Zapatos de niña","Zapatos de niño","Zapatos de hombre"]],
+  ["Belleza y salud", ["Perfumes","Maquillaje","Cuidado capilar","Cuidado de la piel","Skincare coreano"]]];
+const enCategoria = (p, v) => v.startsWith("g:") ? p.grupo === v.slice(2) : v.startsWith("s:") ? p.subcat === v.slice(2) : p.sub === v;
 let DATA = [], SHOW = 40, REP = {}, HIST = {}, SUBFILTER = "";
 function voted(id){ try { return JSON.parse(localStorage.getItem("votos")||"{}")[id]; } catch(e){ return null; } }
 function markVoted(id,v){ try { const o = JSON.parse(localStorage.getItem("votos")||"{}"); o[id]=v; localStorage.setItem("votos", JSON.stringify(o)); } catch(e){} }
@@ -1081,9 +1087,9 @@ function renderAll(reset){
   if (reset !== false) SHOW = 40;
   const q = norm($("#q").value).trim(), cat = $("#fCat").value, st = $("#fStore").value, cl = $("#fClass").value, sort = $("#fSort").value;
   let list = DATA.filter(p => !p.condicion &&
-    (!cat || p.sub === cat) && (!st || p.tienda === st) &&
+    (!cat || enCategoria(p, cat)) && (!st || p.tienda === st) &&
     (!cl || (() => { const i = radarInfo(p); return cl==="real" ? valeLaPena(i) : cl==="justo" ? !!(i && i.ahorro === 0) : !i; })()) &&
-    (!q || q.split(/\s+/).every(w => norm([p.nombre,p.marca,p.tienda,p.sub,p.categoria].join(" ")).includes(w))));
+    (!q || q.split(/\s+/).every(w => norm([p.nombre,p.marca,p.tienda,p.grupo,p.subcat].join(" ")).includes(w))));
   const rp = p => { const i = radarInfo(p); return i ? i.pct : -1e9; };
   list.sort(sort==="low" ? (a,b)=>a.precio-b.precio : sort==="new" ? (a,b)=>new Date(b.verificado)-new Date(a.verificado) : (a,b)=>rp(b)-rp(a));
   $("#count").textContent = list.length + " producto" + (list.length===1?"":"s");
@@ -1131,11 +1137,13 @@ Promise.all([
   fetch("/api/reportes").then(r=>r.ok?r.json():{}).catch(()=>({})),
   fetch("data/historial.json?v=" + Date.now()).then(r=>r.ok?r.json():{}).catch(()=>({}))
 ]).then(([d, rep, hist])=>{
-  REP = rep || {}; HIST = hist || {}; DATA = d.productos || [];
+  REP = rep || {}; HIST = hist || {}; DATA = (d.productos || []).filter(p => !p.oculto);
   BYLINK = {}; DATA.forEach(p => { if (!p.condicion) BYLINK[p.link] = p; });
   $("#stamp").textContent = "Última actualización: " + fmtDate(d.actualizado);
   if (hoursAgo(d.actualizado) > STALE_HOURS) $("#stampDot").classList.add("old");
-  [...new Set(DATA.map(p=>p.sub).filter(Boolean))].sort().forEach(c=>$("#fCat").insertAdjacentHTML("beforeend",`<option>${esc(c)}</option>`));
+  TAX_ORDEN.forEach(([g, subs]) => { const subsCon = subs.filter(sb => DATA.some(p => p.subcat === sb)); if (!subsCon.length) return;
+    $("#fCat").insertAdjacentHTML("beforeend", `<optgroup label="${esc(g)}"><option value="g:${esc(g)}">Todo ${esc(g)}</option>${subs.length>1 ? subsCon.map(sb=>`<option value="s:${esc(sb)}">${esc(sb)}</option>`).join("") : ""}</optgroup>`); });
+  document.querySelectorAll(".cat[data-sub]").forEach(b => { if (!DATA.some(p => enCategoria(p, b.dataset.sub))) b.hidden = true; });
   [...new Set(DATA.map(p=>p.tienda).filter(Boolean))].sort().forEach(c=>$("#fStore").insertAdjacentHTML("beforeend",`<option>${esc(c)}</option>`));
   renderEverything();
 }).catch(()=>{ $("#stamp").textContent = "No pudimos cargar los precios. Recarga la página."; });
