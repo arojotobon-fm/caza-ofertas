@@ -371,9 +371,9 @@ footer p{margin:0 0 8px;max-width:900px}
     <aside class="radar" id="radarCard" aria-label="Radar de hoy">
       <svg class="spark" viewBox="0 0 110 46"><defs><linearGradient id="sg" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#14B8B8" stop-opacity=".35"/><stop offset="1" stop-color="#14B8B8" stop-opacity="0"/></linearGradient></defs><path d="M0 40 L14 34 L26 37 L40 26 L54 30 L68 18 L82 22 L96 8 L110 4 L110 46 L0 46Z" fill="url(#sg)"/><path d="M0 40 L14 34 L26 37 L40 26 L54 30 L68 18 L82 22 L96 8 L110 4" fill="none" stroke="#14B8B8" stroke-width="2.5" stroke-linejoin="round"/></svg>
       <div class="radar-head"><svg class="ico big"><use href="#i-target"/></svg><div><h3>Radar de Hoy</h3><p>Las mejores oportunidades del mercado</p></div></div>
-      <a class="radar-row" href="#radar" data-radar="real"><svg class="ico" style="color:var(--verde)"><use href="#i-bag"/></svg><span id="rReal">— Ofertas reales</span><svg class="ico chev"><use href="#i-chev"/></svg></a>
-      <a class="radar-row" href="#comparador" data-radar="justo"><svg class="ico" style="color:#F05A28"><use href="#i-flame"/></svg><span id="rJusto">— Precios justos</span><svg class="ico chev"><use href="#i-chev"/></svg></a>
-      <a class="radar-row" href="#comparador" data-radar="vitrina"><svg class="ico" style="color:var(--dorado-2)"><use href="#i-alert"/></svg><span id="rFalso">— Posibles falsos descuentos</span><svg class="ico chev"><use href="#i-chev"/></svg></a>
+      <a class="radar-row" href="#radar" data-radar="real"><svg class="ico" style="color:var(--verde)"><use href="#i-bag"/></svg><span id="rReal">— Más baratos que el mercado</span><svg class="ico chev"><use href="#i-chev"/></svg></a>
+      <a class="radar-row" href="#comparador" data-radar="justo"><svg class="ico" style="color:#F05A28"><use href="#i-flame"/></svg><span id="rJusto">— Con el mismo precio en varias tiendas</span><svg class="ico chev"><use href="#i-chev"/></svg></a>
+      <a class="radar-row" href="#comparador" data-radar="sin"><svg class="ico" style="color:var(--dorado-2)"><use href="#i-alert"/></svg><span id="rFalso">— Sin comparación válida</span><svg class="ico chev"><use href="#i-chev"/></svg></a>
     </aside>
   </div>
 </div>
@@ -413,7 +413,7 @@ footer p{margin:0 0 8px;max-width:900px}
 
 <section id="radar"><div class="wrap">
   <div class="sec-head"><div>
-    <h2><svg class="ico"><use href="#i-target"/></svg>Radar: las ofertas reales de hoy</h2>
+    <h2><svg class="ico"><use href="#i-target"/></svg>Radar: diferencias de precio comprobadas</h2>
     <p>Solo entran productos más baratos que el mismo modelo en otros comercios, comparando <b>precio de contado</b> y <b>sin vendedores externos</b>. Si solo lo encontramos en un comercio más, lo marcamos como <b>comparación limitada</b>. Los precios con tarjeta de la tienda no entran.</p>
   </div></div>
   <div class="community">
@@ -435,13 +435,12 @@ footer p{margin:0 0 8px;max-width:900px}
     <select id="fStore" aria-label="Tienda"><option value="">Todas las tiendas</option></select>
     <select id="fClass" aria-label="Tipo de oferta">
       <option value="">Todo tipo de oferta</option>
-      <option value="real">Ofertas reales</option>
-      <option value="justo">Precio justo</option>
-      <option value="vitrina">Posibles falsos descuentos</option>
-      <option value="sin">Sin comparar</option>
+      <option value="real">Más baratos que en otros comercios</option>
+      <option value="justo">Mismo precio en varias tiendas</option>
+      <option value="sin">Sin comparación válida</option>
     </select>
     <select id="fSort" aria-label="Ordenar">
-      <option value="real">Mayor ahorro real</option>
+      <option value="real">Mayor diferencia a favor</option>
       <option value="low">Menor precio</option>
       <option value="new">Verificado más reciente</option>
     </select>
@@ -537,7 +536,7 @@ const STORES = [
 const STORE_COLOR = {"Falabella":"#6B8E23","Alkosto":"#1F4E9E","Éxito":"#C99A00","Ktronix":"#D9480F","Homecenter":"#C2410C","Jumbo":"#15803D","Olímpica":"#B91C1C","Mercado Libre":"#B59A00","Amazon":"#334155"};
 const LABELS = {
   gangazo:["GANGAZO","t-gangazo"], buena:["BUENA OFERTA","t-buena"], justo:["PRECIO JUSTO","t-justo"],
-  vitrina:["DESCUENTO INFLADO","t-vitrina"], error:["POSIBLE ERROR","t-error"], sin:["SIN COMPARAR","t-sin"]
+  vitrina:["DESCUENTO DE VITRINA","t-vitrina"], error:["POSIBLE ERROR DE PRECIO","t-error"], sin:["SIN COMPARAR","t-sin"]
 };
 const $ = s => document.querySelector(s);
 const cop = n => "$" + Math.round(n).toLocaleString("es-CO");
@@ -597,9 +596,10 @@ document.addEventListener("click", async e => {
 
 /* ---------- tarjeta ---------- */
 function card(p, rank){
-  const [lab, cls] = LABELS[p.clasificacion] || LABELS.sin;
   const stale = hoursAgo(p.verificado) > STALE_HOURS;
   const pct = realPct(p), cs = community(p), fav = favs().includes(p.id), ri = radarInfo(p);
+  // Umbrales de clasificación NO aprobados: se muestra un hecho comprobable, no una etiqueta (decisión 22 nov).
+  const [lab, cls] = !ri ? ["SIN COMPARAR","t-sin"] : ri.ahorro > 0 ? ["MÁS BARATO","t-buena"] : ri.ahorro === 0 ? ["MISMO PRECIO","t-justo"] : ["MÁS CARO","t-vitrina"];
   return `<article class="card ${stale?"stale":""} ${cs.gone?"gone":""}" data-id="${p.id}">
     <div class="media">
       ${rank ? `<span class="rank">#${rank}</span>` : ""}
@@ -654,11 +654,12 @@ function topList(){
 }
 function renderRadar(){
   const real = topList().length;
-  const justo = DATA.filter(p=>p.clasificacion==="justo").length;
-  const vit = DATA.filter(p=>p.clasificacion==="vitrina").length;
+  const infos = DATA.map(radarInfo);
+  const justo = infos.filter(i => i && i.ahorro === 0).length;
+  const vit = DATA.filter((p, k) => !infos[k]).length;
   $("#rReal").textContent = real + (real===1?" Más barato que el mercado":" Más baratos que el mercado");
-  $("#rJusto").textContent = justo + (justo===1?" Precio justo":" Precios justos");
-  $("#rFalso").textContent = vit + (vit===1?" Posible falso descuento":" Posibles falsos descuentos");
+  $("#rJusto").textContent = justo + (justo===1?" Mismo precio en varias tiendas":" Con el mismo precio en varias tiendas");
+  $("#rFalso").textContent = vit + " Sin comparación válida";
 }
 function featured(){ return topList()[0]; }
 function renderFeatured(){
@@ -676,7 +677,7 @@ function renderFeatured(){
       ${p.precio_antes ? `<div class="oldp" title="Descuento que anuncia la tienda frente a su precio 'antes'"><s>${cop(p.precio_antes)}</s><span class="pill-off">-${claim}%</span><small>anunciado</small></div>` : ""}
       <div class="bigp">${cop(p.precio)}</div>
       ${p.condicion ? `<span class="cond">💳 Solo pagando ${esc(p.condicion)}</span><br>` : ""}
-      <span class="verdict ${pct>=30?"":"mid"}">${I("check")}${pct>=30?"Gangazo real":"Oferta real"}</span>
+      <span class="verdict mid">${I("check")}Más barato que en ${info.n===2?"el otro comercio":"los otros comercios"}</span>
       ${ahorro>0 ? `<div class="save">Ahorro real: ${cop(ahorro)} (${pct.toFixed(1)}%) frente a ${info.n===2?"otro comercio":"los otros comercios"}</div>` : ""}
       <div class="feat-actions">
         <button class="btn-out ${fav?"fav-on":""}" data-fav="${p.id}">${I("heart")}${fav?"Guardado":"Guardar"}</button>
@@ -722,9 +723,10 @@ function renderAll(reset){
   const q = norm($("#q").value).trim(), cat = $("#fCat").value, st = $("#fStore").value, cl = $("#fClass").value, sort = $("#fSort").value;
   let list = DATA.filter(p => !p.condicion &&
     (!cat || p.sub === cat) && (!st || p.tienda === st) &&
-    (!cl || (cl==="real" ? isReal(p) : p.clasificacion===cl)) &&
+    (!cl || (() => { const i = radarInfo(p); return cl==="real" ? !!(i && i.ahorro > 0) : cl==="justo" ? !!(i && i.ahorro === 0) : !i; })()) &&
     (!q || q.split(/\s+/).every(w => norm([p.nombre,p.marca,p.tienda,p.sub,p.categoria].join(" ")).includes(w))));
-  list.sort(sort==="low" ? (a,b)=>a.precio-b.precio : sort==="new" ? (a,b)=>new Date(b.verificado)-new Date(a.verificado) : (a,b)=>realPct(b)-realPct(a) || (b.precio_ref?1:0)-(a.precio_ref?1:0));
+  const rp = p => { const i = radarInfo(p); return i ? i.pct : -1e9; };
+  list.sort(sort==="low" ? (a,b)=>a.precio-b.precio : sort==="new" ? (a,b)=>new Date(b.verificado)-new Date(a.verificado) : (a,b)=>rp(b)-rp(a));
   $("#count").textContent = list.length + " producto" + (list.length===1?"":"s");
   $("#allGrid").innerHTML = list.length ? list.slice(0, SHOW).map(p=>card(p)).join("") : `<div class="empty">No lo tenemos revisado todavía. Búscalo abajo en todas las tiendas 👇</div>`;
   $("#more").style.display = list.length > SHOW ? "flex" : "none";
