@@ -771,11 +771,11 @@ function card(p, rank){
   const stale = hoursAgo(p.verificado) > STALE_HOURS;
   const pct = realPct(p), cs = community(p), fav = favs().includes(p.id), ri = radarInfo(p);
   // Umbrales de clasificación NO aprobados: se muestra un hecho comprobable, no una etiqueta (decisión 22 nov).
-  const [lab, cls] = !ri ? ["SIN COMPARAR","t-sin"] : ri.ahorro > 0 ? ["MÁS BARATO","t-buena"] : ri.ahorro === 0 ? ["MISMO PRECIO","t-justo"] : ["MÁS CARO","t-vitrina"];
+  const [lab, cls] = !ri ? ["SIN COMPARAR","t-sin"] : valeLaPena(ri) ? ["MÁS BARATO","t-buena"] : ri.ahorro > 0 ? ["",""] : ri.ahorro === 0 ? ["MISMO PRECIO","t-justo"] : ["MÁS CARO","t-vitrina"];
   return `<article class="card ${stale?"stale":""} ${cs.gone?"gone":""}" data-id="${p.id}">
     <div class="media">
       ${rank ? `<span class="rank">#${rank}</span>` : ""}
-      <span class="tag ${cls}">${lab}</span>
+      ${lab ? `<span class="tag ${cls}">${lab}</span>` : ""}
       <button class="fav ${fav?"on":""}" data-fav="${p.id}" aria-label="${fav?"Quitar de":"Guardar en"} favoritos">${I("heart")}</button>
       ${p.img ? `<img loading="lazy" src="${esc(p.img)}" alt="${esc(p.nombre)}" referrerpolicy="no-referrer" onerror="this.style.display='none';this.nextElementSibling.style.display='block'">` : ""}
       <div class="ph" ${p.img ? "" : 'style="display:block"'}>${esc(p.marca || p.nombre)}</div>
@@ -962,6 +962,10 @@ const enRevision = p => !!p && REFERENCIAS_EN_REVISION.some(rx => rx.test(p.nomb
 const VENDEDOR_POR_CONFIRMAR = new Set(["Alkosto", "Ktronix", "Alkomprar"]);
 const porConfirmar = p => !!p && VENDEDOR_POR_CONFIRMAR.has(p.tienda) && !(p.vendedor_validado_en && p.verificado && p.vendedor_validado_en === String(p.verificado).slice(0, 10));
 const median = a => { const s=[...a].sort((x,y)=>x-y), m=Math.floor(s.length/2); return s.length%2 ? s[m] : (s[m-1]+s[m])/2; };
+// Tope de ahorro aprobado (22 nov): solo cuenta como "más barato" si ahorras al menos $10.000 y además
+// el 5 % o $20.000. Por debajo, la diferencia no se muestra como oportunidad.
+const AHORRO_MIN = 10000, AHORRO_PCT = 5, AHORRO_COP = 20000;
+const valeLaPena = i => !!i && i.ahorro >= AHORRO_MIN && (i.pct >= AHORRO_PCT || i.ahorro >= AHORRO_COP);
 function radarInfo(p){
   // Vendedor por confirmar (Alkosto): visible en el comparador, pero no alimenta comparaciones públicas (decisión 22 nov).
   if (!p || p.condicion || esExterno(p) || enRevision(p) || porConfirmar(p) || !p.comparativo) return null;
@@ -989,6 +993,7 @@ function dondeOtro(p, i){
 function lineaComparacion(p, i){
   const d = Math.abs(i.ahorro), otro = dondeOtro(p, i);
   const precioOtro = i.n === 2 ? `${otro.charAt(0).toUpperCase() + otro.slice(1)} cuesta ${cop(i.ref)}` : `En las otras tiendas que revisamos cuesta ${cop(i.ref)} (precio del medio)`;
+  if (i.ahorro > 0 && !valeLaPena(i)) return precioOtro;
   if (i.ahorro > 0) return `${precioOtro} · <strong>aquí ${cop(d)} menos</strong> (${i.pct.toFixed(1)}%)`;
   if (i.ahorro < 0) return `${precioOtro} · aquí está ${cop(d)} más caro`;
   return `Cuesta lo mismo ${otro}`;
@@ -999,7 +1004,7 @@ const claveRadar = i => Object.entries(i.rows.reduce((m, r) => { const g = grupo
 function topList(){
   const vistos = new Set();
   return DATA.map(p => [p, radarInfo(p)])
-    .filter(([p, i]) => i && i.pct > 0 && !community(p).gone)
+    .filter(([p, i]) => valeLaPena(i) && !community(p).gone)
     .sort((a, b) => b[1].pct - a[1].pct)
     .filter(([p, i]) => { const k = claveRadar(i); if (vistos.has(k)) return false; vistos.add(k); return true; })
     .slice(0, 20).map(([p]) => p);
@@ -1076,7 +1081,7 @@ function renderAll(reset){
   const q = norm($("#q").value).trim(), cat = $("#fCat").value, st = $("#fStore").value, cl = $("#fClass").value, sort = $("#fSort").value;
   let list = DATA.filter(p => !p.condicion &&
     (!cat || p.sub === cat) && (!st || p.tienda === st) &&
-    (!cl || (() => { const i = radarInfo(p); return cl==="real" ? !!(i && i.ahorro > 0) : cl==="justo" ? !!(i && i.ahorro === 0) : !i; })()) &&
+    (!cl || (() => { const i = radarInfo(p); return cl==="real" ? valeLaPena(i) : cl==="justo" ? !!(i && i.ahorro === 0) : !i; })()) &&
     (!q || q.split(/\s+/).every(w => norm([p.nombre,p.marca,p.tienda,p.sub,p.categoria].join(" ")).includes(w))));
   const rp = p => { const i = radarInfo(p); return i ? i.pct : -1e9; };
   list.sort(sort==="low" ? (a,b)=>a.precio-b.precio : sort==="new" ? (a,b)=>new Date(b.verificado)-new Date(a.verificado) : (a,b)=>rp(b)-rp(a));
