@@ -1243,8 +1243,8 @@ function renderEverything(){ renderTop(); renderAll(false); renderFavs(); }
 
 /* ---------- Verificador: ¿el descuento es real? (/api/verificar) ---------- */
 const ESTADO = {
-  oferta_real: ["🟢 ¡Oferta real!", "La misma referencia está más barata que en las otras tiendas que revisamos."],
-  dudosa: ["🟡 ¡Ojo, descuento dudoso!", "El aviso dice descuento, pero las pruebas no muestran que de verdad esté más barato."],
+  oferta_real: ["🟢 ¡Oferta real!", "Hay pruebas: la misma referencia está más barata que en las otras tiendas y el precio “antes” tiene respaldo."],
+  dudosa: ["🟡 ¡Ojo, descuento dudoso!", "Encontramos señales de alerta, pero todavía no hay pruebas suficientes para decir que es una mentira."],
   precio_inflado: ["🔴 ¡Cazamos una mentira!", "Precio anterior inflado: el “antes” que anuncia la tienda no tiene respaldo. Mira las pruebas."],
   insuficiente: ["⚪ No hay pruebas suficientes.", "No encontramos evidencia para decir si el descuento es real o no. Preferimos decírtelo a adivinar."],
 };
@@ -1259,14 +1259,18 @@ async function verificarEnlace(url){
   try { const r = await fetch("/api/verificar?url=" + encodeURIComponent(url)); j = await r.json(); if (!r.ok) throw new Error(j.msg || r.status); }
   catch (e) { $("#bzGrid").innerHTML = `<div class="empty">${esc(e.message && !/^\d+$/.test(e.message) ? e.message : "No pudimos verificarlo en este momento. Intenta de nuevo en un minuto.")}</div>`; $("#bzTitulo").textContent = "No pudimos verificar ese enlace."; return; }
   const o = j.origen; let [tit, txt] = ESTADO[j.estado];
-  if (j.estado === "dudosa" && !o.precio_antes) [tit, txt] = ["🟡 ¡Ojo, revisa antes de comprar!", "Las pruebas no muestran que esta sea la mejor opción hoy."];
+  const SELLO = { oferta_real: ["oferta-real", "¡Oferta real! Este descuento sí es de verdad"], dudosa: ["descuento-dudoso", "¡Ojo! Descuento dudoso: podría no ser una oferta real"],
+    precio_inflado: ["cazamos-mentira", "¡Cazamos una mentira! Este descuento no es real"], insuficiente: ["sin-pruebas", "No hay pruebas suficientes para confirmar el descuento"] };
+  let sello = SELLO[j.estado];
+  if (j.estado === "dudosa" && !o.precio_antes) { [tit, txt] = ["🟡 ¡Ojo, revisa antes de comprar!", "Las pruebas no muestran que esta sea la mejor opción hoy."]; sello = null; }
+  if (j.estado === "oferta_real" && !o.precio_antes) { [tit, txt] = ["🟢 ¡Más barato aquí!", "No anuncia descuento, pero la misma referencia está más barata que en las otras tiendas que revisamos."]; sello = null; }
   const desc = o.precio_antes ? Math.round((1 - o.precio / o.precio_antes) * 100) : 0;
   $("#bzTitulo").innerHTML = `Verificamos <mark>${esc(o.tienda)}</mark> contra las otras tiendas, ahora mismo.`;
   $("#bzEstado").innerHTML = "Consultamos: " + j.consultadas.map(t => `<span class="${t.ok ? "ok" : "no"}">${t.ok ? "✓" : "✕"} ${esc(t.tienda)}${t.ok ? "" : " (no pudimos consultarla)"}</span>`).join("");
   SIM_LIBRE = { nombre: o.nombre, tienda: o.tienda, precio: o.precio };
   $("#bzGrid").innerHTML = `<article class="vf-card" style="grid-column:1/-1">
     <div>
-      <div class="vf-estado ${j.estado}">${j.estado === "precio_inflado" ? `<img class="vf-sello" src="img/cazamos-mentira.webp" alt="¡Cazamos una mentira! Este descuento no es real" width="110" height="110">` : ""}<div><b>${tit}</b><p>${txt}</p></div></div>
+      <div class="vf-estado ${j.estado}">${sello ? `<img class="vf-sello" src="img/${sello[0]}.webp" alt="${esc(sello[1])}" width="110" height="110">` : ""}<div><b>${tit}</b><p>${txt}</p></div></div>
       <div class="vf-prod">${o.img ? `<img src="${esc(o.img)}" alt="" referrerpolicy="no-referrer" onerror="this.remove()">` : ""}
         <div><h3>${esc(o.nombre)}</h3><small class="muted">${esc(o.tienda)}${o.modelo ? " · Ref. " + esc(o.modelo) : ""}${o.propio ? "" : " · lo vende " + esc(o.vendedor)}</small>
         <p class="vf-precio">${cop(o.precio)}${o.precio_antes ? `<s>${cop(o.precio_antes)}</s>` : ""}${desc ? `<small>La tienda anuncia −${desc} %</small>` : ""}</p>

@@ -20,10 +20,10 @@ Estos principios mandan sobre cualquier cambio de la página, del buscador o del
 
 ## Lenguaje de marca (insignias del Verificador)
 
-- 🟢 **¡Oferta real!** — la misma referencia está más barata que en la siguiente tienda más barata, por encima del tope de ahorro.
-- 🟡 **¡Ojo, descuento dudoso!** — hay descuento anunciado pero las pruebas no muestran que sea más barato (empate, otra tienda más barata, o una sola señal débil).
+- 🟢 **¡Oferta real!** — solo con evidencia, no por ser el precio más bajo: la misma referencia está más barata que la siguiente tienda (por encima del tope de ahorro) **y**, si anuncia descuento, el precio "antes" tiene respaldo (otra tienda lo cobra hoy o lo vimos en el historial). Si no anuncia descuento se dice "¡Más barato aquí!", sin la insignia.
+- 🟡 **¡Ojo, descuento dudoso!** — hay señales de alerta pero no pruebas suficientes para afirmar una mentira: empate con otra tienda, otra tienda más barata, un "antes" que no pudimos confirmar o una sola tienda que lo contradice.
 - 🔴 **¡Cazamos una mentira!** — solo con evidencia de irregularidad: el precio "antes" no tiene respaldo en al menos dos tiendas más, o nuestro historial muestra que nunca tuvo ese precio o que lo subieron justo antes del "descuento". Debajo siempre va el hecho: "Precio anterior inflado".
-- ⚪ **No hay pruebas suficientes.** — cuando no pudimos verificar. No poder verificar NUNCA es motivo para "¡Cazamos una mentira!".
+- ⚪ **No hay pruebas suficientes.** — cuando no pudimos verificar: no encontramos la misma referencia en otra tienda y no hay historial. No poder verificar NUNCA es motivo para "¡Cazamos una mentira!".
 
 ## Palabras
 

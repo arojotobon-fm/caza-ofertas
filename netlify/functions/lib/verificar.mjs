@@ -56,6 +56,17 @@ export function verificar(origen, grupo, historial = [], hoy = new Date().toISOS
     else { comparacion = "igual"; pruebas.push({ tipo: "comparacion", signo: "0", texto: `En ${masBarata.tienda} cuesta ${cop(ref)}: prácticamente lo mismo${origen.precio_antes ? ". El descuento anunciado no lo hace más barato que en otras tiendas" : ""}.` }); }
   } else pruebas.push({ tipo: "comparacion", signo: "0", texto: "No encontramos la misma referencia en otra tienda para comparar." });
 
+  // ¿El precio "antes" tiene respaldo? Otra tienda lo cobra hoy (±5 %) o lo vimos en nuestro historial.
+  let antesRespaldado = null;
+  if (origen.precio_antes) {
+    const enOtra = otras.find(t => t.precio >= origen.precio_antes * 0.95);
+    const enHist = hist.find(h => h.precio >= origen.precio_antes * 0.95);
+    antesRespaldado = !!(enOtra || enHist);
+    if (enOtra) pruebas.push({ tipo: "antes_respaldo", signo: "+", texto: `El precio "antes" (${cop(origen.precio_antes)}) tiene respaldo: ${enOtra.tienda} lo cobra hoy a ${cop(enOtra.precio)}.` });
+    else if (enHist) pruebas.push({ tipo: "antes_respaldo", signo: "+", texto: `El precio "antes" (${cop(origen.precio_antes)}) tiene respaldo: el ${enHist.fecha} lo vimos a ${cop(enHist.precio)} en ${origen.tienda}.` });
+    else if (!inflado) pruebas.push({ tipo: "antes_respaldo", signo: "0", texto: `No pudimos confirmar que el precio "antes" de ${cop(origen.precio_antes)} haya existido: ninguna tienda lo cobra hoy y no lo tenemos en nuestro historial.` });
+  }
+
   // 3. ¿Es una oferta histórica?
   let historica = null;
   if (diasHist >= 30) {
@@ -69,7 +80,10 @@ export function verificar(origen, grupo, historial = [], hoy = new Date().toISOS
   // Veredicto
   let estado;
   if (inflado) estado = "precio_inflado";
-  else if (comparacion === "mas_barato" && historica !== false) estado = "oferta_real";
+  // "¡Oferta real!" exige evidencia: más barato que la siguiente tienda (con el tope) Y, si anuncia descuento,
+  // que el precio "antes" tenga respaldo. Ser el precio más bajo no basta.
+  else if (comparacion === "mas_barato" && historica !== false && antesRespaldado !== false) estado = "oferta_real";
+  else if (comparacion === "mas_barato" && antesRespaldado === false) estado = "dudosa";
   else if (comparacion === "mas_caro" || comparacion === "igual" || historica === false || senalDebil) estado = "dudosa";
   else estado = "insuficiente";
   return { estado, pruebas, diasHistorial: diasHist };
