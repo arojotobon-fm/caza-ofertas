@@ -84,7 +84,7 @@ const grupo = t => GRUPO[t] || t;
 export function compararOfertas(ofertas) {
   // El código de modelo se busca en el nombre y en el enlace (Falabella suele ponerlo solo en el enlace: ...-dz201laa).
   const slug = l => String(l || "").split("?")[0].split("/").filter(Boolean).slice(-2).join(" ").replace(/-/g, " ");
-  const pubs = ofertas.map(o => ({ ...o, marca: marcaCanonica(o.marca, o.nombre), codigos: codigosModelo(o.nombre + " " + slug(o.link)), specs: especificaciones(o.nombre) }));
+  const pubs = ofertas.map(o => ({ ...o, marca: marcaCanonica(o.marca, o.nombre), codigos: codigosModelo(o.nombre + " " + slug(o.link) + " " + (o.modelo || "")), specs: especificaciones(o.nombre) }));
   const padre = pubs.map((_, i) => i), raiz = i => (padre[i] === i ? i : (padre[i] = raiz(padre[i])));
   // Cada grupo guarda sus códigos de barras: nunca se unen dos grupos con códigos de barras distintos,
   // aunque una publicación sin código de barras (p. ej. Falabella) parezca el puente entre ellos.

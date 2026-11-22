@@ -71,6 +71,30 @@ h1,h2,h3,h4{font-family:var(--head);letter-spacing:-.01em;margin:0}
 .bz-ext summary{cursor:pointer;font-size:13px;font-weight:800;color:var(--muted)}
 .bz-ext ul{margin:6px 0 0;padding-left:18px;font-size:13px;color:var(--muted)}
 .bz-nota{font-size:12.5px;color:var(--muted);margin-top:12px}
+.vf-card{background:#fff;border:1px solid var(--line);border-radius:var(--r-lg);box-shadow:var(--sh);padding:18px 20px;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.15fr);gap:18px;align-items:start}
+.vf-estado{border-radius:14px;padding:14px 16px;margin-bottom:12px}
+.vf-estado b{display:block;font-size:20px;font-weight:900;letter-spacing:.2px;margin-bottom:4px}
+.vf-estado p{margin:0;font-size:14.5px;line-height:1.4}
+.vf-estado.oferta_real{background:var(--verde-bg);color:#14532d}.vf-estado.oferta_real b{color:var(--verde)}
+.vf-estado.dudosa{background:var(--ambar-bg);color:#6b4500}.vf-estado.dudosa b{color:#a86200}
+.vf-estado.precio_inflado{background:#FDECEC;color:#7a1f1f}.vf-estado.precio_inflado b{color:#B42318}
+.vf-estado.insuficiente{background:#EEF2F3;color:#334}.vf-estado.insuficiente b{color:var(--petroleo)}
+.vf-prod{display:flex;gap:12px;align-items:flex-start}
+.vf-prod img{width:84px;height:84px;object-fit:contain;border-radius:10px;background:#f6fafa;flex:none}
+.vf-prod h3{margin:0;font-size:16px;line-height:1.25;color:var(--ink)}
+.vf-precio{margin:6px 0 0;font-size:22px;font-weight:900;color:var(--petroleo)}
+.vf-precio s{font-size:14px;color:var(--muted);font-weight:600;margin-left:8px}
+.vf-precio small{display:block;font-size:12.5px;color:var(--muted);font-weight:700}
+.vf-pruebas{list-style:none;margin:0 0 12px;padding:0;display:grid;gap:8px}
+.vf-pruebas li{display:flex;gap:10px;font-size:14px;line-height:1.4;color:var(--ink)}
+.vf-pruebas li i{flex:none;width:22px;height:22px;border-radius:50%;display:grid;place-items:center;font-style:normal;font-weight:900;font-size:13px;color:#fff;background:#8A9AA0}
+.vf-pruebas li.mas i{background:var(--verde)}.vf-pruebas li.menos i{background:#D14343}
+.vf-h{font-size:13px;font-weight:900;letter-spacing:.4px;color:var(--muted);margin:0 0 8px}
+.btn.ghost{background:#fff;color:var(--petroleo);border:2px solid var(--petroleo)}
+.vf-acc{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.vf-acc .btn{width:auto;padding:10px 14px;font-size:14px}
+.bz-verif{align-self:flex-start;border:0;background:none;color:var(--petroleo);font:inherit;font-weight:800;font-size:13.5px;text-decoration:underline;cursor:pointer;padding:0}
+@media (max-width:900px){.vf-card{grid-template-columns:minmax(0,1fr);padding:16px}}
 /* ---------- HERO ---------- */
 .hero{position:relative;overflow:hidden;background:linear-gradient(100deg,#F2FBFB 0%,#E5F7F7 40%,#C9EFEE 100%)}
 .hero .wrap{position:relative;display:grid;grid-template-columns:minmax(0,600px) minmax(0,1fr) 320px;align-items:stretch;min-height:300px}
@@ -117,6 +141,8 @@ h1,h2,h3,h4{font-family:var(--head);letter-spacing:-.01em;margin:0}
 .cat{flex:1 0 96px;background:#fff;border:1px solid var(--line);border-radius:16px;padding:12px 8px;display:flex;flex-direction:column;align-items:center;gap:6px;font-weight:700;font-size:14px;cursor:pointer;color:var(--ink);font-family:var(--body);box-shadow:0 2px 8px rgba(11,53,64,.04)}
 .cat img{width:44px;height:44px;display:block}
 .cat[hidden]{display:none}
+.mainnav a.solo-ico{padding:9px 10px}
+@media (max-width:1440px){.tagline{display:none}}
 .cat:hover,.cat.on{border-color:var(--turquesa);background:var(--turquesa-bg)}
 .cat.lead{flex:0 0 184px;background:var(--petroleo);color:#fff;border-color:var(--petroleo);flex-direction:row;justify-content:space-between;padding:12px 18px;font-family:var(--head);font-size:18px;font-weight:800;text-align:left;line-height:1.15;cursor:default}
 .cat.lead .ico{color:#fff;width:24px;height:24px}
@@ -475,6 +501,8 @@ footer p{margin:0 0 8px;max-width:900px;text-align:justify}
   <symbol id="i-check" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9.5"/><path d="M7.5 12.5l3 3 6-6.5"/></symbol>
   <symbol id="i-tick" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7"/></symbol>
   <symbol id="i-flame" viewBox="0 0 24 24"><path d="M12 22c4 0 7-3 7-7 0-4-3-6-4-10-2 2-3 4-3 6-1-1-2-2-2-4-3 3-5 5-5 8 0 4 3 7 7 7z"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 2.5l8 3v6c0 5-3.4 8.6-8 10-4.6-1.4-8-5-8-10v-6z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></symbol>
+  <symbol id="i-calc" viewBox="0 0 24 24"><rect x="5" y="2.5" width="14" height="19" rx="2"/><path d="M8 6.5h8M8.5 11h.01M12 11h.01M15.5 11h.01M8.5 14.5h.01M12 14.5h.01M15.5 14.5h.01M8.5 18h.01M12 18h3.5"/></symbol>
   <symbol id="i-alert" viewBox="0 0 24 24"><path d="M12 3l10 18H2z"/><path d="M12 10v5M12 18h.01"/></symbol>
   <symbol id="i-bag" viewBox="0 0 24 24"><path d="M5 8h14l-1 13H6z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/><path d="M9 13l2 2 4-4"/></symbol>
   <symbol id="i-chev" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></symbol>
@@ -498,11 +526,12 @@ footer p{margin:0 0 8px;max-width:900px;text-align:justify}
   <div class="tagline">Productos a buen precio en el mercado colombiano <span class="flag" aria-hidden="true"></span></div>
   <nav class="mainnav" aria-label="Principal">
     <a href="#inicio" class="on"><svg class="ico"><use href="#i-home"/></svg>Inicio</a>
-    <a href="#comparador"><svg class="ico"><use href="#i-search"/></svg>Comparador</a>
+    <a href="#verificador" data-verificar><svg class="ico"><use href="#i-shield"/></svg>Verificador</a>
     <a href="#radar"><svg class="ico"><use href="#i-target"/></svg>¿Está barato?</a>
+    <a href="#comparador"><svg class="ico"><use href="#i-search"/></svg>Comparador</a>
     <a href="#historico"><svg class="ico"><use href="#i-bars"/></svg>Histórico</a>
-    <a href="#alertas" title="Muy pronto"><svg class="ico"><use href="#i-bell"/></svg>Alertas <span class="soon">PRONTO</span></a>
-    <a href="#favoritos"><svg class="ico"><use href="#i-heart"/></svg>Mis favoritos</a>
+    <a href="#" data-cuentas><svg class="ico"><use href="#i-calc"/></svg>¡Hagamos cuentas!</a>
+    <a href="#favoritos" class="solo-ico" aria-label="Mis favoritos" title="Mis favoritos"><svg class="ico"><use href="#i-heart"/></svg></a>
   </nav>
 </div></header>
 
@@ -511,12 +540,12 @@ footer p{margin:0 0 8px;max-width:900px;text-align:justify}
   <div class="hero-photo" role="img" aria-label="Mujer feliz comparando precios en su celular"></div>
   <div class="wrap">
     <div class="hero-copy">
-      <h1><span class="hl">¡No pagues</span> de más!<br>Te mostramos dónde<br>está más barato</h1>
-      <p>Comparamos el mismo producto en varias tiendas y te decimos dónde está más barato. Los cazadores nos avisan si el precio cambió.</p>
+      <h1><span class="hl">No cazamos</span> descuentos.<br>Cazamos la verdad<br>detrás de los precios.</h1>
+      <p>Pega el enlace del producto o escribe su nombre. Te decimos si el descuento es real, si inflaron el precio anterior o si en otra tienda está más barato.</p>
       <form class="searchbar" id="heroSearch" role="search">
         <svg class="ico"><use href="#i-search"/></svg>
-        <input id="hq" type="search" placeholder="¿Qué producto estás buscando?" autocomplete="off" aria-label="Buscar producto">
-        <button type="submit">Buscar</button>
+        <input id="hq" type="search" placeholder="Pega el enlace o escribe el producto" autocomplete="off" aria-label="Enlace o nombre del producto">
+        <button type="submit">Verificar</button>
       </form>
       <div class="stamp"><span class="dot" id="stampDot"></span><span id="stamp">Cargando…</span></div>
     </div>
@@ -537,7 +566,7 @@ footer p{margin:0 0 8px;max-width:900px;text-align:justify}
       <svg class="ico rh-target" aria-hidden="true"><use href="#i-search"/></svg>
       <span class="rh-div" aria-hidden="true"></span>
       <div class="rh-text">
-        <h2><mark>Buscador inteligente</mark></h2>
+        <h2><mark id="bzHead">Buscador inteligente</mark></h2>
         <p id="bzTitulo">Consultamos las tiendas <mark>en este momento</mark> y te decimos si de verdad está barato.</p>
       </div>
     </div>
@@ -751,10 +780,10 @@ footer p{margin:0 0 8px;max-width:900px;text-align:justify}
 
 <nav class="tabbar" aria-label="Navegación móvil">
   <a href="#inicio" class="on"><svg class="ico"><use href="#i-home"/></svg>Inicio</a>
-  <a href="#comparador"><svg class="ico"><use href="#i-search"/></svg>Comparar</a>
+  <a href="#verificador" data-verificar><svg class="ico"><use href="#i-shield"/></svg>Verificar</a>
   <a href="#radar"><svg class="ico"><use href="#i-target"/></svg>¿Está barato?</a>
   <a href="#historico"><svg class="ico"><use href="#i-bars"/></svg>Histórico</a>
-  <a href="#favoritos"><svg class="ico"><use href="#i-heart"/></svg>Favoritos</a>
+  <a href="#" data-cuentas><svg class="ico"><use href="#i-calc"/></svg>Cuentas</a>
 </nav>
 
 <script>
@@ -835,6 +864,9 @@ function abrirTienda(id){
 }
 document.addEventListener("click", async e => {
   const f = e.target.closest("[data-fav]"); if (f) { e.preventDefault(); toggleFav(f.dataset.fav); return; }
+  const vb = e.target.closest("[data-verif]"); if (vb) { e.preventDefault(); verificarEnlace(vb.dataset.verif); return; }
+  const cb = e.target.closest("[data-cuentas]"); if (cb) { e.preventDefault(); abrirSimuladorCon(cb.closest("#buscador") && SIM_LIBRE ? SIM_LIBRE : { nombre: "", tienda: "", precio: 0 }, "consultado ahora"); return; }
+  const vr = e.target.closest("[data-verificar]"); if (vr) { e.preventDefault(); $("#hq").focus(); $("#hq").scrollIntoView({ behavior: "smooth", block: "center" }); return; }
   const tb = e.target.closest("[data-tienda]"); if (tb) { e.preventDefault(); abrirTienda(tb.dataset.tienda); return; }
   const sb = e.target.closest("[data-sim]"); if (sb) { e.preventDefault(); $("#tiendaModal").classList.remove("on"); abrirSimulador(sb.dataset.sim); return; }
   const b = e.target.closest(".vote button"); if (!b) return;
@@ -962,10 +994,13 @@ function simular({P, n, ea, interes1, manejo, seguro, otros, seguroPM = 0}){
 function abrirSimulador(id){
   let p = DATA.find(x => x.id === id); if (!p) return;
   const base = p.condicion ? (DATA.find(x => x.link === p.link && !x.condicion) || p) : p;   // siempre el precio de contado
+  abrirSimuladorCon(base, "revisado " + ago(base.verificado));
+}
+function abrirSimuladorCon(base, cuando){
   SIM.p = base;
-  $("#simProd").textContent = base.nombre + " · " + base.tienda;
-  $("#simPrecio").value = cop(base.precio);
-  $("#simPrecioNota").textContent = "Precio de contado en " + base.tienda + ", revisado " + ago(base.verificado) + ". Puedes cambiarlo.";
+  $("#simProd").textContent = base.tienda ? base.nombre + " · " + base.tienda : "Escribe el precio de lo que vas a comprar.";
+  $("#simPrecio").value = base.precio ? cop(base.precio) : "";
+  $("#simPrecioNota").textContent = base.tienda ? "Precio de contado en " + base.tienda + ", " + cuando + ". Puedes cambiarlo." : "Precio de contado del producto.";
   $("#simEnt").value = ""; $("#simTasa").value = ""; $("#simManejo").value = ""; $("#simSeguro").value = ""; $("#simOtros").value = "";
   $("#simUsarTienda").checked = false; $("#simUna").checked = false; SIM.usura = false; SIM.ent = null; $("#simFuente").hidden = true;
   $("#simSeguroNota").textContent = "Valor fijo por mes.";
@@ -1202,6 +1237,47 @@ function renderDonate(){
 function renderEverything(){ renderTop(); renderAll(false); renderFavs(); }
 
 
+
+/* ---------- Verificador: ¿el descuento es real? (/api/verificar) ---------- */
+const ESTADO = {
+  oferta_real: ["✅ OFERTA REAL", "La misma referencia está más barata que en las otras tiendas que revisamos."],
+  dudosa: ["🤔 OFERTA DUDOSA", "El descuento existe en el aviso, pero la evidencia no muestra que de verdad sea más barato."],
+  precio_inflado: ["⚠️ PRECIO ANTERIOR INFLADO", "El precio “antes” que muestra la tienda no se sostiene con lo que vemos en el mercado o en nuestro historial."],
+  insuficiente: ["ℹ️ INFORMACIÓN INSUFICIENTE", "No tenemos evidencia suficiente para decir si el descuento es real o no. Preferimos decírtelo a adivinar."],
+};
+const LEIBLES = ["Falabella", "Olímpica", "Jumbo"];
+async function verificarEnlace(url){
+  const sec = $("#buscador"); sec.hidden = false;
+  $("#bzHead").textContent = "Verificador de descuentos";
+  $("#bzTitulo").innerHTML = "Revisando ese producto en las tiendas y en nuestro historial…";
+  $("#bzEstado").innerHTML = ""; $("#bzGrid").innerHTML = `<div class="empty">Verificando…</div>`;
+  sec.scrollIntoView({ behavior: "smooth", block: "start" });
+  let j;
+  try { const r = await fetch("/api/verificar?url=" + encodeURIComponent(url)); j = await r.json(); if (!r.ok) throw new Error(j.msg || r.status); }
+  catch (e) { $("#bzGrid").innerHTML = `<div class="empty">${esc(e.message && !/^\d+$/.test(e.message) ? e.message : "No pudimos verificarlo en este momento. Intenta de nuevo en un minuto.")}</div>`; $("#bzTitulo").textContent = "No pudimos verificar ese enlace."; return; }
+  const o = j.origen, [tit, txt] = ESTADO[j.estado];
+  const desc = o.precio_antes ? Math.round((1 - o.precio / o.precio_antes) * 100) : 0;
+  $("#bzTitulo").innerHTML = `Verificamos <mark>${esc(o.tienda)}</mark> contra las otras tiendas, ahora mismo.`;
+  $("#bzEstado").innerHTML = "Consultamos: " + j.consultadas.map(t => `<span class="${t.ok ? "ok" : "no"}">${t.ok ? "✓" : "✕"} ${esc(t.tienda)}${t.ok ? "" : " (no pudimos consultarla)"}</span>`).join("");
+  SIM_LIBRE = { nombre: o.nombre, tienda: o.tienda, precio: o.precio };
+  $("#bzGrid").innerHTML = `<article class="vf-card" style="grid-column:1/-1">
+    <div>
+      <div class="vf-estado ${j.estado}"><b>${tit}</b><p>${txt}</p></div>
+      <div class="vf-prod">${o.img ? `<img src="${esc(o.img)}" alt="" referrerpolicy="no-referrer" onerror="this.remove()">` : ""}
+        <div><h3>${esc(o.nombre)}</h3><small class="muted">${esc(o.tienda)}${o.modelo ? " · Ref. " + esc(o.modelo) : ""}${o.propio ? "" : " · lo vende " + esc(o.vendedor)}</small>
+        <p class="vf-precio">${cop(o.precio)}${o.precio_antes ? `<s>${cop(o.precio_antes)}</s>` : ""}${desc ? `<small>La tienda anuncia −${desc} %</small>` : ""}</p>
+        ${o.precio_tarjeta ? `<div class="note">💳 Con la tarjeta de la tienda: ${cop(o.precio_tarjeta)}. No entra en la comparación.</div>` : ""}</div></div>
+      <div class="vf-acc"><a class="btn" href="${esc(o.link)}" target="_blank" rel="noopener nofollow">Verlo en ${esc(o.tienda)} ${I("ext")}</a><button class="btn ghost" data-cuentas>¡Hagamos cuentas!</button></div>
+    </div>
+    <div>
+      <p class="vf-h">LAS PRUEBAS</p>
+      <ul class="vf-pruebas">${j.pruebas.map(p => `<li class="${p.signo === "+" ? "mas" : p.signo === "-" ? "menos" : ""}"><i>${p.signo === "+" ? "✓" : p.signo === "-" ? "!" : "·"}</i><span>${esc(p.texto)}</span></li>`).join("")}</ul>
+      ${j.tiendas.length > 1 ? `<p class="vf-h">LA MISMA REFERENCIA HOY</p><ul class="cmp">${j.tiendas.map(t => `<li class="${t.tienda === o.tienda ? "best" : ""}">${sbadge(t.tienda)}<a href="${esc(t.link)}" target="_blank" rel="noopener nofollow">${esc(t.tienda)}</a><b>${cop(t.precio)}</b></li>`).join("")}</ul>` : ""}
+      ${j.similares.length ? `<div class="bz-sim"><b>🔎 Encontramos un producto similar.</b> No confirmamos que sea la misma referencia: revisa las especificaciones.<ul>${j.similares.map(x => `<li><a href="${esc(x.link)}" target="_blank" rel="noopener nofollow">${esc(x.tienda)}: ${esc(x.nombre)}</a> · <strong>${cop(x.precio)}</strong>${x.diferencias.length ? `<br><span class="bz-dif">Diferencias: ${x.diferencias.map(esc).join(" · ")}</span>` : ""}</li>`).join("")}</ul></div>` : ""}
+    </div>
+  </article>`;
+}
+let SIM_LIBRE = null;
 /* ---------- Buscador inteligente: consulta las tiendas en vivo (/api/buscar) ---------- */
 const VEREDICTO = {
   mas_barato: p => [`MÁS BARATO EN ${p.ganador.toUpperCase()}`, `Ahorras ${cop(p.ahorro)} (${String(p.pct).replace(".", ",")} %) frente a las otras tiendas. Esta sí es una diferencia que vale la pena.`],
@@ -1212,6 +1288,7 @@ const VEREDICTO = {
 };
 async function buscarEnVivo(q){
   const sec = $("#buscador"); sec.hidden = false;
+  $("#bzHead").textContent = "Buscador inteligente";
   $("#bzTitulo").innerHTML = `Buscando <mark>${esc(q)}</mark> en las tiendas, en este momento…`;
   $("#bzEstado").innerHTML = ""; $("#bzGrid").innerHTML = `<div class="empty">Consultando Éxito, Falabella, Olímpica y Jumbo…</div>`;
   sec.scrollIntoView({ behavior: "smooth", block: "start" });
@@ -1228,6 +1305,7 @@ async function buscarEnVivo(q){
       <div class="bz-top">${p.img ? `<img src="${esc(p.img)}" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">` : ""}
         <div><h3>${esc(p.nombre)}</h3><small>${esc(p.marca || "")}${p.codigo ? " · Ref. " + esc(p.codigo) : ""}</small></div></div>
       <div class="bz-ver ${p.veredicto}"><b>${tit}</b>${txt}</div>
+      ${(() => { const t = p.tiendas.find(t => LEIBLES.includes(t.tienda) && t.precio_antes); return t ? `<button class="bz-verif" data-verif="${esc(t.link)}">¿Es real el descuento de ${esc(t.tienda)}? Verifícalo</button>` : ""; })()}
       ${p.tiendas.length ? `<ul class="cmp">${p.tiendas.map(t => `<li class="${t.precio === min && p.n > 1 ? "best" : ""}">${sbadge(t.tienda)}<a href="${esc(t.link)}" target="_blank" rel="noopener nofollow">${esc(t.tienda)}</a><b>${cop(t.precio)}</b></li>`).join("")}</ul>` : ""}
       ${p.antesInflado.map(a => `<div class="bz-alerta">⚠️ <strong>Ojo con el descuento de ${esc(a.tienda)}:</strong> dice que antes costaba ${cop(a.antes)} (−${a.descuentoAnunciado} %), pero hoy ninguna de las tiendas que consultamos lo cobra a ese precio.</div>`).join("")}
       ${tarjetas.map(t => `<div class="note">💳 Pagando con la tarjeta de ${esc(t.tienda)}: ${cop(t.precio_tarjeta)}. No entra en la comparación.</div>`).join("")}
@@ -1237,7 +1315,10 @@ async function buscarEnVivo(q){
   }).join("");
 }
 /* ---------- eventos ---------- */
-$("#heroSearch").addEventListener("submit", e => { e.preventDefault(); const q = $("#hq").value.trim(); if (q.length < 3) return; $("#q").value = q; $("#fCat").value = ""; renderAll(); buscarEnVivo(q); });
+if (matchMedia("(max-width:600px)").matches) $("#hq").placeholder = "Enlace o producto";
+$("#heroSearch").addEventListener("submit", e => { e.preventDefault(); const q = $("#hq").value.trim(); if (q.length < 3) return;
+  if (/^https?:\/\//i.test(q)) { verificarEnlace(q); return; }
+  $("#q").value = q; $("#fCat").value = ""; renderAll(); buscarEnVivo(q); });
 document.querySelectorAll(".cat[data-sub]").forEach(b => b.addEventListener("click", () => { $("#fCat").value = $("#fCat").value === b.dataset.sub ? "" : b.dataset.sub; renderAll(); document.getElementById("comparador").scrollIntoView(); }));
 document.querySelectorAll("[data-radar]").forEach(a => a.addEventListener("click", () => { const r = a.dataset.radar; if (r !== "real") { $("#fClass").value = r; renderAll(); } }));
 ["q","fCat","fStore","fClass","fSort"].forEach(id=>$("#"+id).addEventListener("input",()=>renderAll()));
