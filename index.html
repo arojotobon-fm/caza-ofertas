@@ -43,6 +43,28 @@ h1,h2,h3,h4{font-family:var(--head);letter-spacing:-.01em;margin:0}
 .mainnav a.on{background:var(--dorado);color:var(--petroleo)}
 .soon{font-size:10px;font-weight:800;background:rgba(255,255,255,.14);border-radius:999px;padding:2px 6px;letter-spacing:.3px}
 
+/* ---------- Buscador inteligente (en vivo) ---------- */
+#buscador{padding:22px 0 6px}
+.bz-estado{display:flex;flex-wrap:wrap;gap:6px;margin:-4px 0 14px;font-size:13px;color:var(--muted);align-items:center}
+.bz-estado span{background:#fff;border:1px solid var(--line);border-radius:999px;padding:3px 10px;font-weight:700}
+.bz-estado span.ok{color:var(--verde);border-color:#cfe9d9}.bz-estado span.no{color:var(--ambar);border-color:#f1dcb4}
+.bz-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:16px}
+.bz-card{background:#fff;border:1px solid var(--line);border-radius:var(--r-lg);box-shadow:var(--sh);padding:16px 18px;display:flex;flex-direction:column;gap:10px}
+.bz-top{display:flex;gap:12px;align-items:flex-start}
+.bz-top img{width:72px;height:72px;object-fit:contain;flex:none;border-radius:10px;background:#f6fafa}
+.bz-top h3{font-size:16px;line-height:1.25;color:var(--ink);margin:0}
+.bz-top small{display:block;color:var(--muted);font-weight:700;font-size:12px;margin-top:4px}
+.bz-ver{border-radius:12px;padding:10px 12px;font-size:14px;line-height:1.35}
+.bz-ver b{display:block;font-size:13px;letter-spacing:.3px;margin-bottom:2px}
+.bz-ver.mas_barato{background:var(--verde-bg);color:#14532d}.bz-ver.mas_barato b{color:var(--verde)}
+.bz-ver.igual,.bz-ver.casi_igual{background:var(--turquesa-bg);color:#0f3d44}.bz-ver.igual b,.bz-ver.casi_igual b{color:var(--turquesa-2)}
+.bz-ver.una_tienda,.bz-ver.solo_terceros{background:#EEF2F3;color:#334}
+.bz-alerta{background:var(--ambar-bg);color:#6b4500;border-radius:12px;padding:9px 12px;font-size:13px;line-height:1.35}
+.bz-card .cmp li a{color:inherit}
+.bz-card .cmp li small{color:var(--muted);font-weight:600;font-size:12px}
+.bz-ext summary{cursor:pointer;font-size:13px;font-weight:800;color:var(--muted)}
+.bz-ext ul{margin:6px 0 0;padding-left:18px;font-size:13px;color:var(--muted)}
+.bz-nota{font-size:12.5px;color:var(--muted);margin-top:12px}
 /* ---------- HERO ---------- */
 .hero{position:relative;overflow:hidden;background:linear-gradient(100deg,#F2FBFB 0%,#E5F7F7 40%,#C9EFEE 100%)}
 .hero .wrap{position:relative;display:grid;grid-template-columns:minmax(0,600px) minmax(0,1fr) 320px;align-items:stretch;min-height:300px}
@@ -485,6 +507,22 @@ footer p{margin:0 0 8px;max-width:900px;text-align:justify}
     </aside>
   </div>
 </div>
+
+<section id="buscador" hidden><div class="wrap">
+  <div class="radar-panel compact">
+    <div class="radar-hero">
+      <svg class="ico rh-target" aria-hidden="true"><use href="#i-search"/></svg>
+      <span class="rh-div" aria-hidden="true"></span>
+      <div class="rh-text">
+        <h2><mark>Buscador inteligente</mark></h2>
+        <p id="bzTitulo">Consultamos las tiendas <mark>en este momento</mark> y te decimos si de verdad está barato.</p>
+      </div>
+    </div>
+  </div>
+  <div class="bz-estado" id="bzEstado"></div>
+  <div class="bz-grid" id="bzGrid"></div>
+  <p class="bz-nota">Comparamos solo el mismo producto (misma marca y referencia o mismo código de barras) y el precio que vende la tienda misma, de contado. Los precios con tarjeta y los de otros vendedores van aparte. Los precios pueden cambiar: confírmalo en la tienda antes de pagar.</p>
+</div></section>
 
 <div class="wrap">
   <div class="cats" id="cats">
@@ -1118,8 +1156,42 @@ function renderDonate(){
 }
 function renderEverything(){ renderTop(); renderAll(false); renderFavs(); }
 
+
+/* ---------- Buscador inteligente: consulta las tiendas en vivo (/api/buscar) ---------- */
+const VEREDICTO = {
+  mas_barato: p => [`MÁS BARATO EN ${p.ganador.toUpperCase()}`, `Ahorras ${cop(p.ahorro)} (${String(p.pct).replace(".", ",")} %) frente a las otras tiendas. Esta sí es una diferencia que vale la pena.`],
+  casi_igual: p => ["PRECIO CASI IGUAL", `La diferencia es de solo ${cop(p.ahorro)}. No hay afán: cómpralo donde te quede más fácil.`],
+  igual: p => ["MISMO PRECIO", `Cuesta lo mismo en ${p.n} tiendas. Ninguna te está dando una ganga.`],
+  una_tienda: p => ["SOLO EN UNA TIENDA", `Solo lo encontramos en ${p.tiendas[0].tienda}. Sin otra tienda para comparar, no podemos decirte si es barato.`],
+  solo_terceros: p => ["SOLO OTROS VENDEDORES", "Ninguna tienda lo vende directamente: solo vendedores del marketplace. Revisa bien quién vende antes de comprar."],
+};
+async function buscarEnVivo(q){
+  const sec = $("#buscador"); sec.hidden = false;
+  $("#bzTitulo").innerHTML = `Buscando <mark>${esc(q)}</mark> en las tiendas, en este momento…`;
+  $("#bzEstado").innerHTML = ""; $("#bzGrid").innerHTML = `<div class="empty">Consultando Éxito, Falabella, Olímpica y Jumbo…</div>`;
+  sec.scrollIntoView({ behavior: "smooth", block: "start" });
+  let j;
+  try { const r = await fetch("/api/buscar?q=" + encodeURIComponent(q)); j = await r.json(); if (!r.ok) throw new Error(j.msg || r.status); }
+  catch (e) { $("#bzGrid").innerHTML = `<div class="empty">No pudimos hacer la búsqueda en este momento. Intenta de nuevo en un minuto.</div>`; return; }
+  $("#bzTitulo").innerHTML = `Resultados de <mark>${esc(q)}</mark>, consultados ahora mismo.`;
+  $("#bzEstado").innerHTML = "Consultamos: " + j.tiendas.map(t => `<span class="${t.ok ? "ok" : "no"}">${t.ok ? "✓" : "✕"} ${esc(t.tienda)}${t.ok ? "" : " (" + esc(t.motivo) + ")"}</span>`).join("");
+  if (!j.productos.length) { $("#bzGrid").innerHTML = `<div class="empty">No encontramos ese producto en las tiendas que consultamos. Prueba con la marca y la referencia, por ejemplo "Ninja AF141".</div>`; return; }
+  $("#bzGrid").innerHTML = j.productos.map(p => {
+    const [tit, txt] = VEREDICTO[p.veredicto](p), min = p.tiendas.length ? p.tiendas[0].precio : 0;
+    const tarjetas = p.tiendas.filter(t => t.precio_tarjeta && t.precio_tarjeta < t.precio);
+    return `<article class="bz-card">
+      <div class="bz-top">${p.img ? `<img src="${esc(p.img)}" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">` : ""}
+        <div><h3>${esc(p.nombre)}</h3><small>${esc(p.marca || "")}${p.codigo ? " · Ref. " + esc(p.codigo) : ""}</small></div></div>
+      <div class="bz-ver ${p.veredicto}"><b>${tit}</b>${txt}</div>
+      ${p.tiendas.length ? `<ul class="cmp">${p.tiendas.map(t => `<li class="${t.precio === min && p.n > 1 ? "best" : ""}">${sbadge(t.tienda)}<a href="${esc(t.link)}" target="_blank" rel="noopener nofollow">${esc(t.tienda)}</a><b>${cop(t.precio)}</b></li>`).join("")}</ul>` : ""}
+      ${p.antesInflado.map(a => `<div class="bz-alerta">⚠️ <strong>Ojo con el descuento de ${esc(a.tienda)}:</strong> dice que antes costaba ${cop(a.antes)} (−${a.descuentoAnunciado} %), pero hoy ninguna de las tiendas que consultamos lo cobra a ese precio.</div>`).join("")}
+      ${tarjetas.map(t => `<div class="note">💳 Pagando con la tarjeta de ${esc(t.tienda)}: ${cop(t.precio_tarjeta)}. No entra en la comparación.</div>`).join("")}
+      ${p.externas.length ? `<details class="bz-ext"><summary>Otros vendedores (no la tienda): ${p.externas.length}, desde ${cop(p.externas[0].precio)}</summary><ul>${p.externas.slice(0, 5).map(x => `<li>${esc(x.vendedor)} en ${esc(x.tienda)}: ${cop(x.precio)}</li>`).join("")}</ul></details>` : ""}
+    </article>`;
+  }).join("");
+}
 /* ---------- eventos ---------- */
-$("#heroSearch").addEventListener("submit", e => { e.preventDefault(); $("#q").value = $("#hq").value; $("#fCat").value = ""; renderAll(); location.hash = "#comparador"; });
+$("#heroSearch").addEventListener("submit", e => { e.preventDefault(); const q = $("#hq").value.trim(); if (q.length < 3) return; $("#q").value = q; $("#fCat").value = ""; renderAll(); buscarEnVivo(q); });
 document.querySelectorAll(".cat[data-sub]").forEach(b => b.addEventListener("click", () => { $("#fCat").value = $("#fCat").value === b.dataset.sub ? "" : b.dataset.sub; renderAll(); document.getElementById("comparador").scrollIntoView(); }));
 document.querySelectorAll("[data-radar]").forEach(a => a.addEventListener("click", () => { const r = a.dataset.radar; if (r !== "real") { $("#fClass").value = r; renderAll(); } }));
 ["q","fCat","fStore","fClass","fSort"].forEach(id=>$("#"+id).addEventListener("input",()=>renderAll()));
