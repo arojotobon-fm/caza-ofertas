@@ -57,3 +57,15 @@ Las cifras de tráfico de ese documento no están verificadas: no se guardan com
 ### Decisiones ya tomadas sobre ese documento
 - Disponibilidad: no se guarda inventario, pero solo se comparan publicaciones **disponibles al momento** (evita "ofertas" que no se pueden comprar).
 - ¡Hagamos Cuentas! es una herramienta complementaria, no un veredicto.
+
+
+## Experiencia pública — decisiones aprobadas (22 nov 2026)
+- [x] Conservar el panel principal, los personajes y la frase **«No cazamos descuentos. Cazamos la verdad detrás de los precios»**.
+- [x] Mantener el buscador como entrada principal: el usuario solicita investigar un producto concreto.
+- [x] Conservar **Explorar por categoría** como filtro de investigación, no como catálogo público.
+- [x] Retirar de la navegación pública **«¿Está barato hoy? Mira dónde cuesta menos»**, el catálogo/listado masivo del Radar y la sección pública **Comparador**. La comparación multitienda permanece como proceso interno que sustenta los veredictos.
+- [x] Retirar **«¿No está en la lista? Búscalo en todas las tiendas»** y sus enlaces de búsqueda externa.
+- [x] Conservar el historial de precios, la comunidad **«Únete a los Cazadores que reportan»**, **«Apoya este proyecto»** y **«¡Hagamos Cuentas!»**.
+- [ ] Ajustar el flujo de categorías para que al elegir una categoría enfoque la búsqueda de un producto dentro de ella, sin desplegar listados de catálogo.
+- [ ] Validar visualmente la rama en una vista previa antes de autorizar cualquier publicación.
+- **Regla:** no modificar main, no fusionar ni desplegar a producción sin aprobación expresa de Ana.
