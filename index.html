@@ -146,15 +146,23 @@ section{padding:30px 0}
 .sec-head h2{font-size:clamp(24px,3vw,32px);font-weight:900;color:var(--petroleo);display:flex;align-items:center;gap:10px}
 .sec-head h2 .ico{width:30px;height:30px;color:var(--turquesa-2)}
 .sec-head p{margin:4px 0 0;color:var(--muted);font-size:15px;max-width:760px}
-.radar-intro{margin-bottom:12px}
+.radar-panel{background:radial-gradient(120% 140% at 0% 0%,#E9FAF8 0%,rgba(233,250,248,0) 55%),linear-gradient(135deg,#F2FBFA 0%,#E3F7F6 55%,#EEF9F3 100%);border:1px solid #D6EFEC;border-radius:var(--r-lg);padding:26px 26px 22px;margin-bottom:18px}
+.radar-intro{margin-bottom:16px}
 .radar-intro>div,.radar-intro p{max-width:none}
-.radar-intro p{font-size:16px}
-.reglas{list-style:none;margin:0 0 18px;padding:0;display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
-.reglas li{background:#fff;border:1px solid var(--line);border-left:4px solid var(--turquesa-2);border-radius:12px;padding:12px 14px}
-.reglas b{display:block;font-family:var(--head);font-size:15px;color:var(--petroleo);margin-bottom:4px;line-height:1.2}
-.reglas span{display:block;font-size:13.5px;color:var(--muted);line-height:1.45}
+.radar-intro h2{font-size:clamp(28px,3.4vw,38px);letter-spacing:-.01em;line-height:1.08}
+.radar-intro h2 .ico{width:34px;height:34px}
+.radar-intro p{font-size:17px;color:var(--ink);opacity:.8;margin-top:8px}
+.reglas{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.reglas li{--acento:var(--turquesa-2);--acento-bg:var(--turquesa-bg);background:#fff;border-radius:18px;padding:18px 18px 16px;box-shadow:0 1px 2px rgba(11,53,64,.05),0 8px 22px rgba(11,53,64,.07);border-top:4px solid var(--acento)}
+.reglas li.r2{--acento:var(--ambar);--acento-bg:var(--ambar-bg)}
+.reglas li.r3{--acento:var(--petroleo-3);--acento-bg:#E2EEF0}
+.reglas li.r4{--acento:var(--verde);--acento-bg:var(--verde-bg)}
+.reglas .r-ico{display:inline-flex;align-items:center;justify-content:center;width:42px;height:42px;border-radius:12px;background:var(--acento-bg);color:var(--acento);margin-bottom:10px}
+.reglas .r-ico .ico{width:22px;height:22px;stroke-width:2.2}
+.reglas b{display:block;font-family:var(--head);font-size:17px;font-weight:900;color:var(--petroleo);margin-bottom:6px;line-height:1.2}
+.reglas li>span:not(.r-ico){display:block;font-size:14px;color:var(--muted);line-height:1.5}
 @media (max-width:980px){.reglas{grid-template-columns:repeat(2,1fr)}}
-@media (max-width:560px){.reglas{grid-template-columns:1fr}}
+@media (max-width:560px){.reglas{grid-template-columns:1fr}.radar-panel{padding:18px 14px}}
 .community{display:flex;gap:16px;align-items:center;background:linear-gradient(90deg,var(--petroleo),var(--petroleo-3));color:#fff;border-radius:var(--r-lg);padding:14px 20px;margin-bottom:16px}
 .community img{width:92px;height:auto;flex:none;filter:drop-shadow(0 4px 10px rgba(0,0,0,.3))}
 .community b{color:var(--dorado);font-family:var(--head);font-size:18px;display:block}
@@ -421,16 +429,18 @@ footer p{margin:0 0 8px;max-width:900px}
 </div>
 
 <section id="radar"><div class="wrap">
+  <div class="radar-panel">
   <div class="sec-head radar-intro"><div>
     <h2><svg class="ico"><use href="#i-target"/></svg>Radar: dónde está más barato hoy</h2>
     <p>Aquí solo aparece un producto cuando lo encontramos <b>exactamente igual</b> en otra tienda y aquí cuesta menos.</p>
   </div></div>
   <ul class="reglas">
-    <li><b>Precio sin tarjeta</b><span>Comparamos el precio que paga cualquier persona. Los precios con CMR, Tarjeta Éxito o Tarjeta Alkosto los mostramos aparte y no entran en la comparación.</span></li>
-    <li><b>Si son pocas tiendas, te avisamos</b><span>Si solo lo encontramos en 2 tiendas, te lo decimos.</span></li>
-    <li><b>Una sola empresa, una sola tienda</b><span>Alkosto, Ktronix y Alkomprar son de la misma empresa: las contamos como una sola tienda.</span></li>
-    <li><b>Más barato no es lo mismo que oferta</b><span>Más barato no siempre quiere decir que esté en oferta.</span></li>
+    <li class="r1"><span class="r-ico"><svg class="ico"><use href="#i-tag"/></svg></span><b>Precio sin tarjeta</b><span>Comparamos el precio que paga cualquier persona. Los precios con CMR, Tarjeta Éxito o Tarjeta Alkosto los mostramos aparte y no entran en la comparación.</span></li>
+    <li class="r2"><span class="r-ico"><svg class="ico"><use href="#i-alert"/></svg></span><b>Si son pocas tiendas, te avisamos</b><span>Si solo lo encontramos en 2 tiendas, te lo decimos.</span></li>
+    <li class="r3"><span class="r-ico"><svg class="ico"><use href="#i-store"/></svg></span><b>Una sola empresa, una sola tienda</b><span>Alkosto, Ktronix y Alkomprar son de la misma empresa: las contamos como una sola tienda.</span></li>
+    <li class="r4"><span class="r-ico"><svg class="ico"><use href="#i-shield"/></svg></span><b>Más barato no es lo mismo que oferta</b><span>Más barato no siempre quiere decir que esté en oferta.</span></li>
   </ul>
+  </div>
   <div class="community">
     <img src="img/insignia.webp" alt="Insignia de los Cazadores que reportan" width="92" height="61">
     <div><b>Únete a los Cazadores que reportan</b><span>¿Lo viste en la tienda? Toca <strong>Sigue a ese precio</strong> o <strong>Ya no / cambió el precio</strong>. Si 2 o más cazadores avisan que ya no está, lo sacamos del Radar hasta volver a revisarlo.</span></div>
