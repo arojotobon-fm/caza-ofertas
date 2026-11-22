@@ -18,7 +18,7 @@ from comparador import comparar_precios, comercios_independientes  # noqa: E402
 
 HOY = "2026-11-22"
 IDENT = cargar_identidades()
-LIMPIA = {"status": 200, "has_main": True, "banner_txt": "", "banner_img": "", "seller_text": None, "special": False}
+LIMPIA = {"fecha": HOY, "status": 200, "has_main": True, "banner_txt": "", "banner_img": "", "seller_text": None, "special": False}
 CHEQUEO = os.path.join(ROOT, "data", "v2", "chequeos", "alkosto-2026-11-22.json")
 
 
@@ -50,7 +50,13 @@ class ValidacionPorCanal(unittest.TestCase):
         self.assertEqual(v["validado_en"], HOY)
         self.assertEqual(v["vendedor_real"]["nit"], "890.900.943-1")
         self.assertIn("contrato-compraventa", v["evidencia"]["canal"]["fuente"])
-        self.assertLessEqual(v["revalidar_antes_de"], "2027-02-20")   # 90 días
+        self.assertNotIn("revalidar_antes_de", v)  # los 90 días pertenecen al contrato del canal, no a la ficha
+
+    def test_ficha_de_otro_dia_no_se_reutiliza(self):
+        vieja = ficha(fecha="2026-11-21")
+        v = validar_por_canal("alkosto", vieja, IDENT, HOY)
+        self.assertEqual(v["estado_validacion"], "pendiente")
+        self.assertIn("fecha de actualización", v["motivo"])
 
     def test_otro_vendedor_queda_pendiente(self):
         for t in ["Vendido por TecnoShop SAS", "Vendedor: Importadora XYZ", "Proveedor: Samsung Colombia",
