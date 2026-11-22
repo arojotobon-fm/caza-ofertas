@@ -15,6 +15,7 @@ Uso:  python3 scripts/migrar_v1_a_v2.py [--salida DIR] [--chequeo data/v2/cheque
       --salida permite un ensayo sin tocar data/v2.
 """
 import argparse
+import datetime
 import hashlib
 import json
 import os
@@ -62,6 +63,8 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--salida", default=OUT)
     ap.add_argument("--chequeo", action="append", default=[])
+    ap.add_argument("--fecha-verificacion", default=datetime.date.today().isoformat(),
+                    help="Fecha real de esta actualización (AAAA-MM-DD); no reutiliza chequeos de otros días.")
     args = ap.parse_args()
     OUT = args.salida
     identidades = cargar_identidades()
@@ -107,7 +110,7 @@ def main():
             path = re.sub(r"^https?://[^/]+", "", url or "")
             ch = chequeos.get((comercio_id, path))
             if ch:
-                val = validar_por_canal(comercio_id, ch, identidades, ch["fecha"], condicion)
+                val = validar_por_canal(comercio_id, ch, identidades, args.fecha_verificacion, condicion)
                 if val["estado_validacion"] == "validado":
                     vid = f"{identidad_id(val)}@{comercio_id}"
         if vid not in vendedores:
