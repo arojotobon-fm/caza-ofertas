@@ -615,7 +615,7 @@ function card(p, rank){
       <h3 class="name">${esc(p.nombre)}</h3>
       <div class="price"><b>${cop(p.precio)}</b>${p.precio_antes ? `<s>${cop(p.precio_antes)}</s>` : ""}</div>
       ${ri ? `<div class="real">Precio de contado en ${ri.n===2?"otro comercio":"otros comercios"} ${cop(ri.ref)} · diferencia <strong>${ri.pct.toFixed(1)}%</strong></div>${estadoChip(ri)}` : `<div class="real">${p.condicion ? "Precio con tarjeta: no se compara con precios de contado" : esExterno(p) ? "Vendedor externo: no entra en el Radar" : "Sin comparación válida"}</div>`}
-      ${p.nota ? `<div class="note">${esc(p.nota)}</div>` : ""}
+      ${notaLimpia(p) ? `<div class="note">${esc(notaLimpia(p))}</div>` : ""}
       <div class="when"><span class="dot ${stale?"old":""}"></span>Verificado ${ago(p.verificado)}</div>
       <div class="stale-msg">Puede haber cambiado. Revisa antes de comprar.</div>
       ${cs.html}
@@ -653,6 +653,9 @@ function radarInfo(p){
   const ref = median(Object.entries(best).filter(([g]) => g !== grupoDe(p.tienda)).map(([,r]) => r.precio));
   return { rows, n, ref, ahorro: ref - p.precio, pct: (ref - p.precio) / ref * 100, estado: n >= 3 ? "completa" : "limitada" };
 }
+// La nota de los datos v1 trae "Comparado con…" calculado con las reglas viejas (incluía vendedores externos
+// y precios con tarjeta). Se oculta esa parte: la comparación válida se muestra con radarInfo.
+const notaLimpia = p => String(p.nota || "").replace(/Comparado con [^.]*\.\s*/g, "").replace(/Precio pagando [^.]*\.[^.]*\.\s*/g, "").trim();
 const estadoChip = i => i.estado === "limitada"
   ? `<span class="cmpchip lim" title="Solo se encontró el mismo producto en otro comercio independiente">Comparación limitada · 2 comercios</span>`
   : `<span class="cmpchip ok">Comparación con ${i.n} comercios</span>`;
