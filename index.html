@@ -655,7 +655,7 @@ function radarInfo(p){
 }
 // La nota de los datos v1 trae "Comparado con…" calculado con las reglas viejas (incluía vendedores externos
 // y precios con tarjeta). Se oculta esa parte: la comparación válida se muestra con radarInfo.
-const notaLimpia = p => String(p.nota || "").replace(/Comparado con [^.]*\.\s*/g, "").replace(/Precio pagando [^.]*\.[^.]*\.\s*/g, "").trim();
+const notaLimpia = p => String(p.nota || "").replace(/Comparado con .*?\.(?=\s|$)\s*/g, "").replace(/Precio pagando .*?\.(?=\s|$)\s*(con otros medios de pago: .*?\.(?=\s|$)\s*)?/g, "").trim();
 const estadoChip = i => i.estado === "limitada"
   ? `<span class="cmpchip lim" title="Solo se encontró el mismo producto en otro comercio independiente">Comparación limitada · 2 comercios</span>`
   : `<span class="cmpchip ok">Comparación con ${i.n} comercios</span>`;
