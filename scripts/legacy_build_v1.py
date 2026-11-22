@@ -3,7 +3,7 @@ import argparse, json, re, statistics, unicodedata, datetime, os
 def argumentos():
     ap = argparse.ArgumentParser(description="Construye catálogo v1 desde respaldos crudos, sin tocar producción.")
     ap.add_argument("--respaldo-dir", required=True)
-    ap.add_argument("--fecha", required=True, help="AAAA-MM-DD")
+    ap.add_argument("--fecha", required=True, help="Fecha y hora real de la lectura, AAAA-MM-DDTHH:MM:SS-05:00")
     ap.add_argument("--salida", required=True, help="Directorio aislado de salida")
     ap.add_argument("--historial-base")
     return ap.parse_args()
@@ -12,7 +12,10 @@ ARGS = argumentos()
 RESP = os.path.abspath(ARGS.respaldo_dir)
 SALIDA = os.path.abspath(ARGS.salida)
 os.makedirs(SALIDA, exist_ok=True)
-NOW = datetime.datetime.fromisoformat(ARGS.fecha + "T12:00:00-05:00").isoformat()
+# Hora real de la lectura: la página muestra "Revisado hace…" con este valor, así que nunca se inventa una hora.
+if "T" not in ARGS.fecha:
+    raise SystemExit("--fecha debe incluir la hora real de la lectura, por ejemplo 2026-11-22T02:03:00-05:00")
+NOW = datetime.datetime.fromisoformat(ARGS.fecha).isoformat()
 SUB = {"freidora":"Electrodomésticos","licuadora":"Electrodomésticos","cafetera":"Electrodomésticos","aspiradora":"Hogar",
        "televisor":"Televisores","audifonos":"Tecnología","parlante":"Tecnología","smartwatch":"Tecnología","celular":"Celulares",
        "portatil":"Tecnología","tablet":"Tecnología","consola":"Videojuegos","lego":"Juguetes","secador":"Belleza y cuidado"}

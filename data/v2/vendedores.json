@@ -115,7 +115,7 @@
   "tipo": "retailer",
   "estado_validacion": "validado",
   "metodo_validacion": "automatica_coincidencia_exacta",
-  "validado_en": "2026-11-22T12:00:00-05:00",
+  "validado_en": "2026-11-22T02:03:00-05:00",
   "motivo": "El listado identifica expresamente a 'Exito' como vendedor y coincide exactamente con el comercio.",
   "nivel_evidencia": "publicacion",
   "revalidar_antes_de": null,
@@ -124,27 +124,27 @@
    {
     "texto_listado": "Exito",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    },
    {
     "texto_listado": "Exito",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    },
    {
     "texto_listado": "Exito",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    },
    {
     "texto_listado": "Exito",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    },
    {
     "texto_listado": "Exito",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    }
   ],
   "publicaciones": 131
@@ -165,27 +165,27 @@
    {
     "texto_listado": "3 tiendas",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    },
    {
     "texto_listado": "3 tiendas",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    },
    {
     "texto_listado": "3 tiendas",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    },
    {
     "texto_listado": "3 tiendas",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    },
    {
     "texto_listado": "3 tiendas",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    }
   ],
   "publicaciones": 12
@@ -206,12 +206,12 @@
    {
     "texto_listado": "Alz market",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    },
    {
     "texto_listado": "Alz market",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    }
   ],
   "publicaciones": 2
@@ -232,12 +232,12 @@
    {
     "texto_listado": "Bravephone",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    },
    {
     "texto_listado": "Bravephone",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    }
   ],
   "publicaciones": 2
@@ -258,12 +258,12 @@
    {
     "texto_listado": "Comercializadora jw",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    },
    {
     "texto_listado": "Comercializadora jw",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    }
   ],
   "publicaciones": 2
@@ -284,17 +284,17 @@
    {
     "texto_listado": "Compra online",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    },
    {
     "texto_listado": "Compra online",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    },
    {
     "texto_listado": "Compra online",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    }
   ],
   "publicaciones": 3
@@ -315,7 +315,7 @@
    {
     "texto_listado": "E-brands",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    }
   ],
   "publicaciones": 1
@@ -336,12 +336,12 @@
    {
     "texto_listado": "Evolutech tbh",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    },
    {
     "texto_listado": "Evolutech tbh",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    }
   ],
   "publicaciones": 2
@@ -362,12 +362,12 @@
    {
     "texto_listado": "Gamer tecnology",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    },
    {
     "texto_listado": "Gamer tecnology",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    }
   ],
   "publicaciones": 2
@@ -388,22 +388,22 @@
    {
     "texto_listado": "Idagizi",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    },
    {
     "texto_listado": "Idagizi",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    },
    {
     "texto_listado": "Idagizi",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    },
    {
     "texto_listado": "Idagizi",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    }
   ],
   "publicaciones": 4
@@ -424,7 +424,7 @@
    {
     "texto_listado": "Imditec dm colombia",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    }
   ],
   "publicaciones": 1
@@ -445,7 +445,7 @@
    {
     "texto_listado": "Inity",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    }
   ],
   "publicaciones": 1
@@ -466,22 +466,22 @@
    {
     "texto_listado": "Innovation zone1",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    },
    {
     "texto_listado": "Innovation zone1",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    },
    {
     "texto_listado": "Innovation zone1",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    },
    {
     "texto_listado": "Innovation zone1",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    }
   ],
   "publicaciones": 4
@@ -502,12 +502,12 @@
    {
     "texto_listado": "Intelcom negocios integrales",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    },
    {
     "texto_listado": "Intelcom negocios integrales",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    }
   ],
   "publicaciones": 2
@@ -528,7 +528,7 @@
    {
     "texto_listado": "Jesucristo electro",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    }
   ],
   "publicaciones": 1
@@ -549,7 +549,7 @@
    {
     "texto_listado": "Korolos",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    }
   ],
   "publicaciones": 1
@@ -570,17 +570,17 @@
    {
     "texto_listado": "Kuwala",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    },
    {
     "texto_listado": "Kuwala",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    },
    {
     "texto_listado": "Kuwala",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    }
   ],
   "publicaciones": 3
@@ -601,12 +601,12 @@
    {
     "texto_listado": "La fabrica del iphone",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    },
    {
     "texto_listado": "La fabrica del iphone",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    }
   ],
   "publicaciones": 2
@@ -627,12 +627,12 @@
    {
     "texto_listado": "La maxima mayorista",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    },
    {
     "texto_listado": "La maxima mayorista",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    }
   ],
   "publicaciones": 2
@@ -653,7 +653,7 @@
    {
     "texto_listado": "Magnus pro",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    }
   ],
   "publicaciones": 1
@@ -674,7 +674,7 @@
    {
     "texto_listado": "Megaccesorios",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    }
   ],
   "publicaciones": 1
@@ -695,12 +695,12 @@
    {
     "texto_listado": "Natech",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    },
    {
     "texto_listado": "Natech",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    }
   ],
   "publicaciones": 2
@@ -721,22 +721,22 @@
    {
     "texto_listado": "Novamix tech",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    },
    {
     "texto_listado": "Novamix tech",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    },
    {
     "texto_listado": "Novamix tech",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    },
    {
     "texto_listado": "Novamix tech",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    }
   ],
   "publicaciones": 4
@@ -757,7 +757,7 @@
    {
     "texto_listado": "Nuvi tecno",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    }
   ],
   "publicaciones": 1
@@ -778,17 +778,17 @@
    {
     "texto_listado": "Ocnatech",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    },
    {
     "texto_listado": "Ocnatech",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    },
    {
     "texto_listado": "Ocnatech",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    }
   ],
   "publicaciones": 3
@@ -809,7 +809,7 @@
    {
     "texto_listado": "Oklahoma",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    }
   ],
   "publicaciones": 1
@@ -830,7 +830,7 @@
    {
     "texto_listado": "Oportunidades",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    }
   ],
   "publicaciones": 1
@@ -851,7 +851,7 @@
    {
     "texto_listado": "P,n compustar",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    }
   ],
   "publicaciones": 1
@@ -872,7 +872,7 @@
    {
     "texto_listado": "Puntotec",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    }
   ],
   "publicaciones": 1
@@ -893,27 +893,27 @@
    {
     "texto_listado": "Q-bits",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    },
    {
     "texto_listado": "Q-bits",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    },
    {
     "texto_listado": "Q-bits",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    },
    {
     "texto_listado": "Q-bits",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    },
    {
     "texto_listado": "Q-bits",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    }
   ],
   "publicaciones": 6
@@ -934,7 +934,7 @@
    {
     "texto_listado": "Quiero mac",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    }
   ],
   "publicaciones": 1
@@ -955,12 +955,12 @@
    {
     "texto_listado": "River technology",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    },
    {
     "texto_listado": "River technology",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    }
   ],
   "publicaciones": 2
@@ -981,7 +981,7 @@
    {
     "texto_listado": "S&n bienes y servicios",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    }
   ],
   "publicaciones": 1
@@ -1002,27 +1002,27 @@
    {
     "texto_listado": "Simaro co",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    },
    {
     "texto_listado": "Simaro co",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    },
    {
     "texto_listado": "Simaro co",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    },
    {
     "texto_listado": "Simaro co",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    },
    {
     "texto_listado": "Simaro co",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    }
   ],
   "publicaciones": 7
@@ -1043,17 +1043,17 @@
    {
     "texto_listado": "Smartphonetablet",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    },
    {
     "texto_listado": "Smartphonetablet",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    },
    {
     "texto_listado": "Smartphonetablet",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    }
   ],
   "publicaciones": 3
@@ -1074,7 +1074,7 @@
    {
     "texto_listado": "Super electro jyf online",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    }
   ],
   "publicaciones": 1
@@ -1095,7 +1095,7 @@
    {
     "texto_listado": "Team work",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    }
   ],
   "publicaciones": 1
@@ -1116,7 +1116,7 @@
    {
     "texto_listado": "Tecno optima",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    }
   ],
   "publicaciones": 1
@@ -1137,7 +1137,7 @@
    {
     "texto_listado": "Tecnocel bucaramanga",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    }
   ],
   "publicaciones": 1
@@ -1158,12 +1158,12 @@
    {
     "texto_listado": "Tecnomarket ink",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    },
    {
     "texto_listado": "Tecnomarket ink",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    }
   ],
   "publicaciones": 2
@@ -1184,7 +1184,7 @@
    {
     "texto_listado": "Tecnoova com",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    }
   ],
   "publicaciones": 1
@@ -1205,12 +1205,12 @@
    {
     "texto_listado": "Ts online",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    },
    {
     "texto_listado": "Ts online",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    }
   ],
   "publicaciones": 2
@@ -1231,7 +1231,7 @@
    {
     "texto_listado": "Variedades rausang",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    }
   ],
   "publicaciones": 1
@@ -1252,7 +1252,7 @@
    {
     "texto_listado": "Variedades y electrónica de consumo",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    }
   ],
   "publicaciones": 1
@@ -1273,7 +1273,7 @@
    {
     "texto_listado": "Webcaster",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    }
   ],
   "publicaciones": 1
@@ -1294,22 +1294,22 @@
    {
     "texto_listado": "Yaxa",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    },
    {
     "texto_listado": "Yaxa",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    },
    {
     "texto_listado": "Yaxa",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    },
    {
     "texto_listado": "Yaxa",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    }
   ],
   "publicaciones": 4
@@ -1330,17 +1330,17 @@
    {
     "texto_listado": "Cubitt colombia",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    },
    {
     "texto_listado": "Cubitt colombia",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    },
    {
     "texto_listado": "Cubitt colombia",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    }
   ],
   "publicaciones": 3
@@ -1361,12 +1361,12 @@
    {
     "texto_listado": "Electrolux Group",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    },
    {
     "texto_listado": "Electrolux Group",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    }
   ],
   "publicaciones": 2
@@ -1387,12 +1387,12 @@
    {
     "texto_listado": "Distribuidor Oficial Colombia",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    },
    {
     "texto_listado": "Distribuidor Oficial Colombia",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    }
   ],
   "publicaciones": 2
@@ -1404,7 +1404,7 @@
   "tipo": "retailer",
   "estado_validacion": "validado",
   "metodo_validacion": "automatica_coincidencia_exacta",
-  "validado_en": "2026-11-22T12:00:00-05:00",
+  "validado_en": "2026-11-22T02:03:00-05:00",
   "motivo": "El listado identifica expresamente a 'Falabella' como vendedor y coincide exactamente con el comercio.",
   "nivel_evidencia": "publicacion",
   "revalidar_antes_de": null,
@@ -1413,27 +1413,27 @@
    {
     "texto_listado": "Falabella",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    },
    {
     "texto_listado": "Falabella",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    },
    {
     "texto_listado": "Falabella",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    },
    {
     "texto_listado": "Falabella",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    },
    {
     "texto_listado": "Falabella",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    }
   ],
   "publicaciones": 179
@@ -1454,7 +1454,7 @@
    {
     "texto_listado": "52 Bits",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    }
   ],
   "publicaciones": 1
@@ -1475,7 +1475,7 @@
    {
     "texto_listado": "Alz Market",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    }
   ],
   "publicaciones": 1
@@ -1496,7 +1496,7 @@
    {
     "texto_listado": "Aquishopco",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    }
   ],
   "publicaciones": 1
@@ -1517,27 +1517,27 @@
    {
     "texto_listado": "Cardi",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    },
    {
     "texto_listado": "Cardi",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    },
    {
     "texto_listado": "Cardi",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    },
    {
     "texto_listado": "Cardi",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    },
    {
     "texto_listado": "Cardi",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    }
   ],
   "publicaciones": 6
@@ -1558,12 +1558,12 @@
    {
     "texto_listado": "Cell Transit",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    },
    {
     "texto_listado": "Cell Transit",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    }
   ],
   "publicaciones": 2
@@ -1584,17 +1584,17 @@
    {
     "texto_listado": "Celumovil Store Sas",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    },
    {
     "texto_listado": "Celumovil Store Sas",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    },
    {
     "texto_listado": "Celumovil Store Sas",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    }
   ],
   "publicaciones": 3
@@ -1615,27 +1615,27 @@
    {
     "texto_listado": "Compra Tecnología",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    },
    {
     "texto_listado": "Compra Tecnología",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    },
    {
     "texto_listado": "Compra Tecnología",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    },
    {
     "texto_listado": "Compra Tecnología",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    },
    {
     "texto_listado": "Compra Tecnología",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    }
   ],
   "publicaciones": 10
@@ -1656,17 +1656,17 @@
    {
     "texto_listado": "Compumarket Bga",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    },
    {
     "texto_listado": "Compumarket Bga",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    },
    {
     "texto_listado": "Compumarket Bga",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    }
   ],
   "publicaciones": 3
@@ -1687,17 +1687,17 @@
    {
     "texto_listado": "Compumarket.bga",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    },
    {
     "texto_listado": "Compumarket.bga",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    },
    {
     "texto_listado": "Compumarket.bga",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    }
   ],
   "publicaciones": 3
@@ -1718,12 +1718,12 @@
    {
     "texto_listado": "Continente Sas",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    },
    {
     "texto_listado": "Continente Sas",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    }
   ],
   "publicaciones": 2
@@ -1744,7 +1744,7 @@
    {
     "texto_listado": "Dprimero",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    }
   ],
   "publicaciones": 1
@@ -1765,7 +1765,7 @@
    {
     "texto_listado": "Ehommer",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    }
   ],
   "publicaciones": 1
@@ -1786,7 +1786,7 @@
    {
     "texto_listado": "Galaxitel Electronics",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    }
   ],
   "publicaciones": 1
@@ -1807,12 +1807,12 @@
    {
     "texto_listado": "Grupo Comercia",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    },
    {
     "texto_listado": "Grupo Comercia",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    }
   ],
   "publicaciones": 2
@@ -1833,12 +1833,12 @@
    {
     "texto_listado": "Gseb Andean S.a.",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    },
    {
     "texto_listado": "Gseb Andean S.a.",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    }
   ],
   "publicaciones": 2
@@ -1859,7 +1859,7 @@
    {
     "texto_listado": "Home Improvement",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    }
   ],
   "publicaciones": 1
@@ -1880,27 +1880,27 @@
    {
     "texto_listado": "Homecenter",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    },
    {
     "texto_listado": "Homecenter",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    },
    {
     "texto_listado": "Homecenter",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    },
    {
     "texto_listado": "Homecenter",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    },
    {
     "texto_listado": "Homecenter",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    }
   ],
   "publicaciones": 10
@@ -1921,17 +1921,17 @@
    {
     "texto_listado": "Hometec Store",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    },
    {
     "texto_listado": "Hometec Store",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    },
    {
     "texto_listado": "Hometec Store",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    }
   ],
   "publicaciones": 3
@@ -1952,7 +1952,7 @@
    {
     "texto_listado": "Innovaciones M.y",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    }
   ],
   "publicaciones": 1
@@ -1973,17 +1973,17 @@
    {
     "texto_listado": "Jesucristo Electro",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    },
    {
     "texto_listado": "Jesucristo Electro",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    },
    {
     "texto_listado": "Jesucristo Electro",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    }
   ],
   "publicaciones": 3
@@ -2004,7 +2004,7 @@
    {
     "texto_listado": "La Máxima",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    }
   ],
   "publicaciones": 1
@@ -2025,7 +2025,7 @@
    {
     "texto_listado": "Llevame On Line Colombia",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    }
   ],
   "publicaciones": 1
@@ -2046,7 +2046,7 @@
    {
     "texto_listado": "Lustore",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    }
   ],
   "publicaciones": 1
@@ -2067,17 +2067,17 @@
    {
     "texto_listado": "Macrocell",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    },
    {
     "texto_listado": "Macrocell",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    },
    {
     "texto_listado": "Macrocell",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    }
   ],
   "publicaciones": 3
@@ -2098,12 +2098,12 @@
    {
     "texto_listado": "Magic Confort",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    },
    {
     "texto_listado": "Magic Confort",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    }
   ],
   "publicaciones": 2
@@ -2124,12 +2124,12 @@
    {
     "texto_listado": "Marketplace Ten",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    },
    {
     "texto_listado": "Marketplace Ten",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    }
   ],
   "publicaciones": 2
@@ -2150,12 +2150,12 @@
    {
     "texto_listado": "Mptechnology",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    },
    {
     "texto_listado": "Mptechnology",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    }
   ],
   "publicaciones": 2
@@ -2176,12 +2176,12 @@
    {
     "texto_listado": "Nubatech",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    },
    {
     "texto_listado": "Nubatech",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    }
   ],
   "publicaciones": 2
@@ -2202,27 +2202,27 @@
    {
     "texto_listado": "Oklahoma Computadores",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    },
    {
     "texto_listado": "Oklahoma Computadores",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    },
    {
     "texto_listado": "Oklahoma Computadores",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    },
    {
     "texto_listado": "Oklahoma Computadores",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    },
    {
     "texto_listado": "Oklahoma Computadores",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    }
   ],
   "publicaciones": 5
@@ -2243,7 +2243,7 @@
    {
     "texto_listado": "Pctel Computo",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    }
   ],
   "publicaciones": 1
@@ -2264,7 +2264,7 @@
    {
     "texto_listado": "Pineda Store",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    }
   ],
   "publicaciones": 1
@@ -2285,27 +2285,27 @@
    {
     "texto_listado": "River Technology Sas",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    },
    {
     "texto_listado": "River Technology Sas",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    },
    {
     "texto_listado": "River Technology Sas",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    },
    {
     "texto_listado": "River Technology Sas",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    },
    {
     "texto_listado": "River Technology Sas",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    }
   ],
   "publicaciones": 8
@@ -2326,27 +2326,27 @@
    {
     "texto_listado": "Rxggames",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    },
    {
     "texto_listado": "Rxggames",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    },
    {
     "texto_listado": "Rxggames",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    },
    {
     "texto_listado": "Rxggames",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    },
    {
     "texto_listado": "Rxggames",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    }
   ],
   "publicaciones": 7
@@ -2367,12 +2367,12 @@
    {
     "texto_listado": "S & N Bienes Y Servicios Sas",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    },
    {
     "texto_listado": "S & N Bienes Y Servicios Sas",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    }
   ],
   "publicaciones": 2
@@ -2393,7 +2393,7 @@
    {
     "texto_listado": "Shopping Online Colombia Sas",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    }
   ],
   "publicaciones": 1
@@ -2414,12 +2414,12 @@
    {
     "texto_listado": "Smartbuy",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    },
    {
     "texto_listado": "Smartbuy",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    }
   ],
   "publicaciones": 2
@@ -2440,27 +2440,27 @@
    {
     "texto_listado": "Smartphonetablet",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    },
    {
     "texto_listado": "Smartphonetablet",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    },
    {
     "texto_listado": "Smartphonetablet",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    },
    {
     "texto_listado": "Smartphonetablet",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    },
    {
     "texto_listado": "Smartphonetablet",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    }
   ],
   "publicaciones": 7
@@ -2481,17 +2481,17 @@
    {
     "texto_listado": "Star",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    },
    {
     "texto_listado": "Star",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    },
    {
     "texto_listado": "Star",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    }
   ],
   "publicaciones": 3
@@ -2512,7 +2512,7 @@
    {
     "texto_listado": "T & B Group",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    }
   ],
   "publicaciones": 1
@@ -2533,12 +2533,12 @@
    {
     "texto_listado": "Tecnología Moderna",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    },
    {
     "texto_listado": "Tecnología Moderna",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    }
   ],
   "publicaciones": 2
@@ -2559,17 +2559,17 @@
    {
     "texto_listado": "Tecnomarket.ink",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    },
    {
     "texto_listado": "Tecnomarket.ink",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    },
    {
     "texto_listado": "Tecnomarket.ink",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    }
   ],
   "publicaciones": 3
@@ -2590,7 +2590,7 @@
    {
     "texto_listado": "Velez",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    }
   ],
   "publicaciones": 1
@@ -2611,12 +2611,12 @@
    {
     "texto_listado": "Audio Lenovo",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    },
    {
     "texto_listado": "Audio Lenovo",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    }
   ],
   "publicaciones": 2
@@ -2637,7 +2637,7 @@
    {
     "texto_listado": "Cubitt Colombia",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    }
   ],
   "publicaciones": 1
@@ -2658,27 +2658,27 @@
    {
     "texto_listado": "Electrolux Group",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    },
    {
     "texto_listado": "Electrolux Group",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    },
    {
     "texto_listado": "Electrolux Group",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    },
    {
     "texto_listado": "Electrolux Group",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    },
    {
     "texto_listado": "Electrolux Group",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    }
   ],
   "publicaciones": 7
@@ -2699,12 +2699,12 @@
    {
     "texto_listado": "Jugueteria Express",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    },
    {
     "texto_listado": "Jugueteria Express",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    }
   ],
   "publicaciones": 2
@@ -2725,12 +2725,12 @@
    {
     "texto_listado": "Lenovo Asia Pacific Limited Sucursal Colombia",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    },
    {
     "texto_listado": "Lenovo Asia Pacific Limited Sucursal Colombia",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    }
   ],
   "publicaciones": 2
@@ -2751,12 +2751,12 @@
    {
     "texto_listado": "Sony Colombia",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    },
    {
     "texto_listado": "Sony Colombia",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    }
   ],
   "publicaciones": 2
@@ -2777,27 +2777,27 @@
    {
     "texto_listado": "Tienda Oficial Dreame",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    },
    {
     "texto_listado": "Tienda Oficial Dreame",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    },
    {
     "texto_listado": "Tienda Oficial Dreame",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    },
    {
     "texto_listado": "Tienda Oficial Dreame",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    },
    {
     "texto_listado": "Tienda Oficial Dreame",
     "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-22)",
-    "fecha": "2026-11-22T12:00:00-05:00"
+    "fecha": "2026-11-22T02:03:00-05:00"
    }
   ],
   "publicaciones": 6
