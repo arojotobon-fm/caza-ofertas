@@ -66,7 +66,7 @@ export function verificar(origen, grupo, historial = [], hoy = new Date().toISOS
     antesRespaldado = !!(enOtra || enHist);
     if (enOtra) pruebas.push({ tipo: "antes_respaldo", signo: "+", texto: `El precio "antes" (${cop(origen.precio_antes)}) tiene respaldo: ${enOtra.tienda} lo cobra hoy a ${cop(enOtra.precio)}.` });
     else if (enHist) pruebas.push({ tipo: "antes_respaldo", signo: "+", texto: `El precio "antes" (${cop(origen.precio_antes)}) tiene respaldo: el ${enHist.fecha} lo vimos a ${cop(enHist.precio)} en ${origen.tienda}.` });
-    else if (!inflado) pruebas.push({ tipo: "antes_respaldo", signo: "0", texto: `No pudimos confirmar que el precio "antes" de ${cop(origen.precio_antes)} haya existido: ninguna tienda lo cobra hoy y no lo tenemos en nuestro historial.` });
+    else if (!inflado && !senalDebil) pruebas.push({ tipo: "antes_respaldo", signo: "0", texto: `No pudimos confirmar que el precio "antes" de ${cop(origen.precio_antes)} haya existido: ninguna tienda lo cobra hoy y no lo tenemos en nuestro historial.` });
   }
 
   // 3. ¿Es una oferta histórica?
