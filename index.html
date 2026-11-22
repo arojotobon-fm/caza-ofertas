@@ -614,7 +614,7 @@ function card(p, rank){
       ${p.condicion ? `<div><span class="cond">💳 Solo pagando ${esc(p.condicion)}</span></div>` : ""}
       <h3 class="name">${esc(p.nombre)}</h3>
       <div class="price"><b>${cop(p.precio)}</b>${p.precio_antes ? `<s>${cop(p.precio_antes)}</s>` : ""}</div>
-      ${ri ? `<div class="real">Precio de contado en ${ri.n===2?"otro comercio":"otros comercios"} ${cop(ri.ref)} · diferencia <strong>${ri.pct.toFixed(1)}%</strong></div>${estadoChip(ri)}` : `<div class="real">${p.condicion ? "Precio con tarjeta: no se compara con precios de contado" : esExterno(p) ? "Vendedor externo: no entra en el Radar" : "Sin comparación válida"}</div>`}
+      ${ri ? `<div class="real">Precio de contado en ${ri.n===2?"otro comercio":"otros comercios"} ${cop(ri.ref)} · diferencia <strong>${ri.pct.toFixed(1)}%</strong></div>${estadoChip(ri)}` : `<div class="real">${p.condicion ? "Precio con tarjeta: no se compara con precios de contado" : esExterno(p) ? "Vendedor externo: no entra en el Radar" : porConfirmar(p) ? "Vendedor por confirmar: no entra en las comparaciones" : "Sin comparación válida"}</div>`}
       ${notaLimpia(p) ? `<div class="note">${esc(notaLimpia(p))}</div>` : ""}
       <div class="when"><span class="dot ${stale?"old":""}"></span>Verificado ${ago(p.verificado)}</div>
       <div class="stale-msg">Puede haber cambiado. Revisa antes de comprar.</div>
@@ -644,8 +644,9 @@ const VENDEDOR_POR_CONFIRMAR = new Set(["Alkosto"]);
 const porConfirmar = p => !!p && VENDEDOR_POR_CONFIRMAR.has(p.tienda);
 const median = a => { const s=[...a].sort((x,y)=>x-y), m=Math.floor(s.length/2); return s.length%2 ? s[m] : (s[m-1]+s[m])/2; };
 function radarInfo(p){
-  if (!p || p.condicion || esExterno(p) || enRevision(p) || !p.comparativo) return null;
-  const rows = p.comparativo.filter(r => BYLINK[r.link] && !esExterno(BYLINK[r.link]) && !enRevision(BYLINK[r.link]));
+  // Vendedor por confirmar (Alkosto): visible en el comparador, pero no alimenta comparaciones públicas (decisión 22 nov).
+  if (!p || p.condicion || esExterno(p) || enRevision(p) || porConfirmar(p) || !p.comparativo) return null;
+  const rows = p.comparativo.filter(r => { const q = BYLINK[r.link]; return q && !esExterno(q) && !enRevision(q) && !porConfirmar(q); });
   const best = {};
   rows.forEach(r => { const g = grupoDe(r.tienda); if (!best[g] || r.precio < best[g].precio) best[g] = r; });
   const n = Object.keys(best).length;
