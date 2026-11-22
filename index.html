@@ -1148,7 +1148,7 @@ function renderRadar(){
 function featured(){ return topList()[0]; }
 function renderFeatured(){
   const p = featured();
-  if (!p) { $("#featBox").innerHTML = `<div class="empty">Hoy no encontramos un producto más barato aquí que en las otras tiendas que revisamos. Preferimos no mostrarte algo que no podemos comprobar.</div>`; $("#histBox").innerHTML = ""; return; }
+  if (!p) { $("#featBox").innerHTML = `<div class="empty">Las investigaciones verificadas aparecerán aquí cuando tengan referencia exacta, comparación válida y pruebas suficientes. No publicamos resultados incompletos.</div>`; $("#histBox").innerHTML = `<div class="hist-empty">El historial se conserva. Busca un producto concreto para consultar los precios que hemos registrado.</div>`; return; }
   const info = radarInfo(p), pct = info.pct, ahorro = info.ahorro, fav = favs().includes(p.id);
   const claim = p.precio_antes ? Math.round((p.precio_antes - p.precio)/p.precio_antes*100) : 0;
   const rows = info.rows;
@@ -1199,8 +1199,8 @@ function renderHistory(p){
 
 /* ---------- listas ---------- */
 function renderTop(){
-  const top = topList();
-  $("#topGrid").innerHTML = top.length ? top.map((p,i)=>card(p,i+1)).join("") : `<div class="empty">Hoy no encontramos productos más baratos aquí que en las otras tiendas que revisamos.</div>`;
+  // La portada no convierte el catálogo automático en selección editorial.
+  // Las fichas se publican únicamente cuando pasan revisión y evidencia.
   renderRadar(); renderFeatured();
 }
 function renderAll(reset){
