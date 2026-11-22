@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Prueba visual de sellos · Cazadores de Ofertas</title>
+<style>
+:root{--petroleo:#0B3540;--turq:#14B8B8;--bg:#F3F8F8;--line:#DDE9EA;--ink:#0D2A31;--muted:#5D7076;--verde:#E3F5EA;--rojo:#FDECEC;--ambar:#FFF2DA}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 system-ui,-apple-system,Segoe UI,sans-serif}
+header{background:var(--petroleo);color:#fff;padding:22px max(20px,calc((100% - 1080px)/2))}header a{color:#fff;text-decoration:none;font-weight:700}main{max-width:1080px;margin:28px auto;padding:0 18px}
+h1{font-size:clamp(26px,4vw,38px);margin:0 0 8px;color:var(--petroleo)}.intro{color:var(--muted);margin:0 0 22px}
+.notice{background:#FFF5CC;border:1px solid #E8D88A;border-radius:14px;padding:13px 16px;margin-bottom:22px;font-weight:700;color:#705400}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:18px}
+.card{background:#fff;border:1px solid var(--line);border-radius:20px;padding:20px;box-shadow:0 6px 22px #0b354012}
+.stamp{display:flex;gap:15px;align-items:center;border-radius:15px;padding:15px;margin-bottom:16px;min-height:142px}
+.stamp img{width:112px;height:112px;object-fit:contain;flex:none;filter:drop-shadow(0 4px 9px #0002)}
+.real{background:var(--verde);color:#14532d}.lie{background:var(--rojo);color:#7a1f1f}
+.stamp b{display:block;font-size:21px;line-height:1.15;margin-bottom:6px}.stamp p{margin:0;font-size:14px}
+.product{font-weight:900;font-size:18px;margin:0 0 4px}.meta{font-size:13px;color:var(--muted);margin:0 0 14px}
+.evidence{border-top:1px solid var(--line);padding-top:12px}.evidence b{font-size:12px;letter-spacing:.5px;color:var(--muted)}.evidence p{margin:6px 0 0;font-size:14px}
+footer{color:var(--muted);font-size:13px;margin:24px 0 40px}
+</style>
+</head>
+<body>
+<header><a href="/">← Volver al inicio del preview</a></header>
+<main>
+<h1>Así se ven los veredictos</h1>
+<p class="intro">Prueba visual de los sellos que acompañarán las investigaciones de productos.</p>
+<div class="notice">PREVISUALIZACIÓN DE DISEÑO · Ejemplos ilustrativos. No son investigaciones ni precios verificados.</div>
+<div class="grid">
+<article class="card">
+<div class="stamp real"><img src="/img/oferta-real.webp" alt="Sello Oferta real"><div><b>¡Oferta real!</b><p>Hay evidencia suficiente de que el precio sí representa una oportunidad frente a la misma referencia en otras tiendas.</p></div></div>
+<h2 class="product">Producto de ejemplo · misma referencia</h2>
+<p class="meta">Caso ilustrativo de cómo aparecerá una investigación favorable.</p>
+<div class="evidence"><b>LAS PRUEBAS</b><p>Se mostrarán aquí las tiendas consultadas, los precios comparables, la diferencia encontrada y el historial disponible.</p></div>
+</article>
+<article class="card">
+<div class="stamp lie"><img src="/img/cazamos-mentira.webp" alt="Sello Cazamos una mentira"><div><b>¡Cazamos una mentira!</b><p>El precio anterior anunciado no tiene respaldo verificable en el historial o en la evidencia recopilada.</p></div></div>
+<h2 class="product">Producto de ejemplo · precio anterior</h2>
+<p class="meta">Caso ilustrativo de cómo aparecerá una promoción engañosa demostrada.</p>
+<div class="evidence"><b>LAS PRUEBAS</b><p>Se mostrará el precio anunciado como anterior y la evidencia concreta que permite concluir que fue inflado. No basta con que otra tienda sea más barata.</p></div>
+</article>
+</div>
+<footer>Esta página solo permite revisar el tamaño y la presentación de los sellos. Los veredictos reales se publicarán únicamente cuando existan pruebas suficientes. La página principal y producción no se modifican con esta prueba.</footer>
+</main>
+</body></html>
