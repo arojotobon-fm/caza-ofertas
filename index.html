@@ -106,6 +106,9 @@ h1,h2,h3,h4{font-family:var(--head);letter-spacing:-.01em;margin:0}
 .verdict.mid{background:var(--turquesa-2)}
 .verdict .ico{width:16px;height:16px;stroke-width:3}
 .save{color:var(--verde);font-weight:800;font-size:15px;margin-top:6px}
+.cmpchip{display:inline-block;border-radius:8px;padding:3px 9px;font-size:12px;font-weight:800}
+.cmpchip.lim{background:var(--ambar-bg);color:var(--ambar)}
+.cmpchip.ok{background:var(--verde-bg);color:var(--verde)}
 .cond{display:inline-block;background:var(--dorado-bg);color:#7A5600;border-radius:8px;padding:3px 9px;font-size:12.5px;font-weight:800;margin-top:6px}
 .feat-actions{display:flex;gap:10px;margin-top:12px;flex-wrap:wrap}
 .btn-out{font-family:var(--head);font-weight:800;font-size:15px;border:1.5px solid #c9d8da;background:#fff;color:var(--ink);border-radius:12px;padding:9px 16px;cursor:pointer;display:inline-flex;align-items:center;gap:7px}
@@ -411,13 +414,13 @@ footer p{margin:0 0 8px;max-width:900px}
 <section id="radar"><div class="wrap">
   <div class="sec-head"><div>
     <h2><svg class="ico"><use href="#i-target"/></svg>Radar: las ofertas reales de hoy</h2>
-    <p>Solo entran ofertas con ahorro real de 8% o más frente al mismo modelo en otras tiendas. Si hay pocas, es porque las demás tiendas tienen el mismo precio.</p>
+    <p>Solo entran productos más baratos que el mismo modelo en otros comercios, comparando <b>precio de contado</b> y <b>sin vendedores externos</b>. Si solo lo encontramos en un comercio más, lo marcamos como <b>comparación limitada</b>. Los precios con tarjeta de la tienda no entran.</p>
   </div></div>
   <div class="community">
     <img src="img/insignia.webp" alt="Insignia de los Cazadores que reportan" width="92" height="61">
     <div><b>Únete a los Cazadores que reportan</b><span>Después de abrir una oferta, toca <strong>Sigue</strong> o <strong>Ya no</strong>. Si 2 o más cazadores reportan que ya no está, la oferta sale del radar hasta que la volvamos a verificar.</span></div>
   </div>
-  <label class="switch"><input type="checkbox" id="noCard"> Solo ofertas sin tarjeta de la tienda</label>
+  <label class="switch" style="display:none"><input type="checkbox" id="noCard"> Solo ofertas sin tarjeta de la tienda</label>
   <div class="grid" id="topGrid"></div>
 </div></section>
 
@@ -596,7 +599,7 @@ document.addEventListener("click", async e => {
 function card(p, rank){
   const [lab, cls] = LABELS[p.clasificacion] || LABELS.sin;
   const stale = hoursAgo(p.verificado) > STALE_HOURS;
-  const pct = realPct(p), cs = community(p), fav = favs().includes(p.id);
+  const pct = realPct(p), cs = community(p), fav = favs().includes(p.id), ri = radarInfo(p);
   return `<article class="card ${stale?"stale":""} ${cs.gone?"gone":""}" data-id="${p.id}">
     <div class="media">
       ${rank ? `<span class="rank">#${rank}</span>` : ""}
@@ -610,7 +613,7 @@ function card(p, rank){
       ${p.condicion ? `<div><span class="cond">💳 Solo pagando ${esc(p.condicion)}</span></div>` : ""}
       <h3 class="name">${esc(p.nombre)}</h3>
       <div class="price"><b>${cop(p.precio)}</b>${p.precio_antes ? `<s>${cop(p.precio_antes)}</s>` : ""}</div>
-      ${p.precio_ref ? `<div class="real">Precio de mercado ${cop(p.precio_ref)} · ahorro real <strong>${pct.toFixed(0)}%</strong></div>` : `<div class="real">Precio de tienda, aún sin comparar</div>`}
+      ${ri ? `<div class="real">Precio de contado en ${ri.n===2?"otro comercio":"otros comercios"} ${cop(ri.ref)} · diferencia <strong>${ri.pct.toFixed(1)}%</strong></div>${estadoChip(ri)}` : `<div class="real">${p.condicion ? "Precio con tarjeta: no se compara con precios de contado" : esExterno(p) ? "Vendedor externo: no entra en el Radar" : "Sin comparación válida"}</div>`}
       ${p.nota ? `<div class="note">${esc(p.nota)}</div>` : ""}
       <div class="when"><span class="dot ${stale?"old":""}"></span>Verificado ${ago(p.verificado)}</div>
       <div class="stale-msg">Puede haber cambiado. Revisa antes de comprar.</div>
@@ -621,26 +624,49 @@ function card(p, rank){
   </article>`;
 }
 
-/* ---------- radar, destacada, historial ---------- */
+/* ---------- reglas del Radar (corrección urgente, 22 nov) ----------
+   1. Fuera vendedores externos (marketplace), también como referencia de comparación.
+   2. Solo precios de contado: nada de comparar un precio con tarjeta contra uno de contado.
+   3. Comparación con 2 comercios independientes = "limitada"; 3 o más = "completa".
+   Alkosto, Ktronix y Alkomprar cuentan como un solo comercio.                                    */
+const GRUPO = {"Alkosto":"colcomercio","Ktronix":"colcomercio","Alkomprar":"colcomercio"};
+const grupoDe = t => GRUPO[t] || t;
+let BYLINK = {};
+const esExterno = p => /Vendedor externo/i.test(p && p.nota || "");
+const median = a => { const s=[...a].sort((x,y)=>x-y), m=Math.floor(s.length/2); return s.length%2 ? s[m] : (s[m-1]+s[m])/2; };
+function radarInfo(p){
+  if (!p || p.condicion || esExterno(p) || !p.comparativo) return null;
+  const rows = p.comparativo.filter(r => BYLINK[r.link] && !esExterno(BYLINK[r.link]));
+  const best = {};
+  rows.forEach(r => { const g = grupoDe(r.tienda); if (!best[g] || r.precio < best[g].precio) best[g] = r; });
+  const n = Object.keys(best).length;
+  if (n < 2) return null;
+  const ref = median(Object.entries(best).filter(([g]) => g !== grupoDe(p.tienda)).map(([,r]) => r.precio));
+  return { rows, n, ref, ahorro: ref - p.precio, pct: (ref - p.precio) / ref * 100, estado: n >= 3 ? "completa" : "limitada" };
+}
+const estadoChip = i => i.estado === "limitada"
+  ? `<span class="cmpchip lim" title="Solo se encontró el mismo producto en otro comercio independiente">Comparación limitada · 2 comercios</span>`
+  : `<span class="cmpchip ok">Comparación con ${i.n} comercios</span>`;
 function topList(){
-  const noCard = $("#noCard").checked;
-  return DATA.filter(p=>p.top && !community(p).gone && (!noCard || !p.condicion)).sort((a,b)=>(a.rank||99)-(b.rank||99)).slice(0,20);
+  return DATA.map(p => [p, radarInfo(p)])
+    .filter(([p, i]) => i && i.pct > 0 && !community(p).gone)
+    .sort((a, b) => b[1].pct - a[1].pct).slice(0, 20).map(([p]) => p);
 }
 function renderRadar(){
-  const real = DATA.filter(p=>p.top && isReal(p) && !community(p).gone).length;
+  const real = topList().length;
   const justo = DATA.filter(p=>p.clasificacion==="justo").length;
   const vit = DATA.filter(p=>p.clasificacion==="vitrina").length;
-  $("#rReal").textContent = real + (real===1?" Oferta real":" Ofertas reales");
+  $("#rReal").textContent = real + (real===1?" Más barato que el mercado":" Más baratos que el mercado");
   $("#rJusto").textContent = justo + (justo===1?" Precio justo":" Precios justos");
   $("#rFalso").textContent = vit + (vit===1?" Posible falso descuento":" Posibles falsos descuentos");
 }
-function featured(){ return DATA.filter(p=>p.top && !community(p).gone && !p.condicion).sort((a,b)=>(a.rank||99)-(b.rank||99))[0] || topList()[0]; }
+function featured(){ return topList()[0]; }
 function renderFeatured(){
   const p = featured();
-  if (!p) { $("#featBox").innerHTML = `<div class="empty">Estamos verificando la oferta del día.</div>`; return; }
-  const pct = realPct(p), ahorro = p.precio_ref ? p.precio_ref - p.precio : 0, fav = favs().includes(p.id);
+  if (!p) { $("#featBox").innerHTML = `<div class="empty">Hoy no hay una diferencia de precio comprobada a favor del comprador. Preferimos no mostrar una oferta que no podemos respaldar.</div>`; $("#histBox").innerHTML = ""; return; }
+  const info = radarInfo(p), pct = info.pct, ahorro = info.ahorro, fav = favs().includes(p.id);
   const claim = p.precio_antes ? Math.round((p.precio_antes - p.precio)/p.precio_antes*100) : 0;
-  const rows = (p.comparativo || [{tienda:p.tienda, precio:p.precio, link:p.link}]);
+  const rows = info.rows;
   const min = Math.min(...rows.map(r=>r.precio));
   $("#featBox").innerHTML = `<div class="feat">
     <div class="feat-img">${p.img ? `<img src="${esc(p.img)}" alt="" referrerpolicy="no-referrer" onerror="this.replaceWith(Object.assign(document.createElement('b'),{textContent:${JSON.stringify(p.marca||p.nombre).replace(/"/g,'&quot;')}}))">` : `<b>${esc(p.marca||p.nombre)}</b>`}</div>
@@ -651,14 +677,15 @@ function renderFeatured(){
       <div class="bigp">${cop(p.precio)}</div>
       ${p.condicion ? `<span class="cond">💳 Solo pagando ${esc(p.condicion)}</span><br>` : ""}
       <span class="verdict ${pct>=30?"":"mid"}">${I("check")}${pct>=30?"Gangazo real":"Oferta real"}</span>
-      ${ahorro>0 ? `<div class="save">Ahorro real: ${cop(ahorro)} (${pct.toFixed(0)}%) frente al mercado</div>` : ""}
+      ${ahorro>0 ? `<div class="save">Ahorro real: ${cop(ahorro)} (${pct.toFixed(1)}%) frente a ${info.n===2?"otro comercio":"los otros comercios"}</div>` : ""}
       <div class="feat-actions">
         <button class="btn-out ${fav?"fav-on":""}" data-fav="${p.id}">${I("heart")}${fav?"Guardado":"Guardar"}</button>
         <a class="btn-gold" href="${esc(p.link)}" target="_blank" rel="noopener nofollow">Ver oferta ${I("ext")}</a>
       </div>
     </div>
     <div class="cmpbox">
-      <div class="cmp-title">Comparativo de precios hoy</div>
+      <div class="cmp-title">Comparativo de precios de contado hoy</div>
+      <div style="margin:-2px 0 8px">${estadoChip(info)}</div>
       <ul class="cmp">${rows.map(r=>`<li class="${r.precio===min?"best":""}">${sbadge(r.tienda)}<a href="${esc(r.link)}" target="_blank" rel="noopener nofollow">${esc(r.tienda)}</a><b>${cop(r.precio)}</b></li>`).join("")}</ul>
       <div class="when" style="margin-top:8px"><span class="dot ${hoursAgo(p.verificado)>STALE_HOURS?"old":""}"></span>Verificado ${ago(p.verificado)}</div>
     </div>
@@ -667,7 +694,7 @@ function renderFeatured(){
 }
 function renderHistory(p){
   const h = HIST[p.id] && HIST[p.id].p ? Object.entries(HIST[p.id].p).sort() : [];
-  const others = (p.comparativo||[]).filter(r=>r.tienda!==p.tienda);
+  const others = ((radarInfo(p)||{}).rows||[]).filter(r=>r.tienda!==p.tienda);
   const cheapest = others.length && others.every(r=>r.precio>=p.precio);
   let chart = "";
   if (h.length >= 2) {
@@ -687,7 +714,7 @@ function renderHistory(p){
 /* ---------- listas ---------- */
 function renderTop(){
   const top = topList();
-  $("#topGrid").innerHTML = top.length ? top.map((p,i)=>card(p,i+1)).join("") : `<div class="empty">${$("#noCard").checked ? "Hoy casi todos los descuentos reales piden la tarjeta de la tienda. Quita el filtro para verlos." : "Estamos actualizando el radar. Vuelve en un rato."}</div>`;
+  $("#topGrid").innerHTML = top.length ? top.map((p,i)=>card(p,i+1)).join("") : `<div class="empty">Hoy no encontramos diferencias de precio comprobadas a favor del comprador.</div>`;
   renderRadar(); renderFeatured();
 }
 function renderAll(reset){
@@ -744,6 +771,7 @@ Promise.all([
   fetch("data/historial.json?v=" + Date.now()).then(r=>r.ok?r.json():{}).catch(()=>({}))
 ]).then(([d, rep, hist])=>{
   REP = rep || {}; HIST = hist || {}; DATA = d.productos || [];
+  BYLINK = {}; DATA.forEach(p => { if (!p.condicion) BYLINK[p.link] = p; });
   $("#stamp").textContent = "Última actualización: " + fmtDate(d.actualizado);
   if (hoursAgo(d.actualizado) > STALE_HOURS) $("#stampDot").classList.add("old");
   [...new Set(DATA.map(p=>p.sub).filter(Boolean))].sort().forEach(c=>$("#fCat").insertAdjacentHTML("beforeend",`<option>${esc(c)}</option>`));
