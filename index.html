@@ -281,6 +281,19 @@ section{padding:30px 0}
 .comm.ok{background:var(--verde-bg);color:var(--verde)}
 .comm.warn{background:var(--ambar-bg);color:var(--ambar)}
 .comm.bad{background:var(--rojo-bg);color:var(--rojo);font-weight:700}
+.acciones{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:6px}
+.accion{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;min-height:74px;border:1px solid var(--line);background:#fff;border-radius:12px;padding:8px 6px;font:inherit;font-size:12.5px;font-weight:800;color:var(--petroleo);cursor:pointer;line-height:1.15;text-align:center}
+.accion:hover{border-color:var(--petroleo);background:#F4FCFB}
+.accion img{width:34px;height:34px}
+.accion .aico{display:grid;place-items:center;width:34px;height:34px;border-radius:50%;background:var(--petroleo);color:#fff}
+.accion .aico .ico{width:17px;height:17px}
+#tiendaModal .modal-box{text-align:left;max-width:420px}
+#tiendaModal h3{font-size:19px;padding-right:36px}
+#tiendaModal .tm-prod{color:var(--muted);font-size:14px;margin:4px 0 12px}
+#tiendaModal .btn{margin-bottom:12px}
+#tiendaModal .vote .vico{width:28px;height:auto;max-width:none;margin:0}
+#tiendaModal .vote{border-top:1px dashed var(--line);padding-top:12px;font-size:14px}
+#tiendaModal .vote button{font-size:14px;padding:9px 12px}
 .vote{display:flex;gap:6px;flex-wrap:wrap;align-items:center;font-size:12.5px;color:var(--muted);border-top:1px dashed var(--line);padding-top:9px}
 .vote .vico{width:28px;height:auto}
 .vote button{font:inherit;font-size:12.5px;font-weight:800;border:1px solid var(--line);background:#fff;border-radius:10px;padding:6px 9px;cursor:pointer;color:var(--ink)}
@@ -378,7 +391,7 @@ footer{padding:26px 0 90px;color:var(--muted);font-size:13px;border-top:1px soli
 footer p{margin:0 0 8px;max-width:900px;text-align:justify}
 
 /* bottom nav (móvil) */
-.subir{position:fixed;right:18px;bottom:84px;z-index:60;display:flex;align-items:center;gap:6px;border:0;cursor:pointer;background:var(--petroleo);color:#fff;font:inherit;font-weight:800;font-size:14px;padding:11px 16px 11px 12px;border-radius:999px;box-shadow:0 8px 22px rgba(7,40,49,.3);opacity:0;transform:translateY(14px);pointer-events:none;transition:opacity .2s,transform .2s}.subir.on{opacity:1;transform:none;pointer-events:auto}.subir:hover{background:#0d3a45}.subir span{display:grid;place-items:center;width:26px;height:26px;border-radius:50%;background:var(--dorado);color:var(--petroleo);font-size:16px;line-height:1}@media (max-width:900px){.subir{bottom:calc(78px + env(safe-area-inset-bottom));right:12px;padding:9px 13px 9px 9px;font-size:13px}}
+.subir{position:fixed;right:18px;bottom:84px;z-index:60;display:grid;place-items:center;border:0;cursor:pointer;background:var(--petroleo);color:#fff;width:52px;height:52px;padding:0;border-radius:50%;box-shadow:0 8px 22px rgba(7,40,49,.3);opacity:0;transform:translateY(14px);pointer-events:none;transition:opacity .2s,transform .2s}.subir.on{opacity:1;transform:none;pointer-events:auto}.subir:hover{background:#0d3a45}.subir span{display:grid;place-items:center;width:34px;height:34px;border-radius:50%;background:var(--dorado);color:var(--petroleo);font-size:20px;font-weight:900;line-height:1}@media (max-width:900px){.subir{bottom:calc(86px + env(safe-area-inset-bottom));right:12px;width:46px;height:46px}.subir span{width:30px;height:30px;font-size:18px}}
 .tabbar{display:none}
 
 /* ---------- RESPONSIVE ---------- */
@@ -706,6 +719,16 @@ footer p{margin:0 0 8px;max-width:900px;text-align:justify}
   </div>
 </div>
 
+<div class="modal" id="tiendaModal" role="dialog" aria-modal="true" aria-labelledby="tmTitle">
+  <div class="modal-box">
+    <button class="modal-x" id="tmClose" aria-label="Cerrar">×</button>
+    <h3 id="tmTitle">¿Sigue a ese precio?</h3>
+    <p class="tm-prod" id="tmProd"></p>
+    <a class="btn" id="tmLink" href="#" target="_blank" rel="noopener nofollow">Míralo en la tienda</a>
+    <div id="tmVoto"></div>
+  </div>
+</div>
+
 <div class="modal" id="donModal" role="dialog" aria-modal="true" aria-labelledby="donTitle">
   <div class="modal-box">
     <button class="modal-x" id="donClose" aria-label="Cerrar">×</button>
@@ -793,9 +816,17 @@ function voteBox(p){
     <button data-v="si">✅ Sigue a ese precio</button><button data-v="no">❌ Ya no / cambió el precio</button>
     <div class="pform"><input type="number" inputmode="numeric" placeholder="¿Qué precio viste? (opcional)"><button data-v="send">Enviar</button></div></div>`;
 }
+function abrirTienda(id){
+  const p = DATA.find(x => x.id === id); if (!p) return;
+  $("#tmProd").textContent = p.nombre + " · " + cop(p.precio) + " en " + p.tienda + " (revisado " + ago(p.verificado) + ")";
+  $("#tmLink").href = p.link; $("#tmLink").innerHTML = "Míralo en " + esc(p.tienda) + " " + I("ext");
+  $("#tmVoto").innerHTML = voteBox(p).replace("¿Lo viste en la tienda?", "¿Lo viste en la tienda? Repórtalo:");
+  $("#tiendaModal").classList.add("on");
+}
 document.addEventListener("click", async e => {
   const f = e.target.closest("[data-fav]"); if (f) { e.preventDefault(); toggleFav(f.dataset.fav); return; }
-  const sb = e.target.closest("[data-sim]"); if (sb) { e.preventDefault(); abrirSimulador(sb.dataset.sim); return; }
+  const tb = e.target.closest("[data-tienda]"); if (tb) { e.preventDefault(); abrirTienda(tb.dataset.tienda); return; }
+  const sb = e.target.closest("[data-sim]"); if (sb) { e.preventDefault(); $("#tiendaModal").classList.remove("on"); abrirSimulador(sb.dataset.sim); return; }
   const b = e.target.closest(".vote button"); if (!b) return;
   const box = b.closest(".vote"), id = box.dataset.vote, v = b.dataset.v;
   if (v === "no") { box.querySelector(".pform").classList.add("on"); box.querySelector("input").focus(); return; }
@@ -836,9 +867,10 @@ function card(p, rank){
       <div class="when"><span class="dot ${stale?"old":""}"></span>Revisado ${ago(p.verificado)}</div>
       <div class="stale-msg">Ojo, este precio puede haber cambiado. Revísalo en la tienda antes de comprar.</div>
       ${cs.html}
-      <a class="btn" href="${esc(p.link)}" target="_blank" rel="noopener nofollow">¿Sigue a ese precio? Míralo en la tienda ${I("ext")}</a>
-      <div class="sim-cta"><img src="img/hagamos-cuentas-mini.webp" alt="" width="48" height="48" loading="lazy"><div><p>¿Te gustó este producto? ¿Quieres saber cuánto pagarías si lo compras a cuotas?</p><button class="sim-btn" data-sim="${p.id}">${I("bars")}SIMULAR MI COMPRA</button></div></div>
-      ${voteBox(p)}
+      <div class="acciones">
+        <button class="accion" data-tienda="${p.id}"><span class="aico">${I("ext")}</span>Ver en la tienda</button>
+        <button class="accion" data-sim="${p.id}"><img src="img/hagamos-cuentas-mini.webp" alt="" width="34" height="34" loading="lazy">Simular cuotas</button>
+      </div>
     </div>
   </article>`;
 }
@@ -1149,6 +1181,9 @@ function renderDonate(){
   $("#donate").innerHTML = `<button class="btn-gold" id="donBtn">${I("heart")} Dona aquí</button><small>${esc(DONAR.medios)}</small>`;
   $("#donBtn").addEventListener("click", () => $("#donModal").classList.add("on"));
   $("#donClose").addEventListener("click", () => $("#donModal").classList.remove("on"));
+  $("#tmClose").addEventListener("click", () => $("#tiendaModal").classList.remove("on"));
+  $("#tiendaModal").addEventListener("click", e => { if (e.target.id === "tiendaModal") $("#tiendaModal").classList.remove("on"); });
+  document.addEventListener("keydown", e => { if (e.key === "Escape") $("#tiendaModal").classList.remove("on"); });
   $("#donModal").addEventListener("click", e => { if (e.target.id === "donModal") $("#donModal").classList.remove("on"); });
   document.addEventListener("keydown", e => { if (e.key === "Escape") $("#donModal").classList.remove("on"); });
   const msg = encodeURIComponent("Mira esta página: compara precios reales entre tiendas y te dice si el descuento es verdad 👉 " + SITE_URL);
@@ -1221,7 +1256,7 @@ Promise.all([
 }).catch(()=>{ $("#stamp").textContent = "No pudimos cargar los precios. Recarga la página."; });
 setInterval(()=>fetch("/api/reportes").then(r=>r.ok?r.json():null).then(j=>{ if(j){ REP=j; renderTop(); } }).catch(()=>{}), 120000);
 </script>
-<button class="subir" id="subir" type="button" aria-label="Volver al inicio de la página"><span aria-hidden="true">↑</span>Ir al inicio</button>
+<button class="subir" id="subir" type="button" aria-label="Volver al inicio de la página" title="Ir al inicio"><span aria-hidden="true">↑</span></button>
 <script>(()=>{const b=document.getElementById("subir");const f=()=>b.classList.toggle("on",scrollY>700);addEventListener("scroll",f,{passive:true});f();b.addEventListener("click",()=>scrollTo({top:0,behavior:matchMedia("(prefers-reduced-motion: reduce)").matches?"auto":"smooth"}));})();</script>
 </body>
 </html>
