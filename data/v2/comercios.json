@@ -1,21 +1,124 @@
 {
-  "_nota": "Comercios y grupos empresariales. 'admitido' = ya hay datos en el catálogo; 'candidato' = pendiente de validar con las reglas de admisión. La pertenencia a grupos debe confirmarse antes de admitir un comercio nuevo.",
-  "grupos_empresariales": [
-    {"id": "colcomercio", "nombre": "Colombiana de Comercio (Corbeta)", "verificado": true, "evidencia": "Pie de página de alkosto.com: 'Alkosto S.A - Colombiana de Comercio S.A.'; Alkosto, Ktronix y Alkomprar comparten plataforma"},
-    {"id": "falabella", "nombre": "Falabella", "verificado": true, "evidencia": "Operador de falabella.com.co"},
-    {"id": "grupo-exito", "nombre": "Grupo Éxito", "verificado": true, "evidencia": "Operador de exito.com"},
-    {"id": "sodimac-colombia", "nombre": "Sodimac Colombia (Homecenter)", "verificado": false, "evidencia": "Pendiente: confirmar relación societaria con Falabella antes de contarlo como independiente"},
-    {"id": "cencosud", "nombre": "Cencosud (Jumbo, Metro)", "verificado": false, "evidencia": "Pendiente de confirmar"},
-    {"id": "olimpica", "nombre": "Olímpica", "verificado": false, "evidencia": "Pendiente de confirmar"}
-  ],
-  "comercios": [
-    {"id": "falabella", "nombre": "Falabella", "grupo_empresarial": "falabella", "dominio": "falabella.com.co", "cobertura": "nacional", "estado_admision": "admitido", "tiene_marketplace": true},
-    {"id": "alkosto", "nombre": "Alkosto", "grupo_empresarial": "colcomercio", "dominio": "alkosto.com", "cobertura": "nacional", "estado_admision": "admitido", "tiene_marketplace": false},
-    {"id": "exito", "nombre": "Éxito", "grupo_empresarial": "grupo-exito", "dominio": "exito.com", "cobertura": "nacional", "estado_admision": "admitido", "tiene_marketplace": true},
-    {"id": "ktronix", "nombre": "Ktronix", "grupo_empresarial": "colcomercio", "dominio": "ktronix.com", "cobertura": "nacional", "estado_admision": "candidato", "tiene_marketplace": false},
-    {"id": "alkomprar", "nombre": "Alkomprar", "grupo_empresarial": "colcomercio", "dominio": "alkomprar.com", "cobertura": "nacional", "estado_admision": "candidato", "tiene_marketplace": false},
-    {"id": "homecenter", "nombre": "Homecenter", "grupo_empresarial": "sodimac-colombia", "dominio": "homecenter.com.co", "cobertura": "nacional", "estado_admision": "candidato", "tiene_marketplace": null},
-    {"id": "jumbo", "nombre": "Jumbo", "grupo_empresarial": "cencosud", "dominio": "tiendasjumbo.co", "cobertura": "nacional", "estado_admision": "candidato", "tiene_marketplace": null},
-    {"id": "olimpica", "nombre": "Olímpica", "grupo_empresarial": "olimpica", "dominio": "olimpica.com", "cobertura": "nacional", "estado_admision": "candidato", "tiene_marketplace": null}
-  ]
+ "_nota": "Comercios y grupos empresariales. 'admitido' = ya hay datos en el catálogo; 'candidato' = pendiente de validar con las reglas de admisión. La pertenencia a grupos debe confirmarse antes de admitir un comercio nuevo.",
+ "grupos_empresariales": [
+  {
+   "id": "colcomercio",
+   "nombre": "Colombiana de Comercio (Corbeta)",
+   "verificado": true,
+   "evidencia": "Pie de página de alkosto.com: 'Alkosto S.A - Colombiana de Comercio S.A.'; Alkosto, Ktronix y Alkomprar comparten plataforma; contratos de compraventa de Alkosto, Ktronix y Alkomprar con la misma cláusula de proveedor (verificados 22 nov 2026)"
+  },
+  {
+   "id": "falabella",
+   "nombre": "Falabella",
+   "verificado": true,
+   "evidencia": "Operador de falabella.com.co"
+  },
+  {
+   "id": "grupo-exito",
+   "nombre": "Grupo Éxito",
+   "verificado": true,
+   "evidencia": "Operador de exito.com"
+  },
+  {
+   "id": "sodimac-colombia",
+   "nombre": "Sodimac Colombia S.A. (Homecenter, Constructor)",
+   "verificado": true,
+   "evidencia": "Gobierno corporativo de Sodimac Colombia: subordinada de Organización Corona (50,8 %); Inversiones Falabella de Colombia 49,0 %. Verificado 22 nov 2026.",
+   "vinculado_con": [
+    {
+     "grupo": "falabella",
+     "participacion": "49 %",
+     "decision_pendiente": true
+    }
+   ]
+  },
+  {
+   "id": "cencosud",
+   "nombre": "Cencosud (Jumbo, Metro)",
+   "verificado": false,
+   "evidencia": "Pendiente de confirmar"
+  },
+  {
+   "id": "olimpica",
+   "nombre": "Olímpica",
+   "verificado": false,
+   "evidencia": "Pendiente de confirmar"
+  }
+ ],
+ "comercios": [
+  {
+   "id": "falabella",
+   "nombre": "Falabella",
+   "grupo_empresarial": "falabella",
+   "dominio": "falabella.com.co",
+   "cobertura": "nacional",
+   "estado_admision": "admitido",
+   "tiene_marketplace": true
+  },
+  {
+   "id": "alkosto",
+   "nombre": "Alkosto",
+   "grupo_empresarial": "colcomercio",
+   "dominio": "alkosto.com",
+   "cobertura": "nacional",
+   "estado_admision": "admitido",
+   "tiene_marketplace": false
+  },
+  {
+   "id": "exito",
+   "nombre": "Éxito",
+   "grupo_empresarial": "grupo-exito",
+   "dominio": "exito.com",
+   "cobertura": "nacional",
+   "estado_admision": "admitido",
+   "tiene_marketplace": true
+  },
+  {
+   "id": "ktronix",
+   "nombre": "Ktronix",
+   "grupo_empresarial": "colcomercio",
+   "dominio": "ktronix.com",
+   "cobertura": "nacional",
+   "estado_admision": "candidato",
+   "tiene_marketplace": false,
+   "nota": "Canal validado por contrato (22 nov 2026); falta incluirlo en la lectura de precios"
+  },
+  {
+   "id": "alkomprar",
+   "nombre": "Alkomprar",
+   "grupo_empresarial": "colcomercio",
+   "dominio": "alkomprar.com",
+   "cobertura": "nacional",
+   "estado_admision": "candidato",
+   "tiene_marketplace": false
+  },
+  {
+   "id": "homecenter",
+   "nombre": "Homecenter",
+   "grupo_empresarial": "sodimac-colombia",
+   "dominio": "homecenter.com.co",
+   "cobertura": "nacional",
+   "estado_admision": "candidato",
+   "tiene_marketplace": true,
+   "nota": "Marketplace y Crossborder: falta identificar vendedor por ficha"
+  },
+  {
+   "id": "jumbo",
+   "nombre": "Jumbo",
+   "grupo_empresarial": "cencosud",
+   "dominio": "tiendasjumbo.co",
+   "cobertura": "nacional",
+   "estado_admision": "candidato",
+   "tiene_marketplace": null
+  },
+  {
+   "id": "olimpica",
+   "nombre": "Olímpica",
+   "grupo_empresarial": "olimpica",
+   "dominio": "olimpica.com",
+   "cobertura": "nacional",
+   "estado_admision": "candidato",
+   "tiene_marketplace": null
+  }
+ ]
 }

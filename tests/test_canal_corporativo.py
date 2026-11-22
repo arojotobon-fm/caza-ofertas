@@ -91,8 +91,11 @@ class ValidacionPorCanal(unittest.TestCase):
         self.assertIn("canal", v["motivo"])
 
     def test_canal_sin_clausula_verificada_no_valida(self):
-        for c in ["ktronix", "alkomprar", "falabella", "exito"]:
+        # Ktronix y Alkomprar: cláusula verificada el 22 nov 2026. Homecenter tiene marketplace: sigue pendiente.
+        for c in ["homecenter", "falabella", "exito"]:
             self.assertEqual(validar_por_canal(c, ficha(), IDENT, HOY)["estado_validacion"], "pendiente", c)
+        for c in ["ktronix", "alkomprar"]:
+            self.assertEqual(validar_por_canal(c, ficha(), IDENT, HOY)["estado_validacion"], "validado", c)
 
 
 class DistribuidorAutorizado(unittest.TestCase):

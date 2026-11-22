@@ -8,32 +8,88 @@
       "nit": "890.900.943-1",
       "grupo_empresarial": "colcomercio",
       "alias": [
-        {"nombre": "Alkosto", "tipo": "marca_comercial", "comercio_id": "alkosto",
-         "evidencia": [
-           {"fuente": "https://www.alkosto.com/terminos-condiciones/sitio-web", "texto": "Estos términos y condiciones de uso aplican a los canales digitales que son propiedad de Colombiana de Comercio S.A., sociedad legalmente constituida en Colombia con NIT 890.900943-1 y están disponibles en https://www.alkosto.com.", "fecha": "2026-11-22"},
-           {"fuente": "pie de página de alkosto.com", "texto": "© 2026 Alkosto S.A - Todos los derechos reservados - Colombiana de Comercio S.A. NIT: 890.900.943-1", "fecha": "2026-11-22"}
-         ]},
-        {"nombre": "Ktronix", "tipo": "marca_comercial", "comercio_id": "ktronix",
-         "evidencia": [
-           {"fuente": "pie de página de ktronix.com (ficha de producto)", "texto": "Colombiana de Comercio S.A. NIT: 890.900.943-1", "fecha": "2026-11-22"},
-           {"fuente": "https://www.ktronix.com/politicas/privacidad", "texto": "COLOMBIANA DE COMERCIO S.A. comunica a sus grupos de interés la Política de Privacidad…", "fecha": "2026-11-22"}
-         ]},
-        {"nombre": "Alkomprar", "tipo": "marca_comercial", "comercio_id": "alkomprar",
-         "evidencia": [
-           {"fuente": "https://www.alkomprar.com/politicas/privacidad", "texto": "…contratos comerciales y demás negocios jurídicos que celebra COLOMBIANA DE COMERCIO S.A. en desarrollo de su objeto social.", "fecha": "2026-11-22"}
-         ]},
-        {"nombre": "Corbeta S.A.", "tipo": "sigla", "comercio_id": null,
-         "evidencia": [
-           {"fuente": "https://supertransporte.gov.co/documentos/2024/Diciembre/Notificaciones_01/1/7.8290.pdf", "texto": "COLOMBIANA DE COMERCIO SA SIGLAS CORBETA SA Y/O ALKOSTO SA", "fecha": "2026-11-22"}
-         ]},
-        {"nombre": "Alkosto S.A.", "tipo": "denominacion_alterna", "comercio_id": null,
-         "evidencia": [
-           {"fuente": "https://supertransporte.gov.co/documentos/2024/Diciembre/Notificaciones_01/1/7.8290.pdf", "texto": "COLOMBIANA DE COMERCIO SA SIGLAS CORBETA SA Y/O ALKOSTO SA", "fecha": "2026-11-22"}
-         ]},
-        {"nombre": "Colombiana de Comercio", "tipo": "razon_social_abreviada", "comercio_id": null,
-         "evidencia": [
-           {"fuente": "https://www.alkosto.com/contrato-compraventa", "texto": "…Términos y Condiciones de Uso de los canales digitales de Colombiana de Comercio…", "fecha": "2026-11-22"}
-         ]}
+        {
+          "nombre": "Alkosto",
+          "tipo": "marca_comercial",
+          "comercio_id": "alkosto",
+          "evidencia": [
+            {
+              "fuente": "https://www.alkosto.com/terminos-condiciones/sitio-web",
+              "texto": "Estos términos y condiciones de uso aplican a los canales digitales que son propiedad de Colombiana de Comercio S.A., sociedad legalmente constituida en Colombia con NIT 890.900943-1 y están disponibles en https://www.alkosto.com.",
+              "fecha": "2026-11-22"
+            },
+            {
+              "fuente": "pie de página de alkosto.com",
+              "texto": "© 2026 Alkosto S.A - Todos los derechos reservados - Colombiana de Comercio S.A. NIT: 890.900.943-1",
+              "fecha": "2026-11-22"
+            }
+          ]
+        },
+        {
+          "nombre": "Ktronix",
+          "tipo": "marca_comercial",
+          "comercio_id": "ktronix",
+          "evidencia": [
+            {
+              "fuente": "pie de página de ktronix.com (ficha de producto)",
+              "texto": "Colombiana de Comercio S.A. NIT: 890.900.943-1",
+              "fecha": "2026-11-22"
+            },
+            {
+              "fuente": "https://www.ktronix.com/politicas/privacidad",
+              "texto": "COLOMBIANA DE COMERCIO S.A. comunica a sus grupos de interés la Política de Privacidad…",
+              "fecha": "2026-11-22"
+            }
+          ]
+        },
+        {
+          "nombre": "Alkomprar",
+          "tipo": "marca_comercial",
+          "comercio_id": "alkomprar",
+          "evidencia": [
+            {
+              "fuente": "https://www.alkomprar.com/politicas/privacidad",
+              "texto": "…contratos comerciales y demás negocios jurídicos que celebra COLOMBIANA DE COMERCIO S.A. en desarrollo de su objeto social.",
+              "fecha": "2026-11-22"
+            }
+          ]
+        },
+        {
+          "nombre": "Corbeta S.A.",
+          "tipo": "sigla",
+          "comercio_id": null,
+          "evidencia": [
+            {
+              "fuente": "https://supertransporte.gov.co/documentos/2024/Diciembre/Notificaciones_01/1/7.8290.pdf",
+              "texto": "COLOMBIANA DE COMERCIO SA SIGLAS CORBETA SA Y/O ALKOSTO SA",
+              "fecha": "2026-11-22"
+            }
+          ]
+        },
+        {
+          "nombre": "Alkosto S.A.",
+          "tipo": "denominacion_alterna",
+          "comercio_id": null,
+          "evidencia": [
+            {
+              "fuente": "https://supertransporte.gov.co/documentos/2024/Diciembre/Notificaciones_01/1/7.8290.pdf",
+              "texto": "COLOMBIANA DE COMERCIO SA SIGLAS CORBETA SA Y/O ALKOSTO SA",
+              "fecha": "2026-11-22"
+            }
+          ]
+        },
+        {
+          "nombre": "Colombiana de Comercio",
+          "tipo": "razon_social_abreviada",
+          "comercio_id": null,
+          "evidencia": [
+            {
+              "fuente": "https://www.alkosto.com/contrato-compraventa",
+              "texto": "…Términos y Condiciones de Uso de los canales digitales de Colombiana de Comercio…",
+              "fecha": "2026-11-22"
+            }
+          ]
+        }
       ],
       "canales": [
         {
@@ -48,22 +104,131 @@
             "fecha_verificacion": "2026-11-22"
           },
           "evidencia_complementaria": [
-            {"fuente": "https://www.alkosto.com/contrato-compraventa", "texto": "Los Términos para este contrato, hacen parte integral de los Términos y Condiciones de Uso de los canales digitales de Colombiana de Comercio y aplican a todas las transacciones de compraventa realizadas a través de los mismos.", "fecha": "2026-11-22"},
-            {"fuente": "fichas de producto alkosto.com (revisión en navegador)", "texto": "Las fichas revisadas no muestran un campo 'Vendido por'; las facturas se descargan en descargascolcomercio.com.", "fecha": "2026-11-22"}
+            {
+              "fuente": "https://www.alkosto.com/contrato-compraventa",
+              "texto": "Los Términos para este contrato, hacen parte integral de los Términos y Condiciones de Uso de los canales digitales de Colombiana de Comercio y aplican a todas las transacciones de compraventa realizadas a través de los mismos.",
+              "fecha": "2026-11-22"
+            },
+            {
+              "fuente": "fichas de producto alkosto.com (revisión en navegador)",
+              "texto": "Las fichas revisadas no muestran un campo 'Vendido por'; las facturas se descargan en descargascolcomercio.com.",
+              "fecha": "2026-11-22"
+            }
           ],
           "regla_por_publicacion": "Hereda la validación solo si la ficha no indica otro vendedor/proveedor, el banner principal del producto está vacío y no es reacondicionado, de exhibición ni de sección especial. Si no se puede leer la ficha, queda pendiente.",
           "validado_en": "2026-11-22",
           "revalidar_antes_de": "2027-02-20"
         },
         {
-          "comercio_id": "ktronix", "nivel_evidencia": "canal_corporativo", "estado": "pendiente",
-          "motivo": "Falta verificar en ktronix.com la misma cláusula de proveedor del contrato de compraventa. Hoy no hay publicaciones de Ktronix en el catálogo.",
-          "validado_en": null, "revalidar_antes_de": null
+          "comercio_id": "ktronix",
+          "nivel_evidencia": "canal_corporativo",
+          "estado": "validado",
+          "motivo": null,
+          "validado_en": "2026-11-22",
+          "revalidar_antes_de": "2027-02-20",
+          "aprobado_por": "Ana Marcela Rojo (decisión 22 nov 2026: misma regla de canal que Alkosto)",
+          "evidencia_principal": {
+            "fuente": "https://www.ktronix.com/contrato-compraventa",
+            "seccion": "Portafolio de productos",
+            "texto": "Colombiana de Comercio S.A. es el proveedor de los productos y servicios indicados en los canales digitales, salvo que se indique lo contrario en el banner principal del producto, estos corresponden a una selección especial de referencias que no necesariamente coinciden con el portafolio de las demás tiendas de Colombiana de Comercio.",
+            "fecha_verificacion": "2026-11-22"
+          },
+          "evidencia_complementaria": [
+            {
+              "fuente": "fichas de producto ktronix.com (3 revisadas)",
+              "texto": "Misma estructura de ficha que Alkosto (banner principal .new-container__main-product__mini-banner vacío) y pie 'Colombiana de Comercio S.A. NIT: 890.900.943-1'.",
+              "fecha": "2026-11-22"
+            }
+          ],
+          "regla_por_publicacion": "Igual que Alkosto: hereda la validación solo con revisión de la ficha del mismo día de la lectura de precios."
         },
         {
-          "comercio_id": "alkomprar", "nivel_evidencia": "canal_corporativo", "estado": "pendiente",
-          "motivo": "Falta verificar en alkomprar.com la misma cláusula de proveedor del contrato de compraventa. Hoy no hay publicaciones de Alkomprar en el catálogo.",
-          "validado_en": null, "revalidar_antes_de": null
+          "comercio_id": "alkomprar",
+          "nivel_evidencia": "canal_corporativo",
+          "estado": "validado",
+          "motivo": null,
+          "validado_en": "2026-11-22",
+          "revalidar_antes_de": "2027-02-20",
+          "aprobado_por": "Ana Marcela Rojo (decisión 22 nov 2026: misma regla de canal que Alkosto)",
+          "evidencia_principal": {
+            "fuente": "https://www.alkomprar.com/politicas/contrato-compra-venta-online",
+            "seccion": "Portafolio de productos",
+            "texto": "Colombiana de Comercio S.A. es el proveedor de los productos y servicios indicados en los canales digitales, salvo que se indique lo contrario en el banner principal del producto, estos corresponden a una selección especial de referencias que no necesariamente coinciden con el portafolio de las demás tiendas de Colombiana de Comercio.",
+            "fecha_verificacion": "2026-11-22"
+          },
+          "evidencia_complementaria": [
+            {
+              "fuente": "pie de página de alkomprar.com",
+              "texto": "Colombiana de Comercio S.A. NIT: 890.900.943-1",
+              "fecha": "2026-11-22"
+            }
+          ],
+          "regla_por_publicacion": "Igual que Alkosto: hereda la validación solo con revisión de la ficha del mismo día de la lectura de precios."
+        }
+      ]
+    },
+    {
+      "id": "sodimac-colombia",
+      "razon_social": "Sodimac Colombia S.A.",
+      "nit": "800.242.106-2",
+      "grupo_empresarial": "sodimac-colombia",
+      "propiedad": {
+        "controlante": "Organización Corona S.A. (NIT 860002688-6), 50,8 %; Sodimac Colombia es subordinada de Organización Corona",
+        "otros": "Inversiones Falabella de Colombia S.A. (NIT 900017459-6), 49,0 %",
+        "fuentes": [
+          "https://www.homecenter.com.co/homecenter-co/content/informacion-inversionistas-gobierno-corporativo/",
+          "Informe de Gobierno Corporativo 2023 de Sodimac Colombia (tabla de accionistas)",
+          "Prensa ene. 2026 (Valora Analitik, Portafolio, Bloomberg Línea): Corona 51 % y Falabella 49 % se mantienen tras la venta de Corona en los demás negocios de Falabella"
+        ],
+        "fecha_verificacion": "2026-11-22",
+        "decision_pendiente": "Si Homecenter se cuenta como tienda independiente de Falabella o como vinculada (Falabella tiene el 49 %). Decide Ana Marcela."
+      },
+      "alias": [
+        {
+          "nombre": "Homecenter",
+          "tipo": "marca_comercial",
+          "comercio_id": "homecenter",
+          "evidencia": [
+            {
+              "fuente": "https://www.homecenter.com.co/homecenter-co/content/financiacion-hogar-construccion-credicrea-terminos-y-condiciones/",
+              "texto": "SODIMAC COLOMBIA S.A., sociedad identificada con el NIT 800.242.106-2 ... es dueña de los Almacenes Homecenter y Constructor y propietaria de este sitio web.",
+              "fecha": "2026-11-22"
+            }
+          ]
+        },
+        {
+          "nombre": "Constructor",
+          "tipo": "marca_comercial",
+          "comercio_id": null,
+          "evidencia": [
+            {
+              "fuente": "mismo documento",
+              "texto": "es dueña de los Almacenes Homecenter y Constructor",
+              "fecha": "2026-11-22"
+            }
+          ]
+        },
+        {
+          "nombre": "Sodimac",
+          "tipo": "marca_comercial",
+          "comercio_id": null,
+          "evidencia": [
+            {
+              "fuente": "https://www.homecenter.com.co/homecenter-co/content/cross-border/",
+              "texto": "Sodimac Marketplace Crossborder",
+              "fecha": "2026-11-22"
+            }
+          ]
+        }
+      ],
+      "canales": [
+        {
+          "comercio_id": "homecenter",
+          "nivel_evidencia": "canal_corporativo",
+          "estado": "pendiente",
+          "motivo": "homecenter.com.co tiene Marketplace ('colocando sus productos junto a los nuestros') y Crossborder. La lista de búsqueda no trae el vendedor de cada producto; falta un método para identificar quién vende cada ficha antes de admitir sus precios.",
+          "validado_en": null,
+          "revalidar_antes_de": null
         }
       ]
     }
