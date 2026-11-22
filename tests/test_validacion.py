@@ -140,7 +140,7 @@ class DatosMigrados(unittest.TestCase):
     def test_vendedores_validados_tienen_evidencia_metodo_y_fecha(self):
         for v in self.vend:
             if v["estado_validacion"] == "validado":
-                self.assertEqual(v["metodo_validacion"], "automatica_coincidencia_exacta")
+                self.assertIn(v["metodo_validacion"], ("automatica_coincidencia_exacta", "evidencia_corporativa_del_canal"))
                 self.assertTrue(v["validado_en"])
                 self.assertTrue(v["evidencias"])
             if v["tipo"] == "tienda_oficial_fabricante":
@@ -148,14 +148,18 @@ class DatosMigrados(unittest.TestCase):
             if v["tipo"] == "tercero_marketplace":
                 self.assertEqual(v["estado_validacion"], "rechazado")
 
-    def test_alkosto_sin_vendedor_pendiente(self):
+    def test_alkosto_validado_solo_con_chequeo_del_mismo_dia(self):
+        # decisión 22 nov: Alkosto se valida por evidencia del canal y revisión de ficha de la misma fecha
         for p in self.pubs.values():
-            if p["comercio_id"] == "alkosto":
-                self.assertEqual(p["estado_validacion"], "pendiente")
+            if p["comercio_id"] == "alkosto" and p["estado_validacion"] == "validado":
+                v = p["validacion_vendedor"]
+                self.assertEqual(v["metodo"], "evidencia_corporativa_del_canal")
+                self.assertEqual(v["nivel_evidencia"], "canal_corporativo")
+                self.assertEqual(v["evidencia"]["chequeo_ficha"]["fecha"], v["validado_en"])
 
     def test_ninguna_referencia_verificada_sin_persona(self):
         for p in self.prods:
-            self.assertIn(p["estado_referencia"], ("sin_verificar", "agrupada_automatica"))
+            self.assertIn(p["estado_referencia"], ("sin_verificar", "agrupada_automatica", "en_revision"))
             self.assertIsNone(p["verificacion_humana"])
 
 
