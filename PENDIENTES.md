@@ -2,6 +2,12 @@
 
 Lista para próximas actualizaciones (se publican por bloques para ahorrar créditos de Netlify).
 
+## Frecuencia de actualización del catálogo y de "¿Está barato hoy?" (decidida por Ana, 22 nov 2026)
+- **Semana del Black Friday (23–29 nov):** actualizar **cada 2 días** (≈ 3 publicaciones, 45 créditos de Netlify). La primera publicación incluye la corrección del texto duplicado del Verificador (6c96110).
+- **Después del Black Friday:** actualizar **una vez por semana, los viernes**.
+- Cada actualización = lectura de las tiendas + publicación con autorización de Ana (15 créditos por publicación).
+- El historial diario de precios es aparte: corre solo en GitHub a las 6:17 a. m. y no gasta créditos (pendiente confirmar su primera corrida automática el 23 nov).
+
 ## Próxima actualización de datos
 - [ ] Agregar búsquedas de **Deportes** (bicicletas, mancuernas, tenis deportivos…) y **Mercado** (café, aceite, detergente…) para que esas categorías tengan productos.
 - [ ] Revisar primero los productos que la comunidad reportó como "Ya no".
