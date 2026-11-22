@@ -63,3 +63,10 @@ test("ficha de Falabella: modelo, precio de contado, tarjeta y 'antes'", () => {
   const o = leerFichaFalabella(`<script id="__NEXT_DATA__" type="application/json">${JSON.stringify({ props: { pageProps: { productData: pd } } })}</script>`, "https://www.falabella.com.co/falabella-co/product/73646009/x?y=1");
   assert.deepEqual([o.modelo, o.precio, o.precio_tarjeta, o.precio_antes, o.propio, o.link], ["AF141", 399900, 369900, 599900, true, "https://www.falabella.com.co/falabella-co/product/73646009/x"]);
 });
+
+test("falso positivo real del 22 nov: Remington D5000 empata con Falabella → no es oferta real", () => {
+  const o = of("Jumbo", 109900, { precio_antes: 169900 });
+  const r = verificar(o, grupo(o, of("Falabella", 109900), of("Olímpica", 169900)), [], HOY);
+  assert.notEqual(r.estado, "oferta_real");
+  assert.equal(r.estado, "dudosa");
+});

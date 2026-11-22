@@ -118,3 +118,9 @@ test("parecido pero no igual: se muestra como 'similar' con sus diferencias, sin
   assert.ok(fal.similares[0].diferencias.some(d => d.startsWith("procesador")));
   assert.ok(fal.similares[0].diferencias.some(d => d.startsWith("pantalla")));
 });
+
+test("buscador: empate en el primer lugar no es 'más barato' (Remington D5000)", () => {
+  const mk = (t, precio, ean) => leerVtex(t, "https://x.co", [vtex("Secador Remington D5000", "REMINGTON", "d5000-" + t, precio, null, "1", t, ean)]);
+  const [p] = compararOfertas([...mk("Jumbo", 109900, "74590"), ...mk("Falabella", 109900, "74590"), ...mk("Olímpica", 169900, "74590")]);
+  assert.equal(p.veredicto, "igual");
+});

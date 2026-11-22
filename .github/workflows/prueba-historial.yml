@@ -1,4 +1,4 @@
-# PRUEBA ÚNICA (no es la tarea diaria). Autorizada el 22 nov 2026.
+# PRUEBA ÚNICA (no es la tarea diaria). Autorizada el 22 nov 2026. Corrida 2: después de corregir el empate.
 # Corre en la rama de trabajo etapa-1-modelo-datos:
 #  1) la misma lectura de precios que hará la tarea diaria, y la guarda en la rama "historial" (primer registro real);
 #  2) el Verificador contra 30 enlaces reales, y deja los resultados en pruebas/ de esta misma rama.

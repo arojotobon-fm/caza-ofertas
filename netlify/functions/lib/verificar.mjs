@@ -45,9 +45,11 @@ export function verificar(origen, grupo, historial = [], hoy = new Date().toISOS
   // 2. ¿Está realmente más barato? (misma referencia en otras tiendas)
   let comparacion = "sin_datos";
   if (otras.length) {
-    const ref = mediana(otras.map(t => t.precio)), ahorro = ref - origen.precio, pct = ahorro / ref * 100;
+    // "Más barato" es contra la tienda MÁS BARATA de las otras, no contra el promedio:
+    // si otra tienda tiene el mismo precio, no hay ahorro (falso positivo real del 22 nov: Remington D5000).
     const masBarata = otras.reduce((a, b) => (b.precio < a.precio ? b : a));
-    if (valeLaPena(ahorro, pct)) { comparacion = "mas_barato"; pruebas.push({ tipo: "comparacion", signo: "+", texto: `Es ${cop(ahorro)} (${pct.toFixed(1).replace(".", ",")} %) más barato que en ${otras.map(t => t.tienda).join(", ")}, con la misma referencia.` }); }
+    const ref = masBarata.precio, ahorro = ref - origen.precio, pct = ahorro / ref * 100;
+    if (valeLaPena(ahorro, pct)) { comparacion = "mas_barato"; pruebas.push({ tipo: "comparacion", signo: "+", texto: `Es ${cop(ahorro)} (${pct.toFixed(1).replace(".", ",")} %) más barato que en la siguiente tienda más barata (${masBarata.tienda}, ${cop(ref)}), con la misma referencia.` }); }
     else if (valeLaPena(origen.precio - masBarata.precio, (origen.precio - masBarata.precio) / origen.precio * 100)) { comparacion = "mas_caro"; pruebas.push({ tipo: "comparacion", signo: "-", texto: `En ${masBarata.tienda} cuesta ${cop(masBarata.precio)}: ${cop(origen.precio - masBarata.precio)} menos.` }); }
     else { comparacion = "igual"; pruebas.push({ tipo: "comparacion", signo: "0", texto: `Cuesta prácticamente lo mismo en ${otras.map(t => t.tienda).join(", ")}${origen.precio_antes ? ": el descuento anunciado no lo hace más barato que en otras tiendas" : ""}.` }); }
   } else pruebas.push({ tipo: "comparacion", signo: "0", texto: "No encontramos la misma referencia en otra tienda para comparar." });

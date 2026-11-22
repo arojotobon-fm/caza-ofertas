@@ -113,7 +113,8 @@ export function compararOfertas(ofertas) {
     const r = { nombre: base.nombre, marca: base.marca, img: (tiendas.find(t => t.img) || base).img || "", codigo: [...base.codigos][0] || "",
       tiendas, externas, n: tiendas.length };
     if (tiendas.length >= 2) {
-      const barato = tiendas[0], ref = mediana(tiendas.slice(1).map(t => t.precio));
+      // Contra la SEGUNDA más barata, no contra el promedio: un empate en el primer lugar no es "más barato".
+      const barato = tiendas[0], ref = tiendas[1].precio;
       const ahorro = ref - barato.precio, pct = ahorro / ref * 100;
       r.ganador = barato.tienda; r.ahorro = ahorro; r.pct = Math.round(pct * 10) / 10;
       r.veredicto = ahorro <= 0 ? "igual" : valeLaPena(ahorro, pct) ? "mas_barato" : "casi_igual";
