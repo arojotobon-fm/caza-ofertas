@@ -1,0 +1,829 @@
+{
+ "buscador": {
+  "freidora de aire": {
+   "tiendas": [
+    {
+     "tienda": "Éxito",
+     "ok": false,
+     "motivo": "no pudimos consultarla",
+     "n": 0
+    },
+    {
+     "tienda": "Olímpica",
+     "ok": true,
+     "motivo": null,
+     "n": 30
+    },
+    {
+     "tienda": "Jumbo",
+     "ok": true,
+     "motivo": null,
+     "n": 28
+    },
+    {
+     "tienda": "Falabella",
+     "ok": true,
+     "motivo": null,
+     "n": 56
+    },
+    {
+     "tienda": "Flamingo",
+     "ok": true,
+     "motivo": null,
+     "n": 10
+    }
+   ],
+   "productos": [
+    {
+     "v": "igual",
+     "n": 3,
+     "nombre": "Freidora de aire Black+Decker de 4.2L PURIFY AFBD42-3BDLA",
+     "tiendas": [
+      [
+       "Jumbo",
+       219900,
+       "50875005716",
+       "https://www.jumbocolombia.com/freidora-de-aire-black-decker-purify-afbd42-3bdla-432049/p"
+      ],
+      [
+       "Falabella",
+       219900,
+       null,
+       "https://www.falabella.com.co/falabella-co/product/73587720/freidora-aire-bd-4-2lt-afbd42-3"
+      ],
+      [
+       "Olímpica",
+       219950,
+       "50875005716",
+       "https://www.olimpica.com/freidora-air-b-d-4-2l-purify/p"
+      ]
+     ],
+     "ext": 1
+    },
+    {
+     "v": "igual",
+     "n": 3,
+     "nombre": "Freidora de Aire 5.5 L Black+Decker PURIFRY AFBD62-1BDLA",
+     "tiendas": [
+      [
+       "Jumbo",
+       329900,
+       "50875003866",
+       "https://www.jumbocolombia.com/freidora-de-aire-5-5-l-black-decker-purifry-afbd62-1bdla-3678895/p"
+      ],
+      [
+       "Falabella",
+       329900,
+       null,
+       "https://www.falabella.com.co/falabella-co/product/73474293/Freidora-B+D-5.7-lt-AFBD62"
+      ],
+      [
+       "Olímpica",
+       329945,
+       "50875003866",
+       "https://www.olimpica.com/freidora-aire-digit-black-decker-5-5-litros/p"
+      ]
+     ],
+     "ext": 0
+    },
+    {
+     "v": "casi_igual",
+     "n": 2,
+     "nombre": "Freidora de Aire Oster 1100 Watts 3,8 Lt Manual",
+     "tiendas": [
+      [
+       "Olímpica",
+       215900,
+       "53891178068",
+       "https://www.olimpica.com/freidora-oster-3-8-l-manual/p"
+      ],
+      [
+       "Jumbo",
+       219900,
+       "53891178068",
+       "https://www.jumbocolombia.com/freidora-de-aire-3-8-l-manual-oster/p"
+      ]
+     ],
+     "ext": 0
+    },
+    {
+     "v": "casi_igual",
+     "n": 2,
+     "nombre": "Freidora de Aire Midea Mecánica 4,5 Lt Negra",
+     "tiendas": [
+      [
+       "Olímpica",
+       197132,
+       "6936718340487",
+       "https://www.olimpica.com/freidora-aire-midea-negra-mecanica-4-5l/p"
+      ],
+      [
+       "Jumbo",
+       199900,
+       "6936718340487",
+       "https://www.jumbocolombia.com/freidora-de-aire-midea-negra-mecanica-4-5-litros-wide-max/p"
+      ]
+     ],
+     "ext": 0
+    },
+    {
+     "v": "casi_igual",
+     "n": 2,
+     "nombre": "Freidora De Aire PURIFRY™ BLACK+DECKER De 4.2 L",
+     "tiendas": [
+      [
+       "Olímpica",
+       249849,
+       "50875003835",
+       "https://www.olimpica.com/freidora-digital-black-decker-de-4-4-l/p"
+      ],
+      [
+       "Jumbo",
+       249900,
+       "50875003835",
+       "https://www.jumbocolombia.com/freidora-de-aire-digital-black-decker-4-4-litros-3669884/p"
+      ]
+     ],
+     "ext": 0
+    },
+    {
+     "v": "igual",
+     "n": 2,
+     "nombre": "Freidora de Aire Ninja Doublestack XL de 2 Canastas SL401 LAA",
+     "tiendas": [
+      [
+       "Jumbo",
+       859900,
+       "622356320610",
+       "https://www.jumbocolombia.com/freidora-de-aire-ninja-doublestack-xl-de-2-canastas-sl401-laa-455342-455342/p"
+      ],
+      [
+       "Falabella",
+       859900,
+       null,
+       "https://www.falabella.com.co/falabella-co/product/73687165/freid-aire-doublestack-sl401laa"
+      ]
+     ],
+     "ext": 0
+    },
+    {
+     "v": "una_tienda",
+     "n": 1,
+     "nombre": "Freidora De Aire Haceb 6 Litros - Inox Negra",
+     "tiendas": [
+      [
+       "Olímpica",
+       316173,
+       "7704353459661",
+       "https://www.olimpica.com/freidora-de-aire-haceb-6-litros---inox-negra/p"
+      ]
+     ],
+     "ext": 0
+    },
+    {
+     "v": "una_tienda",
+     "n": 1,
+     "nombre": "Freidora de Aire Imusa Max 5 Lt Mecánica Inoxidable",
+     "tiendas": [
+      [
+       "Olímpica",
+       299900,
+       "7702073241047",
+       "https://www.olimpica.com/freidora-de-aire-imusa-max-5l-mecanica-inox/p"
+      ]
+     ],
+     "ext": 0
+    }
+   ]
+  },
+  "ps5 slim": {
+   "tiendas": [
+    {
+     "tienda": "Éxito",
+     "ok": false,
+     "motivo": "no pudimos consultarla",
+     "n": 0
+    },
+    {
+     "tienda": "Olímpica",
+     "ok": true,
+     "motivo": null,
+     "n": 1
+    },
+    {
+     "tienda": "Jumbo",
+     "ok": true,
+     "motivo": null,
+     "n": 0
+    },
+    {
+     "tienda": "Falabella",
+     "ok": true,
+     "motivo": null,
+     "n": 48
+    },
+    {
+     "tienda": "Flamingo",
+     "ok": true,
+     "motivo": null,
+     "n": 1
+    }
+   ],
+   "productos": [
+    {
+     "v": "una_tienda",
+     "n": 1,
+     "nombre": "Consola de videojuegos PS5 5 Slim Estándar 1TB Bundle GT7 + Astro Bot",
+     "tiendas": [
+      [
+       "Falabella",
+       3199900,
+       null,
+       "https://www.falabella.com.co/falabella-co/product/73531272/ps5-hw-2115-bndl-est-gt7-ast"
+      ]
+     ],
+     "ext": 0
+    },
+    {
+     "v": "una_tienda",
+     "n": 1,
+     "nombre": "Consola PlayStation: PS5 Slim Digital + 2 Videojuegos | 825GB de Almacenamiento | Edición Digital | Videojuegos Incluidos Astro Bot y Gran turismo 7",
+     "tiendas": [
+      [
+       "Falabella",
+       2999900,
+       null,
+       "https://www.falabella.com.co/falabella-co/product/73472607/Consola-PlayStation:-PS5-Slim-Digital-+-2-Videojuegos-825GB-de-Almacenamiento-Edicion-Digital-Videojuegos-Incluidos-Astro-Bot-y-Gran-turismo-7"
+      ]
+     ],
+     "ext": 0
+    },
+    {
+     "v": "una_tienda",
+     "n": 1,
+     "nombre": "Consola PS5 Digital Slim | 825GB | 1 control",
+     "tiendas": [
+      [
+       "Falabella",
+       2999900,
+       null,
+       "https://www.falabella.com.co/falabella-co/product/73684117/sony-playstation-5-digital-slim"
+      ]
+     ],
+     "ext": 0
+    },
+    {
+     "v": "solo_terceros",
+     "n": 0,
+     "nombre": "Base Soporte PS5 Slim/Pro VTA con Carga Dual RGB",
+     "tiendas": [],
+     "ext": 1
+    },
+    {
+     "v": "solo_terceros",
+     "n": 0,
+     "nombre": "PlayStation 5 PS5 Slim Digital 825GB Fortnite + 2 Mandos DualSense Blancos",
+     "tiendas": [],
+     "ext": 1
+    },
+    {
+     "v": "solo_terceros",
+     "n": 0,
+     "nombre": "Soporte Para Ps5 Slim DIGITAL Base Horizontal Negro",
+     "tiendas": [],
+     "ext": 1
+    },
+    {
+     "v": "solo_terceros",
+     "n": 0,
+     "nombre": "Consola PS5 Slim 1TB + 2 Controles DualSense + FC27 + Cargador DOBE",
+     "tiendas": [],
+     "ext": 1
+    },
+    {
+     "v": "solo_terceros",
+     "n": 0,
+     "nombre": "Enfriador Ventilador Refrigerante Compatible Ps5 Slim",
+     "tiendas": [],
+     "ext": 1
+    }
+   ]
+  },
+  "televisor challenger 43": {
+   "tiendas": [
+    {
+     "tienda": "Éxito",
+     "ok": false,
+     "motivo": "no pudimos consultarla",
+     "n": 0
+    },
+    {
+     "tienda": "Olímpica",
+     "ok": true,
+     "motivo": null,
+     "n": 30
+    },
+    {
+     "tienda": "Jumbo",
+     "ok": true,
+     "motivo": null,
+     "n": 20
+    },
+    {
+     "tienda": "Falabella",
+     "ok": true,
+     "motivo": null,
+     "n": 11
+    },
+    {
+     "tienda": "Flamingo",
+     "ok": true,
+     "motivo": null,
+     "n": 10
+    }
+   ],
+   "productos": [
+    {
+     "v": "igual",
+     "n": 2,
+     "nombre": "Televisor Challenger 43 Pulgadas LED FHD Google Tv 43Kg90 Bt T2",
+     "tiendas": [
+      [
+       "Olímpica",
+       899900,
+       "7705191046365",
+       "https://www.olimpica.com/televisor-challenger-43-pulgadas-full-hd-google-tv--led-43kg90-bt-t2/p"
+      ],
+      [
+       "Jumbo",
+       899900,
+       "7705191046365",
+       "https://www.jumbocolombia.com/televisor-led43kg90-bt-google-tv-t2-3717583/p"
+      ]
+     ],
+     "ext": 11
+    },
+    {
+     "v": "igual",
+     "n": 2,
+     "nombre": "Televisor Challenger 65 Pulgadas Qled UHD 4K Google Tv 65Kg290 Bt T2",
+     "tiendas": [
+      [
+       "Olímpica",
+       1999900,
+       "7705191046334",
+       "https://www.olimpica.com/televisor-challenger-65-pulgadas-qled-google-tv-65kg290-bt-t2/p"
+      ],
+      [
+       "Jumbo",
+       1999900,
+       "7705191046334",
+       "https://www.jumbocolombia.com/televisor-challenger-65-pulgadas-qled-google-tv-65kg290-3716282/p"
+      ]
+     ],
+     "ext": 1
+    },
+    {
+     "v": "igual",
+     "n": 2,
+     "nombre": "Televisor Challenger 55 Pulgadas Qled UHD 4K Arte Google TV 55Tg380",
+     "tiendas": [
+      [
+       "Olímpica",
+       2629900,
+       "7705191047683",
+       "https://www.olimpica.com/televisor-challenger-55-pulgadas-qled-arte-55tg380-bt-t2/p"
+      ],
+      [
+       "Jumbo",
+       2629900,
+       "7705191047683",
+       "https://www.jumbocolombia.com/televisor-challenger-55-qled-55tg380-bt-t2-441156/p"
+      ]
+     ],
+     "ext": 0
+    },
+    {
+     "v": "igual",
+     "n": 2,
+     "nombre": "Televisor Challenger 40 Pulgadas LED FHD Google Tv 40Kg90 Bt T2",
+     "tiendas": [
+      [
+       "Olímpica",
+       819900,
+       "7705191046372",
+       "https://www.olimpica.com/televisor-challenger-40-pulgadas-full-hd-google-tv--led-40kg90-bt-t2/p"
+      ],
+      [
+       "Jumbo",
+       819900,
+       "7705191046372",
+       "https://www.jumbocolombia.com/televisor-challenger-40-pulgadas-fhd-google-led-40kg90-3724023/p"
+      ]
+     ],
+     "ext": 1
+    },
+    {
+     "v": "igual",
+     "n": 2,
+     "nombre": "Televisor Challenger 65 Pulgadas Qled UHD 4K Arte Google TV 65Tg380",
+     "tiendas": [
+      [
+       "Olímpica",
+       3099900,
+       "7705191047690",
+       "https://www.olimpica.com/televisor-challenger-65-pulgadas-qled-arte-65tg380-bt-t2/p"
+      ],
+      [
+       "Jumbo",
+       3099900,
+       "7705191047690",
+       "https://www.jumbocolombia.com/televisor-challenger-65-qled-65tg380-bt-t2-441152/p"
+      ]
+     ],
+     "ext": 0
+    },
+    {
+     "v": "igual",
+     "n": 2,
+     "nombre": "Televisor Challenger 75 Pulgadas Qled UHD 4K Google Tv 75Kg290 Bt T2",
+     "tiendas": [
+      [
+       "Olímpica",
+       3099900,
+       "7705191046327",
+       "https://www.olimpica.com/televisor-challenger-75-pulgadas-qled-google-tv-75kg290-bt-t2/p"
+      ],
+      [
+       "Jumbo",
+       3099900,
+       "7705191046327",
+       "https://www.jumbocolombia.com/televisor-challenger-75-pulgadas-qled-google-tv-75kg290-3716288/p"
+      ]
+     ],
+     "ext": 1
+    },
+    {
+     "v": "igual",
+     "n": 2,
+     "nombre": "Televisor Challenger 50 Pulgadas Led UHD Roku Tv 50Kr15  T2",
+     "tiendas": [
+      [
+       "Olímpica",
+       1099900,
+       "7705191047638",
+       "https://www.olimpica.com/televisor-challenger-50-pulgadas-ultra--hd-roku--tv--led-50kr15--t2/p"
+      ],
+      [
+       "Jumbo",
+       1099900,
+       "7705191047638",
+       "https://www.jumbocolombia.com/televisor-challenger-50-pulgadas-led-uhd-t2-roku-50kr15-3745687/p"
+      ]
+     ],
+     "ext": 0
+    },
+    {
+     "v": "casi_igual",
+     "n": 2,
+     "nombre": "Televisor Hyundai Led 43 Pulgadas 109Cm Hyled4326 Goog",
+     "tiendas": [
+      [
+       "Olímpica",
+       885047,
+       "7707138077883",
+       "https://www.olimpica.com/televisor-hyundai-led-43-pulgadas-109cm-hyled4326-goog/p"
+      ],
+      [
+       "Jumbo",
+       889900,
+       "7707138077883",
+       "https://www.jumbocolombia.com/televisor-qled-smart-fhd-43-pulgadas-hyled4326qg-3689037/p"
+      ]
+     ],
+     "ext": 0
+    }
+   ]
+  },
+  "lavadora": {
+   "tiendas": [
+    {
+     "tienda": "Éxito",
+     "ok": false,
+     "motivo": "no pudimos consultarla",
+     "n": 0
+    },
+    {
+     "tienda": "Olímpica",
+     "ok": true,
+     "motivo": null,
+     "n": 30
+    },
+    {
+     "tienda": "Jumbo",
+     "ok": true,
+     "motivo": null,
+     "n": 30
+    },
+    {
+     "tienda": "Falabella",
+     "ok": true,
+     "motivo": null,
+     "n": 40
+    },
+    {
+     "tienda": "Flamingo",
+     "ok": true,
+     "motivo": null,
+     "n": 10
+    }
+   ],
+   "productos": [
+    {
+     "v": "mas_barato",
+     "n": 2,
+     "nombre": "Lavadora Carga Superior 18 kg LMA8120WDGAB0",
+     "tiendas": [
+      [
+       "Falabella",
+       1479900,
+       null,
+       "https://www.falabella.com.co/falabella-co/product/72857993/Lavadora-Mabe-Carga-Superior-18-kg-LMA8120WDGAB0"
+      ],
+      [
+       "Jumbo",
+       1599900,
+       "757638383363",
+       "https://www.jumbocolombia.com/lavadora-mabe-propela-18kg-lma8120wdgab0-drive/p"
+      ]
+     ],
+     "ext": 0
+    },
+    {
+     "v": "igual",
+     "n": 2,
+     "nombre": "Lavadora Mabe propela 9kg LMA9020WDGAB0 Diamond",
+     "tiendas": [
+      [
+       "Jumbo",
+       999900,
+       "757638383332",
+       "https://www.jumbocolombia.com/lavadora-mabe-propela-9kg-lma9020wdgab0-diamond/p"
+      ],
+      [
+       "Falabella",
+       999900,
+       null,
+       "https://www.falabella.com.co/falabella-co/product/72857990/Lavadora-Mabe-Carga-Superior-9-kg-LMA9020WDGAB0"
+      ]
+     ],
+     "ext": 1
+    },
+    {
+     "v": "mas_barato",
+     "n": 2,
+     "nombre": "Lavadora Carga Superior 11 KG LMD1123HBAB0",
+     "tiendas": [
+      [
+       "Falabella",
+       559900,
+       null,
+       "https://www.falabella.com.co/falabella-co/product/72717250/Lavadora-Mabe-Carga-Superior-11-KG-LMD1123HBAB0"
+      ],
+      [
+       "Jumbo",
+       599900,
+       "757638389853",
+       "https://www.jumbocolombia.com/lavadora-semiautomat-mabe-lmd1123hbab0-11kg-blanca/p"
+      ]
+     ],
+     "ext": 1
+    },
+    {
+     "v": "una_tienda",
+     "n": 1,
+     "nombre": "Limpia Lavadoras Dr Beckmann 250 ml",
+     "tiendas": [
+      [
+       "Olímpica",
+       21590,
+       "4008455424019",
+       "https://www.olimpica.com/limpiador-ad-dr-beckmann-lav-1apl-250ml-4008455424019-1599205/p"
+      ]
+     ],
+     "ext": 0
+    },
+    {
+     "v": "una_tienda",
+     "n": 1,
+     "nombre": "Funda Lavadora Krea Carga Frontal",
+     "tiendas": [
+      [
+       "Jumbo",
+       44990,
+       "7800155347929",
+       "https://www.jumbocolombia.com/funda-lavadora-krea-carga-frontal-422924/p"
+      ]
+     ],
+     "ext": 0
+    },
+    {
+     "v": "una_tienda",
+     "n": 1,
+     "nombre": "Lavadora Challenger 13kg CW 5713 Gris",
+     "tiendas": [
+      [
+       "Jumbo",
+       1259900,
+       "7705191044941",
+       "https://www.jumbocolombia.com/lavadora-challenger-13kg-cw-5713-gris-3661419/p"
+      ]
+     ],
+     "ext": 0
+    },
+    {
+     "v": "una_tienda",
+     "n": 1,
+     "nombre": "Lavadora Whirlpool Impeller 12Kg/26Lb Silver",
+     "tiendas": [
+      [
+       "Jumbo",
+       1199900,
+       "7891129237322",
+       "https://www.jumbocolombia.com/lavadora-whirlpool-impeller-12kg-26lb-silver-20034886/p"
+      ]
+     ],
+     "ext": 0
+    },
+    {
+     "v": "una_tienda",
+     "n": 1,
+     "nombre": "Lavadora Haceb Semiautomatica 9 Kg Blanco",
+     "tiendas": [
+      [
+       "Jumbo",
+       599900,
+       "7704353487268",
+       "https://www.jumbocolombia.com/lavadora-haceb-semiautomatica-9-kg-436481/p"
+      ]
+     ],
+     "ext": 0
+    }
+   ]
+  },
+  "celular samsung a16": {
+   "tiendas": [
+    {
+     "tienda": "Éxito",
+     "ok": false,
+     "motivo": "no pudimos consultarla",
+     "n": 0
+    },
+    {
+     "tienda": "Olímpica",
+     "ok": true,
+     "motivo": null,
+     "n": 30
+    },
+    {
+     "tienda": "Jumbo",
+     "ok": true,
+     "motivo": null,
+     "n": 25
+    },
+    {
+     "tienda": "Falabella",
+     "ok": true,
+     "motivo": null,
+     "n": 2
+    },
+    {
+     "tienda": "Flamingo",
+     "ok": true,
+     "motivo": null,
+     "n": 10
+    }
+   ],
+   "productos": [
+    {
+     "v": "una_tienda",
+     "n": 1,
+     "nombre": "Celular Samsung Galaxy A16 8Gb 256Gb Negro",
+     "tiendas": [
+      [
+       "Jumbo",
+       989900,
+       "8806095819068",
+       "https://www.jumbocolombia.com/celular-samsung-galaxy-a16-8gb-256gb-negro-3662105/p"
+      ]
+     ],
+     "ext": 0
+    },
+    {
+     "v": "solo_terceros",
+     "n": 0,
+     "nombre": "Celular Samsung Galaxy A16 Color Negro 4GB+128GB",
+     "tiendas": [],
+     "ext": 1
+    },
+    {
+     "v": "mas_barato",
+     "n": 2,
+     "nombre": "Celular Samsung A07 Verde 128 GB",
+     "tiendas": [
+      [
+       "Olímpica",
+       529900,
+       "8806097661849",
+       "https://www.olimpica.com/celular-samsung--a07-4gb-128gb-verde/p"
+      ],
+      [
+       "Jumbo",
+       549900,
+       "8806097661849",
+       "https://www.jumbocolombia.com/celular-samsung-galaxy-a07-4gb-128gb-verde-3706244/p"
+      ]
+     ],
+     "ext": 0
+    },
+    {
+     "v": "mas_barato",
+     "n": 2,
+     "nombre": "Celular Samsung Galaxy A17 LTE 8GB 256GB Negro",
+     "tiendas": [
+      [
+       "Jumbo",
+       849900,
+       "8806097667063",
+       "https://www.jumbocolombia.com/celular-samsung-galaxy-a17-lte-8gb-256gb-negro-3706227/p"
+      ],
+      [
+       "Olímpica",
+       999900,
+       "8806097667063",
+       "https://www.olimpica.com/celular-samsung-a17-lte-8gb-256gb-negro/p"
+      ]
+     ],
+     "ext": 0
+    },
+    {
+     "v": "una_tienda",
+     "n": 1,
+     "nombre": "Celular Samsung A07 Negro 128 GB",
+     "tiendas": [
+      [
+       "Olímpica",
+       529900,
+       "8806097661498",
+       "https://www.olimpica.com/celular-samsung-a07-4gb-128gb-negro/p"
+      ]
+     ],
+     "ext": 0
+    },
+    {
+     "v": "una_tienda",
+     "n": 1,
+     "nombre": "Celular Samsung A17 Lte Gris 256 GB",
+     "tiendas": [
+      [
+       "Olímpica",
+       999900,
+       "8806097668565",
+       "https://www.olimpica.com/celular-samsung-a17-lte-8gb-256gb-gris/p"
+      ]
+     ],
+     "ext": 0
+    },
+    {
+     "v": "una_tienda",
+     "n": 1,
+     "nombre": "Celular Samsung Galaxy A57 8GB / 256GB Gris",
+     "tiendas": [
+      [
+       "Jumbo",
+       1999900,
+       "8806099057626",
+       "https://www.jumbocolombia.com/celular-samsung-galaxy-a57-8gb-256gb-gris-3745961/p"
+      ]
+     ],
+     "ext": 0
+    },
+    {
+     "v": "una_tienda",
+     "n": 1,
+     "nombre": "Celular Samsung Galaxy A57 8GB / 256GB Violeta",
+     "tiendas": [
+      [
+       "Jumbo",
+       1999900,
+       "8806099057206",
+       "https://www.jumbocolombia.com/celular-samsung-galaxy-a57-8gb-256gb-violeta-3745979/p"
+      ]
+     ],
+     "ext": 0
+    }
+   ]
+  }
+ },
+ "verificador": []
+}
