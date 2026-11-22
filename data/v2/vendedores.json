@@ -1,0 +1,1055 @@
+[
+ {
+  "id": "desconocido@alkosto",
+  "nombre": null,
+  "tipo": null,
+  "comercio_id": "alkosto",
+  "estado_validacion": "pendiente",
+  "evidencia": "El listado no informaba quién vende; hay que revisarlo en la página del producto.",
+  "verificado_en": null
+ },
+ {
+  "id": "a832778b67",
+  "nombre": "Exito",
+  "tipo": "retailer",
+  "comercio_id": "exito",
+  "estado_validacion": "pendiente",
+  "evidencia": "El listado dice 'vendido por' el propio comercio. Falta confirmación humana.",
+  "verificado_en": null
+ },
+ {
+  "id": "30df9e4911",
+  "nombre": "3 tiendas",
+  "tipo": "tercero_marketplace",
+  "comercio_id": "exito",
+  "estado_validacion": "rechazado",
+  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
+  "verificado_en": null
+ },
+ {
+  "id": "9fbf9a0ee4",
+  "nombre": "Akiha ecommerce home marketplace-catalog",
+  "tipo": "tercero_marketplace",
+  "comercio_id": "exito",
+  "estado_validacion": "rechazado",
+  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
+  "verificado_en": null
+ },
+ {
+  "id": "ce9114a47d",
+  "nombre": "Alz market",
+  "tipo": "tercero_marketplace",
+  "comercio_id": "exito",
+  "estado_validacion": "rechazado",
+  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
+  "verificado_en": null
+ },
+ {
+  "id": "29174d6cb6",
+  "nombre": "Bravephone",
+  "tipo": "tercero_marketplace",
+  "comercio_id": "exito",
+  "estado_validacion": "rechazado",
+  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
+  "verificado_en": null
+ },
+ {
+  "id": "8c6d67355e",
+  "nombre": "Compra online",
+  "tipo": "tercero_marketplace",
+  "comercio_id": "exito",
+  "estado_validacion": "rechazado",
+  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
+  "verificado_en": null
+ },
+ {
+  "id": "a2d8df9d94",
+  "nombre": "E-brands",
+  "tipo": "tercero_marketplace",
+  "comercio_id": "exito",
+  "estado_validacion": "rechazado",
+  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
+  "verificado_en": null
+ },
+ {
+  "id": "e5c6fbfb5b",
+  "nombre": "Electrocompras online",
+  "tipo": "tercero_marketplace",
+  "comercio_id": "exito",
+  "estado_validacion": "rechazado",
+  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
+  "verificado_en": null
+ },
+ {
+  "id": "2e76296341",
+  "nombre": "Gamer tecnology",
+  "tipo": "tercero_marketplace",
+  "comercio_id": "exito",
+  "estado_validacion": "rechazado",
+  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
+  "verificado_en": null
+ },
+ {
+  "id": "815bc79571",
+  "nombre": "Idagizi",
+  "tipo": "tercero_marketplace",
+  "comercio_id": "exito",
+  "estado_validacion": "rechazado",
+  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
+  "verificado_en": null
+ },
+ {
+  "id": "6d378564ae",
+  "nombre": "Imditec dm colombia",
+  "tipo": "tercero_marketplace",
+  "comercio_id": "exito",
+  "estado_validacion": "rechazado",
+  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
+  "verificado_en": null
+ },
+ {
+  "id": "cfa6c9124a",
+  "nombre": "Inity",
+  "tipo": "tercero_marketplace",
+  "comercio_id": "exito",
+  "estado_validacion": "rechazado",
+  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
+  "verificado_en": null
+ },
+ {
+  "id": "28fb8109ca",
+  "nombre": "Innovation zone1",
+  "tipo": "tercero_marketplace",
+  "comercio_id": "exito",
+  "estado_validacion": "rechazado",
+  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
+  "verificado_en": null
+ },
+ {
+  "id": "2e98c28406",
+  "nombre": "Intelcom negocios integrales",
+  "tipo": "tercero_marketplace",
+  "comercio_id": "exito",
+  "estado_validacion": "rechazado",
+  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
+  "verificado_en": null
+ },
+ {
+  "id": "0275a906de",
+  "nombre": "Jesucristo electro",
+  "tipo": "tercero_marketplace",
+  "comercio_id": "exito",
+  "estado_validacion": "rechazado",
+  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
+  "verificado_en": null
+ },
+ {
+  "id": "29ef8e21e9",
+  "nombre": "Korolos",
+  "tipo": "tercero_marketplace",
+  "comercio_id": "exito",
+  "estado_validacion": "rechazado",
+  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
+  "verificado_en": null
+ },
+ {
+  "id": "33952de3b5",
+  "nombre": "Kuwala",
+  "tipo": "tercero_marketplace",
+  "comercio_id": "exito",
+  "estado_validacion": "rechazado",
+  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
+  "verificado_en": null
+ },
+ {
+  "id": "faa8772f61",
+  "nombre": "La fabrica del iphone",
+  "tipo": "tercero_marketplace",
+  "comercio_id": "exito",
+  "estado_validacion": "rechazado",
+  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
+  "verificado_en": null
+ },
+ {
+  "id": "427cbc828c",
+  "nombre": "La maxima mayorista",
+  "tipo": "tercero_marketplace",
+  "comercio_id": "exito",
+  "estado_validacion": "rechazado",
+  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
+  "verificado_en": null
+ },
+ {
+  "id": "f7c74f540a",
+  "nombre": "Marketusa",
+  "tipo": "tercero_marketplace",
+  "comercio_id": "exito",
+  "estado_validacion": "rechazado",
+  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
+  "verificado_en": null
+ },
+ {
+  "id": "60441ea693",
+  "nombre": "Megaccesorios",
+  "tipo": "tercero_marketplace",
+  "comercio_id": "exito",
+  "estado_validacion": "rechazado",
+  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
+  "verificado_en": null
+ },
+ {
+  "id": "955c0fb083",
+  "nombre": "Natech",
+  "tipo": "tercero_marketplace",
+  "comercio_id": "exito",
+  "estado_validacion": "rechazado",
+  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
+  "verificado_en": null
+ },
+ {
+  "id": "3cb17e4fad",
+  "nombre": "Novamix tech",
+  "tipo": "tercero_marketplace",
+  "comercio_id": "exito",
+  "estado_validacion": "rechazado",
+  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
+  "verificado_en": null
+ },
+ {
+  "id": "acda8dd012",
+  "nombre": "Nuvi tecno",
+  "tipo": "tercero_marketplace",
+  "comercio_id": "exito",
+  "estado_validacion": "rechazado",
+  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
+  "verificado_en": null
+ },
+ {
+  "id": "da0f5642a8",
+  "nombre": "Ocnatech",
+  "tipo": "tercero_marketplace",
+  "comercio_id": "exito",
+  "estado_validacion": "rechazado",
+  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
+  "verificado_en": null
+ },
+ {
+  "id": "820d425a7a",
+  "nombre": "Oklahoma",
+  "tipo": "tercero_marketplace",
+  "comercio_id": "exito",
+  "estado_validacion": "rechazado",
+  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
+  "verificado_en": null
+ },
+ {
+  "id": "4067754d90",
+  "nombre": "Oportunidades",
+  "tipo": "tercero_marketplace",
+  "comercio_id": "exito",
+  "estado_validacion": "rechazado",
+  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
+  "verificado_en": null
+ },
+ {
+  "id": "ce9e47efd4",
+  "nombre": "P,n compustar",
+  "tipo": "tercero_marketplace",
+  "comercio_id": "exito",
+  "estado_validacion": "rechazado",
+  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
+  "verificado_en": null
+ },
+ {
+  "id": "026cd8aa8c",
+  "nombre": "Puntotec",
+  "tipo": "tercero_marketplace",
+  "comercio_id": "exito",
+  "estado_validacion": "rechazado",
+  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
+  "verificado_en": null
+ },
+ {
+  "id": "19c5ddbe92",
+  "nombre": "Q-bits",
+  "tipo": "tercero_marketplace",
+  "comercio_id": "exito",
+  "estado_validacion": "rechazado",
+  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
+  "verificado_en": null
+ },
+ {
+  "id": "7677cc286d",
+  "nombre": "Quiero mac",
+  "tipo": "tercero_marketplace",
+  "comercio_id": "exito",
+  "estado_validacion": "rechazado",
+  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
+  "verificado_en": null
+ },
+ {
+  "id": "6964492442",
+  "nombre": "River technology",
+  "tipo": "tercero_marketplace",
+  "comercio_id": "exito",
+  "estado_validacion": "rechazado",
+  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
+  "verificado_en": null
+ },
+ {
+  "id": "55190920cc",
+  "nombre": "Simaro co",
+  "tipo": "tercero_marketplace",
+  "comercio_id": "exito",
+  "estado_validacion": "rechazado",
+  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
+  "verificado_en": null
+ },
+ {
+  "id": "7e91176333",
+  "nombre": "Smartphonetablet",
+  "tipo": "tercero_marketplace",
+  "comercio_id": "exito",
+  "estado_validacion": "rechazado",
+  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
+  "verificado_en": null
+ },
+ {
+  "id": "3bef59be03",
+  "nombre": "Super electro jyf online",
+  "tipo": "tercero_marketplace",
+  "comercio_id": "exito",
+  "estado_validacion": "rechazado",
+  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
+  "verificado_en": null
+ },
+ {
+  "id": "f23de637af",
+  "nombre": "Syl mobile",
+  "tipo": "tercero_marketplace",
+  "comercio_id": "exito",
+  "estado_validacion": "rechazado",
+  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
+  "verificado_en": null
+ },
+ {
+  "id": "2ecaab987b",
+  "nombre": "Team work",
+  "tipo": "tercero_marketplace",
+  "comercio_id": "exito",
+  "estado_validacion": "rechazado",
+  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
+  "verificado_en": null
+ },
+ {
+  "id": "1c51c804fb",
+  "nombre": "Tecno optima",
+  "tipo": "tercero_marketplace",
+  "comercio_id": "exito",
+  "estado_validacion": "rechazado",
+  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
+  "verificado_en": null
+ },
+ {
+  "id": "780800581e",
+  "nombre": "Tecnocel bucaramanga",
+  "tipo": "tercero_marketplace",
+  "comercio_id": "exito",
+  "estado_validacion": "rechazado",
+  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
+  "verificado_en": null
+ },
+ {
+  "id": "0d46b066f5",
+  "nombre": "Tecnomarket ink",
+  "tipo": "tercero_marketplace",
+  "comercio_id": "exito",
+  "estado_validacion": "rechazado",
+  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
+  "verificado_en": null
+ },
+ {
+  "id": "abc6ebdcee",
+  "nombre": "Tecnoova com",
+  "tipo": "tercero_marketplace",
+  "comercio_id": "exito",
+  "estado_validacion": "rechazado",
+  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
+  "verificado_en": null
+ },
+ {
+  "id": "053e5a8eed",
+  "nombre": "Ts online",
+  "tipo": "tercero_marketplace",
+  "comercio_id": "exito",
+  "estado_validacion": "rechazado",
+  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
+  "verificado_en": null
+ },
+ {
+  "id": "9cb1375d27",
+  "nombre": "Ultraphone70",
+  "tipo": "tercero_marketplace",
+  "comercio_id": "exito",
+  "estado_validacion": "rechazado",
+  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
+  "verificado_en": null
+ },
+ {
+  "id": "2bd4364045",
+  "nombre": "Variedades rausang",
+  "tipo": "tercero_marketplace",
+  "comercio_id": "exito",
+  "estado_validacion": "rechazado",
+  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
+  "verificado_en": null
+ },
+ {
+  "id": "a06aabe39a",
+  "nombre": "Variedades y electrónica de consumo",
+  "tipo": "tercero_marketplace",
+  "comercio_id": "exito",
+  "estado_validacion": "rechazado",
+  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
+  "verificado_en": null
+ },
+ {
+  "id": "bc19b65c36",
+  "nombre": "Webcaster",
+  "tipo": "tercero_marketplace",
+  "comercio_id": "exito",
+  "estado_validacion": "rechazado",
+  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
+  "verificado_en": null
+ },
+ {
+  "id": "958d7935db",
+  "nombre": "Yaxa",
+  "tipo": "tercero_marketplace",
+  "comercio_id": "exito",
+  "estado_validacion": "rechazado",
+  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
+  "verificado_en": null
+ },
+ {
+  "id": "9fccae67a8",
+  "nombre": "Zylar",
+  "tipo": "tercero_marketplace",
+  "comercio_id": "exito",
+  "estado_validacion": "rechazado",
+  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
+  "verificado_en": null
+ },
+ {
+  "id": "8f5009d126",
+  "nombre": "Cubitt colombia",
+  "tipo": "tienda_oficial_fabricante",
+  "comercio_id": "exito",
+  "estado_validacion": "pendiente",
+  "evidencia": "El nombre del vendedor coincide con la marca; confirmar que es la tienda oficial.",
+  "verificado_en": null
+ },
+ {
+  "id": "b233a7d030",
+  "nombre": "Falabella",
+  "tipo": "retailer",
+  "comercio_id": "falabella",
+  "estado_validacion": "pendiente",
+  "evidencia": "El listado dice 'vendido por' el propio comercio. Falta confirmación humana.",
+  "verificado_en": null
+ },
+ {
+  "id": "fbaacbef19",
+  "nombre": "52 Bits",
+  "tipo": "tercero_marketplace",
+  "comercio_id": "falabella",
+  "estado_validacion": "rechazado",
+  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
+  "verificado_en": null
+ },
+ {
+  "id": "a4679a13b4",
+  "nombre": "Adriatik Brands Sas",
+  "tipo": "tercero_marketplace",
+  "comercio_id": "falabella",
+  "estado_validacion": "rechazado",
+  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
+  "verificado_en": null
+ },
+ {
+  "id": "28c8cb6804",
+  "nombre": "Af Tecnology",
+  "tipo": "tercero_marketplace",
+  "comercio_id": "falabella",
+  "estado_validacion": "rechazado",
+  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
+  "verificado_en": null
+ },
+ {
+  "id": "5ce1ea1b3a",
+  "nombre": "Casa Magna",
+  "tipo": "tercero_marketplace",
+  "comercio_id": "falabella",
+  "estado_validacion": "rechazado",
+  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
+  "verificado_en": null
+ },
+ {
+  "id": "084dd30944",
+  "nombre": "Cell Transit",
+  "tipo": "tercero_marketplace",
+  "comercio_id": "falabella",
+  "estado_validacion": "rechazado",
+  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
+  "verificado_en": null
+ },
+ {
+  "id": "9e63c794c5",
+  "nombre": "Celumovil Store Sas",
+  "tipo": "tercero_marketplace",
+  "comercio_id": "falabella",
+  "estado_validacion": "rechazado",
+  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
+  "verificado_en": null
+ },
+ {
+  "id": "c251532ea6",
+  "nombre": "Comercializadora Productos Al Mayor Y Detal",
+  "tipo": "tercero_marketplace",
+  "comercio_id": "falabella",
+  "estado_validacion": "rechazado",
+  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
+  "verificado_en": null
+ },
+ {
+  "id": "afb911f48c",
+  "nombre": "Compra Tecnología",
+  "tipo": "tercero_marketplace",
+  "comercio_id": "falabella",
+  "estado_validacion": "rechazado",
+  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
+  "verificado_en": null
+ },
+ {
+  "id": "b5dee7211a",
+  "nombre": "Compumarket Bga",
+  "tipo": "tercero_marketplace",
+  "comercio_id": "falabella",
+  "estado_validacion": "rechazado",
+  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
+  "verificado_en": null
+ },
+ {
+  "id": "fdb4a3549d",
+  "nombre": "Compumarket.bga",
+  "tipo": "tercero_marketplace",
+  "comercio_id": "falabella",
+  "estado_validacion": "rechazado",
+  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
+  "verificado_en": null
+ },
+ {
+  "id": "6bdb95d45c",
+  "nombre": "Continente Sas",
+  "tipo": "tercero_marketplace",
+  "comercio_id": "falabella",
+  "estado_validacion": "rechazado",
+  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
+  "verificado_en": null
+ },
+ {
+  "id": "9909cc36ab",
+  "nombre": "Distribuidor Oficial Colombia",
+  "tipo": "tercero_marketplace",
+  "comercio_id": "falabella",
+  "estado_validacion": "rechazado",
+  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
+  "verificado_en": null
+ },
+ {
+  "id": "46a00a355b",
+  "nombre": "Dji Official Store",
+  "tipo": "tercero_marketplace",
+  "comercio_id": "falabella",
+  "estado_validacion": "rechazado",
+  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
+  "verificado_en": null
+ },
+ {
+  "id": "1f5a64c4ba",
+  "nombre": "Dos Mundos Colombia Sas",
+  "tipo": "tercero_marketplace",
+  "comercio_id": "falabella",
+  "estado_validacion": "rechazado",
+  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
+  "verificado_en": null
+ },
+ {
+  "id": "ff0b50d1c5",
+  "nombre": "Ferinnovacciòn",
+  "tipo": "tercero_marketplace",
+  "comercio_id": "falabella",
+  "estado_validacion": "rechazado",
+  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
+  "verificado_en": null
+ },
+ {
+  "id": "b2baf64096",
+  "nombre": "Galaxitel Electronics",
+  "tipo": "tercero_marketplace",
+  "comercio_id": "falabella",
+  "estado_validacion": "rechazado",
+  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
+  "verificado_en": null
+ },
+ {
+  "id": "2015e32e6f",
+  "nombre": "Grupo Comercia",
+  "tipo": "tercero_marketplace",
+  "comercio_id": "falabella",
+  "estado_validacion": "rechazado",
+  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
+  "verificado_en": null
+ },
+ {
+  "id": "d4836f49a5",
+  "nombre": "Gseb Andean S.a.",
+  "tipo": "tercero_marketplace",
+  "comercio_id": "falabella",
+  "estado_validacion": "rechazado",
+  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
+  "verificado_en": null
+ },
+ {
+  "id": "a2e7c2c9f2",
+  "nombre": "Home Improvement",
+  "tipo": "tercero_marketplace",
+  "comercio_id": "falabella",
+  "estado_validacion": "rechazado",
+  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
+  "verificado_en": null
+ },
+ {
+  "id": "d7caef2e76",
+  "nombre": "Homecenter",
+  "tipo": "tercero_marketplace",
+  "comercio_id": "falabella",
+  "estado_validacion": "rechazado",
+  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
+  "verificado_en": null
+ },
+ {
+  "id": "5efa6eb84d",
+  "nombre": "Hometec Store",
+  "tipo": "tercero_marketplace",
+  "comercio_id": "falabella",
+  "estado_validacion": "rechazado",
+  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
+  "verificado_en": null
+ },
+ {
+  "id": "c6f3028ec8",
+  "nombre": "Importaciones Redexpress",
+  "tipo": "tercero_marketplace",
+  "comercio_id": "falabella",
+  "estado_validacion": "rechazado",
+  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
+  "verificado_en": null
+ },
+ {
+  "id": "a2e05f09be",
+  "nombre": "Importacionesredesprexx1",
+  "tipo": "tercero_marketplace",
+  "comercio_id": "falabella",
+  "estado_validacion": "rechazado",
+  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
+  "verificado_en": null
+ },
+ {
+  "id": "fd5017d5f6",
+  "nombre": "Innovaciones M.y",
+  "tipo": "tercero_marketplace",
+  "comercio_id": "falabella",
+  "estado_validacion": "rechazado",
+  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
+  "verificado_en": null
+ },
+ {
+  "id": "f98e81f81b",
+  "nombre": "Jd Market Sas",
+  "tipo": "tercero_marketplace",
+  "comercio_id": "falabella",
+  "estado_validacion": "rechazado",
+  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
+  "verificado_en": null
+ },
+ {
+  "id": "e65b4e9a4e",
+  "nombre": "Jesucristo Electro",
+  "tipo": "tercero_marketplace",
+  "comercio_id": "falabella",
+  "estado_validacion": "rechazado",
+  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
+  "verificado_en": null
+ },
+ {
+  "id": "87871540f1",
+  "nombre": "Jl Lujo",
+  "tipo": "tercero_marketplace",
+  "comercio_id": "falabella",
+  "estado_validacion": "rechazado",
+  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
+  "verificado_en": null
+ },
+ {
+  "id": "4e1c53ee49",
+  "nombre": "K-tienda",
+  "tipo": "tercero_marketplace",
+  "comercio_id": "falabella",
+  "estado_validacion": "rechazado",
+  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
+  "verificado_en": null
+ },
+ {
+  "id": "4ca2a6e849",
+  "nombre": "Korolos.",
+  "tipo": "tercero_marketplace",
+  "comercio_id": "falabella",
+  "estado_validacion": "rechazado",
+  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
+  "verificado_en": null
+ },
+ {
+  "id": "665daf2e2c",
+  "nombre": "La Cabrera",
+  "tipo": "tercero_marketplace",
+  "comercio_id": "falabella",
+  "estado_validacion": "rechazado",
+  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
+  "verificado_en": null
+ },
+ {
+  "id": "ebceed81ab",
+  "nombre": "Leumax Store",
+  "tipo": "tercero_marketplace",
+  "comercio_id": "falabella",
+  "estado_validacion": "rechazado",
+  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
+  "verificado_en": null
+ },
+ {
+  "id": "868380f51d",
+  "nombre": "Llevame On Line Colombia",
+  "tipo": "tercero_marketplace",
+  "comercio_id": "falabella",
+  "estado_validacion": "rechazado",
+  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
+  "verificado_en": null
+ },
+ {
+  "id": "bc9c7dbd49",
+  "nombre": "Losmelaitosdemaito Sas",
+  "tipo": "tercero_marketplace",
+  "comercio_id": "falabella",
+  "estado_validacion": "rechazado",
+  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
+  "verificado_en": null
+ },
+ {
+  "id": "115dccb9cc",
+  "nombre": "Macrocell",
+  "tipo": "tercero_marketplace",
+  "comercio_id": "falabella",
+  "estado_validacion": "rechazado",
+  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
+  "verificado_en": null
+ },
+ {
+  "id": "c42752f429",
+  "nombre": "Magic Confort",
+  "tipo": "tercero_marketplace",
+  "comercio_id": "falabella",
+  "estado_validacion": "rechazado",
+  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
+  "verificado_en": null
+ },
+ {
+  "id": "a50c9d5221",
+  "nombre": "Marketplace Ten",
+  "tipo": "tercero_marketplace",
+  "comercio_id": "falabella",
+  "estado_validacion": "rechazado",
+  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
+  "verificado_en": null
+ },
+ {
+  "id": "1647639b88",
+  "nombre": "Mega Shop Tv",
+  "tipo": "tercero_marketplace",
+  "comercio_id": "falabella",
+  "estado_validacion": "rechazado",
+  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
+  "verificado_en": null
+ },
+ {
+  "id": "0ae49f446c",
+  "nombre": "Moblizen",
+  "tipo": "tercero_marketplace",
+  "comercio_id": "falabella",
+  "estado_validacion": "rechazado",
+  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
+  "verificado_en": null
+ },
+ {
+  "id": "42dd50082f",
+  "nombre": "More Products",
+  "tipo": "tercero_marketplace",
+  "comercio_id": "falabella",
+  "estado_validacion": "rechazado",
+  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
+  "verificado_en": null
+ },
+ {
+  "id": "c3a024459f",
+  "nombre": "Mptechnology",
+  "tipo": "tercero_marketplace",
+  "comercio_id": "falabella",
+  "estado_validacion": "rechazado",
+  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
+  "verificado_en": null
+ },
+ {
+  "id": "cffa8ce38d",
+  "nombre": "Naseb",
+  "tipo": "tercero_marketplace",
+  "comercio_id": "falabella",
+  "estado_validacion": "rechazado",
+  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
+  "verificado_en": null
+ },
+ {
+  "id": "84b1a64af7",
+  "nombre": "Nubatech",
+  "tipo": "tercero_marketplace",
+  "comercio_id": "falabella",
+  "estado_validacion": "rechazado",
+  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
+  "verificado_en": null
+ },
+ {
+  "id": "1c0999445e",
+  "nombre": "Oklahoma Computadores",
+  "tipo": "tercero_marketplace",
+  "comercio_id": "falabella",
+  "estado_validacion": "rechazado",
+  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
+  "verificado_en": null
+ },
+ {
+  "id": "b37fe700e3",
+  "nombre": "Pctel Computo",
+  "tipo": "tercero_marketplace",
+  "comercio_id": "falabella",
+  "estado_validacion": "rechazado",
+  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
+  "verificado_en": null
+ },
+ {
+  "id": "f10492e7fe",
+  "nombre": "Pineda Store",
+  "tipo": "tercero_marketplace",
+  "comercio_id": "falabella",
+  "estado_validacion": "rechazado",
+  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
+  "verificado_en": null
+ },
+ {
+  "id": "a580992056",
+  "nombre": "Quiero Mac",
+  "tipo": "tercero_marketplace",
+  "comercio_id": "falabella",
+  "estado_validacion": "rechazado",
+  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
+  "verificado_en": null
+ },
+ {
+  "id": "9f6e7c046d",
+  "nombre": "River Technology Sas",
+  "tipo": "tercero_marketplace",
+  "comercio_id": "falabella",
+  "estado_validacion": "rechazado",
+  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
+  "verificado_en": null
+ },
+ {
+  "id": "aa03cfe2e4",
+  "nombre": "S & N Bienes Y Servicios Sas",
+  "tipo": "tercero_marketplace",
+  "comercio_id": "falabella",
+  "estado_validacion": "rechazado",
+  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
+  "verificado_en": null
+ },
+ {
+  "id": "a0fb7e3cb2",
+  "nombre": "Saixxpress Comercial",
+  "tipo": "tercero_marketplace",
+  "comercio_id": "falabella",
+  "estado_validacion": "rechazado",
+  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
+  "verificado_en": null
+ },
+ {
+  "id": "f2c2b5bfe4",
+  "nombre": "Shopping Online Colombia Sas",
+  "tipo": "tercero_marketplace",
+  "comercio_id": "falabella",
+  "estado_validacion": "rechazado",
+  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
+  "verificado_en": null
+ },
+ {
+  "id": "bb74ac30a5",
+  "nombre": "Smartbuy",
+  "tipo": "tercero_marketplace",
+  "comercio_id": "falabella",
+  "estado_validacion": "rechazado",
+  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
+  "verificado_en": null
+ },
+ {
+  "id": "1532607ce2",
+  "nombre": "Smartphonetablet",
+  "tipo": "tercero_marketplace",
+  "comercio_id": "falabella",
+  "estado_validacion": "rechazado",
+  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
+  "verificado_en": null
+ },
+ {
+  "id": "c1b517038b",
+  "nombre": "Solutions 2 Go",
+  "tipo": "tercero_marketplace",
+  "comercio_id": "falabella",
+  "estado_validacion": "rechazado",
+  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
+  "verificado_en": null
+ },
+ {
+  "id": "a1f07c4c24",
+  "nombre": "Star",
+  "tipo": "tercero_marketplace",
+  "comercio_id": "falabella",
+  "estado_validacion": "rechazado",
+  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
+  "verificado_en": null
+ },
+ {
+  "id": "f5db7fde27",
+  "nombre": "Strong Machine",
+  "tipo": "tercero_marketplace",
+  "comercio_id": "falabella",
+  "estado_validacion": "rechazado",
+  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
+  "verificado_en": null
+ },
+ {
+  "id": "974f15ba67",
+  "nombre": "T & B Group",
+  "tipo": "tercero_marketplace",
+  "comercio_id": "falabella",
+  "estado_validacion": "rechazado",
+  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
+  "verificado_en": null
+ },
+ {
+  "id": "84b4856824",
+  "nombre": "Tecnología Moderna",
+  "tipo": "tercero_marketplace",
+  "comercio_id": "falabella",
+  "estado_validacion": "rechazado",
+  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
+  "verificado_en": null
+ },
+ {
+  "id": "3b017280a4",
+  "nombre": "Tecnomarket.ink",
+  "tipo": "tercero_marketplace",
+  "comercio_id": "falabella",
+  "estado_validacion": "rechazado",
+  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
+  "verificado_en": null
+ },
+ {
+  "id": "78f6ed69c9",
+  "nombre": "Tenbytech",
+  "tipo": "tercero_marketplace",
+  "comercio_id": "falabella",
+  "estado_validacion": "rechazado",
+  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
+  "verificado_en": null
+ },
+ {
+  "id": "b5069f0c3f",
+  "nombre": "Trade Solutions Group",
+  "tipo": "tercero_marketplace",
+  "comercio_id": "falabella",
+  "estado_validacion": "rechazado",
+  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
+  "verificado_en": null
+ },
+ {
+  "id": "fbd1b2bbd3",
+  "nombre": "Audio Lenovo",
+  "tipo": "tienda_oficial_fabricante",
+  "comercio_id": "falabella",
+  "estado_validacion": "pendiente",
+  "evidencia": "El nombre del vendedor coincide con la marca; confirmar que es la tienda oficial.",
+  "verificado_en": null
+ },
+ {
+  "id": "569f649858",
+  "nombre": "Cubitt Colombia",
+  "tipo": "tienda_oficial_fabricante",
+  "comercio_id": "falabella",
+  "estado_validacion": "pendiente",
+  "evidencia": "El nombre del vendedor coincide con la marca; confirmar que es la tienda oficial.",
+  "verificado_en": null
+ },
+ {
+  "id": "6f5914b074",
+  "nombre": "Electrolux Group",
+  "tipo": "tienda_oficial_fabricante",
+  "comercio_id": "falabella",
+  "estado_validacion": "pendiente",
+  "evidencia": "El nombre del vendedor coincide con la marca; confirmar que es la tienda oficial.",
+  "verificado_en": null
+ },
+ {
+  "id": "0659a8b915",
+  "nombre": "Lenovo Asia Pacific Limited Sucursal Colombia",
+  "tipo": "tienda_oficial_fabricante",
+  "comercio_id": "falabella",
+  "estado_validacion": "pendiente",
+  "evidencia": "El nombre del vendedor coincide con la marca; confirmar que es la tienda oficial.",
+  "verificado_en": null
+ },
+ {
+  "id": "bf5ba41ed5",
+  "nombre": "Sony Colombia",
+  "tipo": "tienda_oficial_fabricante",
+  "comercio_id": "falabella",
+  "estado_validacion": "pendiente",
+  "evidencia": "El nombre del vendedor coincide con la marca; confirmar que es la tienda oficial.",
+  "verificado_en": null
+ },
+ {
+  "id": "522b24508d",
+  "nombre": "Tienda Oficial Dreame",
+  "tipo": "tienda_oficial_fabricante",
+  "comercio_id": "falabella",
+  "estado_validacion": "pendiente",
+  "evidencia": "El nombre del vendedor coincide con la marca; confirmar que es la tienda oficial.",
+  "verificado_en": null
+ }
+]

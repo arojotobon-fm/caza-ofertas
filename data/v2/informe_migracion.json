@@ -1,0 +1,41 @@
+{
+ "origen": "v1-2026-11-21",
+ "registros_v1": 868,
+ "publicaciones_v2": 855,
+ "variantes_tarjeta_v1_convertidas_en_precio": 13,
+ "ids_v1_mapeados": 868,
+ "precios": {
+  "contado": 855,
+  "tarjeta": 303
+ },
+ "publicaciones_por_estado": {
+  "pendiente": 589,
+  "rechazado": 266
+ },
+ "publicaciones_por_motivo": {
+  "vendedor sin confirmar": 589,
+  "vendedor externo": 266
+ },
+ "publicaciones_por_comercio_y_estado": {
+  "falabella/pendiente": 169,
+  "falabella/rechazado": 151,
+  "alkosto/pendiente": 320,
+  "exito/pendiente": 100,
+  "exito/rechazado": 115
+ },
+ "vendedores_por_tipo": {
+  "retailer": 2,
+  "tercero_marketplace": 107,
+  "tienda_oficial_fabricante": 7,
+  "desconocido": 1
+ },
+ "productos_referencia": 801,
+ "productos_en_varias_tiendas": 15,
+ "comparaciones_contado": {
+  "limitada": 11,
+  "completa": 1
+ },
+ "pares_candidatos_para_revision": 12,
+ "observaciones_historial": 855,
+ "errores_verificacion": []
+}

@@ -1,0 +1,74 @@
+[
+ {
+  "publicacion_a": "d75eaf7b54ec",
+  "publicacion_b": "41aad106cac2",
+  "motivo": "código parecido (AF141~AF141LAA); revisar si es la misma referencia",
+  "estado_revision": "pendiente"
+ },
+ {
+  "publicacion_a": "fb3c6a93d079",
+  "publicacion_b": "bf826b9e2cf6",
+  "motivo": "mismo código FN101GY, pero falta confirmar: capacidad_l",
+  "estado_revision": "pendiente"
+ },
+ {
+  "publicacion_a": "41aad106cac2",
+  "publicacion_b": "d16308d44a7e",
+  "motivo": "código parecido (AF141LAA~AF141); revisar si es la misma referencia",
+  "estado_revision": "pendiente"
+ },
+ {
+  "publicacion_a": "3f1e662ec168",
+  "publicacion_b": "bf826b9e2cf6",
+  "motivo": "mismo código FN101GY, pero falta confirmar: capacidad_l",
+  "estado_revision": "pendiente"
+ },
+ {
+  "publicacion_a": "be8e079728ae",
+  "publicacion_b": "cc653e2ed5b5",
+  "motivo": "código parecido (BLBD210GB~BLBD210); revisar si es la misma referencia",
+  "estado_revision": "pendiente"
+ },
+ {
+  "publicacion_a": "be8e079728ae",
+  "publicacion_b": "40cf89bc96d7",
+  "motivo": "mismo código BLBD210GB, pero falta confirmar: capacidad_l",
+  "estado_revision": "pendiente"
+ },
+ {
+  "publicacion_a": "be8e079728ae",
+  "publicacion_b": "e8eeb47c2667",
+  "motivo": "mismo código BLBD210GB, pero falta confirmar: capacidad_l",
+  "estado_revision": "pendiente"
+ },
+ {
+  "publicacion_a": "cc653e2ed5b5",
+  "publicacion_b": "40cf89bc96d7",
+  "motivo": "código parecido (BLBD210~BLBD210GB); revisar si es la misma referencia",
+  "estado_revision": "pendiente"
+ },
+ {
+  "publicacion_a": "cc653e2ed5b5",
+  "publicacion_b": "e8eeb47c2667",
+  "motivo": "código parecido (BLBD210~BLBD210GB); revisar si es la misma referencia",
+  "estado_revision": "pendiente"
+ },
+ {
+  "publicacion_a": "597edfd989ed",
+  "publicacion_b": "76fc84f4da36",
+  "motivo": "código parecido (AFBD423B~AFBD42); revisar si es la misma referencia",
+  "estado_revision": "pendiente"
+ },
+ {
+  "publicacion_a": "597edfd989ed",
+  "publicacion_b": "970e6901bfd6",
+  "motivo": "código parecido (AFBD423B~AFBD423BDLA); revisar si es la misma referencia",
+  "estado_revision": "pendiente"
+ },
+ {
+  "publicacion_a": "07d9e64ec5ce",
+  "publicacion_b": "0610abc18087",
+  "motivo": "mismo código E1504FABQ4316W, pero falta confirmar: ram_gb",
+  "estado_revision": "pendiente"
+ }
+]
