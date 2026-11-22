@@ -355,6 +355,7 @@ footer{padding:26px 0 90px;color:var(--muted);font-size:13px;border-top:1px soli
 footer p{margin:0 0 8px;max-width:900px;text-align:justify}
 
 /* bottom nav (móvil) */
+.subir{position:fixed;right:18px;bottom:24px;z-index:60;display:flex;align-items:center;gap:6px;border:0;cursor:pointer;background:var(--petroleo);color:#fff;font:inherit;font-weight:800;font-size:14px;padding:11px 16px 11px 12px;border-radius:999px;box-shadow:0 8px 22px rgba(7,40,49,.3);opacity:0;transform:translateY(14px);pointer-events:none;transition:opacity .2s,transform .2s}.subir.on{opacity:1;transform:none;pointer-events:auto}.subir:hover{background:#0d3a45}.subir span{display:grid;place-items:center;width:26px;height:26px;border-radius:50%;background:var(--dorado);color:var(--petroleo);font-size:16px;line-height:1}@media (max-width:900px){.subir{bottom:calc(78px + env(safe-area-inset-bottom));right:12px;padding:9px 13px 9px 9px;font-size:13px}}
 .tabbar{display:none}
 
 /* ---------- RESPONSIVE ---------- */
@@ -1140,5 +1141,7 @@ Promise.all([
 }).catch(()=>{ $("#stamp").textContent = "No pudimos cargar los precios. Recarga la página."; });
 setInterval(()=>fetch("/api/reportes").then(r=>r.ok?r.json():null).then(j=>{ if(j){ REP=j; renderTop(); } }).catch(()=>{}), 120000);
 </script>
+<button class="subir" id="subir" type="button" aria-label="Volver al inicio de la página"><span aria-hidden="true">↑</span>Ir al inicio</button>
+<script>(()=>{const b=document.getElementById("subir");const f=()=>b.classList.toggle("on",scrollY>700);addEventListener("scroll",f,{passive:true});f();b.addEventListener("click",()=>scrollTo({top:0,behavior:matchMedia("(prefers-reduced-motion: reduce)").matches?"auto":"smooth"}));})();</script>
 </body>
 </html>
