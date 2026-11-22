@@ -635,10 +635,19 @@ footer p{margin:0 0 8px;max-width:900px;text-align:justify}
     <div><b>Únete a los Cazadores que reportan</b><span>¿Lo viste en la tienda? Toca <strong>Sigue a ese precio</strong> o <strong>Ya no / cambió el precio</strong>. Si 2 o más cazadores avisan que ya no está, lo sacamos de la lista hasta volver a revisarlo.</span></div>
   </div>
   <label class="switch" style="display:none"><input type="checkbox" id="noCard"> Solo precios sin tarjeta de la tienda</label>
-  <div class="grid" id="topGrid"></div>
+  <div class="editorial-grid" id="topGrid">
+    <article class="panel editorial-panel">
+      <div class="panel-title">Selección semanal · 15 investigaciones</div>
+      <div class="empty">Estamos aplicando los criterios de evidencia. Solo aparecerán productos con referencia identificada, precios comprobados y veredicto sustentado. No rellenamos cupos.</div>
+    </article>
+    <article class="panel editorial-panel">
+      <div class="panel-title">Más barato en otra tienda · mínimo 5</div>
+      <div class="empty">Esta selección mostrará únicamente la misma referencia comprobada en otra tienda, con precios vigentes y evidencia comparable.</div>
+    </article>
+  </div>
 </div></section>
 
-<section id="comparador"><div class="wrap">
+<section id="comparador" hidden><div class="wrap">
   <div class="radar-panel compact">
     <div class="radar-hero">
       <svg class="ico rh-target" aria-hidden="true"><use href="#i-search"/></svg>
@@ -684,7 +693,7 @@ footer p{margin:0 0 8px;max-width:900px;text-align:justify}
   <div class="grid" id="favGrid"></div>
 </div></section>
 
-<section id="tiendas"><div class="wrap">
+<section id="tiendas" hidden><div class="wrap">
   <div class="all">
     <h2>Investiga un producto</h2>
     <p>Usa el buscador principal para solicitar una investigación. No te enviaremos a búsquedas externas tienda por tienda.</p>
@@ -1130,22 +1139,11 @@ function lineaComparacion(p, i){
 // Un solo puesto por producto: si dos tiendas del mismo grupo (Alkosto y Ktronix) o varias tiendas con el mismo
 // precio comparten la misma comparación, se muestra una sola vez.
 const claveRadar = i => Object.entries(i.rows.reduce((m, r) => { const g = grupoDe(r.tienda); if (!(g in m) || r.precio < m[g]) m[g] = r.precio; return m; }, {})).sort().join("|");
-function topList(){
-  const vistos = new Set();
-  return DATA.map(p => [p, radarInfo(p)])
-    .filter(([p, i]) => valeLaPena(i) && !community(p).gone)
-    .sort((a, b) => b[1].pct - a[1].pct)
-    .filter(([p, i]) => { const k = claveRadar(i); if (vistos.has(k)) return false; vistos.add(k); return true; })
-    .slice(0, 20).map(([p]) => p);
-}
+function topList(){ return []; }
 function renderRadar(){
-  const real = topList().length;
-  const infos = DATA.map(radarInfo);
-  const justo = infos.filter(i => i && i.ahorro === 0).length;
-  const vit = DATA.filter((p, k) => !infos[k]).length;
-  $("#rReal").textContent = real + (real===1?" más barato que en otras tiendas":" más baratos que en otras tiendas");
-  $("#rJusto").textContent = justo + " con el mismo precio en varias tiendas";
-  $("#rFalso").textContent = vit + " sin comparar";
+  $("#rReal").textContent = "Solo publicamos ofertas con pruebas comprobables";
+  $("#rJusto").textContent = "La misma referencia y condición de pago";
+  $("#rFalso").textContent = "Si no hay evidencia, no hay veredicto";
 }
 function featured(){ return topList()[0]; }
 function renderFeatured(){
@@ -1332,7 +1330,20 @@ if (matchMedia("(max-width:600px)").matches) $("#hq").placeholder = "Enlace o pr
 $("#heroSearch").addEventListener("submit", e => { e.preventDefault(); const q = $("#hq").value.trim(); if (q.length < 3) return;
   if (/^https?:\/\//i.test(q)) { verificarEnlace(q); return; }
   $("#q").value = q; $("#fCat").value = ""; renderAll(); buscarEnVivo(q); });
-document.querySelectorAll(".cat[data-sub]").forEach(b => b.addEventListener("click", () => { $("#fCat").value = $("#fCat").value === b.dataset.sub ? "" : b.dataset.sub; renderAll(); document.getElementById("comparador").scrollIntoView(); }));
+document.querySelectorAll(".cat[data-sub]").forEach(b => b.addEventListener("click", () => {
+  const active = b.classList.contains("on");
+  document.querySelectorAll(".cat[data-sub]").forEach(x => x.classList.remove("on"));
+  if (active) {
+    $("#hq").placeholder = "Pega el enlace o escribe el producto";
+    $("#hq").focus();
+    return;
+  }
+  b.classList.add("on");
+  const category = b.textContent.trim();
+  $("#hq").placeholder = "Escribe el producto de " + category;
+  $("#hq").focus();
+  document.getElementById("heroSearch").scrollIntoView({behavior:"smooth",block:"center"});
+}));
 document.querySelectorAll("[data-radar]").forEach(a => a.addEventListener("click", () => { const r = a.dataset.radar; if (r !== "real") { $("#fClass").value = r; renderAll(); } }));
 ["q","fCat","fStore","fClass","fSort"].forEach(id=>$("#"+id).addEventListener("input",()=>renderAll()));
 $("#more").addEventListener("click",()=>{ SHOW += 40; renderAll(false); });
