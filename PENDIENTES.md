@@ -66,8 +66,8 @@ Las cifras de tráfico de ese documento no están verificadas: no se guardan com
 - [x] Retirar de la navegación pública **«¿Está barato hoy? Mira dónde cuesta menos»**, el catálogo/listado masivo del Radar y la sección pública **Comparador**. La comparación multitienda permanece como proceso interno que sustenta los veredictos.
 - [x] Retirar **«¿No está en la lista? Búscalo en todas las tiendas»** y sus enlaces de búsqueda externa.
 - [x] Conservar el historial de precios, la comunidad **«Únete a los Cazadores que reportan»**, **«Apoya este proyecto»** y **«¡Hagamos Cuentas!»**.
-- [ ] Ajustar el flujo de categorías para que al elegir una categoría enfoque la búsqueda de un producto dentro de ella, sin desplegar listados de catálogo.
-- [ ] Validar visualmente la rama en una vista previa antes de autorizar cualquier publicación.
+- [x] Ajustar el flujo de categorías para que al elegir una categoría enfoque la búsqueda de un producto dentro de ella, sin desplegar listados de catálogo.
+- [x] La vista previa de la rama quedó publicada por Netlify para revisión técnica; la validación visual final sigue pendiente si hay diferencias de navegador/dispositivo.
 - **Regla:** no modificar main, no fusionar ni desplegar a producción sin aprobación expresa de Ana.
 
 
@@ -79,3 +79,9 @@ Las cifras de tráfico de ese documento no están verificadas: no se guardan com
 - [ ] Actualizar ambas selecciones una vez por semana. La selección debe ser editorial y revisada; no llenar cupos con productos sin pruebas.
 - **Regla de evidencia:** no llamar «descuento inflado» a un precio solo porque el precio anterior no coincide con otras tiendas. Debe existir respaldo verificable (historial o evidencia equivalente). Si no lo hay, no se publica como mentira.
 - **Regla de publicación:** los conteos de productos iguales o sin comparar no se muestran en portada ni generan secciones públicas.
+
+
+### Estado de evidencia editorial revisado (22 nov 2026)
+- El modelo v2 contiene 130 comparaciones: 4 completas, 31 limitadas y 95 sin comparación pública.
+- De las 4 completas, tres muestran precios iguales entre comercios; una presenta una diferencia pequeña (0,8 %) y no alcanza por sí sola los criterios de una selección editorial de 5.
+- Por tanto, las selecciones de 15 investigaciones y mínimo 5 comparaciones no se rellenan con datos incompletos ni se publican como si estuvieran verificadas. Se mantienen pendientes de evidencia suficiente.
