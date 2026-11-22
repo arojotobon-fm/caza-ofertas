@@ -14,10 +14,17 @@ test("información insuficiente: una sola tienda y sin historial → no afirmamo
   assert.equal(r.estado, "insuficiente");
 });
 
-test("precio anterior inflado frente al mercado: dice 'antes $1.099.900' y nadie lo cobra así", () => {
+test("precio anterior inflado frente al mercado: dos tiendas más lo confirman", () => {
+  const o = of("Falabella", 699900, { precio_antes: 1099900 });
+  const r = verificar(o, grupo(o, of("Éxito", 699900), of("Jumbo", 719900)), [], HOY);
+  assert.equal(r.estado, "precio_inflado");
+  assert.ok(r.pruebas.some(p => p.tipo === "antes_mercado"));
+});
+
+test("con UNA sola tienda para comparar, el 'antes' alto no basta para '¡Cazamos una mentira!': queda dudoso con la prueba", () => {
   const o = of("Falabella", 699900, { precio_antes: 1099900 });
   const r = verificar(o, grupo(o, of("Éxito", 699900)), [], HOY);
-  assert.equal(r.estado, "precio_inflado");
+  assert.equal(r.estado, "dudosa");
   assert.ok(r.pruebas.some(p => p.tipo === "antes_mercado"));
 });
 

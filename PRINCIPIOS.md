@@ -18,7 +18,14 @@ Estos principios mandan sobre cualquier cambio de la página, del buscador o del
 3. ¿Es una oferta histórica? → con 30 días de historial.
 4. ¿Vale la pena comprarlo? → ahorro real, condiciones de pago y ¡Hagamos Cuentas!.
 
+## Lenguaje de marca (insignias del Verificador)
+
+- 🟢 **¡Oferta real!** — la misma referencia está más barata que en la siguiente tienda más barata, por encima del tope de ahorro.
+- 🟡 **¡Ojo, descuento dudoso!** — hay descuento anunciado pero las pruebas no muestran que sea más barato (empate, otra tienda más barata, o una sola señal débil).
+- 🔴 **¡Cazamos una mentira!** — solo con evidencia de irregularidad: el precio "antes" no tiene respaldo en al menos dos tiendas más, o nuestro historial muestra que nunca tuvo ese precio o que lo subieron justo antes del "descuento". Debajo siempre va el hecho: "Precio anterior inflado".
+- ⚪ **No hay pruebas suficientes.** — cuando no pudimos verificar. No poder verificar NUNCA es motivo para "¡Cazamos una mentira!".
+
 ## Palabras
 
-- En el veredicto se describe el hecho ("Precio anterior inflado"), no la intención de la tienda.
+- Debajo de la insignia se describe el hecho ("Precio anterior inflado"), con las pruebas a la vista.
 - Los precios con tarjeta y los de vendedores externos (marketplace) van aparte y no definen el veredicto.

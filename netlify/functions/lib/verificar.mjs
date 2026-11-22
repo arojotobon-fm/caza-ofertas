@@ -12,13 +12,15 @@ export function verificar(origen, grupo, historial = [], hoy = new Date().toISOS
   const otras = (grupo?.tiendas || []).filter(t => t.tienda !== origen.tienda);
   const hist = historial.filter(h => h.fecha < hoy && h.precio > 0).sort((a, b) => a.fecha.localeCompare(b.fecha));
   const diasHist = hist.length ? Math.round((Date.parse(hoy) - Date.parse(hist[0].fecha)) / DIA) : 0;
-  let inflado = false;
+  let inflado = false, senalDebil = false;
 
   // 1. ¿Inflaron el precio? (a) contra el mercado de hoy
   if (origen.precio_antes && otras.length) {
     const maxOtras = Math.max(...otras.map(t => t.precio));
     if (origen.precio_antes > maxOtras * 1.15) {
-      inflado = true;
+      // Para "¡Cazamos una mentira!" basta con el mercado solo si al menos DOS tiendas más lo confirman.
+      // Con una sola tienda la señal es débil: queda como prueba y el veredicto baja a "dudoso".
+      if (otras.length >= 2) inflado = true; else senalDebil = true;
       pruebas.push({ tipo: "antes_mercado", signo: "-", texto: `${origen.tienda} dice que antes costaba ${cop(origen.precio_antes)}, pero hoy ninguna de las otras tiendas que consultamos lo cobra a ese precio (la más cara lo tiene en ${cop(maxOtras)}).` });
     }
   }
@@ -68,7 +70,7 @@ export function verificar(origen, grupo, historial = [], hoy = new Date().toISOS
   let estado;
   if (inflado) estado = "precio_inflado";
   else if (comparacion === "mas_barato" && historica !== false) estado = "oferta_real";
-  else if (comparacion === "mas_caro" || comparacion === "igual" || historica === false) estado = "dudosa";
+  else if (comparacion === "mas_caro" || comparacion === "igual" || historica === false || senalDebil) estado = "dudosa";
   else estado = "insuficiente";
   return { estado, pruebas, diasHistorial: diasHist };
 }
