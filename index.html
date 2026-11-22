@@ -146,23 +146,31 @@ section{padding:30px 0}
 .sec-head h2{font-size:clamp(24px,3vw,32px);font-weight:900;color:var(--petroleo);display:flex;align-items:center;gap:10px}
 .sec-head h2 .ico{width:30px;height:30px;color:var(--turquesa-2)}
 .sec-head p{margin:4px 0 0;color:var(--muted);font-size:15px;max-width:760px}
-.radar-panel{background:radial-gradient(120% 140% at 0% 0%,#E9FAF8 0%,rgba(233,250,248,0) 55%),linear-gradient(135deg,#F2FBFA 0%,#E3F7F6 55%,#EEF9F3 100%);border:1px solid #D6EFEC;border-radius:var(--r-lg);padding:26px 26px 22px;margin-bottom:18px}
-.radar-intro{margin-bottom:16px}
-.radar-intro>div,.radar-intro p{max-width:none}
-.radar-intro h2{font-size:clamp(28px,3.4vw,38px);letter-spacing:-.01em;line-height:1.08}
-.radar-intro h2 .ico{width:34px;height:34px}
-.radar-intro p{font-size:17px;color:var(--ink);opacity:.8;margin-top:8px}
-.reglas{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
-.reglas li{--acento:var(--turquesa-2);--acento-bg:var(--turquesa-bg);background:#fff;border-radius:18px;padding:18px 18px 16px;box-shadow:0 1px 2px rgba(11,53,64,.05),0 8px 22px rgba(11,53,64,.07);border-top:4px solid var(--acento)}
-.reglas li.r2{--acento:var(--ambar);--acento-bg:var(--ambar-bg)}
-.reglas li.r3{--acento:var(--petroleo-3);--acento-bg:#E2EEF0}
-.reglas li.r4{--acento:var(--verde);--acento-bg:var(--verde-bg)}
-.reglas .r-ico{display:inline-flex;align-items:center;justify-content:center;width:42px;height:42px;border-radius:12px;background:var(--acento-bg);color:var(--acento);margin-bottom:10px}
-.reglas .r-ico .ico{width:22px;height:22px;stroke-width:2.2}
-.reglas b{display:block;font-family:var(--head);font-size:17px;font-weight:900;color:var(--petroleo);margin-bottom:6px;line-height:1.2}
-.reglas li>span:not(.r-ico){display:block;font-size:14px;color:var(--muted);line-height:1.5}
-@media (max-width:980px){.reglas{grid-template-columns:repeat(2,1fr)}}
-@media (max-width:560px){.reglas{grid-template-columns:1fr}.radar-panel{padding:18px 14px}}
+.radar-panel{position:relative;overflow:hidden;background:linear-gradient(180deg,#F4FCFB 0%,#EAF8F6 100%);border:1px solid #D6EFEC;border-radius:var(--r-lg);padding:30px 30px 54px;margin-bottom:18px}
+.radar-panel::before{content:"";position:absolute;left:0;top:0;width:260px;height:104px;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 120'%3E%3Cpath d='M0 0h300C220 10 170 40 120 70S30 110 0 120z' fill='%2314B8B8' fill-opacity='.28'/%3E%3C/svg%3E") no-repeat left top/100% 100%;pointer-events:none}
+.radar-panel::after{content:"";position:absolute;left:0;right:0;bottom:0;height:64px;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 80' preserveAspectRatio='none'%3E%3Cpath d='M0 40C200 0 420 10 640 34s420 30 560-4v50H0z' fill='%2314B8B8' fill-opacity='.22'/%3E%3Cpath d='M0 62c260-30 520-26 760-8s340 10 440-10v36H0z' fill='%230E9C9C' fill-opacity='.35'/%3E%3C/svg%3E") no-repeat center bottom/100% 100%;pointer-events:none}
+.radar-hero{position:relative;z-index:1;display:flex;align-items:center;gap:18px;margin-bottom:26px}
+.rh-target{width:62px;height:62px;color:var(--turquesa-2);stroke-width:2.4}
+.rh-div{width:3px;align-self:stretch;min-height:64px;background:var(--turquesa-2);border-radius:2px;opacity:.85}
+.rh-text{flex:1;min-width:0}
+.rh-text h2{font-family:var(--head);font-size:clamp(28px,3.6vw,44px);font-weight:900;color:var(--petroleo);line-height:1.08;letter-spacing:-.015em;margin:0}
+.rh-text h2 mark{background:var(--turquesa-soft);color:var(--petroleo);border-radius:14px;padding:0 .22em;box-decoration-break:clone;-webkit-box-decoration-break:clone}
+.rh-text p{margin:10px 0 0;font-size:17px;color:var(--muted)}
+.rh-text p mark{background:var(--turquesa-bg);color:var(--petroleo);font-weight:800;border-radius:8px;padding:1px 6px}
+.rh-bag{width:118px;height:118px;flex:none;filter:drop-shadow(0 8px 14px rgba(11,53,64,.18))}
+.reglas{position:relative;z-index:1;list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.reglas li{--acento:var(--petroleo);background:#fff;border-radius:22px;padding:18px 16px 18px;box-shadow:0 10px 24px rgba(11,53,64,.08),0 6px 0 var(--acento)}
+.reglas li.r2{--acento:var(--turquesa)}
+.reglas li.r3{--acento:var(--turquesa-2)}
+.reglas li.r4{--acento:#5FD3CC}
+.r-head{display:flex;align-items:center;gap:12px;margin-bottom:12px}
+.reglas .r-ico{display:inline-flex;align-items:center;justify-content:center;flex:none;width:48px;height:48px;border-radius:16px;background:var(--turquesa-soft);color:var(--petroleo)}
+.reglas .r-ico .ico{width:28px;height:28px;stroke-width:1.9}
+.reglas b{font-family:var(--head);font-size:17px;font-weight:900;color:var(--petroleo);line-height:1.18}
+.reglas li p{margin:0;font-size:15px;color:var(--ink);opacity:.82;line-height:1.5}
+@media (max-width:1100px){.reglas{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:720px){.rh-bag{display:none}.rh-target{width:44px;height:44px}.rh-div{min-height:48px}}
+@media (max-width:560px){.reglas{grid-template-columns:1fr}.radar-panel{padding:22px 16px 48px}.radar-hero{gap:12px;align-items:flex-start}.rh-target{width:38px;height:38px;margin-top:4px}.rh-div{display:none}}
 .community{display:flex;gap:16px;align-items:center;background:linear-gradient(90deg,var(--petroleo),var(--petroleo-3));color:#fff;border-radius:var(--r-lg);padding:14px 20px;margin-bottom:16px}
 .community img{width:92px;height:auto;flex:none;filter:drop-shadow(0 4px 10px rgba(0,0,0,.3))}
 .community b{color:var(--dorado);font-family:var(--head);font-size:18px;display:block}
@@ -342,6 +350,10 @@ footer p{margin:0 0 8px;max-width:900px}
   <symbol id="i-bag" viewBox="0 0 24 24"><path d="M5 8h14l-1 13H6z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/><path d="M9 13l2 2 4-4"/></symbol>
   <symbol id="i-chev" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></symbol>
   <symbol id="i-ext" viewBox="0 0 24 24"><path d="M14 4h6v6M20 4l-9 9"/><path d="M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></symbol>
+  <symbol id="i-card" viewBox="0 0 24 24"><rect x="2.5" y="5" width="19" height="14" rx="2.5"/><path d="M2.5 10h19M6.5 15h4M15 15h2.5"/></symbol>
+  <symbol id="i-shop" viewBox="0 0 24 24"><path d="M3.5 9.5 5 4h14l1.5 5.5"/><path d="M3.5 9.5c0 1.5 1.2 2.5 2.7 2.5s2.6-1 2.6-2.5c0 1.5 1.2 2.5 2.7 2.5h1c1.5 0 2.7-1 2.7-2.5 0 1.5 1.1 2.5 2.6 2.5s2.7-1 2.7-2.5"/><path d="M5 12v8h14v-8"/></symbol>
+  <symbol id="i-building" viewBox="0 0 24 24"><rect x="5" y="3" width="9" height="18" rx="1"/><path d="M14 9h4.5a.5.5 0 0 1 .5.5V21M3 21h18"/><path d="M8 7h1M10.5 7h1M8 10.5h1M10.5 10.5h1M8 14h1M10.5 14h1M16.5 13h0M16.5 16.5h0"/></symbol>
+  <symbol id="i-pct" viewBox="0 0 24 24"><path d="M3 12V4h8l10 10-8 8z"/><path d="M9 15l5-5"/><circle cx="9.3" cy="10.3" r=".9"/><circle cx="13.7" cy="14.7" r=".9"/></symbol>
   <symbol id="i-tag" viewBox="0 0 24 24"><path d="M3 12V4h8l10 10-8 8z"/><circle cx="7.5" cy="8.5" r="1.3"/></symbol>
   <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></symbol>
   <symbol id="i-share" viewBox="0 0 24 24"><circle cx="18" cy="5" r="2.5"/><circle cx="6" cy="12" r="2.5"/><circle cx="18" cy="19" r="2.5"/><path d="M8.2 10.8l7.6-4.4M8.2 13.2l7.6 4.4"/></symbol>
@@ -430,16 +442,26 @@ footer p{margin:0 0 8px;max-width:900px}
 
 <section id="radar"><div class="wrap">
   <div class="radar-panel">
-  <div class="sec-head radar-intro"><div>
-    <h2><svg class="ico"><use href="#i-target"/></svg>Radar: dónde está más barato hoy</h2>
-    <p>Aquí solo aparece un producto cuando lo encontramos <b>exactamente igual</b> en otra tienda y aquí cuesta menos.</p>
-  </div></div>
-  <ul class="reglas">
-    <li class="r1"><span class="r-ico"><svg class="ico"><use href="#i-tag"/></svg></span><b>Precio sin tarjeta</b><span>Comparamos el precio que paga cualquier persona. Los precios con CMR, Tarjeta Éxito o Tarjeta Alkosto los mostramos aparte y no entran en la comparación.</span></li>
-    <li class="r2"><span class="r-ico"><svg class="ico"><use href="#i-alert"/></svg></span><b>Si son pocas tiendas, te avisamos</b><span>Si solo lo encontramos en 2 tiendas, te lo decimos.</span></li>
-    <li class="r3"><span class="r-ico"><svg class="ico"><use href="#i-store"/></svg></span><b>Una sola empresa, una sola tienda</b><span>Alkosto, Ktronix y Alkomprar son de la misma empresa: las contamos como una sola tienda.</span></li>
-    <li class="r4"><span class="r-ico"><svg class="ico"><use href="#i-shield"/></svg></span><b>Más barato no es lo mismo que oferta</b><span>Más barato no siempre quiere decir que esté en oferta.</span></li>
-  </ul>
+    <div class="radar-hero">
+      <svg class="ico rh-target" aria-hidden="true"><use href="#i-target"/></svg>
+      <span class="rh-div" aria-hidden="true"></span>
+      <div class="rh-text">
+        <h2>Radar: dónde está <mark>más barato hoy</mark></h2>
+        <p>Aquí solo aparece un producto cuando lo encontramos <mark>exactamente igual</mark> en otra tienda y aquí cuesta menos.</p>
+      </div>
+      <svg class="rh-bag" viewBox="0 0 120 120" aria-hidden="true">
+        <g stroke="#0E9C9C" stroke-width="5" stroke-linecap="round" fill="none"><path d="M14 36 26 42M22 18l9 13M40 8l3 15"/></g>
+        <path d="M52 40c0-14 9-22 20-22s20 8 20 22" fill="none" stroke="#0B3540" stroke-width="7" stroke-linecap="round"/>
+        <g transform="rotate(10 72 75)"><rect x="36" y="38" width="72" height="70" rx="10" fill="#0E9C9C"/><rect x="36" y="38" width="72" height="16" rx="8" fill="#14B8B8"/>
+        <text x="72" y="96" text-anchor="middle" font-family="Nunito,system-ui,sans-serif" font-weight="900" font-size="38" fill="#fff">%</text></g>
+      </svg>
+    </div>
+    <ul class="reglas">
+      <li class="r1"><div class="r-head"><span class="r-ico"><svg class="ico"><use href="#i-card"/></svg></span><b>Precio sin tarjeta</b></div><p>Comparamos el precio que paga cualquier persona. Los precios con CMR, Tarjeta Éxito o Tarjeta Alkosto los mostramos aparte y no entran en la comparación.</p></li>
+      <li class="r2"><div class="r-head"><span class="r-ico"><svg class="ico"><use href="#i-shop"/></svg></span><b>Si son pocas tiendas, te avisamos</b></div><p>Si solo lo encontramos en 2 tiendas, te lo decimos.</p></li>
+      <li class="r3"><div class="r-head"><span class="r-ico"><svg class="ico"><use href="#i-building"/></svg></span><b>Una sola empresa, una sola tienda</b></div><p>Alkosto, Ktronix y Alkomprar son de la misma empresa: las contamos como una sola tienda.</p></li>
+      <li class="r4"><div class="r-head"><span class="r-ico"><svg class="ico"><use href="#i-pct"/></svg></span><b>Más barato no es lo mismo que oferta</b></div><p>Más barato no siempre quiere decir que esté en oferta.</p></li>
+    </ul>
   </div>
   <div class="community">
     <img src="img/insignia.webp" alt="Insignia de los Cazadores que reportan" width="92" height="61">
