@@ -49,6 +49,9 @@ h1,h2,h3,h4{font-family:var(--head);letter-spacing:-.01em;margin:0}
 /* Radar de Hoy corrido a la derecha (hacia el margen) para no tapar el rostro de la portada */
 @media (min-width:901px){.hero .radar{transform:translateX(clamp(8px, calc((100vw - 1240px) / 2 + 8px), 110px))}.hero .wrap{min-height:430px}.hero-copy{align-self:center}}
 .hero-photo{position:absolute;inset:0;background:url(img/portada.webp) no-repeat;background-size:auto 116%;background-position:calc(50% + 10px) 0;-webkit-mask-image:linear-gradient(90deg,transparent calc(50% - 160px),#000 calc(50% - 20px),#000 calc(50% + 380px),transparent calc(50% + 440px));mask-image:linear-gradient(90deg,transparent calc(50% - 160px),#000 calc(50% - 20px),#000 calc(50% + 380px),transparent calc(50% + 440px))}
+/* Encuadre de portada (computador): bolsas + celular + rostro entre el texto y el Radar */
+@media (min-width:901px){.hero-photo{inset:0 auto 0 calc(50% - 205px);width:auto;aspect-ratio:1400/788;background-size:100% 100%;background-position:0 0;-webkit-mask-image:linear-gradient(90deg,transparent 0,#000 110px,#000 88%,transparent);mask-image:linear-gradient(90deg,transparent 0,#000 110px,#000 88%,transparent)}.hero h1{font-size:clamp(30px,2.9vw,42px);max-width:480px}.hero-copy p{max-width:470px}.hero .searchbar{max-width:500px}}
+@media (min-width:901px) and (max-width:1199px){.hero-photo{left:calc(100% - 860px);-webkit-mask-image:linear-gradient(90deg,transparent 0,transparent 190px,#000 320px,#000 88%,transparent);mask-image:linear-gradient(90deg,transparent 0,transparent 190px,#000 320px,#000 88%,transparent)}}
 .hero-copy{position:relative;z-index:2;padding:24px 0 20px}
 .hero h1{font-size:clamp(30px,3.2vw,46px);line-height:1.04;font-weight:900;color:var(--petroleo);max-width:540px}
 .hero h1 .hl{position:relative;display:inline-block;z-index:0}
