@@ -825,5 +825,98 @@
    ]
   }
  },
- "verificador": []
+ "verificador": [
+  {
+   "url": "https://www.flamingo.com.co/products/freidora-esencial-ez122856-s",
+   "status": 200,
+   "estado": "insuficiente",
+   "origen": [
+    "FREIDORA ESENCIAL EZ122856-S",
+    219900,
+    299900,
+    "Almacenes Flamingo",
+    "713786"
+   ],
+   "tiendas": [
+    [
+     "Flamingo",
+     219900
+    ]
+   ],
+   "pruebas": [
+    "0 No encontramos la misma referencia en otra tienda para comparar.",
+    "0 No pudimos confirmar que el precio \"antes\" de $299.900 haya existido: ninguna tienda lo cobra hoy y no lo tenemos en nuestro historial.",
+    "0 Todavía no tenemos historial de este precio."
+   ]
+  },
+  {
+   "url": "https://www.flamingo.com.co/products/freidora-aire-max",
+   "status": 200,
+   "estado": "insuficiente",
+   "origen": [
+    "FREIDORA  AIRE MAX EZ241DI0",
+    329900,
+    null,
+    "Almacenes Flamingo",
+    "705868"
+   ],
+   "tiendas": [
+    [
+     "Flamingo",
+     329900
+    ]
+   ],
+   "pruebas": [
+    "0 No encontramos la misma referencia en otra tienda para comparar.",
+    "0 Todavía no tenemos historial de este precio."
+   ]
+  },
+  {
+   "url": "https://www.flamingo.com.co/products/televisor-challenger-43-43kg90-led-fhd-smart-tv",
+   "status": 200,
+   "estado": "precio_inflado",
+   "origen": [
+    "Televisor CHALLENGER 43″ 43KG90 LED FHD Smart TV",
+    995900,
+    1294900,
+    "PUNTONET",
+    "7705191046365"
+   ],
+   "tiendas": [
+    [
+     "Olímpica",
+     899900
+    ],
+    [
+     "Jumbo",
+     899900
+    ]
+   ],
+   "pruebas": [
+    "- Flamingo dice que antes costaba $1.294.900, pero hoy ninguna de las otras tiendas que consultamos lo cobra a ese precio (la más cara lo tiene en $899.900).",
+    "- En Olímpica cuesta $899.900: $96.000 menos.",
+    "0 Todavía no tenemos historial de este precio.",
+    "- Lo vende PUNTONET dentro de Flamingo, no la tienda misma."
+   ]
+  },
+  {
+   "url": "https://www.flamingo.com.co/products/freidora-de-aire-haceb-4-2-litros-negra",
+   "status": 200,
+   "estado": "insuficiente",
+   "origen": [
+    "Freidora de Aire Haceb 4.2 litros Negra",
+    259900,
+    489900,
+    "Virtual Muebles",
+    "7704353459647"
+   ],
+   "tiendas": [],
+   "pruebas": [
+    "0 No encontramos la misma referencia en otra tienda para comparar.",
+    "0 No pudimos confirmar que el precio \"antes\" de $489.900 haya existido: ninguna tienda lo cobra hoy y no lo tenemos en nuestro historial.",
+    "0 Todavía no tenemos historial de este precio.",
+    "- Lo vende Virtual Muebles dentro de Flamingo, no la tienda misma."
+   ]
+  }
+ ]
 }
