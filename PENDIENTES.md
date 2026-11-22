@@ -18,9 +18,10 @@ Lista para próximas actualizaciones (se publican por bloques para ahorrar créd
 - [ ] "Cazadores de la semana" (reconocimiento a quienes más reportan).
 
 ## Etapa 1 (rama etapa-1-modelo-datos) — decisiones que necesita Ana
-- [ ] Validación de vendedores: opción A (humana) u opción B (automática cuando el listado dice que vende el propio comercio). Ver docs/MODELO_DATOS.md §4.
-- [ ] Aprobar la estructura de clasificación y cómo fijar los parámetros. Ver docs/METODOLOGIA_CLASIFICACION.md.
-- [ ] Decidir si se corrige YA el Radar publicado (quitar el vendedor externo del top y marcar las comparaciones de 2 tiendas como "limitadas").
+- [x] Validación de vendedores: opción B con controles (aprobada 22 nov).
+- [x] Estructura de clasificación aprobada; umbrales NO activos hasta tener historial por categoría.
+- [ ] Revisar y aprobar la rama correccion-radar (corrección urgente del Radar publicado).
+- [ ] Validación humana de 8 posibles tiendas oficiales y de los vendedores de Alkosto (320 publicaciones pendientes).
 - [ ] Confirmar grupos empresariales de Homecenter, Jumbo/Metro y Olímpica antes de admitirlos.
 - [ ] Etapa 2: conectar la página al modelo v2 y construir el panel administrativo.
 

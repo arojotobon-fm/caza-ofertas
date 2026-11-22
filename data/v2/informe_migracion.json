@@ -9,32 +9,56 @@
   "tarjeta": 303
  },
  "publicaciones_por_estado": {
-  "pendiente": 589,
-  "rechazado": 266
+  "validado": 251,
+  "rechazado": 264,
+  "pendiente": 340
  },
  "publicaciones_por_motivo": {
-  "vendedor sin confirmar": 589,
-  "vendedor externo": 266
+  "vendedor validado: automatica_coincidencia_exacta": 251,
+  "Vendedor externo de marketplace: excluido de ofertas aprobadas (política 3.2).": 264,
+  "Posible tienda oficial del fabricante: requiere validación humana de su oficialidad.": 20,
+  "El listado no identifica al vendedor.": 320
  },
  "publicaciones_por_comercio_y_estado": {
-  "falabella/pendiente": 169,
-  "falabella/rechazado": 151,
+  "falabella/validado": 154,
+  "falabella/rechazado": 149,
+  "falabella/pendiente": 17,
   "alkosto/pendiente": 320,
-  "exito/pendiente": 100,
-  "exito/rechazado": 115
+  "exito/validado": 97,
+  "exito/rechazado": 115,
+  "exito/pendiente": 3
  },
  "vendedores_por_tipo": {
   "retailer": 2,
-  "tercero_marketplace": 107,
-  "tienda_oficial_fabricante": 7,
+  "tercero_marketplace": 106,
+  "tienda_oficial_fabricante": 8,
   "desconocido": 1
  },
  "productos_referencia": 801,
  "productos_en_varias_tiendas": 15,
- "comparaciones_contado": {
+ "vendedores_por_estado": {
+  "validado": 2,
+  "rechazado": 106,
+  "pendiente": 9
+ },
+ "vendedores_validados_automaticamente": [
+  "Exito@exito",
+  "Falabella@falabella"
+ ],
+ "publicaciones_elegibles_publico": 251,
+ "referencias_por_estado": {
+  "sin_verificar": 767,
+  "agrupada_automatica": 34
+ },
+ "comparaciones_tecnicas": {
   "limitada": 11,
   "completa": 1
  },
+ "comparaciones_publicas": {
+  "limitada": 4,
+  "sin_comparacion": 8
+ },
+ "filas_aptas_radar": 8,
  "pares_candidatos_para_revision": 12,
  "observaciones_historial": 855,
  "errores_verificacion": []

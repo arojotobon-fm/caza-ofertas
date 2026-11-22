@@ -2,1054 +2,2802 @@
  {
   "id": "desconocido@alkosto",
   "nombre": null,
-  "tipo": null,
   "comercio_id": "alkosto",
+  "tipo": null,
   "estado_validacion": "pendiente",
-  "evidencia": "El listado no informaba quién vende; hay que revisarlo en la página del producto.",
-  "verificado_en": null
+  "metodo_validacion": null,
+  "validado_en": null,
+  "motivo": "El listado no identifica al vendedor.",
+  "evidencias": [
+   {
+    "texto_listado": null,
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   },
+   {
+    "texto_listado": null,
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   },
+   {
+    "texto_listado": null,
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   },
+   {
+    "texto_listado": null,
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   },
+   {
+    "texto_listado": null,
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   }
+  ],
+  "publicaciones": 320
  },
  {
   "id": "a832778b67",
   "nombre": "Exito",
-  "tipo": "retailer",
   "comercio_id": "exito",
-  "estado_validacion": "pendiente",
-  "evidencia": "El listado dice 'vendido por' el propio comercio. Falta confirmación humana.",
-  "verificado_en": null
+  "tipo": "retailer",
+  "estado_validacion": "validado",
+  "metodo_validacion": "automatica_coincidencia_exacta",
+  "validado_en": "2026-11-21T22:40:00-05:00",
+  "motivo": "El listado identifica expresamente a 'Exito' como vendedor y coincide exactamente con el comercio.",
+  "evidencias": [
+   {
+    "texto_listado": "Exito",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   },
+   {
+    "texto_listado": "Exito",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   },
+   {
+    "texto_listado": "Exito",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   },
+   {
+    "texto_listado": "Exito",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   },
+   {
+    "texto_listado": "Exito",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   }
+  ],
+  "publicaciones": 97
  },
  {
   "id": "30df9e4911",
   "nombre": "3 tiendas",
-  "tipo": "tercero_marketplace",
   "comercio_id": "exito",
+  "tipo": "tercero_marketplace",
   "estado_validacion": "rechazado",
-  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
-  "verificado_en": null
+  "metodo_validacion": null,
+  "validado_en": null,
+  "motivo": "Vendedor externo de marketplace: excluido de ofertas aprobadas (política 3.2).",
+  "evidencias": [
+   {
+    "texto_listado": "3 tiendas",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   },
+   {
+    "texto_listado": "3 tiendas",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   },
+   {
+    "texto_listado": "3 tiendas",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   },
+   {
+    "texto_listado": "3 tiendas",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   },
+   {
+    "texto_listado": "3 tiendas",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   }
+  ],
+  "publicaciones": 15
  },
  {
   "id": "9fbf9a0ee4",
   "nombre": "Akiha ecommerce home marketplace-catalog",
-  "tipo": "tercero_marketplace",
   "comercio_id": "exito",
+  "tipo": "tercero_marketplace",
   "estado_validacion": "rechazado",
-  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
-  "verificado_en": null
+  "metodo_validacion": null,
+  "validado_en": null,
+  "motivo": "Vendedor externo de marketplace: excluido de ofertas aprobadas (política 3.2).",
+  "evidencias": [
+   {
+    "texto_listado": "Akiha ecommerce home marketplace-catalog",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   }
+  ],
+  "publicaciones": 1
  },
  {
   "id": "ce9114a47d",
   "nombre": "Alz market",
-  "tipo": "tercero_marketplace",
   "comercio_id": "exito",
+  "tipo": "tercero_marketplace",
   "estado_validacion": "rechazado",
-  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
-  "verificado_en": null
+  "metodo_validacion": null,
+  "validado_en": null,
+  "motivo": "Vendedor externo de marketplace: excluido de ofertas aprobadas (política 3.2).",
+  "evidencias": [
+   {
+    "texto_listado": "Alz market",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   },
+   {
+    "texto_listado": "Alz market",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   }
+  ],
+  "publicaciones": 2
  },
  {
   "id": "29174d6cb6",
   "nombre": "Bravephone",
-  "tipo": "tercero_marketplace",
   "comercio_id": "exito",
+  "tipo": "tercero_marketplace",
   "estado_validacion": "rechazado",
-  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
-  "verificado_en": null
+  "metodo_validacion": null,
+  "validado_en": null,
+  "motivo": "Vendedor externo de marketplace: excluido de ofertas aprobadas (política 3.2).",
+  "evidencias": [
+   {
+    "texto_listado": "Bravephone",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   }
+  ],
+  "publicaciones": 1
  },
  {
   "id": "8c6d67355e",
   "nombre": "Compra online",
-  "tipo": "tercero_marketplace",
   "comercio_id": "exito",
+  "tipo": "tercero_marketplace",
   "estado_validacion": "rechazado",
-  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
-  "verificado_en": null
+  "metodo_validacion": null,
+  "validado_en": null,
+  "motivo": "Vendedor externo de marketplace: excluido de ofertas aprobadas (política 3.2).",
+  "evidencias": [
+   {
+    "texto_listado": "Compra online",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   },
+   {
+    "texto_listado": "Compra online",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   }
+  ],
+  "publicaciones": 2
  },
  {
   "id": "a2d8df9d94",
   "nombre": "E-brands",
-  "tipo": "tercero_marketplace",
   "comercio_id": "exito",
+  "tipo": "tercero_marketplace",
   "estado_validacion": "rechazado",
-  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
-  "verificado_en": null
+  "metodo_validacion": null,
+  "validado_en": null,
+  "motivo": "Vendedor externo de marketplace: excluido de ofertas aprobadas (política 3.2).",
+  "evidencias": [
+   {
+    "texto_listado": "E-brands",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   }
+  ],
+  "publicaciones": 1
  },
  {
   "id": "e5c6fbfb5b",
   "nombre": "Electrocompras online",
-  "tipo": "tercero_marketplace",
   "comercio_id": "exito",
+  "tipo": "tercero_marketplace",
   "estado_validacion": "rechazado",
-  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
-  "verificado_en": null
+  "metodo_validacion": null,
+  "validado_en": null,
+  "motivo": "Vendedor externo de marketplace: excluido de ofertas aprobadas (política 3.2).",
+  "evidencias": [
+   {
+    "texto_listado": "Electrocompras online",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   },
+   {
+    "texto_listado": "Electrocompras online",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   }
+  ],
+  "publicaciones": 2
  },
  {
   "id": "2e76296341",
   "nombre": "Gamer tecnology",
-  "tipo": "tercero_marketplace",
   "comercio_id": "exito",
+  "tipo": "tercero_marketplace",
   "estado_validacion": "rechazado",
-  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
-  "verificado_en": null
+  "metodo_validacion": null,
+  "validado_en": null,
+  "motivo": "Vendedor externo de marketplace: excluido de ofertas aprobadas (política 3.2).",
+  "evidencias": [
+   {
+    "texto_listado": "Gamer tecnology",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   },
+   {
+    "texto_listado": "Gamer tecnology",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   }
+  ],
+  "publicaciones": 2
  },
  {
   "id": "815bc79571",
   "nombre": "Idagizi",
-  "tipo": "tercero_marketplace",
   "comercio_id": "exito",
+  "tipo": "tercero_marketplace",
   "estado_validacion": "rechazado",
-  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
-  "verificado_en": null
+  "metodo_validacion": null,
+  "validado_en": null,
+  "motivo": "Vendedor externo de marketplace: excluido de ofertas aprobadas (política 3.2).",
+  "evidencias": [
+   {
+    "texto_listado": "Idagizi",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   },
+   {
+    "texto_listado": "Idagizi",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   },
+   {
+    "texto_listado": "Idagizi",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   }
+  ],
+  "publicaciones": 3
  },
  {
   "id": "6d378564ae",
   "nombre": "Imditec dm colombia",
-  "tipo": "tercero_marketplace",
   "comercio_id": "exito",
+  "tipo": "tercero_marketplace",
   "estado_validacion": "rechazado",
-  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
-  "verificado_en": null
+  "metodo_validacion": null,
+  "validado_en": null,
+  "motivo": "Vendedor externo de marketplace: excluido de ofertas aprobadas (política 3.2).",
+  "evidencias": [
+   {
+    "texto_listado": "Imditec dm colombia",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   }
+  ],
+  "publicaciones": 1
  },
  {
   "id": "cfa6c9124a",
   "nombre": "Inity",
-  "tipo": "tercero_marketplace",
   "comercio_id": "exito",
+  "tipo": "tercero_marketplace",
   "estado_validacion": "rechazado",
-  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
-  "verificado_en": null
+  "metodo_validacion": null,
+  "validado_en": null,
+  "motivo": "Vendedor externo de marketplace: excluido de ofertas aprobadas (política 3.2).",
+  "evidencias": [
+   {
+    "texto_listado": "Inity",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   }
+  ],
+  "publicaciones": 1
  },
  {
   "id": "28fb8109ca",
   "nombre": "Innovation zone1",
-  "tipo": "tercero_marketplace",
   "comercio_id": "exito",
+  "tipo": "tercero_marketplace",
   "estado_validacion": "rechazado",
-  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
-  "verificado_en": null
+  "metodo_validacion": null,
+  "validado_en": null,
+  "motivo": "Vendedor externo de marketplace: excluido de ofertas aprobadas (política 3.2).",
+  "evidencias": [
+   {
+    "texto_listado": "Innovation zone1",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   },
+   {
+    "texto_listado": "Innovation zone1",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   },
+   {
+    "texto_listado": "Innovation zone1",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   },
+   {
+    "texto_listado": "Innovation zone1",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   }
+  ],
+  "publicaciones": 4
  },
  {
   "id": "2e98c28406",
   "nombre": "Intelcom negocios integrales",
-  "tipo": "tercero_marketplace",
   "comercio_id": "exito",
+  "tipo": "tercero_marketplace",
   "estado_validacion": "rechazado",
-  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
-  "verificado_en": null
+  "metodo_validacion": null,
+  "validado_en": null,
+  "motivo": "Vendedor externo de marketplace: excluido de ofertas aprobadas (política 3.2).",
+  "evidencias": [
+   {
+    "texto_listado": "Intelcom negocios integrales",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   },
+   {
+    "texto_listado": "Intelcom negocios integrales",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   },
+   {
+    "texto_listado": "Intelcom negocios integrales",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   }
+  ],
+  "publicaciones": 3
  },
  {
   "id": "0275a906de",
   "nombre": "Jesucristo electro",
-  "tipo": "tercero_marketplace",
   "comercio_id": "exito",
+  "tipo": "tercero_marketplace",
   "estado_validacion": "rechazado",
-  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
-  "verificado_en": null
+  "metodo_validacion": null,
+  "validado_en": null,
+  "motivo": "Vendedor externo de marketplace: excluido de ofertas aprobadas (política 3.2).",
+  "evidencias": [
+   {
+    "texto_listado": "Jesucristo electro",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   }
+  ],
+  "publicaciones": 1
  },
  {
   "id": "29ef8e21e9",
   "nombre": "Korolos",
-  "tipo": "tercero_marketplace",
   "comercio_id": "exito",
+  "tipo": "tercero_marketplace",
   "estado_validacion": "rechazado",
-  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
-  "verificado_en": null
+  "metodo_validacion": null,
+  "validado_en": null,
+  "motivo": "Vendedor externo de marketplace: excluido de ofertas aprobadas (política 3.2).",
+  "evidencias": [
+   {
+    "texto_listado": "Korolos",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   },
+   {
+    "texto_listado": "Korolos",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   }
+  ],
+  "publicaciones": 2
  },
  {
   "id": "33952de3b5",
   "nombre": "Kuwala",
-  "tipo": "tercero_marketplace",
   "comercio_id": "exito",
+  "tipo": "tercero_marketplace",
   "estado_validacion": "rechazado",
-  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
-  "verificado_en": null
+  "metodo_validacion": null,
+  "validado_en": null,
+  "motivo": "Vendedor externo de marketplace: excluido de ofertas aprobadas (política 3.2).",
+  "evidencias": [
+   {
+    "texto_listado": "Kuwala",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   },
+   {
+    "texto_listado": "Kuwala",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   },
+   {
+    "texto_listado": "Kuwala",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   }
+  ],
+  "publicaciones": 3
  },
  {
   "id": "faa8772f61",
   "nombre": "La fabrica del iphone",
-  "tipo": "tercero_marketplace",
   "comercio_id": "exito",
+  "tipo": "tercero_marketplace",
   "estado_validacion": "rechazado",
-  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
-  "verificado_en": null
+  "metodo_validacion": null,
+  "validado_en": null,
+  "motivo": "Vendedor externo de marketplace: excluido de ofertas aprobadas (política 3.2).",
+  "evidencias": [
+   {
+    "texto_listado": "La fabrica del iphone",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   }
+  ],
+  "publicaciones": 1
  },
  {
   "id": "427cbc828c",
   "nombre": "La maxima mayorista",
-  "tipo": "tercero_marketplace",
   "comercio_id": "exito",
+  "tipo": "tercero_marketplace",
   "estado_validacion": "rechazado",
-  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
-  "verificado_en": null
+  "metodo_validacion": null,
+  "validado_en": null,
+  "motivo": "Vendedor externo de marketplace: excluido de ofertas aprobadas (política 3.2).",
+  "evidencias": [
+   {
+    "texto_listado": "La maxima mayorista",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   },
+   {
+    "texto_listado": "La maxima mayorista",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   }
+  ],
+  "publicaciones": 2
  },
  {
   "id": "f7c74f540a",
   "nombre": "Marketusa",
-  "tipo": "tercero_marketplace",
   "comercio_id": "exito",
+  "tipo": "tercero_marketplace",
   "estado_validacion": "rechazado",
-  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
-  "verificado_en": null
+  "metodo_validacion": null,
+  "validado_en": null,
+  "motivo": "Vendedor externo de marketplace: excluido de ofertas aprobadas (política 3.2).",
+  "evidencias": [
+   {
+    "texto_listado": "Marketusa",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   }
+  ],
+  "publicaciones": 1
  },
  {
   "id": "60441ea693",
   "nombre": "Megaccesorios",
-  "tipo": "tercero_marketplace",
   "comercio_id": "exito",
+  "tipo": "tercero_marketplace",
   "estado_validacion": "rechazado",
-  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
-  "verificado_en": null
+  "metodo_validacion": null,
+  "validado_en": null,
+  "motivo": "Vendedor externo de marketplace: excluido de ofertas aprobadas (política 3.2).",
+  "evidencias": [
+   {
+    "texto_listado": "Megaccesorios",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   }
+  ],
+  "publicaciones": 1
  },
  {
   "id": "955c0fb083",
   "nombre": "Natech",
-  "tipo": "tercero_marketplace",
   "comercio_id": "exito",
+  "tipo": "tercero_marketplace",
   "estado_validacion": "rechazado",
-  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
-  "verificado_en": null
+  "metodo_validacion": null,
+  "validado_en": null,
+  "motivo": "Vendedor externo de marketplace: excluido de ofertas aprobadas (política 3.2).",
+  "evidencias": [
+   {
+    "texto_listado": "Natech",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   }
+  ],
+  "publicaciones": 1
  },
  {
   "id": "3cb17e4fad",
   "nombre": "Novamix tech",
-  "tipo": "tercero_marketplace",
   "comercio_id": "exito",
+  "tipo": "tercero_marketplace",
   "estado_validacion": "rechazado",
-  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
-  "verificado_en": null
+  "metodo_validacion": null,
+  "validado_en": null,
+  "motivo": "Vendedor externo de marketplace: excluido de ofertas aprobadas (política 3.2).",
+  "evidencias": [
+   {
+    "texto_listado": "Novamix tech",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   },
+   {
+    "texto_listado": "Novamix tech",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   },
+   {
+    "texto_listado": "Novamix tech",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   },
+   {
+    "texto_listado": "Novamix tech",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   }
+  ],
+  "publicaciones": 4
  },
  {
   "id": "acda8dd012",
   "nombre": "Nuvi tecno",
-  "tipo": "tercero_marketplace",
   "comercio_id": "exito",
+  "tipo": "tercero_marketplace",
   "estado_validacion": "rechazado",
-  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
-  "verificado_en": null
+  "metodo_validacion": null,
+  "validado_en": null,
+  "motivo": "Vendedor externo de marketplace: excluido de ofertas aprobadas (política 3.2).",
+  "evidencias": [
+   {
+    "texto_listado": "Nuvi tecno",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   }
+  ],
+  "publicaciones": 1
  },
  {
   "id": "da0f5642a8",
   "nombre": "Ocnatech",
-  "tipo": "tercero_marketplace",
   "comercio_id": "exito",
+  "tipo": "tercero_marketplace",
   "estado_validacion": "rechazado",
-  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
-  "verificado_en": null
+  "metodo_validacion": null,
+  "validado_en": null,
+  "motivo": "Vendedor externo de marketplace: excluido de ofertas aprobadas (política 3.2).",
+  "evidencias": [
+   {
+    "texto_listado": "Ocnatech",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   },
+   {
+    "texto_listado": "Ocnatech",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   },
+   {
+    "texto_listado": "Ocnatech",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   }
+  ],
+  "publicaciones": 3
  },
  {
   "id": "820d425a7a",
   "nombre": "Oklahoma",
-  "tipo": "tercero_marketplace",
   "comercio_id": "exito",
+  "tipo": "tercero_marketplace",
   "estado_validacion": "rechazado",
-  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
-  "verificado_en": null
+  "metodo_validacion": null,
+  "validado_en": null,
+  "motivo": "Vendedor externo de marketplace: excluido de ofertas aprobadas (política 3.2).",
+  "evidencias": [
+   {
+    "texto_listado": "Oklahoma",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   }
+  ],
+  "publicaciones": 1
  },
  {
   "id": "4067754d90",
   "nombre": "Oportunidades",
-  "tipo": "tercero_marketplace",
   "comercio_id": "exito",
+  "tipo": "tercero_marketplace",
   "estado_validacion": "rechazado",
-  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
-  "verificado_en": null
+  "metodo_validacion": null,
+  "validado_en": null,
+  "motivo": "Vendedor externo de marketplace: excluido de ofertas aprobadas (política 3.2).",
+  "evidencias": [
+   {
+    "texto_listado": "Oportunidades",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   }
+  ],
+  "publicaciones": 1
  },
  {
   "id": "ce9e47efd4",
   "nombre": "P,n compustar",
-  "tipo": "tercero_marketplace",
   "comercio_id": "exito",
+  "tipo": "tercero_marketplace",
   "estado_validacion": "rechazado",
-  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
-  "verificado_en": null
+  "metodo_validacion": null,
+  "validado_en": null,
+  "motivo": "Vendedor externo de marketplace: excluido de ofertas aprobadas (política 3.2).",
+  "evidencias": [
+   {
+    "texto_listado": "P,n compustar",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   }
+  ],
+  "publicaciones": 1
  },
  {
   "id": "026cd8aa8c",
   "nombre": "Puntotec",
-  "tipo": "tercero_marketplace",
   "comercio_id": "exito",
+  "tipo": "tercero_marketplace",
   "estado_validacion": "rechazado",
-  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
-  "verificado_en": null
+  "metodo_validacion": null,
+  "validado_en": null,
+  "motivo": "Vendedor externo de marketplace: excluido de ofertas aprobadas (política 3.2).",
+  "evidencias": [
+   {
+    "texto_listado": "Puntotec",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   },
+   {
+    "texto_listado": "Puntotec",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   },
+   {
+    "texto_listado": "Puntotec",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   },
+   {
+    "texto_listado": "Puntotec",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   },
+   {
+    "texto_listado": "Puntotec",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   }
+  ],
+  "publicaciones": 5
  },
  {
   "id": "19c5ddbe92",
   "nombre": "Q-bits",
-  "tipo": "tercero_marketplace",
   "comercio_id": "exito",
+  "tipo": "tercero_marketplace",
   "estado_validacion": "rechazado",
-  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
-  "verificado_en": null
+  "metodo_validacion": null,
+  "validado_en": null,
+  "motivo": "Vendedor externo de marketplace: excluido de ofertas aprobadas (política 3.2).",
+  "evidencias": [
+   {
+    "texto_listado": "Q-bits",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   },
+   {
+    "texto_listado": "Q-bits",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   },
+   {
+    "texto_listado": "Q-bits",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   },
+   {
+    "texto_listado": "Q-bits",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   },
+   {
+    "texto_listado": "Q-bits",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   }
+  ],
+  "publicaciones": 6
  },
  {
   "id": "7677cc286d",
   "nombre": "Quiero mac",
-  "tipo": "tercero_marketplace",
   "comercio_id": "exito",
+  "tipo": "tercero_marketplace",
   "estado_validacion": "rechazado",
-  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
-  "verificado_en": null
+  "metodo_validacion": null,
+  "validado_en": null,
+  "motivo": "Vendedor externo de marketplace: excluido de ofertas aprobadas (política 3.2).",
+  "evidencias": [
+   {
+    "texto_listado": "Quiero mac",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   }
+  ],
+  "publicaciones": 1
  },
  {
   "id": "6964492442",
   "nombre": "River technology",
-  "tipo": "tercero_marketplace",
   "comercio_id": "exito",
+  "tipo": "tercero_marketplace",
   "estado_validacion": "rechazado",
-  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
-  "verificado_en": null
+  "metodo_validacion": null,
+  "validado_en": null,
+  "motivo": "Vendedor externo de marketplace: excluido de ofertas aprobadas (política 3.2).",
+  "evidencias": [
+   {
+    "texto_listado": "River technology",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   }
+  ],
+  "publicaciones": 1
  },
  {
   "id": "55190920cc",
   "nombre": "Simaro co",
-  "tipo": "tercero_marketplace",
   "comercio_id": "exito",
+  "tipo": "tercero_marketplace",
   "estado_validacion": "rechazado",
-  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
-  "verificado_en": null
+  "metodo_validacion": null,
+  "validado_en": null,
+  "motivo": "Vendedor externo de marketplace: excluido de ofertas aprobadas (política 3.2).",
+  "evidencias": [
+   {
+    "texto_listado": "Simaro co",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   },
+   {
+    "texto_listado": "Simaro co",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   },
+   {
+    "texto_listado": "Simaro co",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   },
+   {
+    "texto_listado": "Simaro co",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   },
+   {
+    "texto_listado": "Simaro co",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   }
+  ],
+  "publicaciones": 15
  },
  {
   "id": "7e91176333",
   "nombre": "Smartphonetablet",
-  "tipo": "tercero_marketplace",
   "comercio_id": "exito",
+  "tipo": "tercero_marketplace",
   "estado_validacion": "rechazado",
-  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
-  "verificado_en": null
+  "metodo_validacion": null,
+  "validado_en": null,
+  "motivo": "Vendedor externo de marketplace: excluido de ofertas aprobadas (política 3.2).",
+  "evidencias": [
+   {
+    "texto_listado": "Smartphonetablet",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   },
+   {
+    "texto_listado": "Smartphonetablet",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   }
+  ],
+  "publicaciones": 2
  },
  {
   "id": "3bef59be03",
   "nombre": "Super electro jyf online",
-  "tipo": "tercero_marketplace",
   "comercio_id": "exito",
+  "tipo": "tercero_marketplace",
   "estado_validacion": "rechazado",
-  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
-  "verificado_en": null
+  "metodo_validacion": null,
+  "validado_en": null,
+  "motivo": "Vendedor externo de marketplace: excluido de ofertas aprobadas (política 3.2).",
+  "evidencias": [
+   {
+    "texto_listado": "Super electro jyf online",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   }
+  ],
+  "publicaciones": 1
  },
  {
   "id": "f23de637af",
   "nombre": "Syl mobile",
-  "tipo": "tercero_marketplace",
   "comercio_id": "exito",
+  "tipo": "tercero_marketplace",
   "estado_validacion": "rechazado",
-  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
-  "verificado_en": null
+  "metodo_validacion": null,
+  "validado_en": null,
+  "motivo": "Vendedor externo de marketplace: excluido de ofertas aprobadas (política 3.2).",
+  "evidencias": [
+   {
+    "texto_listado": "Syl mobile",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   }
+  ],
+  "publicaciones": 1
  },
  {
   "id": "2ecaab987b",
   "nombre": "Team work",
-  "tipo": "tercero_marketplace",
   "comercio_id": "exito",
+  "tipo": "tercero_marketplace",
   "estado_validacion": "rechazado",
-  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
-  "verificado_en": null
+  "metodo_validacion": null,
+  "validado_en": null,
+  "motivo": "Vendedor externo de marketplace: excluido de ofertas aprobadas (política 3.2).",
+  "evidencias": [
+   {
+    "texto_listado": "Team work",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   }
+  ],
+  "publicaciones": 1
  },
  {
   "id": "1c51c804fb",
   "nombre": "Tecno optima",
-  "tipo": "tercero_marketplace",
   "comercio_id": "exito",
+  "tipo": "tercero_marketplace",
   "estado_validacion": "rechazado",
-  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
-  "verificado_en": null
+  "metodo_validacion": null,
+  "validado_en": null,
+  "motivo": "Vendedor externo de marketplace: excluido de ofertas aprobadas (política 3.2).",
+  "evidencias": [
+   {
+    "texto_listado": "Tecno optima",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   }
+  ],
+  "publicaciones": 1
  },
  {
   "id": "780800581e",
   "nombre": "Tecnocel bucaramanga",
-  "tipo": "tercero_marketplace",
   "comercio_id": "exito",
+  "tipo": "tercero_marketplace",
   "estado_validacion": "rechazado",
-  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
-  "verificado_en": null
+  "metodo_validacion": null,
+  "validado_en": null,
+  "motivo": "Vendedor externo de marketplace: excluido de ofertas aprobadas (política 3.2).",
+  "evidencias": [
+   {
+    "texto_listado": "Tecnocel bucaramanga",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   }
+  ],
+  "publicaciones": 1
  },
  {
   "id": "0d46b066f5",
   "nombre": "Tecnomarket ink",
-  "tipo": "tercero_marketplace",
   "comercio_id": "exito",
+  "tipo": "tercero_marketplace",
   "estado_validacion": "rechazado",
-  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
-  "verificado_en": null
+  "metodo_validacion": null,
+  "validado_en": null,
+  "motivo": "Vendedor externo de marketplace: excluido de ofertas aprobadas (política 3.2).",
+  "evidencias": [
+   {
+    "texto_listado": "Tecnomarket ink",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   },
+   {
+    "texto_listado": "Tecnomarket ink",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   }
+  ],
+  "publicaciones": 2
  },
  {
   "id": "abc6ebdcee",
   "nombre": "Tecnoova com",
-  "tipo": "tercero_marketplace",
   "comercio_id": "exito",
+  "tipo": "tercero_marketplace",
   "estado_validacion": "rechazado",
-  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
-  "verificado_en": null
+  "metodo_validacion": null,
+  "validado_en": null,
+  "motivo": "Vendedor externo de marketplace: excluido de ofertas aprobadas (política 3.2).",
+  "evidencias": [
+   {
+    "texto_listado": "Tecnoova com",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   },
+   {
+    "texto_listado": "Tecnoova com",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   }
+  ],
+  "publicaciones": 2
  },
  {
   "id": "053e5a8eed",
   "nombre": "Ts online",
-  "tipo": "tercero_marketplace",
   "comercio_id": "exito",
+  "tipo": "tercero_marketplace",
   "estado_validacion": "rechazado",
-  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
-  "verificado_en": null
+  "metodo_validacion": null,
+  "validado_en": null,
+  "motivo": "Vendedor externo de marketplace: excluido de ofertas aprobadas (política 3.2).",
+  "evidencias": [
+   {
+    "texto_listado": "Ts online",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   },
+   {
+    "texto_listado": "Ts online",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   }
+  ],
+  "publicaciones": 2
  },
  {
   "id": "9cb1375d27",
   "nombre": "Ultraphone70",
-  "tipo": "tercero_marketplace",
   "comercio_id": "exito",
+  "tipo": "tercero_marketplace",
   "estado_validacion": "rechazado",
-  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
-  "verificado_en": null
+  "metodo_validacion": null,
+  "validado_en": null,
+  "motivo": "Vendedor externo de marketplace: excluido de ofertas aprobadas (política 3.2).",
+  "evidencias": [
+   {
+    "texto_listado": "Ultraphone70",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   }
+  ],
+  "publicaciones": 1
  },
  {
   "id": "2bd4364045",
   "nombre": "Variedades rausang",
-  "tipo": "tercero_marketplace",
   "comercio_id": "exito",
+  "tipo": "tercero_marketplace",
   "estado_validacion": "rechazado",
-  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
-  "verificado_en": null
+  "metodo_validacion": null,
+  "validado_en": null,
+  "motivo": "Vendedor externo de marketplace: excluido de ofertas aprobadas (política 3.2).",
+  "evidencias": [
+   {
+    "texto_listado": "Variedades rausang",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   }
+  ],
+  "publicaciones": 1
  },
  {
   "id": "a06aabe39a",
   "nombre": "Variedades y electrónica de consumo",
-  "tipo": "tercero_marketplace",
   "comercio_id": "exito",
+  "tipo": "tercero_marketplace",
   "estado_validacion": "rechazado",
-  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
-  "verificado_en": null
+  "metodo_validacion": null,
+  "validado_en": null,
+  "motivo": "Vendedor externo de marketplace: excluido de ofertas aprobadas (política 3.2).",
+  "evidencias": [
+   {
+    "texto_listado": "Variedades y electrónica de consumo",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   }
+  ],
+  "publicaciones": 1
  },
  {
   "id": "bc19b65c36",
   "nombre": "Webcaster",
-  "tipo": "tercero_marketplace",
   "comercio_id": "exito",
+  "tipo": "tercero_marketplace",
   "estado_validacion": "rechazado",
-  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
-  "verificado_en": null
+  "metodo_validacion": null,
+  "validado_en": null,
+  "motivo": "Vendedor externo de marketplace: excluido de ofertas aprobadas (política 3.2).",
+  "evidencias": [
+   {
+    "texto_listado": "Webcaster",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   }
+  ],
+  "publicaciones": 1
  },
  {
   "id": "958d7935db",
   "nombre": "Yaxa",
-  "tipo": "tercero_marketplace",
   "comercio_id": "exito",
+  "tipo": "tercero_marketplace",
   "estado_validacion": "rechazado",
-  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
-  "verificado_en": null
+  "metodo_validacion": null,
+  "validado_en": null,
+  "motivo": "Vendedor externo de marketplace: excluido de ofertas aprobadas (política 3.2).",
+  "evidencias": [
+   {
+    "texto_listado": "Yaxa",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   },
+   {
+    "texto_listado": "Yaxa",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   },
+   {
+    "texto_listado": "Yaxa",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   },
+   {
+    "texto_listado": "Yaxa",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   },
+   {
+    "texto_listado": "Yaxa",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   }
+  ],
+  "publicaciones": 8
  },
  {
   "id": "9fccae67a8",
   "nombre": "Zylar",
-  "tipo": "tercero_marketplace",
   "comercio_id": "exito",
+  "tipo": "tercero_marketplace",
   "estado_validacion": "rechazado",
-  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
-  "verificado_en": null
+  "metodo_validacion": null,
+  "validado_en": null,
+  "motivo": "Vendedor externo de marketplace: excluido de ofertas aprobadas (política 3.2).",
+  "evidencias": [
+   {
+    "texto_listado": "Zylar",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   }
+  ],
+  "publicaciones": 1
  },
  {
   "id": "8f5009d126",
   "nombre": "Cubitt colombia",
-  "tipo": "tienda_oficial_fabricante",
   "comercio_id": "exito",
+  "tipo": "tienda_oficial_fabricante",
   "estado_validacion": "pendiente",
-  "evidencia": "El nombre del vendedor coincide con la marca; confirmar que es la tienda oficial.",
-  "verificado_en": null
+  "metodo_validacion": null,
+  "validado_en": null,
+  "motivo": "Posible tienda oficial del fabricante: requiere validación humana de su oficialidad.",
+  "evidencias": [
+   {
+    "texto_listado": "Cubitt colombia",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   },
+   {
+    "texto_listado": "Cubitt colombia",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   },
+   {
+    "texto_listado": "Cubitt colombia",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   }
+  ],
+  "publicaciones": 3
  },
  {
   "id": "b233a7d030",
   "nombre": "Falabella",
-  "tipo": "retailer",
   "comercio_id": "falabella",
-  "estado_validacion": "pendiente",
-  "evidencia": "El listado dice 'vendido por' el propio comercio. Falta confirmación humana.",
-  "verificado_en": null
+  "tipo": "retailer",
+  "estado_validacion": "validado",
+  "metodo_validacion": "automatica_coincidencia_exacta",
+  "validado_en": "2026-11-21T22:40:00-05:00",
+  "motivo": "El listado identifica expresamente a 'Falabella' como vendedor y coincide exactamente con el comercio.",
+  "evidencias": [
+   {
+    "texto_listado": "Falabella",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   },
+   {
+    "texto_listado": "Falabella",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   },
+   {
+    "texto_listado": "Falabella",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   },
+   {
+    "texto_listado": "Falabella",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   },
+   {
+    "texto_listado": "Falabella",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   }
+  ],
+  "publicaciones": 154
  },
  {
   "id": "fbaacbef19",
   "nombre": "52 Bits",
-  "tipo": "tercero_marketplace",
   "comercio_id": "falabella",
+  "tipo": "tercero_marketplace",
   "estado_validacion": "rechazado",
-  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
-  "verificado_en": null
+  "metodo_validacion": null,
+  "validado_en": null,
+  "motivo": "Vendedor externo de marketplace: excluido de ofertas aprobadas (política 3.2).",
+  "evidencias": [
+   {
+    "texto_listado": "52 Bits",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   },
+   {
+    "texto_listado": "52 Bits",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   }
+  ],
+  "publicaciones": 2
  },
  {
   "id": "a4679a13b4",
   "nombre": "Adriatik Brands Sas",
-  "tipo": "tercero_marketplace",
   "comercio_id": "falabella",
+  "tipo": "tercero_marketplace",
   "estado_validacion": "rechazado",
-  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
-  "verificado_en": null
+  "metodo_validacion": null,
+  "validado_en": null,
+  "motivo": "Vendedor externo de marketplace: excluido de ofertas aprobadas (política 3.2).",
+  "evidencias": [
+   {
+    "texto_listado": "Adriatik Brands Sas",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   }
+  ],
+  "publicaciones": 1
  },
  {
   "id": "28c8cb6804",
   "nombre": "Af Tecnology",
-  "tipo": "tercero_marketplace",
   "comercio_id": "falabella",
+  "tipo": "tercero_marketplace",
   "estado_validacion": "rechazado",
-  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
-  "verificado_en": null
+  "metodo_validacion": null,
+  "validado_en": null,
+  "motivo": "Vendedor externo de marketplace: excluido de ofertas aprobadas (política 3.2).",
+  "evidencias": [
+   {
+    "texto_listado": "Af Tecnology",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   }
+  ],
+  "publicaciones": 1
  },
  {
   "id": "5ce1ea1b3a",
   "nombre": "Casa Magna",
-  "tipo": "tercero_marketplace",
   "comercio_id": "falabella",
+  "tipo": "tercero_marketplace",
   "estado_validacion": "rechazado",
-  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
-  "verificado_en": null
+  "metodo_validacion": null,
+  "validado_en": null,
+  "motivo": "Vendedor externo de marketplace: excluido de ofertas aprobadas (política 3.2).",
+  "evidencias": [
+   {
+    "texto_listado": "Casa Magna",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   }
+  ],
+  "publicaciones": 1
  },
  {
   "id": "084dd30944",
   "nombre": "Cell Transit",
-  "tipo": "tercero_marketplace",
   "comercio_id": "falabella",
+  "tipo": "tercero_marketplace",
   "estado_validacion": "rechazado",
-  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
-  "verificado_en": null
+  "metodo_validacion": null,
+  "validado_en": null,
+  "motivo": "Vendedor externo de marketplace: excluido de ofertas aprobadas (política 3.2).",
+  "evidencias": [
+   {
+    "texto_listado": "Cell Transit",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   },
+   {
+    "texto_listado": "Cell Transit",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   },
+   {
+    "texto_listado": "Cell Transit",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   },
+   {
+    "texto_listado": "Cell Transit",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   },
+   {
+    "texto_listado": "Cell Transit",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   }
+  ],
+  "publicaciones": 5
  },
  {
   "id": "9e63c794c5",
   "nombre": "Celumovil Store Sas",
-  "tipo": "tercero_marketplace",
   "comercio_id": "falabella",
+  "tipo": "tercero_marketplace",
   "estado_validacion": "rechazado",
-  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
-  "verificado_en": null
+  "metodo_validacion": null,
+  "validado_en": null,
+  "motivo": "Vendedor externo de marketplace: excluido de ofertas aprobadas (política 3.2).",
+  "evidencias": [
+   {
+    "texto_listado": "Celumovil Store Sas",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   },
+   {
+    "texto_listado": "Celumovil Store Sas",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   }
+  ],
+  "publicaciones": 2
  },
  {
   "id": "c251532ea6",
   "nombre": "Comercializadora Productos Al Mayor Y Detal",
-  "tipo": "tercero_marketplace",
   "comercio_id": "falabella",
+  "tipo": "tercero_marketplace",
   "estado_validacion": "rechazado",
-  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
-  "verificado_en": null
+  "metodo_validacion": null,
+  "validado_en": null,
+  "motivo": "Vendedor externo de marketplace: excluido de ofertas aprobadas (política 3.2).",
+  "evidencias": [
+   {
+    "texto_listado": "Comercializadora Productos Al Mayor Y Detal",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   }
+  ],
+  "publicaciones": 1
  },
  {
   "id": "afb911f48c",
   "nombre": "Compra Tecnología",
-  "tipo": "tercero_marketplace",
   "comercio_id": "falabella",
+  "tipo": "tercero_marketplace",
   "estado_validacion": "rechazado",
-  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
-  "verificado_en": null
+  "metodo_validacion": null,
+  "validado_en": null,
+  "motivo": "Vendedor externo de marketplace: excluido de ofertas aprobadas (política 3.2).",
+  "evidencias": [
+   {
+    "texto_listado": "Compra Tecnología",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   },
+   {
+    "texto_listado": "Compra Tecnología",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   },
+   {
+    "texto_listado": "Compra Tecnología",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   },
+   {
+    "texto_listado": "Compra Tecnología",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   },
+   {
+    "texto_listado": "Compra Tecnología",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   }
+  ],
+  "publicaciones": 10
  },
  {
   "id": "b5dee7211a",
   "nombre": "Compumarket Bga",
-  "tipo": "tercero_marketplace",
   "comercio_id": "falabella",
+  "tipo": "tercero_marketplace",
   "estado_validacion": "rechazado",
-  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
-  "verificado_en": null
+  "metodo_validacion": null,
+  "validado_en": null,
+  "motivo": "Vendedor externo de marketplace: excluido de ofertas aprobadas (política 3.2).",
+  "evidencias": [
+   {
+    "texto_listado": "Compumarket Bga",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   },
+   {
+    "texto_listado": "Compumarket Bga",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   },
+   {
+    "texto_listado": "Compumarket Bga",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   }
+  ],
+  "publicaciones": 3
  },
  {
   "id": "fdb4a3549d",
   "nombre": "Compumarket.bga",
-  "tipo": "tercero_marketplace",
   "comercio_id": "falabella",
+  "tipo": "tercero_marketplace",
   "estado_validacion": "rechazado",
-  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
-  "verificado_en": null
+  "metodo_validacion": null,
+  "validado_en": null,
+  "motivo": "Vendedor externo de marketplace: excluido de ofertas aprobadas (política 3.2).",
+  "evidencias": [
+   {
+    "texto_listado": "Compumarket.bga",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   },
+   {
+    "texto_listado": "Compumarket.bga",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   },
+   {
+    "texto_listado": "Compumarket.bga",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   },
+   {
+    "texto_listado": "Compumarket.bga",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   }
+  ],
+  "publicaciones": 4
  },
  {
   "id": "6bdb95d45c",
   "nombre": "Continente Sas",
-  "tipo": "tercero_marketplace",
   "comercio_id": "falabella",
-  "estado_validacion": "rechazado",
-  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
-  "verificado_en": null
- },
- {
-  "id": "9909cc36ab",
-  "nombre": "Distribuidor Oficial Colombia",
   "tipo": "tercero_marketplace",
-  "comercio_id": "falabella",
   "estado_validacion": "rechazado",
-  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
-  "verificado_en": null
+  "metodo_validacion": null,
+  "validado_en": null,
+  "motivo": "Vendedor externo de marketplace: excluido de ofertas aprobadas (política 3.2).",
+  "evidencias": [
+   {
+    "texto_listado": "Continente Sas",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   },
+   {
+    "texto_listado": "Continente Sas",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   }
+  ],
+  "publicaciones": 2
  },
  {
   "id": "46a00a355b",
   "nombre": "Dji Official Store",
-  "tipo": "tercero_marketplace",
   "comercio_id": "falabella",
+  "tipo": "tercero_marketplace",
   "estado_validacion": "rechazado",
-  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
-  "verificado_en": null
+  "metodo_validacion": null,
+  "validado_en": null,
+  "motivo": "Vendedor externo de marketplace: excluido de ofertas aprobadas (política 3.2).",
+  "evidencias": [
+   {
+    "texto_listado": "Dji Official Store",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   }
+  ],
+  "publicaciones": 1
  },
  {
   "id": "1f5a64c4ba",
   "nombre": "Dos Mundos Colombia Sas",
-  "tipo": "tercero_marketplace",
   "comercio_id": "falabella",
+  "tipo": "tercero_marketplace",
   "estado_validacion": "rechazado",
-  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
-  "verificado_en": null
+  "metodo_validacion": null,
+  "validado_en": null,
+  "motivo": "Vendedor externo de marketplace: excluido de ofertas aprobadas (política 3.2).",
+  "evidencias": [
+   {
+    "texto_listado": "Dos Mundos Colombia Sas",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   }
+  ],
+  "publicaciones": 1
  },
  {
   "id": "ff0b50d1c5",
   "nombre": "Ferinnovacciòn",
-  "tipo": "tercero_marketplace",
   "comercio_id": "falabella",
+  "tipo": "tercero_marketplace",
   "estado_validacion": "rechazado",
-  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
-  "verificado_en": null
+  "metodo_validacion": null,
+  "validado_en": null,
+  "motivo": "Vendedor externo de marketplace: excluido de ofertas aprobadas (política 3.2).",
+  "evidencias": [
+   {
+    "texto_listado": "Ferinnovacciòn",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   }
+  ],
+  "publicaciones": 1
  },
  {
   "id": "b2baf64096",
   "nombre": "Galaxitel Electronics",
-  "tipo": "tercero_marketplace",
   "comercio_id": "falabella",
+  "tipo": "tercero_marketplace",
   "estado_validacion": "rechazado",
-  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
-  "verificado_en": null
+  "metodo_validacion": null,
+  "validado_en": null,
+  "motivo": "Vendedor externo de marketplace: excluido de ofertas aprobadas (política 3.2).",
+  "evidencias": [
+   {
+    "texto_listado": "Galaxitel Electronics",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   }
+  ],
+  "publicaciones": 1
  },
  {
   "id": "2015e32e6f",
   "nombre": "Grupo Comercia",
-  "tipo": "tercero_marketplace",
   "comercio_id": "falabella",
+  "tipo": "tercero_marketplace",
   "estado_validacion": "rechazado",
-  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
-  "verificado_en": null
+  "metodo_validacion": null,
+  "validado_en": null,
+  "motivo": "Vendedor externo de marketplace: excluido de ofertas aprobadas (política 3.2).",
+  "evidencias": [
+   {
+    "texto_listado": "Grupo Comercia",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   },
+   {
+    "texto_listado": "Grupo Comercia",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   },
+   {
+    "texto_listado": "Grupo Comercia",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   }
+  ],
+  "publicaciones": 3
  },
  {
   "id": "d4836f49a5",
   "nombre": "Gseb Andean S.a.",
-  "tipo": "tercero_marketplace",
   "comercio_id": "falabella",
+  "tipo": "tercero_marketplace",
   "estado_validacion": "rechazado",
-  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
-  "verificado_en": null
+  "metodo_validacion": null,
+  "validado_en": null,
+  "motivo": "Vendedor externo de marketplace: excluido de ofertas aprobadas (política 3.2).",
+  "evidencias": [
+   {
+    "texto_listado": "Gseb Andean S.a.",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   }
+  ],
+  "publicaciones": 1
  },
  {
   "id": "a2e7c2c9f2",
   "nombre": "Home Improvement",
-  "tipo": "tercero_marketplace",
   "comercio_id": "falabella",
+  "tipo": "tercero_marketplace",
   "estado_validacion": "rechazado",
-  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
-  "verificado_en": null
+  "metodo_validacion": null,
+  "validado_en": null,
+  "motivo": "Vendedor externo de marketplace: excluido de ofertas aprobadas (política 3.2).",
+  "evidencias": [
+   {
+    "texto_listado": "Home Improvement",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   }
+  ],
+  "publicaciones": 1
  },
  {
   "id": "d7caef2e76",
   "nombre": "Homecenter",
-  "tipo": "tercero_marketplace",
   "comercio_id": "falabella",
+  "tipo": "tercero_marketplace",
   "estado_validacion": "rechazado",
-  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
-  "verificado_en": null
+  "metodo_validacion": null,
+  "validado_en": null,
+  "motivo": "Vendedor externo de marketplace: excluido de ofertas aprobadas (política 3.2).",
+  "evidencias": [
+   {
+    "texto_listado": "Homecenter",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   },
+   {
+    "texto_listado": "Homecenter",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   },
+   {
+    "texto_listado": "Homecenter",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   },
+   {
+    "texto_listado": "Homecenter",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   },
+   {
+    "texto_listado": "Homecenter",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   }
+  ],
+  "publicaciones": 10
  },
  {
   "id": "5efa6eb84d",
   "nombre": "Hometec Store",
-  "tipo": "tercero_marketplace",
   "comercio_id": "falabella",
+  "tipo": "tercero_marketplace",
   "estado_validacion": "rechazado",
-  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
-  "verificado_en": null
+  "metodo_validacion": null,
+  "validado_en": null,
+  "motivo": "Vendedor externo de marketplace: excluido de ofertas aprobadas (política 3.2).",
+  "evidencias": [
+   {
+    "texto_listado": "Hometec Store",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   },
+   {
+    "texto_listado": "Hometec Store",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   }
+  ],
+  "publicaciones": 2
  },
  {
   "id": "c6f3028ec8",
   "nombre": "Importaciones Redexpress",
-  "tipo": "tercero_marketplace",
   "comercio_id": "falabella",
+  "tipo": "tercero_marketplace",
   "estado_validacion": "rechazado",
-  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
-  "verificado_en": null
+  "metodo_validacion": null,
+  "validado_en": null,
+  "motivo": "Vendedor externo de marketplace: excluido de ofertas aprobadas (política 3.2).",
+  "evidencias": [
+   {
+    "texto_listado": "Importaciones Redexpress",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   }
+  ],
+  "publicaciones": 1
  },
  {
   "id": "a2e05f09be",
   "nombre": "Importacionesredesprexx1",
-  "tipo": "tercero_marketplace",
   "comercio_id": "falabella",
+  "tipo": "tercero_marketplace",
   "estado_validacion": "rechazado",
-  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
-  "verificado_en": null
+  "metodo_validacion": null,
+  "validado_en": null,
+  "motivo": "Vendedor externo de marketplace: excluido de ofertas aprobadas (política 3.2).",
+  "evidencias": [
+   {
+    "texto_listado": "Importacionesredesprexx1",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   },
+   {
+    "texto_listado": "Importacionesredesprexx1",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   },
+   {
+    "texto_listado": "Importacionesredesprexx1",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   },
+   {
+    "texto_listado": "Importacionesredesprexx1",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   },
+   {
+    "texto_listado": "Importacionesredesprexx1",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   }
+  ],
+  "publicaciones": 5
  },
  {
   "id": "fd5017d5f6",
   "nombre": "Innovaciones M.y",
-  "tipo": "tercero_marketplace",
   "comercio_id": "falabella",
+  "tipo": "tercero_marketplace",
   "estado_validacion": "rechazado",
-  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
-  "verificado_en": null
+  "metodo_validacion": null,
+  "validado_en": null,
+  "motivo": "Vendedor externo de marketplace: excluido de ofertas aprobadas (política 3.2).",
+  "evidencias": [
+   {
+    "texto_listado": "Innovaciones M.y",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   }
+  ],
+  "publicaciones": 1
  },
  {
   "id": "f98e81f81b",
   "nombre": "Jd Market Sas",
-  "tipo": "tercero_marketplace",
   "comercio_id": "falabella",
+  "tipo": "tercero_marketplace",
   "estado_validacion": "rechazado",
-  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
-  "verificado_en": null
+  "metodo_validacion": null,
+  "validado_en": null,
+  "motivo": "Vendedor externo de marketplace: excluido de ofertas aprobadas (política 3.2).",
+  "evidencias": [
+   {
+    "texto_listado": "Jd Market Sas",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   }
+  ],
+  "publicaciones": 1
  },
  {
   "id": "e65b4e9a4e",
   "nombre": "Jesucristo Electro",
-  "tipo": "tercero_marketplace",
   "comercio_id": "falabella",
+  "tipo": "tercero_marketplace",
   "estado_validacion": "rechazado",
-  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
-  "verificado_en": null
+  "metodo_validacion": null,
+  "validado_en": null,
+  "motivo": "Vendedor externo de marketplace: excluido de ofertas aprobadas (política 3.2).",
+  "evidencias": [
+   {
+    "texto_listado": "Jesucristo Electro",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   },
+   {
+    "texto_listado": "Jesucristo Electro",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   },
+   {
+    "texto_listado": "Jesucristo Electro",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   },
+   {
+    "texto_listado": "Jesucristo Electro",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   }
+  ],
+  "publicaciones": 4
  },
  {
   "id": "87871540f1",
   "nombre": "Jl Lujo",
-  "tipo": "tercero_marketplace",
   "comercio_id": "falabella",
+  "tipo": "tercero_marketplace",
   "estado_validacion": "rechazado",
-  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
-  "verificado_en": null
+  "metodo_validacion": null,
+  "validado_en": null,
+  "motivo": "Vendedor externo de marketplace: excluido de ofertas aprobadas (política 3.2).",
+  "evidencias": [
+   {
+    "texto_listado": "Jl Lujo",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   }
+  ],
+  "publicaciones": 1
  },
  {
   "id": "4e1c53ee49",
   "nombre": "K-tienda",
-  "tipo": "tercero_marketplace",
   "comercio_id": "falabella",
+  "tipo": "tercero_marketplace",
   "estado_validacion": "rechazado",
-  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
-  "verificado_en": null
+  "metodo_validacion": null,
+  "validado_en": null,
+  "motivo": "Vendedor externo de marketplace: excluido de ofertas aprobadas (política 3.2).",
+  "evidencias": [
+   {
+    "texto_listado": "K-tienda",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   }
+  ],
+  "publicaciones": 1
  },
  {
   "id": "4ca2a6e849",
   "nombre": "Korolos.",
-  "tipo": "tercero_marketplace",
   "comercio_id": "falabella",
+  "tipo": "tercero_marketplace",
   "estado_validacion": "rechazado",
-  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
-  "verificado_en": null
+  "metodo_validacion": null,
+  "validado_en": null,
+  "motivo": "Vendedor externo de marketplace: excluido de ofertas aprobadas (política 3.2).",
+  "evidencias": [
+   {
+    "texto_listado": "Korolos.",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   }
+  ],
+  "publicaciones": 1
  },
  {
   "id": "665daf2e2c",
   "nombre": "La Cabrera",
-  "tipo": "tercero_marketplace",
   "comercio_id": "falabella",
+  "tipo": "tercero_marketplace",
   "estado_validacion": "rechazado",
-  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
-  "verificado_en": null
+  "metodo_validacion": null,
+  "validado_en": null,
+  "motivo": "Vendedor externo de marketplace: excluido de ofertas aprobadas (política 3.2).",
+  "evidencias": [
+   {
+    "texto_listado": "La Cabrera",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   }
+  ],
+  "publicaciones": 1
  },
  {
   "id": "ebceed81ab",
   "nombre": "Leumax Store",
-  "tipo": "tercero_marketplace",
   "comercio_id": "falabella",
+  "tipo": "tercero_marketplace",
   "estado_validacion": "rechazado",
-  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
-  "verificado_en": null
+  "metodo_validacion": null,
+  "validado_en": null,
+  "motivo": "Vendedor externo de marketplace: excluido de ofertas aprobadas (política 3.2).",
+  "evidencias": [
+   {
+    "texto_listado": "Leumax Store",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   }
+  ],
+  "publicaciones": 1
  },
  {
   "id": "868380f51d",
   "nombre": "Llevame On Line Colombia",
-  "tipo": "tercero_marketplace",
   "comercio_id": "falabella",
+  "tipo": "tercero_marketplace",
   "estado_validacion": "rechazado",
-  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
-  "verificado_en": null
+  "metodo_validacion": null,
+  "validado_en": null,
+  "motivo": "Vendedor externo de marketplace: excluido de ofertas aprobadas (política 3.2).",
+  "evidencias": [
+   {
+    "texto_listado": "Llevame On Line Colombia",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   }
+  ],
+  "publicaciones": 1
  },
  {
   "id": "bc9c7dbd49",
   "nombre": "Losmelaitosdemaito Sas",
-  "tipo": "tercero_marketplace",
   "comercio_id": "falabella",
+  "tipo": "tercero_marketplace",
   "estado_validacion": "rechazado",
-  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
-  "verificado_en": null
+  "metodo_validacion": null,
+  "validado_en": null,
+  "motivo": "Vendedor externo de marketplace: excluido de ofertas aprobadas (política 3.2).",
+  "evidencias": [
+   {
+    "texto_listado": "Losmelaitosdemaito Sas",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   }
+  ],
+  "publicaciones": 1
  },
  {
   "id": "115dccb9cc",
   "nombre": "Macrocell",
-  "tipo": "tercero_marketplace",
   "comercio_id": "falabella",
+  "tipo": "tercero_marketplace",
   "estado_validacion": "rechazado",
-  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
-  "verificado_en": null
+  "metodo_validacion": null,
+  "validado_en": null,
+  "motivo": "Vendedor externo de marketplace: excluido de ofertas aprobadas (política 3.2).",
+  "evidencias": [
+   {
+    "texto_listado": "Macrocell",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   },
+   {
+    "texto_listado": "Macrocell",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   },
+   {
+    "texto_listado": "Macrocell",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   }
+  ],
+  "publicaciones": 3
  },
  {
   "id": "c42752f429",
   "nombre": "Magic Confort",
-  "tipo": "tercero_marketplace",
   "comercio_id": "falabella",
+  "tipo": "tercero_marketplace",
   "estado_validacion": "rechazado",
-  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
-  "verificado_en": null
+  "metodo_validacion": null,
+  "validado_en": null,
+  "motivo": "Vendedor externo de marketplace: excluido de ofertas aprobadas (política 3.2).",
+  "evidencias": [
+   {
+    "texto_listado": "Magic Confort",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   },
+   {
+    "texto_listado": "Magic Confort",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   },
+   {
+    "texto_listado": "Magic Confort",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   }
+  ],
+  "publicaciones": 3
  },
  {
   "id": "a50c9d5221",
   "nombre": "Marketplace Ten",
-  "tipo": "tercero_marketplace",
   "comercio_id": "falabella",
+  "tipo": "tercero_marketplace",
   "estado_validacion": "rechazado",
-  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
-  "verificado_en": null
+  "metodo_validacion": null,
+  "validado_en": null,
+  "motivo": "Vendedor externo de marketplace: excluido de ofertas aprobadas (política 3.2).",
+  "evidencias": [
+   {
+    "texto_listado": "Marketplace Ten",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   }
+  ],
+  "publicaciones": 1
  },
  {
   "id": "1647639b88",
   "nombre": "Mega Shop Tv",
-  "tipo": "tercero_marketplace",
   "comercio_id": "falabella",
+  "tipo": "tercero_marketplace",
   "estado_validacion": "rechazado",
-  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
-  "verificado_en": null
+  "metodo_validacion": null,
+  "validado_en": null,
+  "motivo": "Vendedor externo de marketplace: excluido de ofertas aprobadas (política 3.2).",
+  "evidencias": [
+   {
+    "texto_listado": "Mega Shop Tv",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   },
+   {
+    "texto_listado": "Mega Shop Tv",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   },
+   {
+    "texto_listado": "Mega Shop Tv",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   },
+   {
+    "texto_listado": "Mega Shop Tv",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   },
+   {
+    "texto_listado": "Mega Shop Tv",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   }
+  ],
+  "publicaciones": 6
  },
  {
   "id": "0ae49f446c",
   "nombre": "Moblizen",
-  "tipo": "tercero_marketplace",
   "comercio_id": "falabella",
+  "tipo": "tercero_marketplace",
   "estado_validacion": "rechazado",
-  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
-  "verificado_en": null
+  "metodo_validacion": null,
+  "validado_en": null,
+  "motivo": "Vendedor externo de marketplace: excluido de ofertas aprobadas (política 3.2).",
+  "evidencias": [
+   {
+    "texto_listado": "Moblizen",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   },
+   {
+    "texto_listado": "Moblizen",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   }
+  ],
+  "publicaciones": 2
  },
  {
   "id": "42dd50082f",
   "nombre": "More Products",
-  "tipo": "tercero_marketplace",
   "comercio_id": "falabella",
+  "tipo": "tercero_marketplace",
   "estado_validacion": "rechazado",
-  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
-  "verificado_en": null
+  "metodo_validacion": null,
+  "validado_en": null,
+  "motivo": "Vendedor externo de marketplace: excluido de ofertas aprobadas (política 3.2).",
+  "evidencias": [
+   {
+    "texto_listado": "More Products",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   },
+   {
+    "texto_listado": "More Products",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   },
+   {
+    "texto_listado": "More Products",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   }
+  ],
+  "publicaciones": 3
  },
  {
   "id": "c3a024459f",
   "nombre": "Mptechnology",
-  "tipo": "tercero_marketplace",
   "comercio_id": "falabella",
+  "tipo": "tercero_marketplace",
   "estado_validacion": "rechazado",
-  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
-  "verificado_en": null
+  "metodo_validacion": null,
+  "validado_en": null,
+  "motivo": "Vendedor externo de marketplace: excluido de ofertas aprobadas (política 3.2).",
+  "evidencias": [
+   {
+    "texto_listado": "Mptechnology",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   }
+  ],
+  "publicaciones": 1
  },
  {
   "id": "cffa8ce38d",
   "nombre": "Naseb",
-  "tipo": "tercero_marketplace",
   "comercio_id": "falabella",
+  "tipo": "tercero_marketplace",
   "estado_validacion": "rechazado",
-  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
-  "verificado_en": null
+  "metodo_validacion": null,
+  "validado_en": null,
+  "motivo": "Vendedor externo de marketplace: excluido de ofertas aprobadas (política 3.2).",
+  "evidencias": [
+   {
+    "texto_listado": "Naseb",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   }
+  ],
+  "publicaciones": 1
  },
  {
   "id": "84b1a64af7",
   "nombre": "Nubatech",
-  "tipo": "tercero_marketplace",
   "comercio_id": "falabella",
+  "tipo": "tercero_marketplace",
   "estado_validacion": "rechazado",
-  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
-  "verificado_en": null
+  "metodo_validacion": null,
+  "validado_en": null,
+  "motivo": "Vendedor externo de marketplace: excluido de ofertas aprobadas (política 3.2).",
+  "evidencias": [
+   {
+    "texto_listado": "Nubatech",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   },
+   {
+    "texto_listado": "Nubatech",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   }
+  ],
+  "publicaciones": 2
  },
  {
   "id": "1c0999445e",
   "nombre": "Oklahoma Computadores",
-  "tipo": "tercero_marketplace",
   "comercio_id": "falabella",
+  "tipo": "tercero_marketplace",
   "estado_validacion": "rechazado",
-  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
-  "verificado_en": null
+  "metodo_validacion": null,
+  "validado_en": null,
+  "motivo": "Vendedor externo de marketplace: excluido de ofertas aprobadas (política 3.2).",
+  "evidencias": [
+   {
+    "texto_listado": "Oklahoma Computadores",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   },
+   {
+    "texto_listado": "Oklahoma Computadores",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   },
+   {
+    "texto_listado": "Oklahoma Computadores",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   },
+   {
+    "texto_listado": "Oklahoma Computadores",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   },
+   {
+    "texto_listado": "Oklahoma Computadores",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   }
+  ],
+  "publicaciones": 5
  },
  {
   "id": "b37fe700e3",
   "nombre": "Pctel Computo",
-  "tipo": "tercero_marketplace",
   "comercio_id": "falabella",
+  "tipo": "tercero_marketplace",
   "estado_validacion": "rechazado",
-  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
-  "verificado_en": null
+  "metodo_validacion": null,
+  "validado_en": null,
+  "motivo": "Vendedor externo de marketplace: excluido de ofertas aprobadas (política 3.2).",
+  "evidencias": [
+   {
+    "texto_listado": "Pctel Computo",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   }
+  ],
+  "publicaciones": 1
  },
  {
   "id": "f10492e7fe",
   "nombre": "Pineda Store",
-  "tipo": "tercero_marketplace",
   "comercio_id": "falabella",
+  "tipo": "tercero_marketplace",
   "estado_validacion": "rechazado",
-  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
-  "verificado_en": null
+  "metodo_validacion": null,
+  "validado_en": null,
+  "motivo": "Vendedor externo de marketplace: excluido de ofertas aprobadas (política 3.2).",
+  "evidencias": [
+   {
+    "texto_listado": "Pineda Store",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   },
+   {
+    "texto_listado": "Pineda Store",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   },
+   {
+    "texto_listado": "Pineda Store",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   }
+  ],
+  "publicaciones": 3
  },
  {
   "id": "a580992056",
   "nombre": "Quiero Mac",
-  "tipo": "tercero_marketplace",
   "comercio_id": "falabella",
+  "tipo": "tercero_marketplace",
   "estado_validacion": "rechazado",
-  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
-  "verificado_en": null
+  "metodo_validacion": null,
+  "validado_en": null,
+  "motivo": "Vendedor externo de marketplace: excluido de ofertas aprobadas (política 3.2).",
+  "evidencias": [
+   {
+    "texto_listado": "Quiero Mac",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   }
+  ],
+  "publicaciones": 1
  },
  {
   "id": "9f6e7c046d",
   "nombre": "River Technology Sas",
-  "tipo": "tercero_marketplace",
   "comercio_id": "falabella",
+  "tipo": "tercero_marketplace",
   "estado_validacion": "rechazado",
-  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
-  "verificado_en": null
+  "metodo_validacion": null,
+  "validado_en": null,
+  "motivo": "Vendedor externo de marketplace: excluido de ofertas aprobadas (política 3.2).",
+  "evidencias": [
+   {
+    "texto_listado": "River Technology Sas",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   },
+   {
+    "texto_listado": "River Technology Sas",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   },
+   {
+    "texto_listado": "River Technology Sas",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   },
+   {
+    "texto_listado": "River Technology Sas",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   },
+   {
+    "texto_listado": "River Technology Sas",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   }
+  ],
+  "publicaciones": 7
  },
  {
   "id": "aa03cfe2e4",
   "nombre": "S & N Bienes Y Servicios Sas",
-  "tipo": "tercero_marketplace",
   "comercio_id": "falabella",
+  "tipo": "tercero_marketplace",
   "estado_validacion": "rechazado",
-  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
-  "verificado_en": null
+  "metodo_validacion": null,
+  "validado_en": null,
+  "motivo": "Vendedor externo de marketplace: excluido de ofertas aprobadas (política 3.2).",
+  "evidencias": [
+   {
+    "texto_listado": "S & N Bienes Y Servicios Sas",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   },
+   {
+    "texto_listado": "S & N Bienes Y Servicios Sas",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   },
+   {
+    "texto_listado": "S & N Bienes Y Servicios Sas",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   }
+  ],
+  "publicaciones": 3
  },
  {
   "id": "a0fb7e3cb2",
   "nombre": "Saixxpress Comercial",
-  "tipo": "tercero_marketplace",
   "comercio_id": "falabella",
+  "tipo": "tercero_marketplace",
   "estado_validacion": "rechazado",
-  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
-  "verificado_en": null
+  "metodo_validacion": null,
+  "validado_en": null,
+  "motivo": "Vendedor externo de marketplace: excluido de ofertas aprobadas (política 3.2).",
+  "evidencias": [
+   {
+    "texto_listado": "Saixxpress Comercial",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   },
+   {
+    "texto_listado": "Saixxpress Comercial",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   },
+   {
+    "texto_listado": "Saixxpress Comercial",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   }
+  ],
+  "publicaciones": 3
  },
  {
   "id": "f2c2b5bfe4",
   "nombre": "Shopping Online Colombia Sas",
-  "tipo": "tercero_marketplace",
   "comercio_id": "falabella",
+  "tipo": "tercero_marketplace",
   "estado_validacion": "rechazado",
-  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
-  "verificado_en": null
+  "metodo_validacion": null,
+  "validado_en": null,
+  "motivo": "Vendedor externo de marketplace: excluido de ofertas aprobadas (política 3.2).",
+  "evidencias": [
+   {
+    "texto_listado": "Shopping Online Colombia Sas",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   }
+  ],
+  "publicaciones": 1
  },
  {
   "id": "bb74ac30a5",
   "nombre": "Smartbuy",
-  "tipo": "tercero_marketplace",
   "comercio_id": "falabella",
+  "tipo": "tercero_marketplace",
   "estado_validacion": "rechazado",
-  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
-  "verificado_en": null
+  "metodo_validacion": null,
+  "validado_en": null,
+  "motivo": "Vendedor externo de marketplace: excluido de ofertas aprobadas (política 3.2).",
+  "evidencias": [
+   {
+    "texto_listado": "Smartbuy",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   },
+   {
+    "texto_listado": "Smartbuy",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   }
+  ],
+  "publicaciones": 2
  },
  {
   "id": "1532607ce2",
   "nombre": "Smartphonetablet",
-  "tipo": "tercero_marketplace",
   "comercio_id": "falabella",
+  "tipo": "tercero_marketplace",
   "estado_validacion": "rechazado",
-  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
-  "verificado_en": null
+  "metodo_validacion": null,
+  "validado_en": null,
+  "motivo": "Vendedor externo de marketplace: excluido de ofertas aprobadas (política 3.2).",
+  "evidencias": [
+   {
+    "texto_listado": "Smartphonetablet",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   },
+   {
+    "texto_listado": "Smartphonetablet",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   },
+   {
+    "texto_listado": "Smartphonetablet",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   },
+   {
+    "texto_listado": "Smartphonetablet",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   },
+   {
+    "texto_listado": "Smartphonetablet",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   }
+  ],
+  "publicaciones": 8
  },
  {
   "id": "c1b517038b",
   "nombre": "Solutions 2 Go",
-  "tipo": "tercero_marketplace",
   "comercio_id": "falabella",
+  "tipo": "tercero_marketplace",
   "estado_validacion": "rechazado",
-  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
-  "verificado_en": null
+  "metodo_validacion": null,
+  "validado_en": null,
+  "motivo": "Vendedor externo de marketplace: excluido de ofertas aprobadas (política 3.2).",
+  "evidencias": [
+   {
+    "texto_listado": "Solutions 2 Go",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   },
+   {
+    "texto_listado": "Solutions 2 Go",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   }
+  ],
+  "publicaciones": 2
  },
  {
   "id": "a1f07c4c24",
   "nombre": "Star",
-  "tipo": "tercero_marketplace",
   "comercio_id": "falabella",
+  "tipo": "tercero_marketplace",
   "estado_validacion": "rechazado",
-  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
-  "verificado_en": null
+  "metodo_validacion": null,
+  "validado_en": null,
+  "motivo": "Vendedor externo de marketplace: excluido de ofertas aprobadas (política 3.2).",
+  "evidencias": [
+   {
+    "texto_listado": "Star",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   },
+   {
+    "texto_listado": "Star",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   },
+   {
+    "texto_listado": "Star",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   },
+   {
+    "texto_listado": "Star",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   },
+   {
+    "texto_listado": "Star",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   }
+  ],
+  "publicaciones": 8
  },
  {
   "id": "f5db7fde27",
   "nombre": "Strong Machine",
-  "tipo": "tercero_marketplace",
   "comercio_id": "falabella",
+  "tipo": "tercero_marketplace",
   "estado_validacion": "rechazado",
-  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
-  "verificado_en": null
+  "metodo_validacion": null,
+  "validado_en": null,
+  "motivo": "Vendedor externo de marketplace: excluido de ofertas aprobadas (política 3.2).",
+  "evidencias": [
+   {
+    "texto_listado": "Strong Machine",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   },
+   {
+    "texto_listado": "Strong Machine",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   }
+  ],
+  "publicaciones": 2
  },
  {
   "id": "974f15ba67",
   "nombre": "T & B Group",
-  "tipo": "tercero_marketplace",
   "comercio_id": "falabella",
+  "tipo": "tercero_marketplace",
   "estado_validacion": "rechazado",
-  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
-  "verificado_en": null
+  "metodo_validacion": null,
+  "validado_en": null,
+  "motivo": "Vendedor externo de marketplace: excluido de ofertas aprobadas (política 3.2).",
+  "evidencias": [
+   {
+    "texto_listado": "T & B Group",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   }
+  ],
+  "publicaciones": 1
  },
  {
   "id": "84b4856824",
   "nombre": "Tecnología Moderna",
-  "tipo": "tercero_marketplace",
   "comercio_id": "falabella",
+  "tipo": "tercero_marketplace",
   "estado_validacion": "rechazado",
-  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
-  "verificado_en": null
+  "metodo_validacion": null,
+  "validado_en": null,
+  "motivo": "Vendedor externo de marketplace: excluido de ofertas aprobadas (política 3.2).",
+  "evidencias": [
+   {
+    "texto_listado": "Tecnología Moderna",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   },
+   {
+    "texto_listado": "Tecnología Moderna",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   }
+  ],
+  "publicaciones": 2
  },
  {
   "id": "3b017280a4",
   "nombre": "Tecnomarket.ink",
-  "tipo": "tercero_marketplace",
   "comercio_id": "falabella",
+  "tipo": "tercero_marketplace",
   "estado_validacion": "rechazado",
-  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
-  "verificado_en": null
+  "metodo_validacion": null,
+  "validado_en": null,
+  "motivo": "Vendedor externo de marketplace: excluido de ofertas aprobadas (política 3.2).",
+  "evidencias": [
+   {
+    "texto_listado": "Tecnomarket.ink",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   },
+   {
+    "texto_listado": "Tecnomarket.ink",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   },
+   {
+    "texto_listado": "Tecnomarket.ink",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   }
+  ],
+  "publicaciones": 3
  },
  {
   "id": "78f6ed69c9",
   "nombre": "Tenbytech",
-  "tipo": "tercero_marketplace",
   "comercio_id": "falabella",
+  "tipo": "tercero_marketplace",
   "estado_validacion": "rechazado",
-  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
-  "verificado_en": null
+  "metodo_validacion": null,
+  "validado_en": null,
+  "motivo": "Vendedor externo de marketplace: excluido de ofertas aprobadas (política 3.2).",
+  "evidencias": [
+   {
+    "texto_listado": "Tenbytech",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   },
+   {
+    "texto_listado": "Tenbytech",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   }
+  ],
+  "publicaciones": 2
  },
  {
   "id": "b5069f0c3f",
   "nombre": "Trade Solutions Group",
-  "tipo": "tercero_marketplace",
   "comercio_id": "falabella",
+  "tipo": "tercero_marketplace",
   "estado_validacion": "rechazado",
-  "evidencia": "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2).",
-  "verificado_en": null
+  "metodo_validacion": null,
+  "validado_en": null,
+  "motivo": "Vendedor externo de marketplace: excluido de ofertas aprobadas (política 3.2).",
+  "evidencias": [
+   {
+    "texto_listado": "Trade Solutions Group",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   }
+  ],
+  "publicaciones": 1
  },
  {
   "id": "fbd1b2bbd3",
   "nombre": "Audio Lenovo",
-  "tipo": "tienda_oficial_fabricante",
   "comercio_id": "falabella",
+  "tipo": "tienda_oficial_fabricante",
   "estado_validacion": "pendiente",
-  "evidencia": "El nombre del vendedor coincide con la marca; confirmar que es la tienda oficial.",
-  "verificado_en": null
+  "metodo_validacion": null,
+  "validado_en": null,
+  "motivo": "Posible tienda oficial del fabricante: requiere validación humana de su oficialidad.",
+  "evidencias": [
+   {
+    "texto_listado": "Audio Lenovo",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   },
+   {
+    "texto_listado": "Audio Lenovo",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   },
+   {
+    "texto_listado": "Audio Lenovo",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   }
+  ],
+  "publicaciones": 3
  },
  {
   "id": "569f649858",
   "nombre": "Cubitt Colombia",
-  "tipo": "tienda_oficial_fabricante",
   "comercio_id": "falabella",
+  "tipo": "tienda_oficial_fabricante",
   "estado_validacion": "pendiente",
-  "evidencia": "El nombre del vendedor coincide con la marca; confirmar que es la tienda oficial.",
-  "verificado_en": null
+  "metodo_validacion": null,
+  "validado_en": null,
+  "motivo": "Posible tienda oficial del fabricante: requiere validación humana de su oficialidad.",
+  "evidencias": [
+   {
+    "texto_listado": "Cubitt Colombia",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   }
+  ],
+  "publicaciones": 1
+ },
+ {
+  "id": "9909cc36ab",
+  "nombre": "Distribuidor Oficial Colombia",
+  "comercio_id": "falabella",
+  "tipo": "tienda_oficial_fabricante",
+  "estado_validacion": "pendiente",
+  "metodo_validacion": null,
+  "validado_en": null,
+  "motivo": "Posible tienda oficial del fabricante: requiere validación humana de su oficialidad.",
+  "evidencias": [
+   {
+    "texto_listado": "Distribuidor Oficial Colombia",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   },
+   {
+    "texto_listado": "Distribuidor Oficial Colombia",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   }
+  ],
+  "publicaciones": 2
  },
  {
   "id": "6f5914b074",
   "nombre": "Electrolux Group",
-  "tipo": "tienda_oficial_fabricante",
   "comercio_id": "falabella",
+  "tipo": "tienda_oficial_fabricante",
   "estado_validacion": "pendiente",
-  "evidencia": "El nombre del vendedor coincide con la marca; confirmar que es la tienda oficial.",
-  "verificado_en": null
+  "metodo_validacion": null,
+  "validado_en": null,
+  "motivo": "Posible tienda oficial del fabricante: requiere validación humana de su oficialidad.",
+  "evidencias": [
+   {
+    "texto_listado": "Electrolux Group",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   },
+   {
+    "texto_listado": "Electrolux Group",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   }
+  ],
+  "publicaciones": 2
  },
  {
   "id": "0659a8b915",
   "nombre": "Lenovo Asia Pacific Limited Sucursal Colombia",
-  "tipo": "tienda_oficial_fabricante",
   "comercio_id": "falabella",
+  "tipo": "tienda_oficial_fabricante",
   "estado_validacion": "pendiente",
-  "evidencia": "El nombre del vendedor coincide con la marca; confirmar que es la tienda oficial.",
-  "verificado_en": null
+  "metodo_validacion": null,
+  "validado_en": null,
+  "motivo": "Posible tienda oficial del fabricante: requiere validación humana de su oficialidad.",
+  "evidencias": [
+   {
+    "texto_listado": "Lenovo Asia Pacific Limited Sucursal Colombia",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   },
+   {
+    "texto_listado": "Lenovo Asia Pacific Limited Sucursal Colombia",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   },
+   {
+    "texto_listado": "Lenovo Asia Pacific Limited Sucursal Colombia",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   }
+  ],
+  "publicaciones": 3
  },
  {
   "id": "bf5ba41ed5",
   "nombre": "Sony Colombia",
-  "tipo": "tienda_oficial_fabricante",
   "comercio_id": "falabella",
+  "tipo": "tienda_oficial_fabricante",
   "estado_validacion": "pendiente",
-  "evidencia": "El nombre del vendedor coincide con la marca; confirmar que es la tienda oficial.",
-  "verificado_en": null
+  "metodo_validacion": null,
+  "validado_en": null,
+  "motivo": "Posible tienda oficial del fabricante: requiere validación humana de su oficialidad.",
+  "evidencias": [
+   {
+    "texto_listado": "Sony Colombia",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   },
+   {
+    "texto_listado": "Sony Colombia",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   }
+  ],
+  "publicaciones": 2
  },
  {
   "id": "522b24508d",
   "nombre": "Tienda Oficial Dreame",
-  "tipo": "tienda_oficial_fabricante",
   "comercio_id": "falabella",
+  "tipo": "tienda_oficial_fabricante",
   "estado_validacion": "pendiente",
-  "evidencia": "El nombre del vendedor coincide con la marca; confirmar que es la tienda oficial.",
-  "verificado_en": null
+  "metodo_validacion": null,
+  "validado_en": null,
+  "motivo": "Posible tienda oficial del fabricante: requiere validación humana de su oficialidad.",
+  "evidencias": [
+   {
+    "texto_listado": "Tienda Oficial Dreame",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   },
+   {
+    "texto_listado": "Tienda Oficial Dreame",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   },
+   {
+    "texto_listado": "Tienda Oficial Dreame",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   },
+   {
+    "texto_listado": "Tienda Oficial Dreame",
+    "fuente": "lectura del listado de la tienda (respaldo crudo 2026-11-21)",
+    "fecha": "2026-11-21T22:40:00-05:00"
+   }
+  ],
+  "publicaciones": 4
  }
 ]

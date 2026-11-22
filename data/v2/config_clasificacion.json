@@ -1,0 +1,13 @@
+{
+  "estado": "estructura_aprobada_umbrales_no_activos",
+  "aprobado_en": "2026-11-22",
+  "nota": "Estructura conceptual aprobada por Ana. NO hay umbrales activos: mientras no exista historial suficiente por categoría, el sistema solo muestra la diferencia real en pesos y porcentaje, sin etiqueta.",
+  "etiquetas": ["gangazo", "buena_oferta", "precio_justo", "descuento_de_vitrina", "posible_error_de_precio", "sin_comparar"],
+  "textos": {
+    "gangazo": "GANGAZO", "buena_oferta": "BUENA OFERTA", "precio_justo": "PRECIO JUSTO",
+    "descuento_de_vitrina": "DESCUENTO DE VITRINA", "posible_error_de_precio": "POSIBLE ERROR DE PRECIO", "sin_comparar": "SIN COMPARAR"
+  },
+  "umbrales_activos": false,
+  "parametros": {"P1": null, "P2": null, "P3": null, "D": null, "dias_historial_minimo": null},
+  "por_categoria": {}
+}

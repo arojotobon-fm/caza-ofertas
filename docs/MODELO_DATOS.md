@@ -45,13 +45,25 @@ Una publicación solo podrá entrar al Radar cuando: vendedor `validado` de un t
 6. Solo se comparan precios de la **misma condición**. El precio de referencia de una publicación es la mediana del mejor precio de *cada otro* grupo empresarial.
 7. Las publicaciones con vendedor rechazado no entran en la comparación (quedan anotadas en `excluidas_por_vendedor`).
 
-## 4. Validación: decisión pendiente de aprobación
+## 4. Validación de vendedores (APROBADO 22 nov: opción B con controles) — `scripts/validacion.py`
 
-La migración **no valida nada automáticamente**. Para el vendedor guarda la evidencia del listado (por ejemplo, *"vendido por Falabella"*), pero lo deja en `pendiente`.
+| Caso | Resultado |
+|---|---|
+| El listado identifica expresamente al vendedor y su nombre coincide **exactamente** con el comercio donde está publicado (Falabella en Falabella, Éxito en Éxito) | `retailer` · **validado** automáticamente · método `automatica_coincidencia_exacta` · se guarda la evidencia (texto, fuente) y la fecha |
+| Nombre parecido pero no idéntico (p. ej. "Falabella Colombia SAS") | **pendiente** de revisión humana |
+| Alkosto sin vendedor identificado | **pendiente** |
+| Posible tienda oficial (nombre con "Oficial" o con la marca **del producto publicado**) | `tienda_oficial_fabricante` · **pendiente** hasta validación humana de su oficialidad |
+| Cualquier otro vendedor externo | `tercero_marketplace` · **rechazado** (se conserva, no se publica) |
 
-**Impacto:** con esta regla, el Radar v2 quedaría vacío hasta que alguien valide vendedores. Hay dos opciones:
-- **A (más estricta):** validación humana de cada vendedor. Sería un trabajo de una sola vez por vendedor, no por producto, porque son solo 2 retailers y 7 posibles tiendas oficiales.
-- **B:** validar automáticamente cuando el listado dice explícitamente que vende el propio comercio, y dejar en revisión humana solo las tiendas oficiales de fabricante.
+Cada publicación guarda su propia `validacion_vendedor` (evidencia completa) y su `elegibilidad_publica` (`elegible` y motivos).
+
+### Comparabilidad técnica ≠ elegibilidad pública
+- **Técnica** (`comparaciones.json → tecnica`): ¿es el mismo producto? Incluye publicaciones pendientes, marcadas en `pendientes`. Sirve para priorizar qué validar. Estado siempre `candidata`.
+- **Pública** (`comparaciones.json → publica`): solo publicaciones con vendedor y publicación **validados**. Es lo único que puede llegar al Radar (`apta_radar`).
+- **Referencias:** `agrupada_automatica` (la unió el comparador) es distinto de `verificada` (solo una persona, con `verificacion_humana: {por, fecha, notas}`). Hoy ninguna está verificada.
+
+### Clasificación (APROBADA la estructura, umbrales NO activos)
+`data/v2/config_clasificacion.json`: las 6 etiquetas aprobadas con sus textos; `umbrales_activos: false` y parámetros en `null`. Las filas públicas llevan la diferencia en pesos y en porcentaje con `etiqueta: null`.
 
 ## 5. Panel administrativo (propuesta, no implementado)
 

@@ -1,4 +1,6 @@
-# Metodología de clasificación · PROPUESTA (no aprobada, no se usa en producción)
+# Metodología de clasificación · ESTRUCTURA APROBADA (22 nov 2026) · UMBRALES NO ACTIVOS
+
+> Decisión: se aprueban las 6 etiquetas y la estructura conceptual. No se activa ningún porcentaje hasta tener historial suficiente por categoría. Mientras tanto se muestran las diferencias reales en pesos y porcentaje, sin etiqueta.
 
 La transferencia pide no inventar umbrales. Esta es la **estructura** que propongo. Los números son **parámetros por aprobar**; ninguno queda fijo en el código hasta que Ana los apruebe.
 

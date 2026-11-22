@@ -2,120 +2,250 @@
  {
   "producto_id": "prod-484d20f0c6",
   "condicion": "contado",
-  "comercios_independientes": 2,
-  "estado_comparacion": "limitada",
-  "filas": [
-   {
-    "publicacion_id": "d16308d44a7e",
-    "condicion": "contado",
-    "monto": 399500,
-    "referencia": 399900,
-    "diferencia": 400,
-    "ahorro_pct": 0.1,
-    "comercios_independientes": 2,
-    "estado_comparacion": "limitada"
-   },
-   {
-    "publicacion_id": "d75eaf7b54ec",
-    "condicion": "contado",
-    "monto": 399900,
-    "referencia": 399500,
-    "diferencia": -400,
-    "ahorro_pct": -0.1,
-    "comercios_independientes": 2,
-    "estado_comparacion": "limitada"
-   }
-  ],
+  "estado_referencia": "agrupada_automatica",
+  "tecnica": {
+   "estado": "candidata",
+   "comercios_independientes": 2,
+   "estado_comparacion": "limitada",
+   "filas": [
+    {
+     "publicacion_id": "d16308d44a7e",
+     "condicion": "contado",
+     "monto": 399500,
+     "referencia": 399900,
+     "diferencia": 400,
+     "ahorro_pct": 0.1,
+     "comercios_independientes": 2,
+     "estado_comparacion": "limitada"
+    },
+    {
+     "publicacion_id": "d75eaf7b54ec",
+     "condicion": "contado",
+     "monto": 399900,
+     "referencia": 399500,
+     "diferencia": -400,
+     "ahorro_pct": -0.1,
+     "comercios_independientes": 2,
+     "estado_comparacion": "limitada"
+    }
+   ],
+   "pendientes": []
+  },
+  "publica": {
+   "comercios_independientes": 2,
+   "estado_comparacion": "limitada",
+   "filas": [
+    {
+     "publicacion_id": "d16308d44a7e",
+     "condicion": "contado",
+     "monto": 399500,
+     "referencia": 399900,
+     "diferencia": 400,
+     "ahorro_pct": 0.1,
+     "comercios_independientes": 2,
+     "estado_comparacion": "limitada",
+     "etiqueta": null,
+     "apta_radar": true
+    },
+    {
+     "publicacion_id": "d75eaf7b54ec",
+     "condicion": "contado",
+     "monto": 399900,
+     "referencia": 399500,
+     "diferencia": -400,
+     "ahorro_pct": -0.1,
+     "comercios_independientes": 2,
+     "estado_comparacion": "limitada",
+     "etiqueta": null,
+     "apta_radar": true
+    }
+   ]
+  },
   "excluidas_por_vendedor": [],
   "calculado_en": "2026-11-21T22:40:00-05:00"
  },
  {
   "producto_id": "prod-089a5c5f68",
   "condicion": "contado",
-  "comercios_independientes": 2,
-  "estado_comparacion": "limitada",
-  "filas": [
-   {
-    "publicacion_id": "faef0ebc8f3c",
-    "condicion": "contado",
-    "monto": 249900,
-    "referencia": 247900,
-    "diferencia": -2000,
-    "ahorro_pct": -0.8,
-    "comercios_independientes": 2,
-    "estado_comparacion": "limitada"
-   },
-   {
-    "publicacion_id": "fb2268329025",
-    "condicion": "contado",
-    "monto": 247900,
-    "referencia": 249900,
-    "diferencia": 2000,
-    "ahorro_pct": 0.8,
-    "comercios_independientes": 2,
-    "estado_comparacion": "limitada"
-   }
-  ],
+  "estado_referencia": "agrupada_automatica",
+  "tecnica": {
+   "estado": "candidata",
+   "comercios_independientes": 2,
+   "estado_comparacion": "limitada",
+   "filas": [
+    {
+     "publicacion_id": "faef0ebc8f3c",
+     "condicion": "contado",
+     "monto": 249900,
+     "referencia": 247900,
+     "diferencia": -2000,
+     "ahorro_pct": -0.8,
+     "comercios_independientes": 2,
+     "estado_comparacion": "limitada"
+    },
+    {
+     "publicacion_id": "fb2268329025",
+     "condicion": "contado",
+     "monto": 247900,
+     "referencia": 249900,
+     "diferencia": 2000,
+     "ahorro_pct": 0.8,
+     "comercios_independientes": 2,
+     "estado_comparacion": "limitada"
+    }
+   ],
+   "pendientes": []
+  },
+  "publica": {
+   "comercios_independientes": 2,
+   "estado_comparacion": "limitada",
+   "filas": [
+    {
+     "publicacion_id": "faef0ebc8f3c",
+     "condicion": "contado",
+     "monto": 249900,
+     "referencia": 247900,
+     "diferencia": -2000,
+     "ahorro_pct": -0.8,
+     "comercios_independientes": 2,
+     "estado_comparacion": "limitada",
+     "etiqueta": null,
+     "apta_radar": true
+    },
+    {
+     "publicacion_id": "fb2268329025",
+     "condicion": "contado",
+     "monto": 247900,
+     "referencia": 249900,
+     "diferencia": 2000,
+     "ahorro_pct": 0.8,
+     "comercios_independientes": 2,
+     "estado_comparacion": "limitada",
+     "etiqueta": null,
+     "apta_radar": true
+    }
+   ]
+  },
   "excluidas_por_vendedor": [],
   "calculado_en": "2026-11-21T22:40:00-05:00"
  },
  {
   "producto_id": "prod-f4296792f7",
   "condicion": "contado",
-  "comercios_independientes": 2,
-  "estado_comparacion": "limitada",
-  "filas": [
-   {
-    "publicacion_id": "b99efdbc6f05",
-    "condicion": "contado",
-    "monto": 1849900,
-    "referencia": 1899900,
-    "diferencia": 50000,
-    "ahorro_pct": 2.6,
-    "comercios_independientes": 2,
-    "estado_comparacion": "limitada"
-   },
-   {
-    "publicacion_id": "d7c2b6e53183",
-    "condicion": "contado",
-    "monto": 1899900,
-    "referencia": 1849900,
-    "diferencia": -50000,
-    "ahorro_pct": -2.7,
-    "comercios_independientes": 2,
-    "estado_comparacion": "limitada"
-   }
-  ],
+  "estado_referencia": "agrupada_automatica",
+  "tecnica": {
+   "estado": "candidata",
+   "comercios_independientes": 2,
+   "estado_comparacion": "limitada",
+   "filas": [
+    {
+     "publicacion_id": "b99efdbc6f05",
+     "condicion": "contado",
+     "monto": 1849900,
+     "referencia": 1899900,
+     "diferencia": 50000,
+     "ahorro_pct": 2.6,
+     "comercios_independientes": 2,
+     "estado_comparacion": "limitada"
+    },
+    {
+     "publicacion_id": "d7c2b6e53183",
+     "condicion": "contado",
+     "monto": 1899900,
+     "referencia": 1849900,
+     "diferencia": -50000,
+     "ahorro_pct": -2.7,
+     "comercios_independientes": 2,
+     "estado_comparacion": "limitada"
+    }
+   ],
+   "pendientes": []
+  },
+  "publica": {
+   "comercios_independientes": 2,
+   "estado_comparacion": "limitada",
+   "filas": [
+    {
+     "publicacion_id": "b99efdbc6f05",
+     "condicion": "contado",
+     "monto": 1849900,
+     "referencia": 1899900,
+     "diferencia": 50000,
+     "ahorro_pct": 2.6,
+     "comercios_independientes": 2,
+     "estado_comparacion": "limitada",
+     "etiqueta": null,
+     "apta_radar": true
+    },
+    {
+     "publicacion_id": "d7c2b6e53183",
+     "condicion": "contado",
+     "monto": 1899900,
+     "referencia": 1849900,
+     "diferencia": -50000,
+     "ahorro_pct": -2.7,
+     "comercios_independientes": 2,
+     "estado_comparacion": "limitada",
+     "etiqueta": null,
+     "apta_radar": true
+    }
+   ]
+  },
   "excluidas_por_vendedor": [],
   "calculado_en": "2026-11-21T22:40:00-05:00"
  },
  {
   "producto_id": "prod-8bbb82a336",
   "condicion": "contado",
-  "comercios_independientes": 2,
-  "estado_comparacion": "limitada",
-  "filas": [
-   {
-    "publicacion_id": "082bbc06d87a",
-    "condicion": "contado",
-    "monto": 349900,
-    "referencia": 349900,
-    "diferencia": 0,
-    "ahorro_pct": 0.0,
-    "comercios_independientes": 2,
-    "estado_comparacion": "limitada"
-   },
-   {
-    "publicacion_id": "1cd419886f13",
-    "condicion": "contado",
-    "monto": 349900,
-    "referencia": 349900,
-    "diferencia": 0,
-    "ahorro_pct": 0.0,
-    "comercios_independientes": 2,
-    "estado_comparacion": "limitada"
-   }
-  ],
+  "estado_referencia": "agrupada_automatica",
+  "tecnica": {
+   "estado": "candidata",
+   "comercios_independientes": 2,
+   "estado_comparacion": "limitada",
+   "filas": [
+    {
+     "publicacion_id": "082bbc06d87a",
+     "condicion": "contado",
+     "monto": 349900,
+     "referencia": 349900,
+     "diferencia": 0,
+     "ahorro_pct": 0.0,
+     "comercios_independientes": 2,
+     "estado_comparacion": "limitada"
+    },
+    {
+     "publicacion_id": "1cd419886f13",
+     "condicion": "contado",
+     "monto": 349900,
+     "referencia": 349900,
+     "diferencia": 0,
+     "ahorro_pct": 0.0,
+     "comercios_independientes": 2,
+     "estado_comparacion": "limitada"
+    }
+   ],
+   "pendientes": [
+    "082bbc06d87a"
+   ]
+  },
+  "publica": {
+   "comercios_independientes": 1,
+   "estado_comparacion": "sin_comparacion",
+   "filas": [
+    {
+     "publicacion_id": "1cd419886f13",
+     "condicion": "contado",
+     "monto": 349900,
+     "referencia": null,
+     "diferencia": null,
+     "ahorro_pct": null,
+     "comercios_independientes": 1,
+     "estado_comparacion": "sin_comparacion",
+     "etiqueta": null,
+     "apta_radar": false
+    }
+   ]
+  },
   "excluidas_por_vendedor": [
    "9184787e66d1"
   ],
@@ -124,60 +254,98 @@
  {
   "producto_id": "prod-a048e24a23",
   "condicion": "contado",
-  "comercios_independientes": 2,
-  "estado_comparacion": "limitada",
-  "filas": [
-   {
-    "publicacion_id": "31dfd17ab117",
-    "condicion": "contado",
-    "monto": 549900,
-    "referencia": 549900,
-    "diferencia": 0,
-    "ahorro_pct": 0.0,
-    "comercios_independientes": 2,
-    "estado_comparacion": "limitada"
-   },
-   {
-    "publicacion_id": "92a3b7ebb096",
-    "condicion": "contado",
-    "monto": 549900,
-    "referencia": 549900,
-    "diferencia": 0,
-    "ahorro_pct": 0.0,
-    "comercios_independientes": 2,
-    "estado_comparacion": "limitada"
-   }
-  ],
+  "estado_referencia": "agrupada_automatica",
+  "tecnica": {
+   "estado": "candidata",
+   "comercios_independientes": 2,
+   "estado_comparacion": "limitada",
+   "filas": [
+    {
+     "publicacion_id": "31dfd17ab117",
+     "condicion": "contado",
+     "monto": 549900,
+     "referencia": 549900,
+     "diferencia": 0,
+     "ahorro_pct": 0.0,
+     "comercios_independientes": 2,
+     "estado_comparacion": "limitada"
+    },
+    {
+     "publicacion_id": "92a3b7ebb096",
+     "condicion": "contado",
+     "monto": 549900,
+     "referencia": 549900,
+     "diferencia": 0,
+     "ahorro_pct": 0.0,
+     "comercios_independientes": 2,
+     "estado_comparacion": "limitada"
+    }
+   ],
+   "pendientes": [
+    "31dfd17ab117",
+    "92a3b7ebb096"
+   ]
+  },
+  "publica": {
+   "comercios_independientes": 0,
+   "estado_comparacion": "sin_comparacion",
+   "filas": []
+  },
   "excluidas_por_vendedor": [],
   "calculado_en": "2026-11-21T22:40:00-05:00"
  },
  {
   "producto_id": "prod-3f043c72ac",
   "condicion": "contado",
-  "comercios_independientes": 2,
-  "estado_comparacion": "limitada",
-  "filas": [
-   {
-    "publicacion_id": "35dc7f5f0a2e",
-    "condicion": "contado",
-    "monto": 899900,
-    "referencia": 899900,
-    "diferencia": 0,
-    "ahorro_pct": 0.0,
-    "comercios_independientes": 2,
-    "estado_comparacion": "limitada"
-   },
-   {
-    "publicacion_id": "60a798db22ef",
-    "condicion": "contado",
-    "monto": 899900,
-    "referencia": 899900,
-    "diferencia": 0,
-    "ahorro_pct": 0.0,
-    "comercios_independientes": 2,
-    "estado_comparacion": "limitada"
-   }
-  ],
+  "estado_referencia": "agrupada_automatica",
+  "tecnica": {
+   "estado": "candidata",
+   "comercios_independientes": 2,
+   "estado_comparacion": "limitada",
+   "filas": [
+    {
+     "publicacion_id": "35dc7f5f0a2e",
+     "condicion": "contado",
+     "monto": 899900,
+     "referencia": 899900,
+     "diferencia": 0,
+     "ahorro_pct": 0.0,
+     "comercios_independientes": 2,
+     "estado_comparacion": "limitada"
+    },
+    {
+     "publicacion_id": "60a798db22ef",
+     "condicion": "contado",
+     "monto": 899900,
+     "referencia": 899900,
+     "diferencia": 0,
+     "ahorro_pct": 0.0,
+     "comercios_independientes": 2,
+     "estado_comparacion": "limitada"
+    }
+   ],
+   "pendientes": [
+    "60a798db22ef"
+   ]
+  },
+  "publica": {
+   "comercios_independientes": 1,
+   "estado_comparacion": "sin_comparacion",
+   "filas": [
+    {
+     "publicacion_id": "35dc7f5f0a2e",
+     "condicion": "contado",
+     "monto": 899900,
+     "referencia": null,
+     "diferencia": null,
+     "ahorro_pct": null,
+     "comercios_independientes": 1,
+     "estado_comparacion": "sin_comparacion",
+     "etiqueta": null,
+     "apta_radar": false
+    }
+   ]
+  },
   "excluidas_por_vendedor": [
    "d091b24d43fc",
    "efb7aa7c3063"
@@ -187,190 +355,352 @@
  {
   "producto_id": "prod-230e4c3646",
   "condicion": "contado",
-  "comercios_independientes": 3,
-  "estado_comparacion": "completa",
-  "filas": [
-   {
-    "publicacion_id": "3b6d70dfe671",
-    "condicion": "contado",
-    "monto": 1899900,
-    "referencia": 1899900.0,
-    "diferencia": 0.0,
-    "ahorro_pct": 0.0,
-    "comercios_independientes": 3,
-    "estado_comparacion": "completa"
-   },
-   {
-    "publicacion_id": "875904e7c7ef",
-    "condicion": "contado",
-    "monto": 1899900,
-    "referencia": 1899900.0,
-    "diferencia": 0.0,
-    "ahorro_pct": 0.0,
-    "comercios_independientes": 3,
-    "estado_comparacion": "completa"
-   },
-   {
-    "publicacion_id": "b3dccf749c25",
-    "condicion": "contado",
-    "monto": 1899900,
-    "referencia": 1899900.0,
-    "diferencia": 0.0,
-    "ahorro_pct": 0.0,
-    "comercios_independientes": 3,
-    "estado_comparacion": "completa"
-   }
-  ],
+  "estado_referencia": "agrupada_automatica",
+  "tecnica": {
+   "estado": "candidata",
+   "comercios_independientes": 3,
+   "estado_comparacion": "completa",
+   "filas": [
+    {
+     "publicacion_id": "3b6d70dfe671",
+     "condicion": "contado",
+     "monto": 1899900,
+     "referencia": 1899900.0,
+     "diferencia": 0.0,
+     "ahorro_pct": 0.0,
+     "comercios_independientes": 3,
+     "estado_comparacion": "completa"
+    },
+    {
+     "publicacion_id": "875904e7c7ef",
+     "condicion": "contado",
+     "monto": 1899900,
+     "referencia": 1899900.0,
+     "diferencia": 0.0,
+     "ahorro_pct": 0.0,
+     "comercios_independientes": 3,
+     "estado_comparacion": "completa"
+    },
+    {
+     "publicacion_id": "b3dccf749c25",
+     "condicion": "contado",
+     "monto": 1899900,
+     "referencia": 1899900.0,
+     "diferencia": 0.0,
+     "ahorro_pct": 0.0,
+     "comercios_independientes": 3,
+     "estado_comparacion": "completa"
+    }
+   ],
+   "pendientes": [
+    "875904e7c7ef"
+   ]
+  },
+  "publica": {
+   "comercios_independientes": 2,
+   "estado_comparacion": "limitada",
+   "filas": [
+    {
+     "publicacion_id": "3b6d70dfe671",
+     "condicion": "contado",
+     "monto": 1899900,
+     "referencia": 1899900,
+     "diferencia": 0,
+     "ahorro_pct": 0.0,
+     "comercios_independientes": 2,
+     "estado_comparacion": "limitada",
+     "etiqueta": null,
+     "apta_radar": true
+    },
+    {
+     "publicacion_id": "b3dccf749c25",
+     "condicion": "contado",
+     "monto": 1899900,
+     "referencia": 1899900,
+     "diferencia": 0,
+     "ahorro_pct": 0.0,
+     "comercios_independientes": 2,
+     "estado_comparacion": "limitada",
+     "etiqueta": null,
+     "apta_radar": true
+    }
+   ]
+  },
   "excluidas_por_vendedor": [],
   "calculado_en": "2026-11-21T22:40:00-05:00"
  },
  {
   "producto_id": "prod-b8b5f8c892",
   "condicion": "contado",
-  "comercios_independientes": 2,
-  "estado_comparacion": "limitada",
-  "filas": [
-   {
-    "publicacion_id": "3f1e662ec168",
-    "condicion": "contado",
-    "monto": 579900,
-    "referencia": 579900,
-    "diferencia": 0,
-    "ahorro_pct": 0.0,
-    "comercios_independientes": 2,
-    "estado_comparacion": "limitada"
-   },
-   {
-    "publicacion_id": "fb3c6a93d079",
-    "condicion": "contado",
-    "monto": 579900,
-    "referencia": 579900,
-    "diferencia": 0,
-    "ahorro_pct": 0.0,
-    "comercios_independientes": 2,
-    "estado_comparacion": "limitada"
-   }
-  ],
+  "estado_referencia": "agrupada_automatica",
+  "tecnica": {
+   "estado": "candidata",
+   "comercios_independientes": 2,
+   "estado_comparacion": "limitada",
+   "filas": [
+    {
+     "publicacion_id": "3f1e662ec168",
+     "condicion": "contado",
+     "monto": 579900,
+     "referencia": 579900,
+     "diferencia": 0,
+     "ahorro_pct": 0.0,
+     "comercios_independientes": 2,
+     "estado_comparacion": "limitada"
+    },
+    {
+     "publicacion_id": "fb3c6a93d079",
+     "condicion": "contado",
+     "monto": 579900,
+     "referencia": 579900,
+     "diferencia": 0,
+     "ahorro_pct": 0.0,
+     "comercios_independientes": 2,
+     "estado_comparacion": "limitada"
+    }
+   ],
+   "pendientes": [
+    "fb3c6a93d079"
+   ]
+  },
+  "publica": {
+   "comercios_independientes": 1,
+   "estado_comparacion": "sin_comparacion",
+   "filas": [
+    {
+     "publicacion_id": "3f1e662ec168",
+     "condicion": "contado",
+     "monto": 579900,
+     "referencia": null,
+     "diferencia": null,
+     "ahorro_pct": null,
+     "comercios_independientes": 1,
+     "estado_comparacion": "sin_comparacion",
+     "etiqueta": null,
+     "apta_radar": false
+    }
+   ]
+  },
   "excluidas_por_vendedor": [],
   "calculado_en": "2026-11-21T22:40:00-05:00"
  },
  {
   "producto_id": "prod-954db8b59b",
   "condicion": "contado",
-  "comercios_independientes": 2,
-  "estado_comparacion": "limitada",
-  "filas": [
-   {
-    "publicacion_id": "15394dbfad1a",
-    "condicion": "contado",
-    "monto": 2449900,
-    "referencia": 2449900,
-    "diferencia": 0,
-    "ahorro_pct": 0.0,
-    "comercios_independientes": 2,
-    "estado_comparacion": "limitada"
-   },
-   {
-    "publicacion_id": "176bd2f0ae32",
-    "condicion": "contado",
-    "monto": 2449900,
-    "referencia": 2449900,
-    "diferencia": 0,
-    "ahorro_pct": 0.0,
-    "comercios_independientes": 2,
-    "estado_comparacion": "limitada"
-   }
-  ],
+  "estado_referencia": "agrupada_automatica",
+  "tecnica": {
+   "estado": "candidata",
+   "comercios_independientes": 2,
+   "estado_comparacion": "limitada",
+   "filas": [
+    {
+     "publicacion_id": "15394dbfad1a",
+     "condicion": "contado",
+     "monto": 2449900,
+     "referencia": 2449900,
+     "diferencia": 0,
+     "ahorro_pct": 0.0,
+     "comercios_independientes": 2,
+     "estado_comparacion": "limitada"
+    },
+    {
+     "publicacion_id": "176bd2f0ae32",
+     "condicion": "contado",
+     "monto": 2449900,
+     "referencia": 2449900,
+     "diferencia": 0,
+     "ahorro_pct": 0.0,
+     "comercios_independientes": 2,
+     "estado_comparacion": "limitada"
+    }
+   ],
+   "pendientes": [
+    "15394dbfad1a"
+   ]
+  },
+  "publica": {
+   "comercios_independientes": 1,
+   "estado_comparacion": "sin_comparacion",
+   "filas": [
+    {
+     "publicacion_id": "176bd2f0ae32",
+     "condicion": "contado",
+     "monto": 2449900,
+     "referencia": null,
+     "diferencia": null,
+     "ahorro_pct": null,
+     "comercios_independientes": 1,
+     "estado_comparacion": "sin_comparacion",
+     "etiqueta": null,
+     "apta_radar": false
+    }
+   ]
+  },
   "excluidas_por_vendedor": [],
   "calculado_en": "2026-11-21T22:40:00-05:00"
  },
  {
   "producto_id": "prod-5bd0d6beb1",
   "condicion": "contado",
-  "comercios_independientes": 2,
-  "estado_comparacion": "limitada",
-  "filas": [
-   {
-    "publicacion_id": "434e45e219e7",
-    "condicion": "contado",
-    "monto": 1189900,
-    "referencia": 1189900,
-    "diferencia": 0,
-    "ahorro_pct": 0.0,
-    "comercios_independientes": 2,
-    "estado_comparacion": "limitada"
-   },
-   {
-    "publicacion_id": "f1df3d144728",
-    "condicion": "contado",
-    "monto": 1189900,
-    "referencia": 1189900,
-    "diferencia": 0,
-    "ahorro_pct": 0.0,
-    "comercios_independientes": 2,
-    "estado_comparacion": "limitada"
-   }
-  ],
+  "estado_referencia": "agrupada_automatica",
+  "tecnica": {
+   "estado": "candidata",
+   "comercios_independientes": 2,
+   "estado_comparacion": "limitada",
+   "filas": [
+    {
+     "publicacion_id": "434e45e219e7",
+     "condicion": "contado",
+     "monto": 1189900,
+     "referencia": 1189900,
+     "diferencia": 0,
+     "ahorro_pct": 0.0,
+     "comercios_independientes": 2,
+     "estado_comparacion": "limitada"
+    },
+    {
+     "publicacion_id": "f1df3d144728",
+     "condicion": "contado",
+     "monto": 1189900,
+     "referencia": 1189900,
+     "diferencia": 0,
+     "ahorro_pct": 0.0,
+     "comercios_independientes": 2,
+     "estado_comparacion": "limitada"
+    }
+   ],
+   "pendientes": [
+    "434e45e219e7"
+   ]
+  },
+  "publica": {
+   "comercios_independientes": 1,
+   "estado_comparacion": "sin_comparacion",
+   "filas": [
+    {
+     "publicacion_id": "f1df3d144728",
+     "condicion": "contado",
+     "monto": 1189900,
+     "referencia": null,
+     "diferencia": null,
+     "ahorro_pct": null,
+     "comercios_independientes": 1,
+     "estado_comparacion": "sin_comparacion",
+     "etiqueta": null,
+     "apta_radar": false
+    }
+   ]
+  },
   "excluidas_por_vendedor": [],
   "calculado_en": "2026-11-21T22:40:00-05:00"
  },
  {
   "producto_id": "prod-b8157a3972",
   "condicion": "contado",
-  "comercios_independientes": 2,
-  "estado_comparacion": "limitada",
-  "filas": [
-   {
-    "publicacion_id": "40cf89bc96d7",
-    "condicion": "contado",
-    "monto": 89900,
-    "referencia": 94900,
-    "diferencia": 5000,
-    "ahorro_pct": 5.3,
-    "comercios_independientes": 2,
-    "estado_comparacion": "limitada"
-   },
-   {
-    "publicacion_id": "e8eeb47c2667",
-    "condicion": "contado",
-    "monto": 94900,
-    "referencia": 89900,
-    "diferencia": -5000,
-    "ahorro_pct": -5.6,
-    "comercios_independientes": 2,
-    "estado_comparacion": "limitada"
-   }
-  ],
+  "estado_referencia": "agrupada_automatica",
+  "tecnica": {
+   "estado": "candidata",
+   "comercios_independientes": 2,
+   "estado_comparacion": "limitada",
+   "filas": [
+    {
+     "publicacion_id": "40cf89bc96d7",
+     "condicion": "contado",
+     "monto": 89900,
+     "referencia": 94900,
+     "diferencia": 5000,
+     "ahorro_pct": 5.3,
+     "comercios_independientes": 2,
+     "estado_comparacion": "limitada"
+    },
+    {
+     "publicacion_id": "e8eeb47c2667",
+     "condicion": "contado",
+     "monto": 94900,
+     "referencia": 89900,
+     "diferencia": -5000,
+     "ahorro_pct": -5.6,
+     "comercios_independientes": 2,
+     "estado_comparacion": "limitada"
+    }
+   ],
+   "pendientes": [
+    "40cf89bc96d7"
+   ]
+  },
+  "publica": {
+   "comercios_independientes": 1,
+   "estado_comparacion": "sin_comparacion",
+   "filas": [
+    {
+     "publicacion_id": "e8eeb47c2667",
+     "condicion": "contado",
+     "monto": 94900,
+     "referencia": null,
+     "diferencia": null,
+     "ahorro_pct": null,
+     "comercios_independientes": 1,
+     "estado_comparacion": "sin_comparacion",
+     "etiqueta": null,
+     "apta_radar": false
+    }
+   ]
+  },
   "excluidas_por_vendedor": [],
   "calculado_en": "2026-11-21T22:40:00-05:00"
  },
  {
   "producto_id": "prod-6d221509b5",
   "condicion": "contado",
-  "comercios_independientes": 2,
-  "estado_comparacion": "limitada",
-  "filas": [
-   {
-    "publicacion_id": "009a4ec10393",
-    "condicion": "contado",
-    "monto": 799900,
-    "referencia": 829900,
-    "diferencia": 30000,
-    "ahorro_pct": 3.6,
-    "comercios_independientes": 2,
-    "estado_comparacion": "limitada"
-   },
-   {
-    "publicacion_id": "b3cb4c489a84",
-    "condicion": "contado",
-    "monto": 829900,
-    "referencia": 799900,
-    "diferencia": -30000,
-    "ahorro_pct": -3.8,
-    "comercios_independientes": 2,
-    "estado_comparacion": "limitada"
-   }
-  ],
+  "estado_referencia": "agrupada_automatica",
+  "tecnica": {
+   "estado": "candidata",
+   "comercios_independientes": 2,
+   "estado_comparacion": "limitada",
+   "filas": [
+    {
+     "publicacion_id": "009a4ec10393",
+     "condicion": "contado",
+     "monto": 799900,
+     "referencia": 829900,
+     "diferencia": 30000,
+     "ahorro_pct": 3.6,
+     "comercios_independientes": 2,
+     "estado_comparacion": "limitada"
+    },
+    {
+     "publicacion_id": "b3cb4c489a84",
+     "condicion": "contado",
+     "monto": 829900,
+     "referencia": 799900,
+     "diferencia": -30000,
+     "ahorro_pct": -3.8,
+     "comercios_independientes": 2,
+     "estado_comparacion": "limitada"
+    }
+   ],
+   "pendientes": [
+    "009a4ec10393"
+   ]
+  },
+  "publica": {
+   "comercios_independientes": 1,
+   "estado_comparacion": "sin_comparacion",
+   "filas": [
+    {
+     "publicacion_id": "b3cb4c489a84",
+     "condicion": "contado",
+     "monto": 829900,
+     "referencia": null,
+     "diferencia": null,
+     "ahorro_pct": null,
+     "comercios_independientes": 1,
+     "estado_comparacion": "sin_comparacion",
+     "etiqueta": null,
+     "apta_radar": false
+    }
+   ]
+  },
   "excluidas_por_vendedor": [],
   "calculado_en": "2026-11-21T22:40:00-05:00"
  }

@@ -3,7 +3,10 @@
 - No modifica ni borra data/ofertas.json ni data/historial.json (la página publicada sigue usándolos).
 - Usa los respaldos crudos de la lectura del 21 nov para recuperar el vendedor y los precios por condición.
 - Conserva los identificadores v1: los reportes de la comunidad están ligados a ellos.
-- Nada queda 'validado' automáticamente: la validación es una decisión humana (docs/MODELO_DATOS.md §4).
+- Validación de vendedores según la opción B aprobada (scripts/validacion.py): solo coincidencia EXACTA
+  entre el vendedor del listado y el comercio valida automáticamente; se guarda evidencia y fecha.
+- Comparabilidad técnica (mismo producto) y elegibilidad pública (se puede mostrar) se calculan por separado.
+- Clasificación: estructura aprobada, umbrales NO activos (data/v2/config_clasificacion.json).
 
 Uso:  python3 scripts/migrar_v1_a_v2.py
 """
@@ -17,6 +20,7 @@ from collections import Counter, defaultdict
 sys.path.insert(0, os.path.dirname(__file__))
 from normalizar import canonical_brand, model_codes, norm_text, specs  # noqa: E402
 from comparador import agrupar, comparar_precios, comercios_independientes  # noqa: E402
+from validacion import clasificar_vendedor, elegibilidad_publica, estado_publicacion  # noqa: E402
 
 ROOT = os.path.join(os.path.dirname(__file__), "..")
 P = lambda *a: os.path.join(ROOT, *a)  # noqa: E731
@@ -24,7 +28,7 @@ RESP = P("data", "respaldo", "2026-11-21")
 OUT = P("data", "v2")
 ORIGEN = "v1-2026-11-21"
 COMERCIO_ID = {"Falabella": "falabella", "Alkosto": "alkosto", "Éxito": "exito"}
-RETAILER_NAMES = {"falabella": {"FALABELLA"}, "exito": {"EXITO"}, "alkosto": {"ALKOSTO"}}
+FUENTE_CRUDA = "lectura del listado de la tienda (respaldo crudo 2026-11-21)"
 
 
 def h(*parts, n=12):
@@ -71,28 +75,20 @@ def main():
 
     vendedores, publicaciones, precios, mapa_ids = {}, [], [], {}
 
-    def vendedor_para(comercio_id, nombre_vendedor, marca):
-        """Clasifica al vendedor según la evidencia del listado. Nunca valida por sí solo."""
-        if not nombre_vendedor:
-            vid = f"desconocido@{comercio_id}"
-            vendedores.setdefault(vid, {"id": vid, "nombre": None, "tipo": None, "comercio_id": comercio_id,
-                                        "estado_validacion": "pendiente",
-                                        "evidencia": "El listado no informaba quién vende; hay que revisarlo en la página del producto.",
-                                        "verificado_en": None})
-            return vid
-        n = norm_text(nombre_vendedor)
-        vid = h(comercio_id, n, n=10)
-        if vid in vendedores:
-            return vid
-        if n in RETAILER_NAMES.get(comercio_id, set()):
-            tipo, estado, ev = "retailer", "pendiente", "El listado dice 'vendido por' el propio comercio. Falta confirmación humana."
-        elif marca and (n.startswith(marca) or marca in n.split()):
-            tipo, estado, ev = "tienda_oficial_fabricante", "pendiente", "El nombre del vendedor coincide con la marca; confirmar que es la tienda oficial."
-        else:
-            tipo, estado, ev = "tercero_marketplace", "rechazado", "Vendedor externo según el listado. Excluido de ofertas aprobadas (política 3.2)."
-        vendedores[vid] = {"id": vid, "nombre": nombre_vendedor, "tipo": tipo, "comercio_id": comercio_id,
-                           "estado_validacion": estado, "evidencia": ev, "verificado_en": None}
-        return vid
+    def vendedor_para(comercio_id, nombre_vendedor, marca, fecha):
+        """Valida al vendedor de una publicación (opción B) y lo registra como entidad."""
+        val = clasificar_vendedor(comercio_id, nombre_vendedor, marca, fecha, FUENTE_CRUDA)
+        vid = f"desconocido@{comercio_id}" if not nombre_vendedor else h(comercio_id, norm_text(nombre_vendedor), n=10)
+        if vid not in vendedores:
+            vendedores[vid] = {"id": vid, "nombre": nombre_vendedor or None, "comercio_id": comercio_id,
+                               "tipo": val["tipo"], "estado_validacion": val["estado_validacion"],
+                               "metodo_validacion": val["metodo"], "validado_en": val["validado_en"],
+                               "motivo": val["motivo"], "evidencias": []}
+        v = vendedores[vid]
+        if len(v["evidencias"]) < 5:   # muestra de evidencias; la evidencia completa queda en cada publicación
+            v["evidencias"].append(val["evidencia"])
+        v["publicaciones"] = v.get("publicaciones", 0) + 1
+        return vid, val
 
     norm_pubs = []
     for r in base:
@@ -100,21 +96,19 @@ def main():
         ev = crudo.get(r["link"], {})
         marca = canonical_brand(r.get("marca"), r["nombre"])
         sp = specs(r["nombre"])
-        vid = vendedor_para(cid, ev.get("vendedor"), marca)
-        v = vendedores[vid]
-        if v["tipo"] == "tercero_marketplace":
-            estado, motivo = "rechazado", "vendedor externo"
-        elif sp.get("condicion_producto") == "no_nuevo":
-            estado, motivo = "rechazado", "producto no nuevo"
-        else:
-            estado, motivo = "pendiente", "vendedor sin confirmar" if v["estado_validacion"] == "pendiente" else "pendiente de revisión"
-        publicaciones.append({
+        vid, val = vendedor_para(cid, ev.get("vendedor"), marca, r["verificado"])
+        estado, motivo = estado_publicacion(val, sp.get("condicion_producto"))
+        pub_rec = {
             "id": r["id"], "producto_id": None, "comercio_id": cid, "vendedor_id": vid,
             "titulo": r["nombre"], "marca_publicada": r.get("marca") or None, "url": r["link"], "imagen": r.get("img"),
             "categoria": r.get("categoria"), "subcategoria": r.get("sub"),
             "disponibilidad": "desconocida", "estado_validacion": estado, "motivo_estado": motivo,
-            "verificado_en": r["verificado"], "origen": ORIGEN,
-        })
+            "condicion_producto": sp.get("condicion_producto", "nuevo"),
+            "validacion_vendedor": val, "verificado_en": r["verificado"], "origen": ORIGEN,
+        }
+        ok, motivos = elegibilidad_publica(pub_rec, val)
+        pub_rec["elegibilidad_publica"] = {"elegible": ok, "motivos": motivos}
+        publicaciones.append(pub_rec)
         mapa_ids[r["id"]] = {"publicacion_id": r["id"], "condicion": "contado"}
         precios.append({"id": h(r["id"], "contado"), "publicacion_id": r["id"], "condicion": "contado", "detalle": None,
                         "monto": r["precio"], "precio_anunciado_antes": r.get("precio_antes"),
@@ -157,26 +151,41 @@ def main():
             "categoria": pub_idx[ids[0]]["categoria"], "subcategoria": pub_idx[ids[0]]["subcategoria"],
             "codigos_modelo": codes, "especificaciones": merged, "fuente_especificaciones": "extraídas del nombre publicado",
             "estado_referencia": "agrupada_automatica" if len(ids) > 1 else "sin_verificar",
+            "metodo_agrupacion": "comparador v1: marca + código exacto + especificaciones sin conflicto" if len(ids) > 1 else None,
+            "verificacion_humana": None,   # {por, fecha, notas}: solo una persona puede pasarla a 'verificada'
             "publicaciones": ids,
         })
         for i in ids:
             pub_idx[i]["producto_id"] = pid
 
-    # ---- comparaciones de contado, solo con publicaciones no rechazadas ----
+    # ---- comparaciones de contado ----
+    # técnica: todas las publicaciones NO rechazadas (incluye pendientes) -> sirve para revisar y priorizar validaciones.
+    # pública: solo publicaciones elegibles -> lo único que puede llegar al Radar.
     precio_contado = {p["publicacion_id"]: p["monto"] for p in precios if p["condicion"] == "contado"}
     comparaciones = []
     for prod in productos:
-        vivos = [i for i in prod["publicaciones"] if pub_idx[i]["estado_validacion"] != "rechazado"]
-        if len({pub_idx[i]["comercio_id"] for i in vivos}) < 2:
+        tecnicas = [i for i in prod["publicaciones"] if pub_idx[i]["estado_validacion"] != "rechazado"]
+        if len({pub_idx[i]["comercio_id"] for i in tecnicas}) < 2:
             continue
-        ofertas = [{"publicacion_id": i, "comercio_id": pub_idx[i]["comercio_id"], "condicion": "contado",
-                    "monto": precio_contado[i]} for i in vivos]
-        filas = comparar_precios(ofertas, comercios, "contado")
-        comparaciones.append({"producto_id": prod["id"], "condicion": "contado",
-                              "comercios_independientes": comercios_independientes({pub_idx[i]["comercio_id"] for i in vivos}, comercios),
-                              "estado_comparacion": filas[0]["estado_comparacion"], "filas": filas,
-                              "excluidas_por_vendedor": [i for i in prod["publicaciones"] if i not in vivos],
-                              "calculado_en": v1["actualizado"]})
+        publicas = [i for i in tecnicas if pub_idx[i]["elegibilidad_publica"]["elegible"]]
+        mk = lambda ids: [{"publicacion_id": i, "comercio_id": pub_idx[i]["comercio_id"], "condicion": "contado",
+                           "monto": precio_contado[i]} for i in ids]
+        filas_t = comparar_precios(mk(tecnicas), comercios, "contado")
+        filas_p = comparar_precios(mk(publicas), comercios, "contado") if publicas else []
+        estado_p = filas_p[0]["estado_comparacion"] if filas_p else "sin_comparacion"
+        for f in filas_p:
+            f["etiqueta"] = None          # umbrales no aprobados: se muestran diferencias, sin etiqueta
+            f["apta_radar"] = f["estado_comparacion"] in ("completa", "limitada")
+        comparaciones.append({
+            "producto_id": prod["id"], "condicion": "contado",
+            "estado_referencia": prod["estado_referencia"],
+            "tecnica": {"estado": "candidata", "comercios_independientes": comercios_independientes({pub_idx[i]["comercio_id"] for i in tecnicas}, comercios),
+                        "estado_comparacion": filas_t[0]["estado_comparacion"], "filas": filas_t,
+                        "pendientes": [i for i in tecnicas if not pub_idx[i]["elegibilidad_publica"]["elegible"]]},
+            "publica": {"comercios_independientes": filas_p[0]["comercios_independientes"] if filas_p else len({pub_idx[i]["comercio_id"] for i in publicas}),
+                        "estado_comparacion": estado_p, "filas": filas_p},
+            "excluidas_por_vendedor": [i for i in prod["publicaciones"] if i not in tecnicas],
+            "calculado_en": v1["actualizado"]})
 
     # ---- historial: observaciones por publicación y condición ----
     historial = []
@@ -201,6 +210,10 @@ def main():
         pub = pub_idx[m["publicacion_id"]]
         if pub["url"] != r["link"]:
             errores.append(f"enlace distinto: {r['id']}")
+    for c in comparaciones:
+        for f in c["publica"]["filas"]:
+            if not pub_idx[f["publicacion_id"]]["elegibilidad_publica"]["elegible"]:
+                errores.append(f"publicación no elegible en comparación pública: {f['publicacion_id']}")
     if len(historial) != sum(len(v["p"]) for v in hist_v1.values()):
         errores.append("historial incompleto")
 
@@ -224,7 +237,13 @@ def main():
         "publicaciones_por_comercio_y_estado": {f"{c}/{e}": n for (c, e), n in Counter((p["comercio_id"], p["estado_validacion"]) for p in publicaciones).items()},
         "vendedores_por_tipo": dict(vt), "productos_referencia": len(productos),
         "productos_en_varias_tiendas": sum(1 for p in productos if len({pub_idx[i]["comercio_id"] for i in p["publicaciones"]}) > 1),
-        "comparaciones_contado": dict(Counter(c["estado_comparacion"] for c in comparaciones)),
+        "vendedores_por_estado": dict(Counter(v["estado_validacion"] for v in vendedores.values())),
+        "vendedores_validados_automaticamente": sorted(f"{v['nombre']}@{v['comercio_id']}" for v in vendedores.values() if v["metodo_validacion"]),
+        "publicaciones_elegibles_publico": sum(1 for p in publicaciones if p["elegibilidad_publica"]["elegible"]),
+        "referencias_por_estado": dict(Counter(p["estado_referencia"] for p in productos)),
+        "comparaciones_tecnicas": dict(Counter(c["tecnica"]["estado_comparacion"] for c in comparaciones)),
+        "comparaciones_publicas": dict(Counter(c["publica"]["estado_comparacion"] for c in comparaciones)),
+        "filas_aptas_radar": sum(1 for c in comparaciones for f in c["publica"]["filas"] if f.get("apta_radar")),
         "pares_candidatos_para_revision": len(cand), "observaciones_historial": len(historial),
         "errores_verificacion": errores,
     }
