@@ -6,6 +6,8 @@ def argumentos():
     ap.add_argument("--fecha", required=True, help="Fecha y hora real de la lectura, AAAA-MM-DDTHH:MM:SS-05:00")
     ap.add_argument("--salida", required=True, help="Directorio aislado de salida")
     ap.add_argument("--historial-base")
+    ap.add_argument("--chequeo", action="append", default=[],
+                    help="Revisión de fichas (data/v2/chequeos/*.json). Solo valida al vendedor si es del mismo día de la lectura.")
     return ap.parse_args()
 
 ARGS = argumentos()
@@ -56,6 +58,23 @@ def human_slug(url):
     slug = url.strip("/").split("/")[0]
     return slug.replace("-", " ").capitalize()
 
+
+# ---- vendedor validado por evidencia del canal (Corbeta: Alkosto/Ktronix/Alkomprar) ----
+# Solo si: el canal está validado y vigente en identidades_corporativas.json, la ficha se revisó el MISMO día de la
+# lectura de precios y la revisión no encontró otro vendedor, banner, sección especial ni error.
+TIENDA_COMERCIO = {"Alkosto": "alkosto", "Ktronix": "ktronix", "Alkomprar": "alkomprar"}
+FICHAS_OK = {}
+_ident = json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "data", "v2", "identidades_corporativas.json"), encoding="utf-8"))
+_canales = {c["comercio_id"]: c for i in _ident["identidades"] for c in i.get("canales", [])}
+for _ruta in ARGS.chequeo:
+    _c = json.load(open(_ruta, encoding="utf-8"))
+    _canal = _canales.get(_c["comercio_id"], {})
+    if _c["fecha"] != NOW[:10] or _canal.get("estado") != "validado" or (_canal.get("revalidar_antes_de") or "") < NOW[:10]:
+        continue
+    for _p, _f in _c["fichas"].items():
+        if (_f.get("status") == 200 and _f.get("has_main") and not _f.get("banner_txt") and not _f.get("banner_img")
+                and not _f.get("seller_text") and not _f.get("special") and not _f.get("error")):
+            FICHAS_OK[(_c["comercio_id"], _p)] = _c["fecha"]
 
 items = []
 # Falabella: [q, name, brand, price, antes, cmr, path, img, seller(1=Falabella), rating, reviews]
@@ -144,12 +163,24 @@ def same_model(a, b):
             if min(len(x), len(y)) >= 5 and (x.startswith(y) or y.startswith(x)) and abs(len(x)-len(y)) <= 3: return True
     return False
 
+# Regla aprobada (comparador de la etapa 1): solo se compara con otra tienda si es el MISMO producto exacto
+# (misma marca canónica + mismo código de modelo + especificaciones sin conflicto). Las coincidencias por prefijo
+# quedan como "candidatas" para revisión humana y no se muestran como comparación.
+import sys as _sys
+_sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from normalizar import canonical_brand as _cb, model_codes as _mc, specs as _sp  # noqa: E402
+from comparador import evaluar_par as _evaluar_par  # noqa: E402
+def _norm_item(x):
+    return {"marca": _cb(x.get("marca"), x["nombre"]), "codigos": _mc(x["nombre"]), "specs": _sp(x["nombre"]), "categoria": x.get("categoria")}
+def exacta(a, b):
+    return _evaluar_par(_norm_item(a), _norm_item(b))[0] == "exacta"
+
 # cross-store matching by model code
 for it in items:
     others = []
     for o in items:
         if o is it or o["tienda"] == it["tienda"]: continue
-        if o["categoria"] == it["categoria"] and same_model(it["modelos"], o["modelos"]) and same_brand(it, o):
+        if o["categoria"] == it["categoria"] and same_model(it["modelos"], o["modelos"]) and same_brand(it, o) and exacta(it, o):
             others.append(o)
     # keep one (cheapest) per other store
     best = {}
@@ -173,6 +204,9 @@ for it in items:
     rec = dict(nombre=it["nombre"], marca=it["marca"], categoria=it["categoria"], sub=SUB.get(it["q"], "Otros"), tienda=it["tienda"],
                precio=it["precio"], precio_antes=it["precio_antes"], link=it["link"], img=it["img"],
                verificado=NOW, top=False)
+    _cid = TIENDA_COMERCIO.get(it["tienda"])
+    if _cid and FICHAS_OK.get((_cid, it["link"].replace("https://www.alkosto.com", ""))):
+        rec["vendedor_validado_en"] = FICHAS_OK[(_cid, it["link"].replace("https://www.alkosto.com", ""))]
     notes = []
     if it["vendedor"] and it["vendedor"] not in ("Falabella", "Alkosto", "Exito", "Éxito"):
         notes.append("Vendedor externo: " + it["vendedor"] + ".")
