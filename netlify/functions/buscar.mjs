@@ -29,8 +29,9 @@ export default async (req) => {
   const palabras = normTexto(q).split(" ").filter(w => w.length > 1);
   const relevancia = p => palabras.filter(w => normTexto(p.nombre).includes(w)).length / (palabras.length || 1);
   const productos = compararOfertas(ofertas)
-    .filter(p => relevancia(p) >= 0.5)
-    .sort((a, b) => (b.n - a.n) || (relevancia(b) - relevancia(a)))
+    // Primero lo que más se parece a lo que escribió la persona; luego lo que está en más tiendas.
+    .filter(p => relevancia(p) >= 0.6)
+    .sort((a, b) => (relevancia(b) - relevancia(a)) || (b.n - a.n))
     .slice(0, 12);
   return json({ ok: true, q, consultado: new Date().toISOString(),
     tiendas: resultados.map(r => ({ tienda: r.tienda, ok: r.ok, motivo: r.motivo || null, n: (r.ofertas || []).length })), productos });

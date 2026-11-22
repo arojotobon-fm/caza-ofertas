@@ -86,3 +86,23 @@ test("no une productos con códigos de barras distintos aunque Falabella (sin c�
   const grupos = compararOfertas([...extra, ...otra, ...puente]);
   assert.ok(grupos.every(g => new Set(g.tiendas.map(t => t.ean).filter(Boolean)).size <= 1));
 });
+
+test("error real del 22 nov: 'Slim3' no es código de modelo; Intel 14\" ≠ Ryzen 15,6\"", () => {
+  const f = leerFalabella("Falabella", html([fala("Portátil IdeaPad Slim 3 | Intel Core 5 | 8GB de RAM | 512GB SSD de Almacenamiento | Windows 11 | Pantalla 14 pulgadas | IPS3 | Computador Portátil", "LENOVO",
+    "https://www.falabella.com.co/falabella-co/product/73637637/port-14-ip-slim3-core5-8gb-512gb", "FALABELLA_COLOMBIA", "Falabella", [["internetPrice", "1.899.900"]])]));
+  const o = leerVtex("Olímpica", "https://www.olimpica.com", [vtex("Computador Portátil Lenovo Slim 3 15,6 Pulgadas AMD Ryzen 5 512 GB SSD 8 GB RAM", "Lenovo",
+    "portatil-lenovo-slim3-ryzen-5-8g-512g-15-pulgadas", 2099400, null, "1", "Olimpica", "196804839998")]);
+  const g = compararOfertas([...f, ...o]);
+  assert.equal(g.length, 2);
+  assert.ok(g.every(x => x.veredicto === "una_tienda"));
+  assert.ok(!codigosModelo("port 14 ip slim3 core5").has("SLIM3"));
+});
+
+test("mismo código de barras en Olímpica y Jumbo (15IRH10) sigue saliendo como más barato", () => {
+  const o = leerVtex("Olímpica", "https://www.olimpica.com", [vtex("Computador Portátil Lenovo IdeaPad Slim 3 Intel Core I5 512 GB SSD 16 GB RAM 11S Touch Azul 15Irh10", "Lenovo", "a", 2219630, null, "1", "Olimpica", "199275960147")]);
+  const j = leerVtex("Jumbo", "https://www.jumbocolombia.com", [vtex("Computador Portátil  IdeaPad Slim 3 Tactil 15IRH10 - Intel Core I5 - 13420H - RAM 16GB - 512GB SSD - 15,6\" - Azul Cosmico", "LENOVO", "b", 2618000, null, "1", "Cencosud - Colombia", "199275960147")]);
+  const [p] = compararOfertas([...o, ...j]);
+  assert.equal(p.n, 2);
+  assert.equal(p.veredicto, "mas_barato");
+  assert.equal(p.ganador, "Olímpica");
+});

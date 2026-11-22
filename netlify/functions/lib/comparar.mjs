@@ -25,7 +25,7 @@ export function marcaCanonica(campo, nombre) {
 }
 
 const UNIDAD = /^\d+(\.\d+)?(L|LT|LTS|LITROS|GB|TB|W|WATTS|MAH|HZ|MP|PULGADAS|PULG|CM|MM|ML|OZ|V|K|P|G|PCS|PZ|PIEZAS|X\d+)$/;
-const GENERICO = /^(RTX|GTX|RAM|SSD|HDD|DDR|LPDDR|USB|IP|BT|WIFI|HDMI|QLED|OLED|UHD|FHD|LED|CORE|RYZEN|SERIE|SERIES|GEN|ANC|TWS|NFC|AMOLED)\d*[A-Z]?$/;
+const GENERICO = /^(RTX|GTX|RAM|SSD|HDD|DDR|LPDDR|USB|IP|IPS|BT|WIFI|HDMI|QLED|OLED|UHD|FHD|LED|CORE|RYZEN|SERIE|SERIES|GEN|ANC|TWS|NFC|AMOLED|SLIM|PRO|MAX|PLUS|ULTRA|LITE|MINI|AIR|EDGE|NOTE|FE|BUDS|WATCH|PS|SWITCH)\d*[A-Z]?$/;
 const CPU = /^(I[3579]\d{3,5}[A-Z]*|\d{3,5}(U|H|HS|HX|K|KF|G|P)|N\d{3,4}|R[3579]\d{4}[A-Z]*|M[1-4](PRO|MAX)?|SNAPDRAGON\d*|HELIO[A-Z]?\d+|DIMENSITY\d+)$/;
 
 export function codigosModelo(nombre) {
@@ -42,7 +42,11 @@ export function codigosModelo(nombre) {
 
 export function especificaciones(nombre) {
   const n = normTexto(nombre), sp = {};
-  let m = n.match(/(\d{2,3})\s*("|''|PULGADAS|PULG\b|IN\b)/); if (m) sp.pantalla_pulgadas = +m[1];
+  let m = n.match(/(\d{2,3})(?:[.,](\d))?\s*("|''|PULGADAS|PULG\b|IN\b)/); if (m) sp.pantalla_pulgadas = parseFloat(m[1] + "." + (m[2] || 0));
+  // Procesador: Intel y AMD nunca son el mismo producto.
+  if (/\bINTEL\b|\bCORE\s*(I[3579]|[3579]|ULTRA)\b|\bCELERON\b|\bPENTIUM\b/.test(n)) sp.cpu = "INTEL";
+  else if (/\bRYZEN\b|\bAMD\b|\bATHLON\b/.test(n)) sp.cpu = "AMD";
+  else if (/\bSNAPDRAGON\b/.test(n)) sp.cpu = "QUALCOMM";
   m = n.match(/(\d{1,2})\s*GB\s*(DE\s*)?RAM|RAM\s*(DE\s*)?(\d{1,2})\s*GB/); if (m) sp.ram_gb = +(m[1] || m[4]);
   m = n.match(/(\d+(?:[.,]\d+)?)\s*TB\b/);
   if (m) sp.almacenamiento_gb = Math.round(parseFloat(m[1].replace(",", ".")) * 1024);
@@ -52,7 +56,7 @@ export function especificaciones(nombre) {
   if (/REACONDICIONAD|REPOTENCIAD|OPEN ?BOX|\bUSADO\b|EXHIBICION/.test(n)) sp.condicion_producto = "no_nuevo";
   return sp;
 }
-const ESTRICTAS = ["pantalla_pulgadas", "ram_gb", "almacenamiento_gb", "capacidad_l", "es_combo", "condicion_producto"];
+const ESTRICTAS = ["pantalla_pulgadas", "ram_gb", "almacenamiento_gb", "capacidad_l", "es_combo", "condicion_producto", "cpu"];
 
 export function mismoProducto(a, b) {
   if (!a.marca || a.marca !== b.marca) return false;
