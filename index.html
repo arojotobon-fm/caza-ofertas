@@ -318,6 +318,9 @@ section{padding:30px 0}
 .sim-cuotas button{flex:1 0 auto;min-width:44px;border:1px solid var(--line);background:#fff;border-radius:10px;padding:7px 6px;font-weight:800;cursor:pointer;color:var(--petroleo)}
 .sim-cuotas button.on{background:var(--petroleo);color:#fff;border-color:var(--petroleo)}
 .sim-form [hidden]{display:none!important}
+.sim-fuente{margin-top:6px;background:var(--turquesa-bg);border-radius:10px;padding:8px 10px;font-size:12px;line-height:1.4;color:var(--petroleo)}
+.sim-fuente a{color:var(--turquesa-2);font-weight:800}
+.sim-fuente.est{background:var(--ambar-bg);color:#6b4500}
 .sim-link{display:block;text-align:left;border:0;background:none;color:var(--turquesa-2);font-weight:800;font-size:12px;padding:0;cursor:pointer;text-decoration:underline;margin-top:4px}
 .sim-form .sim-check{display:flex;gap:8px;align-items:flex-start;font-size:12.5px;font-weight:600;font-family:var(--body);color:var(--ink);margin-top:8px}
 .sim-check input{width:auto;margin-top:2px}
@@ -630,11 +633,12 @@ footer p{margin:0 0 8px;max-width:900px}
         <label for="simEnt">Entidad o tarjeta</label>
         <select id="simEnt">
           <option value="">Elige tu tarjeta</option>
-          <option>Bancolombia</option><option>Davivienda</option><option>Nu</option><option>Banco de Bogotá</option><option>BBVA</option>
-          <option data-tienda="Éxito">Tarjeta Éxito</option><option data-tienda="Falabella">Tarjeta Falabella (CMR)</option><option data-tienda="Alkosto,Ktronix">Tarjeta Alkosto</option>
+          <option value="bancolombia">Bancolombia</option><option value="davivienda">Davivienda</option><option value="nu">Nu</option><option value="bogota">Banco de Bogotá</option><option value="bbva">BBVA</option>
+          <option value="exito" data-tienda="Éxito">Tarjeta Éxito Mastercard</option><option value="cmr" data-tienda="Falabella">Tarjeta Falabella (CMR)</option><option value="alkosto" data-tienda="Alkosto,Ktronix">Tarjeta Alkosto Mastercard</option>
           <option value="otra">Otra tarjeta</option>
         </select>
-        <small id="simEntNota">No pedimos números de tarjeta ni claves. Escribe tú las condiciones de tu tarjeta: cada una es distinta.</small>
+        <small id="simEntNota">Al elegirla cargamos su tasa y costos publicados. No pedimos números de tarjeta ni claves.</small>
+        <div class="sim-fuente" id="simFuente" hidden></div>
         <label class="sim-check" id="simTiendaBox" hidden><input type="checkbox" id="simUsarTienda"><span id="simTiendaTxt"></span></label>
         <label>Número de cuotas</label>
         <div class="sim-cuotas" id="simCuotas"><button type="button" data-n="1">1</button><button type="button" data-n="3">3</button><button type="button" data-n="6">6</button><button type="button" data-n="12" class="on">12</button><button type="button" data-n="18">18</button><button type="button" data-n="24">24</button><button type="button" data-n="36">36</button></div>
@@ -648,12 +652,13 @@ footer p{margin:0 0 8px;max-width:900px}
         <small>Se suma por cada mes que dure el crédito. Si tu tarjeta no tiene, déjalo en $0.</small>
         <label for="simSeguro">Seguros mensuales</label>
         <input id="simSeguro" type="text" inputmode="numeric" placeholder="$0">
+        <small id="simSeguroNota">Valor fijo por mes.</small>
         <label for="simOtros">Otros cargos (una sola vez)</label>
         <input id="simOtros" type="text" inputmode="numeric" placeholder="$0">
       </form>
       <div class="sim-res" id="simRes" aria-live="polite"></div>
     </div>
-    <p class="sim-legal">Esto es una simulación con cuotas fijas (amortización francesa) a partir de la tasa E.A. que escribas, convertida a tasa mensual: (1 + E.A.)<sup>1/12</sup> − 1. No es asesoría financiera ni una oferta de crédito. Las tasas, la cuota de manejo, los seguros y los cargos dependen de cada entidad y de cada cliente: confírmalos con quien emite tu tarjeta. No guardamos lo que escribes aquí. Tope de usura de noviembre de 2026 para crédito de consumo: 28,34 % E.A. (Superintendencia Financiera, Resolución 1707 de 2026).</p>
+    <p class="sim-legal">Esto es una simulación con cuotas fijas (amortización francesa) a partir de la tasa E.A. que escribas, convertida a tasa mensual: (1 + E.A.)<sup>1/12</sup> − 1. No es asesoría financiera ni una oferta de crédito. Las tasas y costos que cargamos son los que cada entidad publicó para noviembre de 2026; tu tarjeta puede tener condiciones distintas (tipo de tarjeta, tasas preferenciales, promociones): confírmalas con quien la emite. No guardamos lo que escribes aquí. Tope de usura de noviembre de 2026 para crédito de consumo: 28,34 % E.A. (Superintendencia Financiera, Resolución 1707 de 2026).</p>
   </div>
 </div>
 
@@ -790,6 +795,56 @@ function card(p, rank){
    Solo simula: no guarda datos, no pide información bancaria y no trae tasas de ninguna entidad.
    Tasa mensual = (1 + E.A.)^(1/12) − 1. Cuota fija = P·i / (1 − (1 + i)^−n).                     */
 const USURA_EA = 28.34, USURA_MES = "noviembre de 2026";
+// Tasas y costos PUBLICADOS por cada entidad (revisados el 22 nov 2026). Vigencia: noviembre de 2026.
+// interes1: true = la entidad cobra intereses desde el día de la compra, también a 1 cuota.
+// seguroPM: seguro por cada millón adeudado (proporcional al saldo). Sin dato publicado leído = null.
+const TASAS_VIGENTES_HASTA = "2026-11-30";
+const ENTIDADES = {
+  bancolombia: { nombre: "Bancolombia", ea: 28.3288, interes1: false, manejo: null, seguro: 0, seguroPM: 0,
+    fuente: "Bancolombia, tasas de tarjeta de crédito del 1 al 30 de noviembre de 2026 (compras de 2 a 36 meses).",
+    url: "https://www.bancolombia.com/wcm/connect/www.bancolombia.com-26918/ab528278-a6e2-4337-ac43-475955c829aa/Actualizacion_tasas_Noviembre_2026.pdf",
+    nota: "A 1 cuota no cobra intereses, salvo Mastercard Ideal y American Express Libre. La cuota de manejo depende de tu tarjeta: escríbela." },
+  bbva: { nombre: "BBVA", ea: 28.31, interes1: false, manejo: 37030, seguro: 0, seguroPM: 0,
+    fuente: "BBVA, tasas de tarjeta de crédito del 1 al 30 de noviembre de 2026; cuota de manejo de Visa Clásica y Mastercard Standard (tarifario 2026).",
+    url: "https://www.bbva.com.co/personas/informacion-practica/tasas-y-tarifas.html",
+    nota: "A 1 cuota queda al 0 % si pagas hasta la fecha límite. Si tu tarjeta es Oro, Platinum u otra, cambia la cuota de manejo. Seguro de tarjeta, si lo tienes: $4.800 al mes." },
+  nu: { nombre: "Nu", ea: 28.34, interes1: false, manejo: null, seguro: 0, seguroPM: 0,
+    fuente: "Nu, costos y VTUA de la Tarjeta de Crédito Morada, noviembre de 2026.",
+    url: "https://nu.com.co/contratos-y-tarifas/morada",
+    nota: "Nu publica una cuota de manejo de $3.000 a $31.000 al mes según tu plan: escribe la tuya." },
+  exito: { nombre: "Tarjeta Éxito Mastercard", ea: 28.30922, interes1: true, manejo: 37800, seguro: 0, seguroPM: 3990,
+    fuente: "Tuya, tasas y tarifas 2026: tasa de noviembre de 2026, cuota de manejo mensual si hay saldo o uso y seguro deudores por millón adeudado.",
+    url: "https://www.tuya.com.co/tarjetas/tarjeta-basica-exito-mastercard",
+    nota: "Tuya cobra intereses desde el primer día de la compra, también a 1 cuota." },
+  alkosto: { nombre: "Tarjeta Alkosto Mastercard", ea: 28.30922, interes1: true, manejo: 27200, seguro: 0, seguroPM: 3250,
+    fuente: "Tarjeta Alkosto (Tuya), tasas de noviembre de 2026 y tarifas 2026: cuota de manejo mensual si hay saldo o uso y seguro deudores por millón adeudado.",
+    url: "https://www.tarjetaalkosto.com.co/tarifas",
+    nota: "Para tarjetas usadas desde el 1 de enero de 2024 cobran intereses desde el primer día, también a 1 cuota." },
+  davivienda: { nombre: "Davivienda", ea: null }, bogota: { nombre: "Banco de Bogotá", ea: null }, cmr: { nombre: "Tarjeta Falabella (CMR)", ea: null },
+  otra: { nombre: "Otra tarjeta", ea: null }
+};
+function aplicarEntidad(){
+  const k = $("#simEnt").value, e = ENTIDADES[k], f = $("#simFuente");
+  SIM.ent = e || null; SIM.usura = false;
+  if (!e || !k) { f.hidden = true; return; }
+  f.hidden = false; f.classList.remove("est");
+  if (e.ea != null) {
+    $("#simTasa").value = String(e.ea).replace(".", ",");
+    $("#simManejo").value = e.manejo ? cop(e.manejo) : "";
+    $("#simSeguro").value = e.seguro ? cop(e.seguro) : "";
+    $("#simUna").checked = !!e.interes1;
+    const vencida = new Date().toISOString().slice(0, 10) > TASAS_VIGENTES_HASTA;
+    if (vencida) f.classList.add("est");
+    f.innerHTML = `${vencida ? "<b>Ojo: estas tasas son de noviembre de 2026 y pueden haber cambiado.</b> " : ""}Cargado de: <a href="${e.url}" target="_blank" rel="noopener nofollow">${esc(e.fuente)}</a> ${esc(e.nota || "")}`;
+  } else {
+    $("#simTasa").value = String(USURA_EA).replace(".", ","); SIM.usura = true;
+    $("#simManejo").value = ""; $("#simSeguro").value = ""; $("#simUna").checked = false;
+    f.classList.add("est");
+    f.innerHTML = k === "otra" ? `Escribe la tasa y los costos de tu tarjeta. Mientras tanto usamos el tope legal de ${USURA_MES} (${pct1(USURA_EA)} E.A.) como peor escenario.`
+      : `Todavía no tenemos cargada la tasa publicada de ${esc(e.nombre)}. Usamos el tope legal de ${USURA_MES} (${pct1(USURA_EA)} E.A.) como peor escenario: cámbiala por la de tu extracto si la tienes.`;
+  }
+  $("#simSeguroNota").textContent = e.seguroPM ? `Además, seguro deudores de ${cop(e.seguroPM)} por cada millón que debas (lo calculamos mes a mes sobre el saldo).` : "Valor fijo por mes.";
+}
 const SIM = { p: null, n: 12 };
 const numCOP = v => { const d = String(v || "").replace(/[^\d]/g, ""); return d ? parseInt(d, 10) : 0; };
 const numPct = v => { const t = String(v || "").trim().replace(/\s|%/g, "").replace(",", "."); const x = parseFloat(t); return isFinite(x) ? x : NaN; };
@@ -798,12 +853,15 @@ function precioTarjetaTienda(p){
   const m = (p.nota || "").match(/Con (?:tarjeta CMR|Tarjeta Alkosto|tarjeta Éxito): \$([\d.]+)/i);
   return m ? numCOP(m[1]) : 0;
 }
-function simular({P, n, ea, interes1, manejo, seguro, otros}){
+function simular({P, n, ea, interes1, manejo, seguro, otros, seguroPM = 0}){
   const i = Math.pow(1 + ea / 100, 1 / 12) - 1;
   const sinInteres = (n === 1 && !interes1) || ea === 0;
   const cuota = sinInteres ? P / n : P * i / (1 - Math.pow(1 + i, -n));
   const intereses = sinInteres ? 0 : cuota * n - P;
-  const cManejo = manejo * n, cSeguros = seguro * n;
+  // seguro por millón adeudado: proporcional al saldo de cada mes (mínimo el valor de un millón si hay saldo)
+  let segPM = 0, saldo = P;
+  for (let m = 0; m < n && seguroPM; m++) { segPM += seguroPM * Math.max(1, saldo / 1e6); saldo = sinInteres ? saldo - P / n : saldo * (1 + i) - cuota; }
+  const cManejo = manejo * n, cSeguros = seguro * n + segPM;
   const total = P + intereses + cManejo + cSeguros + otros;
   return { i, cuota, intereses, cManejo, cSeguros, otros, total, extra: total - P, extraPct: P ? (total - P) / P * 100 : 0, sinInteres };
 }
@@ -815,7 +873,8 @@ function abrirSimulador(id){
   $("#simPrecio").value = cop(base.precio);
   $("#simPrecioNota").textContent = "Precio de contado en " + base.tienda + ", revisado " + ago(base.verificado) + ". Puedes cambiarlo.";
   $("#simEnt").value = ""; $("#simTasa").value = ""; $("#simManejo").value = ""; $("#simSeguro").value = ""; $("#simOtros").value = "";
-  $("#simUsarTienda").checked = false; $("#simUna").checked = false; SIM.usura = false;
+  $("#simUsarTienda").checked = false; $("#simUna").checked = false; SIM.usura = false; SIM.ent = null; $("#simFuente").hidden = true;
+  $("#simSeguroNota").textContent = "Valor fijo por mes.";
   $("#simModal").classList.add("on"); calcularSim();
 }
 function calcularSim(){
@@ -838,10 +897,11 @@ function calcularSim(){
     return;
   }
   const r = simular({P, n: SIM.n, ea: necesitaTasa ? ea : 0, interes1: $("#simUna").checked,
-                     manejo: numCOP($("#simManejo").value), seguro: numCOP($("#simSeguro").value), otros: numCOP($("#simOtros").value)});
-  const estimado = SIM.usura || !$("#simEnt").value;
+                     manejo: numCOP($("#simManejo").value), seguro: numCOP($("#simSeguro").value), otros: numCOP($("#simOtros").value),
+                     seguroPM: SIM.ent && SIM.ent.seguroPM || 0});
+  const estimado = SIM.usura || !$("#simEnt").value || new Date().toISOString().slice(0, 10) > TASAS_VIGENTES_HASTA;
   const otrosCargos = r.cManejo + r.cSeguros + r.otros;
-  const tasaTxt = r.sinInteres ? "Sin intereses (1 cuota)" : pct1(ea) + " E.A. · " + (r.i * 100).toLocaleString("es-CO", {minimumFractionDigits: 2, maximumFractionDigits: 2}) + " % mensual";
+  const tasaTxt = r.sinInteres ? "Sin intereses (1 cuota)" : ea.toLocaleString("es-CO", {minimumFractionDigits: 2, maximumFractionDigits: 2}) + " % E.A. · " + (r.i * 100).toLocaleString("es-CO", {minimumFractionDigits: 2, maximumFractionDigits: 2}) + " % mensual";
   res.innerHTML = `<h4>ASÍ QUEDARÍA TU COMPRA${estimado ? '<span class="sim-est">ESTIMADO</span>' : ""}</h4>
     <dl>
       <dt>Precio de contado</dt><dd>${cop(P)}</dd>
@@ -871,7 +931,8 @@ document.addEventListener("DOMContentLoaded", () => {
   $("#simUsura").addEventListener("click", () => { $("#simTasa").value = String(USURA_EA).replace(".", ","); SIM.usura = true; calcularSim(); });
   $("#simTasa").addEventListener("input", () => { SIM.usura = false; calcularSim(); });
   ["#simPrecio", "#simManejo", "#simSeguro", "#simOtros"].forEach(sel => $(sel).addEventListener("input", calcularSim));
-  ["#simEnt", "#simUsarTienda", "#simUna"].forEach(sel => $(sel).addEventListener("change", calcularSim));
+  $("#simEnt").addEventListener("change", () => { aplicarEntidad(); calcularSim(); });
+  ["#simUsarTienda", "#simUna"].forEach(sel => $(sel).addEventListener("change", calcularSim));
   ["#simPrecio", "#simManejo", "#simSeguro", "#simOtros"].forEach(sel => $(sel).addEventListener("blur", e => { const v = numCOP(e.target.value); e.target.value = v ? cop(v) : ""; }));
 });
 
