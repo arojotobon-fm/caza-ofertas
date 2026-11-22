@@ -63,7 +63,8 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--salida", default=OUT)
     ap.add_argument("--chequeo", action="append", default=[])
-    ap.add_argument("--fecha-verificacion", default=datetime.date.today().isoformat(),
+    ap.add_argument("--fecha-verificacion",
+                    default=datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=-5))).date().isoformat(),  # hora de Colombia
                     help="Fecha real de esta actualización (AAAA-MM-DD); no reutiliza chequeos de otros días.")
     args = ap.parse_args()
     OUT = args.salida

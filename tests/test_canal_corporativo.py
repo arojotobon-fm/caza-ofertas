@@ -86,7 +86,9 @@ class ValidacionPorCanal(unittest.TestCase):
             self.assertEqual(validar_por_canal("alkosto", f, IDENT, HOY)["estado_validacion"], "pendiente")
 
     def test_evidencia_vencida_obliga_a_revalidar(self):
-        self.assertEqual(validar_por_canal("alkosto", ficha(), IDENT, "2027-03-01")["estado_validacion"], "pendiente")
+        v = validar_por_canal("alkosto", ficha(fecha="2027-03-01"), IDENT, "2027-03-01")   # ficha del día, contrato vencido
+        self.assertEqual(v["estado_validacion"], "pendiente")
+        self.assertIn("canal", v["motivo"])
 
     def test_canal_sin_clausula_verificada_no_valida(self):
         for c in ["ktronix", "alkomprar", "falabella", "exito"]:
@@ -126,10 +128,10 @@ class GrupoUnico(unittest.TestCase):
 class MigracionDeEnsayo(unittest.TestCase):
     """Corre la migración completa en una carpeta temporal y revisa cada fila que podría llegar al Radar."""
 
-    def correr(self, chequeo_path):
+    def correr(self, chequeo_path, fecha=HOY):
         out = tempfile.mkdtemp()
         subprocess.run([sys.executable, os.path.join(ROOT, "scripts", "migrar_v1_a_v2.py"), "--salida", out,
-                        "--chequeo", chequeo_path], check=True, capture_output=True)
+                        "--chequeo", chequeo_path, "--fecha-verificacion", fecha], check=True, capture_output=True)
         L = lambda n: json.load(open(os.path.join(out, n), encoding="utf-8"))  # noqa: E731
         return L("publicaciones.json"), L("comparaciones.json"), L("productos.json")
 
@@ -176,6 +178,13 @@ class MigracionDeEnsayo(unittest.TestCase):
             p = next(x for x in pubs if x["id"] == objetivo["id"])
             self.assertEqual(p["estado_validacion"], "pendiente", cambio)
             self.assertNotIn(objetivo["id"], {f["publicacion_id"] for f in self.filas_publicas(comps)}, cambio)
+
+    def test_chequeo_de_otro_dia_no_llega_al_radar(self):
+        for fecha in ["2026-11-23", "2026-12-15"]:
+            pubs, comps, _ = self.correr(CHEQUEO, fecha)
+            idx = {p["id"]: p for p in pubs}
+            self.assertEqual([f for f in self.filas_publicas(comps) if idx[f["publicacion_id"]]["comercio_id"] == "alkosto"], [], fecha)
+            self.assertTrue(all(p["estado_validacion"] == "pendiente" for p in pubs if p["comercio_id"] == "alkosto"))
 
     def test_sin_chequeo_alkosto_sigue_pendiente(self):
         out = tempfile.mkdtemp()
