@@ -85,3 +85,24 @@ Las cifras de tráfico de ese documento no están verificadas: no se guardan com
 - El modelo v2 contiene 130 comparaciones: 4 completas, 31 limitadas y 95 sin comparación pública.
 - De las 4 completas, tres muestran precios iguales entre comercios; una presenta una diferencia pequeña (0,8 %) y no alcanza por sí sola los criterios de una selección editorial de 5.
 - Por tanto, las selecciones de 15 investigaciones y mínimo 5 comparaciones no se rellenan con datos incompletos ni se publican como si estuvieran verificadas. Se mantienen pendientes de evidencia suficiente.
+
+
+## Estado al cierre del domingo 22 nov 2026, 9:30 p. m. — retomar el viernes 27 nov
+**Producción (main 244ad44, publicada 6:08 p. m.):** funciona. Revisado en Chrome: buscador y Verificador responden; sin catálogo ni contadores; incluye la corrección 6c96110. No hay nada urgente.
+
+### Barrido multitienda del 22 nov (datos en `pruebas/barrido-2026-11-22/`)
+- Leído desde el Chrome de Ana: Éxito (280 productos), Olímpica (235), Jumbo (340), Alkosto (931), Ktronix (701) y Falabella (630), en 12 categorías. Cruce por código de barras; precios de la tienda misma (VTEX vendedor 1; Alkosto confirmado como vendedor en la ficha).
+- Precios de los casos vueltos a leer en la tarde (`fresh.txt`). `final.json` = 69 casos candidatos (10 reales, 15 posibles mentiras, 44 dudosos) **antes** de revisar Falabella.
+- Al revisar Falabella por modelo se cayeron como "oferta real": Motorola G67 y Edge 60 Fusion (Falabella más barato), Galaxy Buds Core (Falabella $99.900 vs Alkosto $189.900).
+- Ofertas reales que sobreviven (a revalidar el día de publicar, también contra Ktronix): Edge 70 Fusion (Alkosto), Galaxy S26 Ultra 512 GB (Alkosto), Galaxy A07 (Alkosto), Buds3 Pro (Jumbo), Nevecón RF22A4220S9 (Alkosto; débil: $50.000 menos que Falabella).
+- Las 15 posibles mentiras se apoyan solo en el mercado de hoy → **por la regla de evidencia no se publican como "¡Cazamos una mentira!"** hasta tener historial (mín. 7 días).
+
+### Pendientes en orden
+- [ ] **Historial de los productos de los casos** (necesita autorización de Ana porque toca main): guardar el barrido del 22 nov como día 1 en la rama `historial`; agregar esos ~70 productos a la lista del robot diario con `[skip netlify]` en el mensaje (sin gastar créditos, verificar en Netlify que no se publicó); intentar Alkosto desde GitHub; Éxito se lee desde el Chrome de Ana en cada actualización. Así las mentiras con respaldo podrían salir desde el 29 nov.
+- [ ] Confirmar que el robot del historial corrió solo (23 nov, 6:17 a. m.). Hasta el 22 nov solo existe la corrida de prueba.
+- [ ] Panel de la portada ("Primero, las pruebas"): hoy es solo texto a propósito. Propuesta: mostrar números con pruebas — 🟢 ofertas reales y 🟡 descuentos dudosos — y 🔴 mentiras cuando el historial las respalde. Cada número abre sus productos con pruebas.
+- [ ] Llenar "Selección semanal · 15 investigaciones" y "Más barato en otra tienda · mínimo 5" con casos revalidados ese mismo día.
+- [ ] Texto "Última actualización: dom 22 nov 2:03 a. m." bajo el buscador se ve viejo: cambiarlo o actualizar datos.
+- [ ] Buscador en vivo: el Galaxy A07 verde sale "solo en Jumbo" aunque el Verificador lo encuentra en Olímpica $20.000 más barato (no está agrupando bien). Revisar.
+- [ ] Alkosto y Ktronix no están en el buscador en vivo (sí en el barrido desde Chrome).
+- [ ] Regla de trabajo: entregar a Ana el HTML para revisar en Visual Studio Code **antes** de cualquier publicación; una sola publicación con su autorización.

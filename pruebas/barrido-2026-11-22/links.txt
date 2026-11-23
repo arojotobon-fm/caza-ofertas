@@ -1,0 +1,171 @@
+exito|4548736164758|Audio|Parlante Sony ULT Field 3 Negro|/parlante-sony-srs-ult30-40w-negro-negro-3224673/p
+exito|4548736164772|Audio|Parlante Sony ULT Field 3 Gris|/parlante-sony-srs-ult30-40w-gris-gris-3224672/p
+exito|4548736164765|Audio|Parlante Sony ULT Field 3 Blanco|/parlante-sony-srs-ult30-40w-blanco-blanco-3224671/p
+exito|27242930339|Audio|Audífonos Sony WF-C510 Negro|/audifonos-inalambricos-sony-audifonos-earbuds-negro-wf-c510-negro-3193044/p
+exito|27242930346|Audio|Audífonos Sony WF-C510 Blanco|/audifonos-inalambricos-sony-audifonos-earbuds-blanco-wf-c510-blanco-3193043/p
+exito|27242930391|Audio|Audífonos Sony WF-C510 Azul|/audifonos-inalambricos-sony-audifonos-earbuds-azul-wf-c510-azul-3193042/p
+exito|7453041024536|Audio|Barra de sonido Aiwa AWSBH22 130 W|/barra-de-sonido-130w-aiwa-awsbh22-3179001/p
+exito|7453041022433|Audio|Barra de sonido Aiwa AWSBH1 40 W|/barra-de-sonido-40w-aiwa-awsbh1-3178997/p
+exito|7705946481519|Televisores|Televisor Kalley 50" 4K 50G315A|/televisor-kalley-50-pulgadas-led-uhd-4k-smart-tv-50g315a-3264972/p
+exito|6942351427836|Televisores|Televisor Hisense 65" Mini LED 65U6ESV|/televisor-hisense-65-pulgadas-uled-uhd-4k-smart-tv-65u6esv-3246406/p
+exito|6942351410388|Televisores|Televisor Hisense 70" 4K 70A6NV|/televisor-hisense-70-pulgadas-led-uhd-4k-smart-tv-70a6nv-3208351/p
+exito|6942351422107|Televisores|Televisor Hisense 85" QLED 85Q6QV|/televisor-hisense-85-pulgadas-qled-uhd-4k-smart-tv-85q6qv-3208357/p
+exito|6942351427843|Televisores|Televisor Hisense 55" Mini LED 55U6ESV|/televisor-hisense-55-pulgadas-uled-uhd-4k-smart-tv-55u6esv-3246405/p
+exito|7705191046365|Televisores|Televisor Challenger 43" FHD 43KG90|/televisor-challenger-43-pulgadas-led-fhd-smart-tv-43kg90-3232595/p
+exito|7705191047638|Televisores|Televisor Challenger 50" 4K 50KR15|/televisor-challenger-50-pulgadas-led-uhd-4k-smart-tv-50kr15-3250529/p
+exito|8806090746161|Lavado|Lavadora secadora Samsung 22 kg WD22T6500GP|/lavadoras-secadora-22-kg-inox-samsung-wd22t6500gpco-3008077/p
+exito|8806092662063|Lavado|Lavadora secadora Samsung 11,5 kg WD11T4046BX|/lavadora-secadora-samsung-electrica-115-kg-wd11t4046bxco-inox-3231512/p
+exito|883049602622|Lavado|Lavadora secadora Whirlpool 20 kg 7MWFC6820LC|/lavasecadora-whirlpool-carga-frontal-20-kg-44lb-7mwfc6820lc-3075517/p
+exito|6901101829542|Lavado|Lavadora secadora Hisense 15 kg WD3S1543BT|/lavadora-secadora-hisense-electrica-15-kg-wd3s1543bt-titanium-gray-3192327/p
+exito|8806095718972|Lavado|Lavadora secadora Samsung 26 kg WD26DB8995BZ|/lavadora-secadora-samsung-gas-26-kilogramo-wd26db8995bzco-silver-3179327/p
+exito|8806092512443|Neveras|Nevecón Samsung 625 L RF22A4220SG|/nevecon-625litros-totales-refi-samsung-rf22a4220sgco-3042391/p
+exito|7909569417232|Neveras|Nevecón Electrolux side by side 528 L ERSA53K3HVB|/nevecon-electrolux-side-by-side-electrolux-ersa53k3hvb-3133764/p
+exito|8806095491820|Neveras|Nevecón Samsung Bespoke Family Hub 809 L RF29DB9950|/nevecon-samsung-tipo-europeo-809-litros-rf29db995012co-blanco-3164197/p
+exito|8806095746456|Neveras|Nevecón Samsung side by side 583 L RS57DG4000B4|/nevecon-samsung-side-by-side-583-lts-375lts-refrigerador-208lts-congelador-rs57dg4000b4co-negro-3193930/p
+exito|7909569483831|Neveras|Nevecón Electrolux side by side 423 L ERS45F3C5EB|/nevecon-423-litros-electrolux-side-by-side-423-litros-ers45f3c5eb-negro-3231539/p
+jumbo|840493610658|Celulares|Celular Motorola G67 5G 8/256 GB Lima|/celular-motorola-g67-5g-8gb-256gb-lima-3743787/p
+jumbo|840493626635|Celulares|Celular Motorola Edge 60 Fusion 8/128 GB Azul|/celular-motorola-edge-60-fusion-5g-8gb-128gb-azul-448775/p
+jumbo|840493626628|Celulares|Celular Motorola Edge 60 Fusion 8/128 GB Verde|/celular-motorola-edge-60-fusion-5g-8gb-128gb-verde-448777/p
+jumbo|6939093017487|Celulares|Celular Xiaomi Redmi 17 6/256 GB Verde|/celular-xiaomi-redmi-17-6gb256gb-oak-green-452325/p
+jumbo|6932554400705|Celulares|Celular Xiaomi Redmi Note 17 6/256 GB Negro|/celular-xiaomi-redmi-note-17-6gb-256gb-black-459626/p
+jumbo|8806097661849|Celulares|Celular Samsung Galaxy A07 4/128 GB Verde|/celular-samsung-galaxy-a07-4gb-128gb-verde-3706244/p
+jumbo|8806099361082|Celulares|Celular Samsung Galaxy A27 5G 8/256 GB Negro|/celular-samsung-galaxy-a27-5g-8gb-256gb-negro-443011/p
+jumbo|8806097885306|Celulares|Celular Samsung Galaxy S26 Ultra 12/512 GB Negro|/celular-samsung-galaxy-s26-ultra-12gb-512gb-negro-3735705/p
+jumbo|8806099361136|Celulares|Celular Samsung Galaxy A27 5G 8/256 GB Azul|/celular-samsung-galaxy-a27-5g-8gb-256gb-azul-443016/p
+jumbo|8806097215325|Tablets|Tablet Samsung Galaxy Tab S10 FE+ 128 GB Gris|/tablet-samsung-galaxy-tab-s10-fe-8-gb-ram-128gb-ssd-gris-381023/p
+jumbo|8806097407867|Tablets|Tablet Samsung Galaxy Tab S10 FE+ 128 GB Azul|/tablet-samsung-galaxy-tab-s10-fe-8gb-ram-128gb-ssd-azul-claro-381017/p
+jumbo|4894947121760|Celulares|Celular Infinix Hot 70 4/256 GB Naranja|/celular-infinix-hot-70-4gb-ram-256gb-naranja-3747202/p
+jumbo|8806097349969|Audio|Audífonos Samsung Galaxy Buds Core Negro|/audifonos-samsung-galaxy-buds-core-negro-381349/p
+jumbo|8806095658339|Audio|Audífonos Samsung Galaxy Buds3 Pro Blanco|/audifonos-galaxy-buds3-pro-blanco-3641482/p
+jumbo|7453041022433|Audio|Barra de sonido Aiwa AWSBH1|/barra-de-sonido-aiwa-awsbh1/p
+jumbo|7453041024536|Audio|Barra de sonido Aiwa AWSBH22|/barra-de-sonido-aiwa-awsbh22/p
+jumbo|8806096022306|Audio|Barra de sonido LG S70TR 500 W|/barra-de-sonido-lg-con-5-1-1-canales-500-w-s70tr-negro/p
+jumbo|6942351410388|Televisores|Televisor Hisense 70" 4K 70A6NV|/televisor-hisense-70-pulgadas-uhd-4k-smart-tv-70a6nv-3706101/p
+jumbo|6942351427843|Televisores|Televisor Hisense 55" Mini LED 55U6ESV|/televisor-hisense-55-pulgadas-miniled-4k-smart-tv-55u6esv-3742195/p
+jumbo|6942351422107|Televisores|Televisor Hisense 85" QLED 85Q6QV|/televisor-hisense-qled-uhd-4k-85-pulgadas-smart-negro-85q6qv-3706100/p
+jumbo|6942351427836|Televisores|Televisor Hisense 65" Mini LED 65U6ESV|/televisor-hisense-65-pulgadas-miniled-4k-smart-tv-65u6esv-3742194/p
+jumbo|8806097960843|Televisores|Televisor Samsung 55" Mini LED UN55M75H|/televisor-samsung-55-pulgadas-mini-led-smart-tv-un55m75hakxzl-3746501/p
+jumbo|8806097960829|Televisores|Televisor Samsung 50" Mini LED UN50M75H|/televisor-samsung-50-pulgadas-mini-led-smart-tv-un50m75hakxzl-3746505/p
+jumbo|8806097960942|Televisores|Televisor Samsung 65" Mini LED UN65M75H|/televisor-samsung-65-pulgadas-mini-led-smart-tv-un65m75hakxzl-3746492/p
+jumbo|8806097960874|Televisores|Televisor Samsung 75" Mini LED UN75M75H|/televisor-samsung-75-pulgadas-mini-led-4k-smart-tv-un75m75hakxzl-3749774/p
+jumbo|8806099123215|Televisores|Televisor Samsung 75" Crystal UHD UN75U8500H|/televisor-samsung-75-pulgadas-led-uhd-4k-smart-tv-un75u8500hkxzl-3749789/p
+jumbo|8806097978336|Televisores|Televisor Samsung 65" Crystal UHD UN65U8000H|/televisor-samsung-65-pulgadas-led-uhd-4k-smart-tv-un65u8000hkxzl-3749771/p
+jumbo|8806097954774|Televisores|Televisor Samsung 85" Crystal UHD UN85U8500H|/televisor-samsung-85-pulgadas-led-uhd-4k-smart-tv-un85u8500hkxzl-3749798/p
+jumbo|8806097977766|Televisores|Televisor Samsung 55" Crystal UHD UN55U8000H|/televisor-samsung-55-pulgadas-led-uhd-4k-smart-tv-un55u8000hkxzl-3749779/p
+jumbo|8806095967806|Televisores|Televisor Samsung 40" FHD UN40F6000F|/televisor-samsung-40-pulgadas-led-smart-tv-fhd-tv-un40f6000fkxzl-3701381/p
+jumbo|8806097960959|Televisores|Televisor Samsung 85" Mini LED UN85M75H|/televisor-samsung-85-pulgadas-mini-led-4k-smart-tv-un85m75hakxzl-3749781/p
+jumbo|7705191047638|Televisores|Televisor Challenger 50" 4K 50KR15|/televisor-challenger-50-pulgadas-led-uhd-t2-roku-50kr15-3745687/p
+jumbo|7705191046365|Televisores|Televisor Challenger 43" FHD 43KG90|/televisor-led43kg90-bt-google-tv-t2-3717583/p
+jumbo|198990787213|Portátiles|Portátil HP 15-fd0131la táctil Core i3|/portatil-hp-15-fd0131la-touch-intel-core-i3-465686/p
+jumbo|198990788418|Portátiles|Portátil gamer HP Victus 15-fa2009la Core i5|/computador-portatil-gaming-hp-15-fa2009-415856/p
+jumbo|828132113647|Portátiles|Portátil Lenovo IdeaPad Slim 3 Intel U300 8/256 GB|/portatil-lenovo-slim3-intel-u300-8gb-256gb-447870/p
+jumbo|199276612137|Portátiles|Portátil Lenovo IdeaPad Slim 3 Ryzen 5 8/512 GB táctil|/portatil-lenovo-slim3-amd-ryzen-5-ram-8gb-512gb-447859/p
+jumbo|196804839998|Portátiles|Portátil Lenovo IdeaPad Slim 3 15AMN8 Ryzen 5 8/512 GB|/computador-portatil-lenovo-ideapad-slim3-15amn8-amd-ryzen-5-7520u-ram-8gb-512gb-ssd-gris-15-6-3592322/p
+jumbo|199272381600|Portátiles|Portátil gamer Lenovo LOQ 15IRX9 Core i5 RTX 3050|/computador-portatil-gaming-lenovo-loq-15irx9-intel-core-i5-13450hx-ram-16gb--512gb-ssd-nvidia-geforce-rtx-3050-6gb-ai-15-6-luna-gris/p
+jumbo|199275960147|Portátiles|Portátil Lenovo IdeaPad Slim 3 15IRH10 Core i5 táctil|/computador-portatil-ideapad-slim-3-tactil-15irh10-431088/p
+jumbo|7704353476170|Lavado|Lavadora secadora Haceb 12 kg|/lavadora-secadora-haceb-12kg-gris-lavsec12k-438504/p
+jumbo|8806090746154|Lavado|Lavadora secadora Samsung 20 kg WD20T6300GP|/lav-sec-samsung-20kg-44lb-wd20t6300gp-co-gris/p
+jumbo|8806092512443|Neveras|Nevecón Samsung 625 L RF22A4220SG|/nevec-n-samsung--760lt-brt-rf22a4220sg-co-negro/p
+jumbo|8806095491820|Neveras|Nevecón Samsung Bespoke Family Hub 809 L RF29DB9950|/nevecon-samsung-tipo-europeo-family-hub-bespoke-809-litros-rf29db995012co-blanco/p
+jumbo|8806095746456|Neveras|Nevecón Samsung side by side 583 L RS57DG4000B4|/nevecon-samsung-side-by-side-583-lt-negro-con-ia-rs57dg4000b4co/p
+jumbo|74108501189|Cuidado personal|Secador Conair 650AL hialurónico|/secador-de-pelo-hialuronico-650al/p
+jumbo|8023277156593|Cuidado personal|Secador Gama Tempo Avocado|/secador-gama-tempo-std-avocado-411481/p
+jumbo|757638382359|Aires acondicionados|Aire acondicionado portátil Mabe 12.000 BTU|/aire-acondicionado-portatil-110v-12000-btu-blanco-mabe-ptm12cabwjm2-282185/p
+olimpica|840493610658|Celulares|Celular Motorola G67 256 GB Lima|/celular-motorola-g67-lima-8-256gb/p
+olimpica|840493610641|Celulares|Celular Motorola G67 256 GB Gris|/celular-motorola-g67-gris-8-256gb/p
+olimpica|840493602639|Celulares|Celular Motorola G06 128 GB|/celular-motorola-g06-128gb-verde/p
+olimpica|840493626635|Celulares|Celular Motorola Edge 60 Fusion 128 GB Azul|/celular-motorola-edge-60-fusion-azul-128gb/p
+olimpica|840493626628|Celulares|Celular Motorola Edge 60 Fusion 128 GB Verde|/celular-motorola-edge-60-fusion-verde-128gb/p
+olimpica|840493628448|Celulares|Celular Motorola Edge 70 Fusion 256 GB Verde|/celular-motorola-edge-70-fusion-verde-256gb/p
+olimpica|8806097661498|Celulares|Celular Samsung Galaxy A07 128 GB Negro|/celular-samsung-a07-4gb-128gb-negro/p
+olimpica|8806097661849|Celulares|Celular Samsung Galaxy A07 128 GB Verde|/celular-samsung--a07-4gb-128gb-verde/p
+olimpica|199271877722|Tablets|Tablet Lenovo Idea Tab Plus 8/256 GB 11"|/tablet-lenovo-ideatab-plus-8g-256g-wifi-acce-11-/p
+olimpica|6942351427843|Televisores|Televisor Hisense 55" Mini LED 55U6ESV|/televisor-hisense-55-pulgadas-uled-miniled-u6esv/p
+olimpica|7705191047638|Televisores|Televisor Challenger 50" 4K 50KR15|/televisor-challenger-50-pulgadas-ultra--hd-roku--tv--led-50kr15--t2/p
+olimpica|7705191046365|Televisores|Televisor Challenger 43" FHD 43KG90|/televisor-challenger-43-pulgadas-full-hd-google-tv--led-43kg90-bt-t2/p
+olimpica|7705191047072|Televisores|Televisor Challenger 100" Mini LED 100KG290|/televisor-challenger-100-pulgadas-miniled-google-tv-100kg290-bt--t2/p
+olimpica|8806095967806|Televisores|Televisor Samsung 40" FHD UN40F6000F|/televisor-samsung-40-pulgadas-101cm-fhd-smart-un40f6000fkxzl/p
+olimpica|8806097978336|Televisores|Televisor Samsung 65" Crystal UHD UN65U8000H|/televisor-samsung-65-pulgadas-163cm-uhd-4k-un65u8000h/p
+olimpica|8806099127183|Televisores|Televisor Samsung 98" Crystal UHD UN98U9500H|/televisor-samsung-98-pulgadas-249cm-uhd-4k-un98u9500h/p
+olimpica|8806099123215|Televisores|Televisor Samsung 75" Crystal UHD UN75U8500H|/televisor-samsung-75-pulgadas-189cm-uhd-4k-un75u8500h/p
+olimpica|8806097954774|Televisores|Televisor Samsung 85" Crystal UHD UN85U8500H|/televisor-samsung-85-pulgadas-215cm-uhd-4k-un85u8500h/p
+olimpica|8806097960874|Televisores|Televisor Samsung 75" Mini LED UN75M75H|/televisor-samsung-75-pulgadas-189cm-mini-led-4k-un75m75h/p
+olimpica|8806097960942|Televisores|Televisor Samsung 65" Mini LED UN65M75H|/televisor-samsung-65-pulgadas-163cm-mini-led-4k-un65m75h/p
+olimpica|8806099025090|Televisores|Televisor Samsung 55" Neo QLED QN55QN70H|/televisor-samsung-55-pulgadas-138cm-neo-qled-4k-qn55qn70h/p
+olimpica|8806097960843|Televisores|Televisor Samsung 55" Mini LED UN55M75H|/televisor-samsung-55-pulgadas-138cm-mini-led-4k-un55m75h/p
+olimpica|8806097960829|Televisores|Televisor Samsung 50" Mini LED UN50M75H|/televisor-samsung-50-pulgadas-125cm-mini-led-4k-un50m75h/p
+olimpica|8806097960959|Televisores|Televisor Samsung 85" Mini LED UN85M75H|/televisor-samsung-85-pulgadas-215cm-mini-led-4k-un85m75h/p
+olimpica|198990787213|Portátiles|Portátil HP 15-fd0131la táctil Core i3|/computador-portatil-hp-15-fd0131la-core-i3-n305-8gb-512gb-ssd-15-6-fhd-tactil-windows-11/p
+olimpica|199764911858|Portátiles|Portátil HP 15-fd0331la Core i3|/portatil-hp-15-fd0331la-intel-core-i3--8gb-512gb-ssd-15-6-fhd-windows-11-home-single-language/p
+olimpica|199276612137|Portátiles|Portátil Lenovo IdeaPad Slim 3 Ryzen 5 8/512 GB táctil|/computador-portatil-lenovo-sl3-15amn8-r5-8g-512g-11s-touch/p
+olimpica|196804839998|Portátiles|Portátil Lenovo IdeaPad Slim 3 15AMN8 Ryzen 5 8/512 GB|/portatil-lenovo-slim3-ryzen-5-8g-512g-15-pulgadas/p
+olimpica|199272381600|Portátiles|Portátil gamer Lenovo LOQ 15IRX9 Core i5 RTX 3050|/computador-portatil-lenovo-loq-15irx9-ci5-16gb-512gb-11s-rtx3050/p
+olimpica|199275960147|Portátiles|Portátil Lenovo IdeaPad Slim 3 15IRH10 Core i5 táctil|/computador-portatil-lenovo-ip-slim-3-15irh10-ci5-16gb-512gb-11s-touch-azul/p
+olimpica|6901101829542|Lavado|Lavadora secadora Hisense 15 kg|/lavadora-secadora-hisense-carga-frontal-3s-15kg/p
+olimpica|7704353476170|Lavado|Lavadora secadora Haceb 12 kg|/lavadora-secadora-haceb-cf-12-kilos-gris/p
+olimpica|8806095718972|Lavado|Lavadora secadora Samsung 26 kg WD26DB8995BZ|/lavadora-secadora-samsung-26kg-wd26db8995bzco/p
+olimpica|8806092662063|Lavado|Lavadora secadora Samsung 11,5 kg WD11T4046BX|/lavadora-secadora-samsung-11-5kg-carga-frontal-wd11t4046bx/p
+olimpica|8806090746161|Lavado|Lavadora secadora Samsung 22 kg WD22T6500GP|/lavadora-secadora-samsung-22kg-wd22t6500gp-co/p
+olimpica|8806095491820|Neveras|Nevecón Samsung Bespoke Family Hub 809 L|/nevecon-samsung-809l-hub-rf29db995012co/p
+olimpica|7909569483831|Neveras|Nevecón Electrolux side by side 423 L|/nevecon--side-by-sideelectrolux-no-frost-423-inverter-negro/p
+olimpica|7909569417232|Neveras|Nevecón Electrolux side by side 529 L|/nevecon-electrolux-side-by-side-no-frost-529--litros-inverter-negro/p
+olimpica|8806092678415|Neveras|Nevecón Samsung 625 L gris claro RF22A4220S9|/nevecon-europeo-samsung-inox-625-lt/p
+olimpica|8806092512443|Neveras|Nevecón Samsung 625 L gris oscuro RF22A4220SG|/nevecon-samsung-625l-inver-rf22a4220sg/p
+olimpica|8806095746456|Neveras|Nevecón Samsung side by side 583 L RS57DG4000B4|/nevecon-samsung-side-by-side-583-litros-rs57dg4000b4co-negro-con-inteligencia-artificial-/p
+olimpica|7909569469194|Neveras|Nevera Electrolux 173 L ERB16|/nevera-electrolux-tipo-europeo-frost-negro/p
+olimpica|757638382359|Aires acondicionados|Aire acondicionado portátil Mabe 12.000 BTU|/aire-acondicionado-portatil-mabe-blanco---ptm12cabwjm2/p
+olimpica|74108501189|Cuidado personal|Secador Conair 650AL hialurónico|/secador-conair-hialuronico--650al/p
+alkosto|8806099361082|Celulares|Celular Samsung Galaxy A27 5G 8/256 GB Negro|/celular-samsung-galaxy-a27-256gb-5g-negro-ram-8gb-bateria/p/8806099361082
+alkosto|8806099361136|Celulares|Celular Samsung Galaxy A27 5G 8/256 GB Azul|/celular-samsung-galaxy-a27-256gb-5g-azul-ram-8gb-bateria/p/8806099361136
+alkosto|8806097661498|Celulares|Celular Samsung Galaxy A07 4/128 GB Negro|/celular-samsung-galaxy-a07-128gb-4g-negro-ram-4gb-bateria/p/8806097661498
+alkosto|8806097661849|Celulares|Celular Samsung Galaxy A07 4/128 GB Verde|/celular-samsung-galaxy-a07-128gb-4g-verde-ram-4gb-bateria/p/8806097661849
+alkosto|8806097885306|Celulares|Celular Samsung Galaxy S26 Ultra 12/512 GB Negro|/celular-samsung-galaxy-s26-ultra-512gb-5g-negro-ram-12gb/p/8806097885306
+alkosto|6932554400705|Celulares|Celular Xiaomi Redmi Note 17 6/256 GB Negro|/celular-redmi-note-17-256gb-4g-negro-ram-6gb-bateria/p/6932554400705
+alkosto|6939093017487|Celulares|Celular Xiaomi Redmi 17 6/256 GB Verde|/celular-redmi-17-256gb-4g-verde-ram-6gb-bateria-7500mah/p/6939093017487
+alkosto|840493610641|Celulares|Celular Motorola G67 5G 8/256 GB Gris|/celular-motorola-g67-256gb-5g-gris-ram-8gb-bateria-5200mah/p/840493610641
+alkosto|840493626635|Celulares|Celular Motorola Edge 60 Fusion 8/128 GB Azul|/celular-motorola-edge-60-fusion-128gb-5g-azul-ram-8gb/p/840493626635
+alkosto|840493610658|Celulares|Celular Motorola G67 5G 8/256 GB Lima|/celular-motorola-g67-256gb-5g-lima-ram-8gb-bateria-5200mah/p/840493610658
+alkosto|840493626628|Celulares|Celular Motorola Edge 60 Fusion 8/128 GB Verde|/celular-motorola-edge-60-fusion-128gb-5g-verde-ram-8gb/p/840493626628
+alkosto|840493602639|Celulares|Celular Motorola G06 4/128 GB|/celular-motorola-g06-128gb-4g-azul-ram-4gb-bateria-5200mah/p/840493602639
+alkosto|840493628448|Celulares|Celular Motorola Edge 70 Fusion 12/256 GB Verde|/celular-motorola-edge-70-fusion-256gb-5g-verde-ram-12gb/p/840493628448
+alkosto|4894947121760|Celulares|Celular Infinix Hot 70 4/256 GB Naranja|/celular-infinix-hot-70-256gb-4g-termo-naranja-ram-4gb/p/4894947121760
+alkosto|8806097215325|Tablets|Tablet Samsung Galaxy Tab S10 FE+ 128 GB Gris|/tablet-samsung-131-pulgadas-s10-fe-128gb-gris/p/8806097215325
+alkosto|8806097407867|Tablets|Tablet Samsung Galaxy Tab S10 FE+ 128 GB Azul|/tablet-samsung-131-pulgadas-s10-fe-128gb-azul-claro/p/8806097407867
+alkosto|199271877722|Tablets|Tablet Lenovo Idea Tab Plus 256 GB|/tablet-lenovo-121-pulgadas-idea-tab-plus-256gb-wifi--gris/p/199271877722
+alkosto|4548736164758|Audio|Parlante Sony ULT Field 3 Negro|/parlante-sony-ult-field-3-negro/p/4548736164758
+alkosto|4548736164772|Audio|Parlante Sony ULT Field 3 Gris|/parlante-sony-ult-field-3-gris/p/4548736164772
+alkosto|4548736164765|Audio|Parlante Sony ULT Field 3 Blanco|/parlante-sony-ult-field-3-blanco/p/4548736164765
+alkosto|8806097349969|Audio|Audífonos Samsung Galaxy Buds Core Negro|/audifonos-samsung-galaxy-buds-core-cancelacion-ruido-negro/p/8806097349969
+alkosto|8806095658339|Audio|Audífonos Samsung Galaxy Buds3 Pro Blanco|/audifonos-samsung-galaxy-buds3-pro-cancelacion-ruido/p/8806095658339
+alkosto|27242930339|Audio|Audífonos Sony WF-C510 Negro|/audifonos-sony-inalambricos-bluetooth-in-ear-deportivos/p/027242930339
+alkosto|27242930391|Audio|Audífonos Sony WF-C510 Azul|/audifonos-sony-inalambricos-bluetooth-in-ear-deportivos/p/027242930391
+alkosto|27242930346|Audio|Audífonos Sony WF-C510 Blanco|/audifonos-sony-inalambricos-bluetooth-in-ear-deportivos/p/027242930346
+alkosto|8806096022306|Audio|Barra de sonido LG S70TR 500 W|/barra-sonido-lg-s70tr-500-watts-negro/p/8806096022306
+alkosto|8806097977766|Televisores|Televisor Samsung 55" Crystal UHD 55U8000H|/tv-samsung-55-pulgadas-1397-cm-55u8000h-4k-uhd-led-crystal/p/8806097977766
+alkosto|8806097978336|Televisores|Televisor Samsung 65" Crystal UHD 65U8000H|/tv-samsung-65-pulgadas-1651-cm-65u8000h-4k-uhd-led-crystal/p/8806097978336
+alkosto|8806099123215|Televisores|Televisor Samsung 75" Crystal UHD 75U8500H|/tv-samsung-75-pulgadas-1905-cm-75u8500h-4k-uhd-led-crystal/p/8806099123215
+alkosto|8806097960829|Televisores|Televisor Samsung 50" Mini LED 50M75H|/tv-samsung-50-pulgadas-127-cm-50m75h-4k-uhd-mini-led-smart/p/8806097960829
+alkosto|8806097960874|Televisores|Televisor Samsung 75" Mini LED 75M75H|/tv-samsung-75-pulgadas-1905-cm-75m75h-4k-uhd-mini-led/p/8806097960874
+alkosto|8806097960959|Televisores|Televisor Samsung 85" Mini LED 85M75H|/tv-samsung-85-pulgadas-2159-cm-85m75h-4k-uhd-mini-led/p/8806097960959
+alkosto|8806099127183|Televisores|Televisor Samsung 98" Crystal UHD 98U9500H|/tv-samsung-98-pulgadas-24892-cm-98u9500h-4k-uhd-led-smart/p/8806099127183
+alkosto|8806097954774|Televisores|Televisor Samsung 85" Crystal UHD 85U8500H|/tv-samsung-85-pulgadas-2159-cm-85u8500h-4k-uhd-led-crystal/p/8806097954774
+alkosto|8806099025090|Televisores|Televisor Samsung 55" Neo QLED 55QN70H|/tv-samsung-55-pulgadas-1397-cm-55qn70h-4k-uhd-mini-led/p/8806099025090
+alkosto|7705946481519|Televisores|Televisor Kalley 50" 4K 50G315A|/tv-kalley-50-pulgadas-126-cm-50g315a-4k-uhd-max-led-smart/p/7705946481519
+alkosto|7705191046365|Televisores|Televisor Challenger 43" FHD 43KG90|/tv-challenger-43-pulgadas-108-cm-43kg90-fhd-led-smart-tv/p/7705191046365
+alkosto|7705191047638|Televisores|Televisor Challenger 50" 4K 50KR15|/tv-challenger-50-pulgadas-126-cm-50kr15-t2-4k-uhd-led/p/7705191047638
+alkosto|7705191047072|Televisores|Televisor Challenger 100" Mini LED 100KG290|/tv-challenger-100-pulgadas-253-cm-100kg290-4k-uhd-mini-led/p/7705191047072
+alkosto|199276612137|Portátiles|Portátil Lenovo IdeaPad Slim 3 táctil|/computador-portatil-lenovo-idepad-slim-3-156-pulgadas/p/199276612137
+alkosto|828132113647|Portátiles|Portátil Lenovo IdeaPad Slim 3 15,6"|/computador-portatil-lenovo-ideapad-slim-3-156-pulgadas/p/828132113647
+alkosto|198990787213|Portátiles|Portátil HP 15-fd0131la táctil Core i3|/computador-portatil-hp-15-pulgadas-fd0131la-tactil-intel/p/198990787213
+alkosto|199764911858|Portátiles|Portátil HP 15-fd0331la Core i3|/computador-portatil-hp-15-pulgadas-fd0331la-intel-core-i3/p/199764911858
+alkosto|198990788418|Portátiles|Portátil gamer HP Victus 15-fa2009la Core i5|/computador-portatil-gamer-hp-victus-15-fa2009la-intel-core/p/198990788418
+alkosto|7909569469194|Neveras|Nevera Electrolux 173 L ERB16|/nevera-electrolux-frost-congelador-inferior-173-litros/p/7909569469194
+alkosto|7909569483831|Neveras|Nevecón Electrolux side by side 423 L ERS45F3C5EB|/nevecon-electrolux-side-by-side-423-litros-ers45f3c5eb/p/7909569483831
+alkosto|8806092678415|Neveras|Nevecón Samsung 625 L RF22A4220S9|/nevecon-samsung-tipo-europeo-625-litros-rf22a4220s9-co/p/8806092678415
+alkosto|8806090746154|Lavado|Lavadora secadora Samsung 20 kg WD20T6300GP|/lavadora-secadora-samsung-carga-frontal-20-kilos/p/8806090746154
+alkosto|8806092662063|Lavado|Lavadora secadora Samsung 11,5 kg WD11T4046|/lavadora-secadora-samsung-carga-frontal-115-kilos/p/8806092662063
+alkosto|8806090746161|Lavado|Lavadora secadora Samsung 22 kg WD22T6500GP|/lavadora-secadora-samsung-carga-frontal-22-kilos/p/8806090746161
+alkosto|7704353476170|Lavado|Lavadora secadora Haceb 12 kg|/lavadora-secadora-haceb-carga-frontal-12-kilos-las12ehcfgc/p/7704353476170
+alkosto|883049602622|Lavado|Lavadora secadora Whirlpool 20 kg 7MWFC6820|/lavadora-secadora-whirlpool-carga-frontal-20-kilos/p/883049602622
+alkosto|8023277156593|Cuidado personal|Secador Gama Tempo Avocado|/secador-cabello-gama-tempo-avocado/p/8023277156593
+alkosto|74108501189|Cuidado personal|Secador Conair 650AL hialurónico|/secador-cabello-conair-650al-con-infusion-hialuronica-azul/p/074108501189

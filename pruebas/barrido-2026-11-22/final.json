@@ -1,0 +1,2359 @@
+[
+{
+"ean": "196804839998",
+"v": "dudosa",
+"tienda": "Jumbo",
+"cat": "Portátiles",
+"nombre": "Portátil Lenovo IdeaPad Slim 3 15AMN8 Ryzen 5 8/512 GB",
+"precio": 2099900,
+"antes": 4199000,
+"tarjeta": 0,
+"url": "https://www.jumbocolombia.com/computador-portatil-lenovo-ideapad-slim3-15amn8-amd-ryzen-5-7520u-ram-8gb-512gb-ssd-gris-15-6-3592322/p",
+"tiendas": [
+{
+"t": "Olímpica",
+"p": 2099400,
+"a": 3499000,
+"c": 0,
+"url": "https://www.olimpica.com/portatil-lenovo-slim3-ryzen-5-8g-512g-15-pulgadas/p"
+},
+{
+"t": "Jumbo",
+"p": 2099900,
+"a": 4199000,
+"c": 0,
+"url": "https://www.jumbocolombia.com/computador-portatil-lenovo-ideapad-slim3-15amn8-amd-ryzen-5-7520u-ram-8gb-512gb-ssd-gris-15-6-3592322/p"
+}
+],
+"pruebas": [
+"Jumbo dice que antes costaba $4.199.000, pero Olímpica lo vende hoy a $2.099.400 y su precio anterior más alto es $3.499.000.",
+"Solo lo comparamos con una tienda más: no basta para afirmar que es mentira."
+],
+"ahorro": 0
+},
+{
+"ean": "198990787213",
+"v": "mentira",
+"tienda": "Olímpica",
+"cat": "Portátiles",
+"nombre": "Portátil HP 15-fd0131la táctil Core i3",
+"precio": 1899620,
+"antes": 4999000,
+"tarjeta": 0,
+"url": "https://www.olimpica.com/computador-portatil-hp-15-fd0131la-core-i3-n305-8gb-512gb-ssd-15-6-fhd-tactil-windows-11/p",
+"tiendas": [
+{
+"t": "Alkosto",
+"p": 1699070,
+"a": 3399000,
+"c": 1599070,
+"url": "https://www.alkosto.com/computador-portatil-hp-15-pulgadas-fd0131la-tactil-intel/p/198990787213"
+},
+{
+"t": "Jumbo",
+"p": 1799000,
+"a": 3399000,
+"c": 0,
+"url": "https://www.jumbocolombia.com/portatil-hp-15-fd0131la-touch-intel-core-i3-465686/p"
+},
+{
+"t": "Olímpica",
+"p": 1899620,
+"a": 4999000,
+"c": 0,
+"url": "https://www.olimpica.com/computador-portatil-hp-15-fd0131la-core-i3-n305-8gb-512gb-ssd-15-6-fhd-tactil-windows-11/p"
+}
+],
+"pruebas": [
+"Olímpica dice que antes costaba $4.999.000.",
+"Ninguna de las otras 2 tiendas lo cobra a ese precio ni lo anuncia como precio anterior: lo más alto que vimos fue $3.399.000.",
+"El \"descuento\" real frente a las demás tiendas: en Alkosto cuesta $1.699.070, $200.550 menos."
+],
+"ahorro": 0
+},
+{
+"ean": "198990788418",
+"v": "dudosa",
+"tienda": "Jumbo",
+"cat": "Portátiles",
+"nombre": "Portátil gamer HP Victus 15-fa2009la Core i5",
+"precio": 3699000,
+"antes": 7499000,
+"tarjeta": 0,
+"url": "https://www.jumbocolombia.com/computador-portatil-gaming-hp-15-fa2009-415856/p",
+"tiendas": [
+{
+"t": "Jumbo",
+"p": 3699000,
+"a": 7499000,
+"c": 0,
+"url": "https://www.jumbocolombia.com/computador-portatil-gaming-hp-15-fa2009-415856/p"
+},
+{
+"t": "Alkosto",
+"p": 3699070,
+"a": 5999000,
+"c": 0,
+"url": "https://www.alkosto.com/computador-portatil-gamer-hp-victus-15-fa2009la-intel-core/p/198990788418"
+}
+],
+"pruebas": [
+"Jumbo dice que antes costaba $7.499.000, pero Alkosto lo vende hoy a $3.699.070 y su precio anterior más alto es $5.999.000.",
+"Solo lo comparamos con una tienda más: no basta para afirmar que es mentira."
+],
+"ahorro": 0
+},
+{
+"ean": "199271877722",
+"v": "dudosa",
+"tienda": "Olímpica",
+"cat": "Tablets",
+"nombre": "Tablet Lenovo Idea Tab Plus 8/256 GB 11\"",
+"precio": 1580490,
+"antes": 3099000,
+"tarjeta": 0,
+"url": "https://www.olimpica.com/tablet-lenovo-ideatab-plus-8g-256g-wifi-acce-11-/p",
+"tiendas": [
+{
+"t": "Olímpica",
+"p": 1580490,
+"a": 3099000,
+"c": 0,
+"url": "https://www.olimpica.com/tablet-lenovo-ideatab-plus-8g-256g-wifi-acce-11-/p"
+},
+{
+"t": "Alkosto",
+"p": 1599070,
+"a": 2299000,
+"c": 0,
+"url": "https://www.alkosto.com/tablet-lenovo-121-pulgadas-idea-tab-plus-256gb-wifi--gris/p/199271877722"
+}
+],
+"pruebas": [
+"Olímpica dice que antes costaba $3.099.000, pero Alkosto lo vende hoy a $1.599.070 y su precio anterior más alto es $2.299.000.",
+"Solo lo comparamos con una tienda más: no basta para afirmar que es mentira."
+],
+"ahorro": 0
+},
+{
+"ean": "199272381600",
+"v": "dudosa",
+"tienda": "Olímpica",
+"cat": "Portátiles",
+"nombre": "Portátil gamer Lenovo LOQ 15IRX9 Core i5 RTX 3050",
+"precio": 4423440,
+"antes": 7899000,
+"tarjeta": 0,
+"url": "https://www.olimpica.com/computador-portatil-lenovo-loq-15irx9-ci5-16gb-512gb-11s-rtx3050/p",
+"tiendas": [
+{
+"t": "Olímpica",
+"p": 4423440,
+"a": 7899000,
+"c": 0,
+"url": "https://www.olimpica.com/computador-portatil-lenovo-loq-15irx9-ci5-16gb-512gb-11s-rtx3050/p"
+},
+{
+"t": "Jumbo",
+"p": 4599900,
+"a": 5899000,
+"c": 0,
+"url": "https://www.jumbocolombia.com/computador-portatil-gaming-lenovo-loq-15irx9-intel-core-i5-13450hx-ram-16gb--512gb-ssd-nvidia-geforce-rtx-3050-6gb-ai-15-6-luna-gris/p"
+}
+],
+"pruebas": [
+"Olímpica dice que antes costaba $7.899.000, pero Jumbo lo vende hoy a $4.599.900 y su precio anterior más alto es $5.899.000.",
+"Solo lo comparamos con una tienda más: no basta para afirmar que es mentira."
+],
+"ahorro": 0
+},
+{
+"ean": "199275960147",
+"v": "dudosa",
+"tienda": "Olímpica",
+"cat": "Portátiles",
+"nombre": "Portátil Lenovo IdeaPad Slim 3 15IRH10 Core i5 táctil",
+"precio": 2219630,
+"antes": 5999000,
+"tarjeta": 0,
+"url": "https://www.olimpica.com/computador-portatil-lenovo-ip-slim-3-15irh10-ci5-16gb-512gb-11s-touch-azul/p",
+"tiendas": [
+{
+"t": "Olímpica",
+"p": 2219630,
+"a": 5999000,
+"c": 0,
+"url": "https://www.olimpica.com/computador-portatil-lenovo-ip-slim-3-15irh10-ci5-16gb-512gb-11s-touch-azul/p"
+},
+{
+"t": "Jumbo",
+"p": 2618000,
+"a": 4299000,
+"c": 0,
+"url": "https://www.jumbocolombia.com/computador-portatil-ideapad-slim-3-tactil-15irh10-431088/p"
+}
+],
+"pruebas": [
+"Olímpica dice que antes costaba $5.999.000, pero Jumbo lo vende hoy a $2.618.000 y su precio anterior más alto es $4.299.000.",
+"Solo lo comparamos con una tienda más: no basta para afirmar que es mentira."
+],
+"ahorro": 0
+},
+{
+"ean": "199275960147",
+"v": "dudosa",
+"tienda": "Jumbo",
+"cat": "Portátiles",
+"nombre": "Portátil Lenovo IdeaPad Slim 3 15IRH10 Core i5 táctil",
+"precio": 2618000,
+"antes": 4299000,
+"tarjeta": 0,
+"url": "https://www.jumbocolombia.com/computador-portatil-ideapad-slim-3-tactil-15irh10-431088/p",
+"tiendas": [
+{
+"t": "Olímpica",
+"p": 2219630,
+"a": 5999000,
+"c": 0,
+"url": "https://www.olimpica.com/computador-portatil-lenovo-ip-slim-3-15irh10-ci5-16gb-512gb-11s-touch-azul/p"
+},
+{
+"t": "Jumbo",
+"p": 2618000,
+"a": 4299000,
+"c": 0,
+"url": "https://www.jumbocolombia.com/computador-portatil-ideapad-slim-3-tactil-15irh10-431088/p"
+}
+],
+"pruebas": [
+"Jumbo anuncia 39 % de descuento (antes $4.299.000), pero en Olímpica cuesta $2.219.630: $398.370 menos."
+],
+"ahorro": 0
+},
+{
+"ean": "199276612137",
+"v": "mentira",
+"tienda": "Olímpica",
+"cat": "Portátiles",
+"nombre": "Portátil Lenovo IdeaPad Slim 3 Ryzen 5 8/512 GB táctil",
+"precio": 1967590,
+"antes": 4799000,
+"tarjeta": 0,
+"url": "https://www.olimpica.com/computador-portatil-lenovo-sl3-15amn8-r5-8g-512g-11s-touch/p",
+"tiendas": [
+{
+"t": "Olímpica",
+"p": 1967590,
+"a": 4799000,
+"c": 0,
+"url": "https://www.olimpica.com/computador-portatil-lenovo-sl3-15amn8-r5-8g-512g-11s-touch/p"
+},
+{
+"t": "Alkosto",
+"p": 1999070,
+"a": 3999000,
+"c": 1899070,
+"url": "https://www.alkosto.com/computador-portatil-lenovo-idepad-slim-3-156-pulgadas/p/199276612137"
+},
+{
+"t": "Jumbo",
+"p": 1999900,
+"a": 3999000,
+"c": 0,
+"url": "https://www.jumbocolombia.com/portatil-lenovo-slim3-amd-ryzen-5-ram-8gb-512gb-447859/p"
+}
+],
+"pruebas": [
+"Olímpica dice que antes costaba $4.799.000.",
+"Ninguna de las otras 2 tiendas lo cobra a ese precio ni lo anuncia como precio anterior: lo más alto que vimos fue $3.999.000.",
+"El \"descuento\" real frente a las demás tiendas: lo deja más barato que Alkosto por $31.480."
+],
+"ahorro": 0
+},
+{
+"ean": "199764911858",
+"v": "dudosa",
+"tienda": "Olímpica",
+"cat": "Portátiles",
+"nombre": "Portátil HP 15-fd0331la Core i3",
+"precio": 1871610,
+"antes": 4799000,
+"tarjeta": 0,
+"url": "https://www.olimpica.com/portatil-hp-15-fd0331la-intel-core-i3--8gb-512gb-ssd-15-6-fhd-windows-11-home-single-language/p",
+"tiendas": [
+{
+"t": "Alkosto",
+"p": 1799070,
+"a": 3749000,
+"c": 0,
+"url": "https://www.alkosto.com/computador-portatil-hp-15-pulgadas-fd0331la-intel-core-i3/p/199764911858"
+},
+{
+"t": "Olímpica",
+"p": 1871610,
+"a": 4799000,
+"c": 0,
+"url": "https://www.olimpica.com/portatil-hp-15-fd0331la-intel-core-i3--8gb-512gb-ssd-15-6-fhd-windows-11-home-single-language/p"
+}
+],
+"pruebas": [
+"Olímpica dice que antes costaba $4.799.000, pero Alkosto lo vende hoy a $1.799.070 y su precio anterior más alto es $3.749.000.",
+"Solo lo comparamos con una tienda más: no basta para afirmar que es mentira."
+],
+"ahorro": 0
+},
+{
+"ean": "27242930339",
+"v": "dudosa",
+"tienda": "Éxito",
+"cat": "Audio",
+"nombre": "Audífonos Sony WF-C510 Negro",
+"precio": 169900,
+"antes": 449900,
+"tarjeta": 0,
+"url": "https://www.exito.com/audifonos-inalambricos-sony-audifonos-earbuds-negro-wf-c510-negro-3193044/p",
+"tiendas": [
+{
+"t": "Éxito",
+"p": 169900,
+"a": 449900,
+"c": 0,
+"url": "https://www.exito.com/audifonos-inalambricos-sony-audifonos-earbuds-negro-wf-c510-negro-3193044/p"
+},
+{
+"t": "Alkosto",
+"p": 169900,
+"a": 339900,
+"c": 0,
+"url": "https://www.alkosto.com/audifonos-sony-inalambricos-bluetooth-in-ear-deportivos/p/027242930339"
+}
+],
+"pruebas": [
+"Éxito dice que antes costaba $449.900, pero Alkosto lo vende hoy a $169.900 y su precio anterior más alto es $339.900.",
+"Solo lo comparamos con una tienda más: no basta para afirmar que es mentira."
+],
+"ahorro": 0
+},
+{
+"ean": "27242930346",
+"v": "dudosa",
+"tienda": "Éxito",
+"cat": "Audio",
+"nombre": "Audífonos Sony WF-C510 Blanco",
+"precio": 169900,
+"antes": 449900,
+"tarjeta": 0,
+"url": "https://www.exito.com/audifonos-inalambricos-sony-audifonos-earbuds-blanco-wf-c510-blanco-3193043/p",
+"tiendas": [
+{
+"t": "Éxito",
+"p": 169900,
+"a": 449900,
+"c": 0,
+"url": "https://www.exito.com/audifonos-inalambricos-sony-audifonos-earbuds-blanco-wf-c510-blanco-3193043/p"
+},
+{
+"t": "Alkosto",
+"p": 169900,
+"a": 339900,
+"c": 0,
+"url": "https://www.alkosto.com/audifonos-sony-inalambricos-bluetooth-in-ear-deportivos/p/027242930346"
+}
+],
+"pruebas": [
+"Éxito dice que antes costaba $449.900, pero Alkosto lo vende hoy a $169.900 y su precio anterior más alto es $339.900.",
+"Solo lo comparamos con una tienda más: no basta para afirmar que es mentira."
+],
+"ahorro": 0
+},
+{
+"ean": "27242930391",
+"v": "dudosa",
+"tienda": "Éxito",
+"cat": "Audio",
+"nombre": "Audífonos Sony WF-C510 Azul",
+"precio": 169900,
+"antes": 449900,
+"tarjeta": 0,
+"url": "https://www.exito.com/audifonos-inalambricos-sony-audifonos-earbuds-azul-wf-c510-azul-3193042/p",
+"tiendas": [
+{
+"t": "Éxito",
+"p": 169900,
+"a": 449900,
+"c": 0,
+"url": "https://www.exito.com/audifonos-inalambricos-sony-audifonos-earbuds-azul-wf-c510-azul-3193042/p"
+},
+{
+"t": "Alkosto",
+"p": 169900,
+"a": 339900,
+"c": 0,
+"url": "https://www.alkosto.com/audifonos-sony-inalambricos-bluetooth-in-ear-deportivos/p/027242930391"
+}
+],
+"pruebas": [
+"Éxito dice que antes costaba $449.900, pero Alkosto lo vende hoy a $169.900 y su precio anterior más alto es $339.900.",
+"Solo lo comparamos con una tienda más: no basta para afirmar que es mentira."
+],
+"ahorro": 0
+},
+{
+"ean": "4548736164758",
+"v": "dudosa",
+"tienda": "Éxito",
+"cat": "Audio",
+"nombre": "Parlante Sony ULT Field 3 Negro",
+"precio": 459900,
+"antes": 999900,
+"tarjeta": 0,
+"url": "https://www.exito.com/parlante-sony-srs-ult30-40w-negro-negro-3224673/p",
+"tiendas": [
+{
+"t": "Alkosto",
+"p": 399900,
+"a": 999900,
+"c": 0,
+"url": "https://www.alkosto.com/parlante-sony-ult-field-3-negro/p/4548736164758"
+},
+{
+"t": "Éxito",
+"p": 459900,
+"a": 999900,
+"c": 0,
+"url": "https://www.exito.com/parlante-sony-srs-ult30-40w-negro-negro-3224673/p"
+}
+],
+"pruebas": [
+"Éxito anuncia 54 % de descuento (antes $999.900), pero en Alkosto cuesta $399.900: $60.000 menos."
+],
+"ahorro": 0
+},
+{
+"ean": "4548736164765",
+"v": "dudosa",
+"tienda": "Éxito",
+"cat": "Audio",
+"nombre": "Parlante Sony ULT Field 3 Blanco",
+"precio": 459900,
+"antes": 999900,
+"tarjeta": 0,
+"url": "https://www.exito.com/parlante-sony-srs-ult30-40w-blanco-blanco-3224671/p",
+"tiendas": [
+{
+"t": "Alkosto",
+"p": 399900,
+"a": 999900,
+"c": 0,
+"url": "https://www.alkosto.com/parlante-sony-ult-field-3-blanco/p/4548736164765"
+},
+{
+"t": "Éxito",
+"p": 459900,
+"a": 999900,
+"c": 0,
+"url": "https://www.exito.com/parlante-sony-srs-ult30-40w-blanco-blanco-3224671/p"
+}
+],
+"pruebas": [
+"Éxito anuncia 54 % de descuento (antes $999.900), pero en Alkosto cuesta $399.900: $60.000 menos."
+],
+"ahorro": 0
+},
+{
+"ean": "4548736164772",
+"v": "dudosa",
+"tienda": "Éxito",
+"cat": "Audio",
+"nombre": "Parlante Sony ULT Field 3 Gris",
+"precio": 459900,
+"antes": 999900,
+"tarjeta": 0,
+"url": "https://www.exito.com/parlante-sony-srs-ult30-40w-gris-gris-3224672/p",
+"tiendas": [
+{
+"t": "Alkosto",
+"p": 399900,
+"a": 999900,
+"c": 0,
+"url": "https://www.alkosto.com/parlante-sony-ult-field-3-gris/p/4548736164772"
+},
+{
+"t": "Éxito",
+"p": 459900,
+"a": 999900,
+"c": 0,
+"url": "https://www.exito.com/parlante-sony-srs-ult30-40w-gris-gris-3224672/p"
+}
+],
+"pruebas": [
+"Éxito anuncia 54 % de descuento (antes $999.900), pero en Alkosto cuesta $399.900: $60.000 menos."
+],
+"ahorro": 0
+},
+{
+"ean": "4894947121760",
+"v": "dudosa",
+"tienda": "Jumbo",
+"cat": "Celulares",
+"nombre": "Celular Infinix Hot 70 4/256 GB Naranja",
+"precio": 835900,
+"antes": 1899900,
+"tarjeta": 0,
+"url": "https://www.jumbocolombia.com/celular-infinix-hot-70-4gb-ram-256gb-naranja-3747202/p",
+"tiendas": [
+{
+"t": "Alkosto",
+"p": 799050,
+"a": 1049050,
+"c": 0,
+"url": "https://www.alkosto.com/celular-infinix-hot-70-256gb-4g-termo-naranja-ram-4gb/p/4894947121760"
+},
+{
+"t": "Jumbo",
+"p": 835900,
+"a": 1899900,
+"c": 0,
+"url": "https://www.jumbocolombia.com/celular-infinix-hot-70-4gb-ram-256gb-naranja-3747202/p"
+}
+],
+"pruebas": [
+"Jumbo dice que antes costaba $1.899.900, pero Alkosto lo vende hoy a $799.050 y su precio anterior más alto es $1.049.050.",
+"Solo lo comparamos con una tienda más: no basta para afirmar que es mentira."
+],
+"ahorro": 0
+},
+{
+"ean": "6901101829542",
+"v": "dudosa",
+"tienda": "Éxito",
+"cat": "Lavado",
+"nombre": "Lavadora secadora Hisense 15 kg WD3S1543BT",
+"precio": 2199900,
+"antes": 3699900,
+"tarjeta": 0,
+"url": "https://www.exito.com/lavadora-secadora-hisense-electrica-15-kg-wd3s1543bt-titanium-gray-3192327/p",
+"tiendas": [
+{
+"t": "Éxito",
+"p": 2199900,
+"a": 3699900,
+"c": 0,
+"url": "https://www.exito.com/lavadora-secadora-hisense-electrica-15-kg-wd3s1543bt-titanium-gray-3192327/p"
+},
+{
+"t": "Olímpica",
+"p": 2203924,
+"a": 2899900,
+"c": 0,
+"url": "https://www.olimpica.com/lavadora-secadora-hisense-carga-frontal-3s-15kg/p"
+}
+],
+"pruebas": [
+"Éxito dice que antes costaba $3.699.900, pero Olímpica lo vende hoy a $2.203.924 y su precio anterior más alto es $2.899.900.",
+"Solo lo comparamos con una tienda más: no basta para afirmar que es mentira."
+],
+"ahorro": 0
+},
+{
+"ean": "6932554400705",
+"v": "dudosa",
+"tienda": "Jumbo",
+"cat": "Celulares",
+"nombre": "Celular Xiaomi Redmi Note 17 6/256 GB Negro",
+"precio": 999900,
+"antes": 1399900,
+"tarjeta": 0,
+"url": "https://www.jumbocolombia.com/celular-xiaomi-redmi-note-17-6gb-256gb-black-459626/p",
+"tiendas": [
+{
+"t": "Alkosto",
+"p": 819050,
+"a": 1399050,
+"c": 0,
+"url": "https://www.alkosto.com/celular-redmi-note-17-256gb-4g-negro-ram-6gb-bateria/p/6932554400705"
+},
+{
+"t": "Jumbo",
+"p": 999900,
+"a": 1399900,
+"c": 0,
+"url": "https://www.jumbocolombia.com/celular-xiaomi-redmi-note-17-6gb-256gb-black-459626/p"
+}
+],
+"pruebas": [
+"Jumbo anuncia 29 % de descuento (antes $1.399.900), pero en Alkosto cuesta $819.050: $180.850 menos."
+],
+"ahorro": 0
+},
+{
+"ean": "6939093017487",
+"v": "dudosa",
+"tienda": "Alkosto",
+"cat": "Celulares",
+"nombre": "Celular Xiaomi Redmi 17 6/256 GB Verde",
+"precio": 849050,
+"antes": 1399050,
+"tarjeta": 0,
+"url": "https://www.alkosto.com/celular-redmi-17-256gb-4g-verde-ram-6gb-bateria-7500mah/p/6939093017487",
+"tiendas": [
+{
+"t": "Alkosto",
+"p": 849050,
+"a": 1399050,
+"c": 0,
+"url": "https://www.alkosto.com/celular-redmi-17-256gb-4g-verde-ram-6gb-bateria-7500mah/p/6939093017487"
+},
+{
+"t": "Jumbo",
+"p": 849900,
+"a": 1099900,
+"c": 0,
+"url": "https://www.jumbocolombia.com/celular-xiaomi-redmi-17-6gb256gb-oak-green-452325/p"
+}
+],
+"pruebas": [
+"Alkosto dice que antes costaba $1.399.050, pero Jumbo lo vende hoy a $849.900 y su precio anterior más alto es $1.099.900.",
+"Solo lo comparamos con una tienda más: no basta para afirmar que es mentira."
+],
+"ahorro": 0
+},
+{
+"ean": "6942351410388",
+"v": "dudosa",
+"tienda": "Éxito",
+"cat": "Televisores",
+"nombre": "Televisor Hisense 70\" 4K 70A6NV",
+"precio": 2299900,
+"antes": 4499900,
+"tarjeta": 0,
+"url": "https://www.exito.com/televisor-hisense-70-pulgadas-led-uhd-4k-smart-tv-70a6nv-3208351/p",
+"tiendas": [
+{
+"t": "Jumbo",
+"p": 2199900,
+"a": 2799900,
+"c": 0,
+"url": "https://www.jumbocolombia.com/televisor-hisense-70-pulgadas-uhd-4k-smart-tv-70a6nv-3706101/p"
+},
+{
+"t": "Éxito",
+"p": 2299900,
+"a": 4499900,
+"c": 0,
+"url": "https://www.exito.com/televisor-hisense-70-pulgadas-led-uhd-4k-smart-tv-70a6nv-3208351/p"
+}
+],
+"pruebas": [
+"Éxito dice que antes costaba $4.499.900, pero Jumbo lo vende hoy a $2.199.900 y su precio anterior más alto es $2.799.900.",
+"Solo lo comparamos con una tienda más: no basta para afirmar que es mentira."
+],
+"ahorro": 0
+},
+{
+"ean": "6942351422107",
+"v": "dudosa",
+"tienda": "Éxito",
+"cat": "Televisores",
+"nombre": "Televisor Hisense 85\" QLED 85Q6QV",
+"precio": 4199900,
+"antes": 10499900,
+"tarjeta": 0,
+"url": "https://www.exito.com/televisor-hisense-85-pulgadas-qled-uhd-4k-smart-tv-85q6qv-3208357/p",
+"tiendas": [
+{
+"t": "Éxito",
+"p": 4199900,
+"a": 10499900,
+"c": 0,
+"url": "https://www.exito.com/televisor-hisense-85-pulgadas-qled-uhd-4k-smart-tv-85q6qv-3208357/p"
+},
+{
+"t": "Jumbo",
+"p": 4199900,
+"a": 6999900,
+"c": 0,
+"url": "https://www.jumbocolombia.com/televisor-hisense-qled-uhd-4k-85-pulgadas-smart-negro-85q6qv-3706100/p"
+}
+],
+"pruebas": [
+"Éxito dice que antes costaba $10.499.900, pero Jumbo lo vende hoy a $4.199.900 y su precio anterior más alto es $6.999.900.",
+"Solo lo comparamos con una tienda más: no basta para afirmar que es mentira."
+],
+"ahorro": 0
+},
+{
+"ean": "6942351427836",
+"v": "dudosa",
+"tienda": "Éxito",
+"cat": "Televisores",
+"nombre": "Televisor Hisense 65\" Mini LED 65U6ESV",
+"precio": 2549900,
+"antes": 5399900,
+"tarjeta": 0,
+"url": "https://www.exito.com/televisor-hisense-65-pulgadas-uled-uhd-4k-smart-tv-65u6esv-3246406/p",
+"tiendas": [
+{
+"t": "Éxito",
+"p": 2549900,
+"a": 5399900,
+"c": 0,
+"url": "https://www.exito.com/televisor-hisense-65-pulgadas-uled-uhd-4k-smart-tv-65u6esv-3246406/p"
+},
+{
+"t": "Jumbo",
+"p": 2549900,
+"a": 4099900,
+"c": 0,
+"url": "https://www.jumbocolombia.com/televisor-hisense-65-pulgadas-miniled-4k-smart-tv-65u6esv-3742194/p"
+}
+],
+"pruebas": [
+"Éxito dice que antes costaba $5.399.900, pero Jumbo lo vende hoy a $2.549.900 y su precio anterior más alto es $4.099.900.",
+"Solo lo comparamos con una tienda más: no basta para afirmar que es mentira."
+],
+"ahorro": 0
+},
+{
+"ean": "6942351427843",
+"v": "mentira",
+"tienda": "Jumbo",
+"cat": "Televisores",
+"nombre": "Televisor Hisense 55\" Mini LED 55U6ESV",
+"precio": 1999900,
+"antes": 5399900,
+"tarjeta": 0,
+"url": "https://www.jumbocolombia.com/televisor-hisense-55-pulgadas-miniled-4k-smart-tv-55u6esv-3742195/p",
+"tiendas": [
+{
+"t": "Olímpica",
+"p": 1967952,
+"a": 4099900,
+"c": 0,
+"url": "https://www.olimpica.com/televisor-hisense-55-pulgadas-uled-miniled-u6esv/p"
+},
+{
+"t": "Éxito",
+"p": 1999900,
+"a": 4099900,
+"c": 0,
+"url": "https://www.exito.com/televisor-hisense-55-pulgadas-uled-uhd-4k-smart-tv-55u6esv-3246405/p"
+},
+{
+"t": "Jumbo",
+"p": 1999900,
+"a": 5399900,
+"c": 0,
+"url": "https://www.jumbocolombia.com/televisor-hisense-55-pulgadas-miniled-4k-smart-tv-55u6esv-3742195/p"
+}
+],
+"pruebas": [
+"Jumbo dice que antes costaba $5.399.900.",
+"Ninguna de las otras 2 tiendas lo cobra a ese precio ni lo anuncia como precio anterior: lo más alto que vimos fue $4.099.900.",
+"El \"descuento\" real frente a las demás tiendas: en Olímpica cuesta $1.967.952, $31.948 menos."
+],
+"ahorro": 0
+},
+{
+"ean": "74108501189",
+"v": "dudosa",
+"tienda": "Olímpica",
+"cat": "Cuidado personal",
+"nombre": "Secador Conair 650AL hialurónico",
+"precio": 230930,
+"antes": 329900,
+"tarjeta": 0,
+"url": "https://www.olimpica.com/secador-conair-hialuronico--650al/p",
+"tiendas": [
+{
+"t": "Jumbo",
+"p": 197900,
+"a": 349900,
+"c": 0,
+"url": "https://www.jumbocolombia.com/secador-de-pelo-hialuronico-650al/p"
+},
+{
+"t": "Alkosto",
+"p": 197900,
+"a": 329900,
+"c": 0,
+"url": "https://www.alkosto.com/secador-cabello-conair-650al-con-infusion-hialuronica-azul/p/074108501189"
+},
+{
+"t": "Olímpica",
+"p": 230930,
+"a": 329900,
+"c": 0,
+"url": "https://www.olimpica.com/secador-conair-hialuronico--650al/p"
+}
+],
+"pruebas": [
+"Olímpica anuncia 30 % de descuento (antes $329.900), pero en Jumbo cuesta $197.900: $33.030 menos."
+],
+"ahorro": 0
+},
+{
+"ean": "7453041022433",
+"v": "dudosa",
+"tienda": "Éxito",
+"cat": "Audio",
+"nombre": "Barra de sonido Aiwa AWSBH1 40 W",
+"precio": 279000,
+"antes": 362900,
+"tarjeta": 0,
+"url": "https://www.exito.com/barra-de-sonido-40w-aiwa-awsbh1-3178997/p",
+"tiendas": [
+{
+"t": "Éxito",
+"p": 279000,
+"a": 362900,
+"c": 0,
+"url": "https://www.exito.com/barra-de-sonido-40w-aiwa-awsbh1-3178997/p"
+},
+{
+"t": "Jumbo",
+"p": 279900,
+"a": 299900,
+"c": 0,
+"url": "https://www.jumbocolombia.com/barra-de-sonido-aiwa-awsbh1/p"
+}
+],
+"pruebas": [
+"Éxito dice que antes costaba $362.900, pero Jumbo lo vende hoy a $279.900 y su precio anterior más alto es $299.900.",
+"Solo lo comparamos con una tienda más: no basta para afirmar que es mentira."
+],
+"ahorro": 0
+},
+{
+"ean": "757638382359",
+"v": "dudosa",
+"tienda": "Jumbo",
+"cat": "Aires acondicionados",
+"nombre": "Aire acondicionado portátil Mabe 12.000 BTU",
+"precio": 1499900,
+"antes": 2483900,
+"tarjeta": 0,
+"url": "https://www.jumbocolombia.com/aire-acondicionado-portatil-110v-12000-btu-blanco-mabe-ptm12cabwjm2-282185/p",
+"tiendas": [
+{
+"t": "Olímpica",
+"p": 1249900,
+"a": 2483900,
+"c": 0,
+"url": "https://www.olimpica.com/aire-acondicionado-portatil-mabe-blanco---ptm12cabwjm2/p"
+},
+{
+"t": "Jumbo",
+"p": 1499900,
+"a": 2483900,
+"c": 0,
+"url": "https://www.jumbocolombia.com/aire-acondicionado-portatil-110v-12000-btu-blanco-mabe-ptm12cabwjm2-282185/p"
+}
+],
+"pruebas": [
+"Jumbo anuncia 40 % de descuento (antes $2.483.900), pero en Olímpica cuesta $1.249.900: $250.000 menos."
+],
+"ahorro": 0
+},
+{
+"ean": "7704353476170",
+"v": "dudosa",
+"tienda": "Jumbo",
+"cat": "Lavado",
+"nombre": "Lavadora secadora Haceb 12 kg",
+"precio": 2369900,
+"antes": 2809900,
+"tarjeta": 0,
+"url": "https://www.jumbocolombia.com/lavadora-secadora-haceb-12kg-gris-lavsec12k-438504/p",
+"tiendas": [
+{
+"t": "Olímpica",
+"p": 2086425,
+"a": 2781900,
+"c": 0,
+"url": "https://www.olimpica.com/lavadora-secadora-haceb-cf-12-kilos-gris/p"
+},
+{
+"t": "Alkosto",
+"p": 2199900,
+"a": 2727900,
+"c": 2099900,
+"url": "https://www.alkosto.com/lavadora-secadora-haceb-carga-frontal-12-kilos-las12ehcfgc/p/7704353476170"
+},
+{
+"t": "Jumbo",
+"p": 2369900,
+"a": 2809900,
+"c": 0,
+"url": "https://www.jumbocolombia.com/lavadora-secadora-haceb-12kg-gris-lavsec12k-438504/p"
+}
+],
+"pruebas": [
+"Jumbo anuncia 16 % de descuento (antes $2.809.900), pero en Olímpica cuesta $2.086.425: $283.475 menos."
+],
+"ahorro": 0
+},
+{
+"ean": "7705191047072",
+"v": "dudosa",
+"tienda": "Alkosto",
+"cat": "Televisores",
+"nombre": "Televisor Challenger 100\" Mini LED 100KG290",
+"precio": 8499900,
+"antes": 9799900,
+"tarjeta": 8399900,
+"url": "https://www.alkosto.com/tv-challenger-100-pulgadas-253-cm-100kg290-4k-uhd-mini-led/p/7705191047072",
+"tiendas": [
+{
+"t": "Olímpica",
+"p": 8499900,
+"a": 0,
+"c": 0,
+"url": "https://www.olimpica.com/televisor-challenger-100-pulgadas-miniled-google-tv-100kg290-bt--t2/p"
+},
+{
+"t": "Alkosto",
+"p": 8499900,
+"a": 9799900,
+"c": 8399900,
+"url": "https://www.alkosto.com/tv-challenger-100-pulgadas-253-cm-100kg290-4k-uhd-mini-led/p/7705191047072"
+}
+],
+"pruebas": [
+"Alkosto dice que antes costaba $9.799.900, pero Olímpica lo vende hoy a $8.499.900 y su precio anterior más alto es $8.499.900.",
+"Solo lo comparamos con una tienda más: no basta para afirmar que es mentira."
+],
+"ahorro": 0
+},
+{
+"ean": "7705191047638",
+"v": "mentira",
+"tienda": "Alkosto",
+"cat": "Televisores",
+"nombre": "Televisor Challenger 50\" 4K 50KR15",
+"precio": 1099900,
+"antes": 1299900,
+"tarjeta": 0,
+"url": "https://www.alkosto.com/tv-challenger-50-pulgadas-126-cm-50kr15-t2-4k-uhd-led/p/7705191047638",
+"tiendas": [
+{
+"t": "Éxito",
+"p": 1099900,
+"a": 0,
+"c": 0,
+"url": "https://www.exito.com/televisor-challenger-50-pulgadas-led-uhd-4k-smart-tv-50kr15-3250529/p"
+},
+{
+"t": "Olímpica",
+"p": 1099900,
+"a": 0,
+"c": 0,
+"url": "https://www.olimpica.com/televisor-challenger-50-pulgadas-ultra--hd-roku--tv--led-50kr15--t2/p"
+},
+{
+"t": "Jumbo",
+"p": 1099900,
+"a": 0,
+"c": 0,
+"url": "https://www.jumbocolombia.com/televisor-challenger-50-pulgadas-led-uhd-t2-roku-50kr15-3745687/p"
+},
+{
+"t": "Alkosto",
+"p": 1099900,
+"a": 1299900,
+"c": 0,
+"url": "https://www.alkosto.com/tv-challenger-50-pulgadas-126-cm-50kr15-t2-4k-uhd-led/p/7705191047638"
+}
+],
+"pruebas": [
+"Alkosto dice que antes costaba $1.299.900.",
+"Ninguna de las otras 3 tiendas lo cobra a ese precio ni lo anuncia como precio anterior: lo más alto que vimos fue $1.099.900.",
+"El \"descuento\" real frente a las demás tiendas: cuesta lo mismo que en Éxito."
+],
+"ahorro": 0
+},
+{
+"ean": "7909569417232",
+"v": "dudosa",
+"tienda": "Éxito",
+"cat": "Neveras",
+"nombre": "Nevecón Electrolux side by side 528 L ERSA53K3HVB",
+"precio": 2702453,
+"antes": 5749900,
+"tarjeta": 0,
+"url": "https://www.exito.com/nevecon-electrolux-side-by-side-electrolux-ersa53k3hvb-3133764/p",
+"tiendas": [
+{
+"t": "Éxito",
+"p": 2702453,
+"a": 5749900,
+"c": 0,
+"url": "https://www.exito.com/nevecon-electrolux-side-by-side-electrolux-ersa53k3hvb-3133764/p"
+},
+{
+"t": "Olímpica",
+"p": 2713941,
+"a": 4599900,
+"c": 0,
+"url": "https://www.olimpica.com/nevecon-electrolux-side-by-side-no-frost-529--litros-inverter-negro/p"
+}
+],
+"pruebas": [
+"Éxito dice que antes costaba $5.749.900, pero Olímpica lo vende hoy a $2.713.941 y su precio anterior más alto es $4.599.900.",
+"Solo lo comparamos con una tienda más: no basta para afirmar que es mentira."
+],
+"ahorro": 0
+},
+{
+"ean": "7909569483831",
+"v": "mentira",
+"tienda": "Alkosto",
+"cat": "Neveras",
+"nombre": "Nevecón Electrolux side by side 423 L ERS45F3C5EB",
+"precio": 2369900,
+"antes": 4399900,
+"tarjeta": 2251900,
+"url": "https://www.alkosto.com/nevecon-electrolux-side-by-side-423-litros-ers45f3c5eb/p/7909569483831",
+"tiendas": [
+{
+"t": "Olímpica",
+"p": 2295918,
+"a": 2799900,
+"c": 0,
+"url": "https://www.olimpica.com/nevecon--side-by-sideelectrolux-no-frost-423-inverter-negro/p"
+},
+{
+"t": "Éxito",
+"p": 2367926,
+"a": 3199900,
+"c": 0,
+"url": "https://www.exito.com/nevecon-423-litros-electrolux-side-by-side-423-litros-ers45f3c5eb-negro-3231539/p"
+},
+{
+"t": "Alkosto",
+"p": 2369900,
+"a": 4399900,
+"c": 2251900,
+"url": "https://www.alkosto.com/nevecon-electrolux-side-by-side-423-litros-ers45f3c5eb/p/7909569483831"
+}
+],
+"pruebas": [
+"Alkosto dice que antes costaba $4.399.900.",
+"Ninguna de las otras 2 tiendas lo cobra a ese precio ni lo anuncia como precio anterior: lo más alto que vimos fue $3.199.900.",
+"El \"descuento\" real frente a las demás tiendas: en Olímpica cuesta $2.295.918, $73.982 menos."
+],
+"ahorro": 0
+},
+{
+"ean": "8023277156593",
+"v": "dudosa",
+"tienda": "Jumbo",
+"cat": "Cuidado personal",
+"nombre": "Secador Gama Tempo Avocado",
+"precio": 201900,
+"antes": 329900,
+"tarjeta": 0,
+"url": "https://www.jumbocolombia.com/secador-gama-tempo-std-avocado-411481/p",
+"tiendas": [
+{
+"t": "Alkosto",
+"p": 169900,
+"a": 329900,
+"c": 136910,
+"url": "https://www.alkosto.com/secador-cabello-gama-tempo-avocado/p/8023277156593"
+},
+{
+"t": "Jumbo",
+"p": 201900,
+"a": 329900,
+"c": 0,
+"url": "https://www.jumbocolombia.com/secador-gama-tempo-std-avocado-411481/p"
+}
+],
+"pruebas": [
+"Jumbo anuncia 39 % de descuento (antes $329.900), pero en Alkosto cuesta $169.900: $32.000 menos."
+],
+"ahorro": 0
+},
+{
+"ean": "828132113647",
+"v": "dudosa",
+"tienda": "Jumbo",
+"cat": "Portátiles",
+"nombre": "Portátil Lenovo IdeaPad Slim 3 Intel U300 8/256 GB",
+"precio": 1799900,
+"antes": 3199000,
+"tarjeta": 0,
+"url": "https://www.jumbocolombia.com/portatil-lenovo-slim3-intel-u300-8gb-256gb-447870/p",
+"tiendas": [
+{
+"t": "Alkosto",
+"p": 1599070,
+"a": 3499000,
+"c": 0,
+"url": "https://www.alkosto.com/computador-portatil-lenovo-ideapad-slim-3-156-pulgadas/p/828132113647"
+},
+{
+"t": "Jumbo",
+"p": 1799900,
+"a": 3199000,
+"c": 0,
+"url": "https://www.jumbocolombia.com/portatil-lenovo-slim3-intel-u300-8gb-256gb-447870/p"
+}
+],
+"pruebas": [
+"Jumbo anuncia 44 % de descuento (antes $3.199.000), pero en Alkosto cuesta $1.599.070: $200.830 menos."
+],
+"ahorro": 0
+},
+{
+"ean": "840493610658",
+"v": "real",
+"tienda": "Jumbo",
+"cat": "Celulares",
+"nombre": "Celular Motorola G67 5G 8/256 GB Lima",
+"precio": 949900,
+"antes": 0,
+"tarjeta": 0,
+"url": "https://www.jumbocolombia.com/celular-motorola-g67-5g-8gb-256gb-lima-3743787/p",
+"tiendas": [
+{
+"t": "Jumbo",
+"p": 949900,
+"a": 0,
+"c": 0,
+"url": "https://www.jumbocolombia.com/celular-motorola-g67-5g-8gb-256gb-lima-3743787/p"
+},
+{
+"t": "Alkosto",
+"p": 999050,
+"a": 1899050,
+"c": 0,
+"url": "https://www.alkosto.com/celular-motorola-g67-256gb-5g-lima-ram-8gb-bateria-5200mah/p/840493610658"
+}
+],
+"pruebas": [
+"Es $49.150 (4,9 %) más barato que en la siguiente tienda más barata (Alkosto, $999.050), con el mismo código de barras."
+],
+"ahorro": 49150
+},
+{
+"ean": "840493610658",
+"v": "dudosa",
+"tienda": "Alkosto",
+"cat": "Celulares",
+"nombre": "Celular Motorola G67 5G 8/256 GB Lima",
+"precio": 999050,
+"antes": 1899050,
+"tarjeta": 0,
+"url": "https://www.alkosto.com/celular-motorola-g67-256gb-5g-lima-ram-8gb-bateria-5200mah/p/840493610658",
+"tiendas": [
+{
+"t": "Jumbo",
+"p": 949900,
+"a": 0,
+"c": 0,
+"url": "https://www.jumbocolombia.com/celular-motorola-g67-5g-8gb-256gb-lima-3743787/p"
+},
+{
+"t": "Alkosto",
+"p": 999050,
+"a": 1899050,
+"c": 0,
+"url": "https://www.alkosto.com/celular-motorola-g67-256gb-5g-lima-ram-8gb-bateria-5200mah/p/840493610658"
+}
+],
+"pruebas": [
+"Alkosto dice que antes costaba $1.899.050, pero Jumbo lo vende hoy a $949.900 y su precio anterior más alto es $949.900.",
+"Solo lo comparamos con una tienda más: no basta para afirmar que es mentira."
+],
+"ahorro": 0
+},
+{
+"ean": "840493626628",
+"v": "real",
+"tienda": "Jumbo",
+"cat": "Celulares",
+"nombre": "Celular Motorola Edge 60 Fusion 8/128 GB Verde",
+"precio": 969900,
+"antes": 2299900,
+"tarjeta": 0,
+"url": "https://www.jumbocolombia.com/celular-motorola-edge-60-fusion-5g-8gb-128gb-verde-448777/p",
+"tiendas": [
+{
+"t": "Jumbo",
+"p": 969900,
+"a": 2299900,
+"c": 0,
+"url": "https://www.jumbocolombia.com/celular-motorola-edge-60-fusion-5g-8gb-128gb-verde-448777/p"
+},
+{
+"t": "Alkosto",
+"p": 999050,
+"a": 2299050,
+"c": 0,
+"url": "https://www.alkosto.com/celular-motorola-edge-60-fusion-128gb-5g-verde-ram-8gb/p/840493626628"
+},
+{
+"t": "Olímpica",
+"p": 2299900,
+"a": 0,
+"c": 0,
+"url": "https://www.olimpica.com/celular-motorola-edge-60-fusion-verde-128gb/p"
+}
+],
+"pruebas": [
+"Es $29.150 (2,9 %) más barato que en la siguiente tienda más barata (Alkosto, $999.050), con el mismo código de barras.",
+"El precio \"antes\" ($2.299.900) tiene respaldo: Olímpica lo cobra hoy a $2.299.900."
+],
+"ahorro": 29150
+},
+{
+"ean": "840493626635",
+"v": "real",
+"tienda": "Jumbo",
+"cat": "Celulares",
+"nombre": "Celular Motorola Edge 60 Fusion 8/128 GB Azul",
+"precio": 969900,
+"antes": 2299900,
+"tarjeta": 0,
+"url": "https://www.jumbocolombia.com/celular-motorola-edge-60-fusion-5g-8gb-128gb-azul-448775/p",
+"tiendas": [
+{
+"t": "Jumbo",
+"p": 969900,
+"a": 2299900,
+"c": 0,
+"url": "https://www.jumbocolombia.com/celular-motorola-edge-60-fusion-5g-8gb-128gb-azul-448775/p"
+},
+{
+"t": "Alkosto",
+"p": 999050,
+"a": 2299050,
+"c": 0,
+"url": "https://www.alkosto.com/celular-motorola-edge-60-fusion-128gb-5g-azul-ram-8gb/p/840493626635"
+},
+{
+"t": "Olímpica",
+"p": 2299900,
+"a": 0,
+"c": 0,
+"url": "https://www.olimpica.com/celular-motorola-edge-60-fusion-azul-128gb/p"
+}
+],
+"pruebas": [
+"Es $29.150 (2,9 %) más barato que en la siguiente tienda más barata (Alkosto, $999.050), con el mismo código de barras.",
+"El precio \"antes\" ($2.299.900) tiene respaldo: Olímpica lo cobra hoy a $2.299.900."
+],
+"ahorro": 29150
+},
+{
+"ean": "840493628448",
+"v": "real",
+"tienda": "Alkosto",
+"cat": "Celulares",
+"nombre": "Celular Motorola Edge 70 Fusion 12/256 GB Verde",
+"precio": 1599050,
+"antes": 3499050,
+"tarjeta": 1519050,
+"url": "https://www.alkosto.com/celular-motorola-edge-70-fusion-256gb-5g-verde-ram-12gb/p/840493628448",
+"tiendas": [
+{
+"t": "Alkosto",
+"p": 1599050,
+"a": 3499050,
+"c": 1519050,
+"url": "https://www.alkosto.com/celular-motorola-edge-70-fusion-256gb-5g-verde-ram-12gb/p/840493628448"
+},
+{
+"t": "Olímpica",
+"p": 3499900,
+"a": 0,
+"c": 0,
+"url": "https://www.olimpica.com/celular-motorola-edge-70-fusion-verde-256gb/p"
+}
+],
+"pruebas": [
+"Es $1.900.850 (54,3 %) más barato que en la siguiente tienda más barata (Olímpica, $3.499.900), con el mismo código de barras.",
+"El precio \"antes\" ($3.499.050) tiene respaldo: Olímpica lo cobra hoy a $3.499.900."
+],
+"ahorro": 1900850
+},
+{
+"ean": "8806090746154",
+"v": "dudosa",
+"tienda": "Jumbo",
+"cat": "Lavado",
+"nombre": "Lavadora secadora Samsung 20 kg WD20T6300GP",
+"precio": 4099900,
+"antes": 6899900,
+"tarjeta": 0,
+"url": "https://www.jumbocolombia.com/lav-sec-samsung-20kg-44lb-wd20t6300gp-co-gris/p",
+"tiendas": [
+{
+"t": "Alkosto",
+"p": 3799900,
+"a": 5279900,
+"c": 3699900,
+"url": "https://www.alkosto.com/lavadora-secadora-samsung-carga-frontal-20-kilos/p/8806090746154"
+},
+{
+"t": "Jumbo",
+"p": 4099900,
+"a": 6899900,
+"c": 0,
+"url": "https://www.jumbocolombia.com/lav-sec-samsung-20kg-44lb-wd20t6300gp-co-gris/p"
+}
+],
+"pruebas": [
+"Jumbo dice que antes costaba $6.899.900, pero Alkosto lo vende hoy a $3.799.900 y su precio anterior más alto es $5.279.900.",
+"Solo lo comparamos con una tienda más: no basta para afirmar que es mentira."
+],
+"ahorro": 0
+},
+{
+"ean": "8806090746161",
+"v": "mentira",
+"tienda": "Éxito",
+"cat": "Lavado",
+"nombre": "Lavadora secadora Samsung 22 kg WD22T6500GP",
+"precio": 4199594,
+"antes": 7746900,
+"tarjeta": 0,
+"url": "https://www.exito.com/lavadoras-secadora-22-kg-inox-samsung-wd22t6500gpco-3008077/p",
+"tiendas": [
+{
+"t": "Alkosto",
+"p": 3999900,
+"a": 5399900,
+"c": 3899900,
+"url": "https://www.alkosto.com/lavadora-secadora-samsung-carga-frontal-22-kilos/p/8806090746161"
+},
+{
+"t": "Olímpica",
+"p": 4171134,
+"a": 6319900,
+"c": 0,
+"url": "https://www.olimpica.com/lavadora-secadora-samsung-22kg-wd22t6500gp-co/p"
+},
+{
+"t": "Éxito",
+"p": 4199594,
+"a": 7746900,
+"c": 0,
+"url": "https://www.exito.com/lavadoras-secadora-22-kg-inox-samsung-wd22t6500gpco-3008077/p"
+}
+],
+"pruebas": [
+"Éxito dice que antes costaba $7.746.900.",
+"Ninguna de las otras 2 tiendas lo cobra a ese precio ni lo anuncia como precio anterior: lo más alto que vimos fue $6.319.900.",
+"El \"descuento\" real frente a las demás tiendas: en Alkosto cuesta $3.999.900, $199.694 menos."
+],
+"ahorro": 0
+},
+{
+"ean": "8806092512443",
+"v": "mentira",
+"tienda": "Éxito",
+"cat": "Neveras",
+"nombre": "Nevecón Samsung 625 L RF22A4220SG",
+"precio": 5099585,
+"antes": 9339900,
+"tarjeta": 0,
+"url": "https://www.exito.com/nevecon-625litros-totales-refi-samsung-rf22a4220sgco-3042391/p",
+"tiendas": [
+{
+"t": "Éxito",
+"p": 5099585,
+"a": 9339900,
+"c": 0,
+"url": "https://www.exito.com/nevecon-625litros-totales-refi-samsung-rf22a4220sgco-3042391/p"
+},
+{
+"t": "Jumbo",
+"p": 5099900,
+"a": 7661900,
+"c": 0,
+"url": "https://www.jumbocolombia.com/nevec-n-samsung--760lt-brt-rf22a4220sg-co-negro/p"
+},
+{
+"t": "Olímpica",
+"p": 5113536,
+"a": 7989900,
+"c": 0,
+"url": "https://www.olimpica.com/nevecon-samsung-625l-inver-rf22a4220sg/p"
+}
+],
+"pruebas": [
+"Éxito dice que antes costaba $9.339.900.",
+"Ninguna de las otras 2 tiendas lo cobra a ese precio ni lo anuncia como precio anterior: lo más alto que vimos fue $7.989.900.",
+"El \"descuento\" real frente a las demás tiendas: cuesta lo mismo que en Jumbo."
+],
+"ahorro": 0
+},
+{
+"ean": "8806092662063",
+"v": "mentira",
+"tienda": "Éxito",
+"cat": "Lavado",
+"nombre": "Lavadora secadora Samsung 11,5 kg WD11T4046BX",
+"precio": 2199878,
+"antes": 6409900,
+"tarjeta": 0,
+"url": "https://www.exito.com/lavadora-secadora-samsung-electrica-115-kg-wd11t4046bxco-inox-3231512/p",
+"tiendas": [
+{
+"t": "Alkosto",
+"p": 2099900,
+"a": 3189900,
+"c": 1999900,
+"url": "https://www.alkosto.com/lavadora-secadora-samsung-carga-frontal-115-kilos/p/8806092662063"
+},
+{
+"t": "Éxito",
+"p": 2199878,
+"a": 6409900,
+"c": 0,
+"url": "https://www.exito.com/lavadora-secadora-samsung-electrica-115-kg-wd11t4046bxco-inox-3231512/p"
+},
+{
+"t": "Olímpica",
+"p": 2217544,
+"a": 3959900,
+"c": 0,
+"url": "https://www.olimpica.com/lavadora-secadora-samsung-11-5kg-carga-frontal-wd11t4046bx/p"
+}
+],
+"pruebas": [
+"Éxito dice que antes costaba $6.409.900.",
+"Ninguna de las otras 2 tiendas lo cobra a ese precio ni lo anuncia como precio anterior: lo más alto que vimos fue $3.959.900.",
+"El \"descuento\" real frente a las demás tiendas: en Alkosto cuesta $2.099.900, $99.978 menos."
+],
+"ahorro": 0
+},
+{
+"ean": "8806092678415",
+"v": "real",
+"tienda": "Alkosto",
+"cat": "Neveras",
+"nombre": "Nevecón Samsung 625 L RF22A4220S9",
+"precio": 4949900,
+"antes": 5983900,
+"tarjeta": 4849900,
+"url": "https://www.alkosto.com/nevecon-samsung-tipo-europeo-625-litros-rf22a4220s9-co/p/8806092678415",
+"tiendas": [
+{
+"t": "Alkosto",
+"p": 4949900,
+"a": 5983900,
+"c": 4849900,
+"url": "https://www.alkosto.com/nevecon-samsung-tipo-europeo-625-litros-rf22a4220s9-co/p/8806092678415"
+},
+{
+"t": "Olímpica",
+"p": 7799900,
+"a": 0,
+"c": 0,
+"url": "https://www.olimpica.com/nevecon-europeo-samsung-inox-625-lt/p"
+}
+],
+"pruebas": [
+"Es $2.850.000 (36,5 %) más barato que en la siguiente tienda más barata (Olímpica, $7.799.900), con el mismo código de barras.",
+"El precio \"antes\" ($5.983.900) tiene respaldo: Olímpica lo cobra hoy a $7.799.900."
+],
+"ahorro": 2850000
+},
+{
+"ean": "8806095491820",
+"v": "mentira",
+"tienda": "Éxito",
+"cat": "Neveras",
+"nombre": "Nevecón Samsung Bespoke Family Hub 809 L RF29DB9950",
+"precio": 13899944,
+"antes": 24999900,
+"tarjeta": 0,
+"url": "https://www.exito.com/nevecon-samsung-tipo-europeo-809-litros-rf29db995012co-blanco-3164197/p",
+"tiendas": [
+{
+"t": "Olímpica",
+"p": 13799931,
+"a": 19999900,
+"c": 0,
+"url": "https://www.olimpica.com/nevecon-samsung-809l-hub-rf29db995012co/p"
+},
+{
+"t": "Jumbo",
+"p": 13899900,
+"a": 19659900,
+"c": 0,
+"url": "https://www.jumbocolombia.com/nevecon-samsung-tipo-europeo-family-hub-bespoke-809-litros-rf29db995012co-blanco/p"
+},
+{
+"t": "Éxito",
+"p": 13899944,
+"a": 24999900,
+"c": 0,
+"url": "https://www.exito.com/nevecon-samsung-tipo-europeo-809-litros-rf29db995012co-blanco-3164197/p"
+}
+],
+"pruebas": [
+"Éxito dice que antes costaba $24.999.900.",
+"Ninguna de las otras 2 tiendas lo cobra a ese precio ni lo anuncia como precio anterior: lo más alto que vimos fue $19.999.900.",
+"El \"descuento\" real frente a las demás tiendas: en Olímpica cuesta $13.799.931, $100.013 menos."
+],
+"ahorro": 0
+},
+{
+"ean": "8806095658339",
+"v": "real",
+"tienda": "Jumbo",
+"cat": "Audio",
+"nombre": "Audífonos Samsung Galaxy Buds3 Pro Blanco",
+"precio": 799900,
+"antes": 0,
+"tarjeta": 0,
+"url": "https://www.jumbocolombia.com/audifonos-galaxy-buds3-pro-blanco-3641482/p",
+"tiendas": [
+{
+"t": "Jumbo",
+"p": 799900,
+"a": 0,
+"c": 0,
+"url": "https://www.jumbocolombia.com/audifonos-galaxy-buds3-pro-blanco-3641482/p"
+},
+{
+"t": "Alkosto",
+"p": 899900,
+"a": 0,
+"c": 0,
+"url": "https://www.alkosto.com/audifonos-samsung-galaxy-buds3-pro-cancelacion-ruido/p/8806095658339"
+}
+],
+"pruebas": [
+"Es $100.000 (11,1 %) más barato que en la siguiente tienda más barata (Alkosto, $899.900), con el mismo código de barras."
+],
+"ahorro": 100000
+},
+{
+"ean": "8806095718972",
+"v": "dudosa",
+"tienda": "Éxito",
+"cat": "Lavado",
+"nombre": "Lavadora secadora Samsung 26 kg WD26DB8995BZ",
+"precio": 6999872,
+"antes": 15286900,
+"tarjeta": 0,
+"url": "https://www.exito.com/lavadora-secadora-samsung-gas-26-kilogramo-wd26db8995bzco-silver-3179327/p",
+"tiendas": [
+{
+"t": "Olímpica",
+"p": 6959942,
+"a": 11999900,
+"c": 0,
+"url": "https://www.olimpica.com/lavadora-secadora-samsung-26kg-wd26db8995bzco/p"
+},
+{
+"t": "Éxito",
+"p": 6999872,
+"a": 15286900,
+"c": 0,
+"url": "https://www.exito.com/lavadora-secadora-samsung-gas-26-kilogramo-wd26db8995bzco-silver-3179327/p"
+}
+],
+"pruebas": [
+"Éxito dice que antes costaba $15.286.900, pero Olímpica lo vende hoy a $6.959.942 y su precio anterior más alto es $11.999.900.",
+"Solo lo comparamos con una tienda más: no basta para afirmar que es mentira."
+],
+"ahorro": 0
+},
+{
+"ean": "8806095746456",
+"v": "mentira",
+"tienda": "Éxito",
+"cat": "Neveras",
+"nombre": "Nevecón Samsung side by side 583 L RS57DG4000B4",
+"precio": 3699743,
+"antes": 6499900,
+"tarjeta": 0,
+"url": "https://www.exito.com/nevecon-samsung-side-by-side-583-lts-375lts-refrigerador-208lts-congelador-rs57dg4000b4co-negro-3193930/p",
+"tiendas": [
+{
+"t": "Éxito",
+"p": 3699743,
+"a": 6499900,
+"c": 0,
+"url": "https://www.exito.com/nevecon-samsung-side-by-side-583-lts-375lts-refrigerador-208lts-congelador-rs57dg4000b4co-negro-3193930/p"
+},
+{
+"t": "Jumbo",
+"p": 3699900,
+"a": 4709900,
+"c": 0,
+"url": "https://www.jumbocolombia.com/nevecon-samsung-side-by-side-583-lt-negro-con-ia-rs57dg4000b4co/p"
+},
+{
+"t": "Olímpica",
+"p": 3725931,
+"a": 5399900,
+"c": 0,
+"url": "https://www.olimpica.com/nevecon-samsung-side-by-side-583-litros-rs57dg4000b4co-negro-con-inteligencia-artificial-/p"
+}
+],
+"pruebas": [
+"Éxito dice que antes costaba $6.499.900.",
+"Ninguna de las otras 2 tiendas lo cobra a ese precio ni lo anuncia como precio anterior: lo más alto que vimos fue $5.399.900.",
+"El \"descuento\" real frente a las demás tiendas: cuesta lo mismo que en Jumbo."
+],
+"ahorro": 0
+},
+{
+"ean": "8806095967806",
+"v": "dudosa",
+"tienda": "Jumbo",
+"cat": "Televisores",
+"nombre": "Televisor Samsung 40\" FHD UN40F6000F",
+"precio": 899900,
+"antes": 1999900,
+"tarjeta": 0,
+"url": "https://www.jumbocolombia.com/televisor-samsung-40-pulgadas-led-smart-tv-fhd-tv-un40f6000fkxzl-3701381/p",
+"tiendas": [
+{
+"t": "Olímpica",
+"p": 849950,
+"a": 1699900,
+"c": 0,
+"url": "https://www.olimpica.com/televisor-samsung-40-pulgadas-101cm-fhd-smart-un40f6000fkxzl/p"
+},
+{
+"t": "Jumbo",
+"p": 899900,
+"a": 1999900,
+"c": 0,
+"url": "https://www.jumbocolombia.com/televisor-samsung-40-pulgadas-led-smart-tv-fhd-tv-un40f6000fkxzl-3701381/p"
+}
+],
+"pruebas": [
+"Jumbo dice que antes costaba $1.999.900, pero Olímpica lo vende hoy a $849.950 y su precio anterior más alto es $1.699.900.",
+"Solo lo comparamos con una tienda más: no basta para afirmar que es mentira."
+],
+"ahorro": 0
+},
+{
+"ean": "8806096022306",
+"v": "dudosa",
+"tienda": "Jumbo",
+"cat": "Audio",
+"nombre": "Barra de sonido LG S70TR 500 W",
+"precio": 1699900,
+"antes": 2799900,
+"tarjeta": 0,
+"url": "https://www.jumbocolombia.com/barra-de-sonido-lg-con-5-1-1-canales-500-w-s70tr-negro/p",
+"tiendas": [
+{
+"t": "Alkosto",
+"p": 1399900,
+"a": 2799900,
+"c": 0,
+"url": "https://www.alkosto.com/barra-sonido-lg-s70tr-500-watts-negro/p/8806096022306"
+},
+{
+"t": "Jumbo",
+"p": 1699900,
+"a": 2799900,
+"c": 0,
+"url": "https://www.jumbocolombia.com/barra-de-sonido-lg-con-5-1-1-canales-500-w-s70tr-negro/p"
+}
+],
+"pruebas": [
+"Jumbo anuncia 39 % de descuento (antes $2.799.900), pero en Alkosto cuesta $1.399.900: $300.000 menos."
+],
+"ahorro": 0
+},
+{
+"ean": "8806097215325",
+"v": "dudosa",
+"tienda": "Alkosto",
+"cat": "Tablets",
+"nombre": "Tablet Samsung Galaxy Tab S10 FE+ 128 GB Gris",
+"precio": 2799990,
+"antes": 4319900,
+"tarjeta": 0,
+"url": "https://www.alkosto.com/tablet-samsung-131-pulgadas-s10-fe-128gb-gris/p/8806097215325",
+"tiendas": [
+{
+"t": "Alkosto",
+"p": 2799990,
+"a": 4319900,
+"c": 0,
+"url": "https://www.alkosto.com/tablet-samsung-131-pulgadas-s10-fe-128gb-gris/p/8806097215325"
+},
+{
+"t": "Jumbo",
+"p": 3099900,
+"a": 0,
+"c": 0,
+"url": "https://www.jumbocolombia.com/tablet-samsung-galaxy-tab-s10-fe-8-gb-ram-128gb-ssd-gris-381023/p"
+}
+],
+"pruebas": [
+"Alkosto dice que antes costaba $4.319.900, pero Jumbo lo vende hoy a $3.099.900 y su precio anterior más alto es $3.099.900.",
+"Solo lo comparamos con una tienda más: no basta para afirmar que es mentira."
+],
+"ahorro": 0
+},
+{
+"ean": "8806097349969",
+"v": "real",
+"tienda": "Alkosto",
+"cat": "Audio",
+"nombre": "Audífonos Samsung Galaxy Buds Core Negro",
+"precio": 189900,
+"antes": 219900,
+"tarjeta": 0,
+"url": "https://www.alkosto.com/audifonos-samsung-galaxy-buds-core-cancelacion-ruido-negro/p/8806097349969",
+"tiendas": [
+{
+"t": "Alkosto",
+"p": 189900,
+"a": 219900,
+"c": 0,
+"url": "https://www.alkosto.com/audifonos-samsung-galaxy-buds-core-cancelacion-ruido-negro/p/8806097349969"
+},
+{
+"t": "Jumbo",
+"p": 219900,
+"a": 0,
+"c": 0,
+"url": "https://www.jumbocolombia.com/audifonos-samsung-galaxy-buds-core-negro-381349/p"
+}
+],
+"pruebas": [
+"Es $30.000 (13,6 %) más barato que en la siguiente tienda más barata (Jumbo, $219.900), con el mismo código de barras.",
+"El precio \"antes\" ($219.900) tiene respaldo: Jumbo lo cobra hoy a $219.900."
+],
+"ahorro": 30000
+},
+{
+"ean": "8806097407867",
+"v": "dudosa",
+"tienda": "Alkosto",
+"cat": "Tablets",
+"nombre": "Tablet Samsung Galaxy Tab S10 FE+ 128 GB Azul",
+"precio": 2799990,
+"antes": 4319900,
+"tarjeta": 0,
+"url": "https://www.alkosto.com/tablet-samsung-131-pulgadas-s10-fe-128gb-azul-claro/p/8806097407867",
+"tiendas": [
+{
+"t": "Alkosto",
+"p": 2799990,
+"a": 4319900,
+"c": 0,
+"url": "https://www.alkosto.com/tablet-samsung-131-pulgadas-s10-fe-128gb-azul-claro/p/8806097407867"
+},
+{
+"t": "Jumbo",
+"p": 3099900,
+"a": 0,
+"c": 0,
+"url": "https://www.jumbocolombia.com/tablet-samsung-galaxy-tab-s10-fe-8gb-ram-128gb-ssd-azul-claro-381017/p"
+}
+],
+"pruebas": [
+"Alkosto dice que antes costaba $4.319.900, pero Jumbo lo vende hoy a $3.099.900 y su precio anterior más alto es $3.099.900.",
+"Solo lo comparamos con una tienda más: no basta para afirmar que es mentira."
+],
+"ahorro": 0
+},
+{
+"ean": "8806097661498",
+"v": "real",
+"tienda": "Alkosto",
+"cat": "Celulares",
+"nombre": "Celular Samsung Galaxy A07 4/128 GB Negro",
+"precio": 499050,
+"antes": 549050,
+"tarjeta": 0,
+"url": "https://www.alkosto.com/celular-samsung-galaxy-a07-128gb-4g-negro-ram-4gb-bateria/p/8806097661498",
+"tiendas": [
+{
+"t": "Alkosto",
+"p": 499050,
+"a": 549050,
+"c": 0,
+"url": "https://www.alkosto.com/celular-samsung-galaxy-a07-128gb-4g-negro-ram-4gb-bateria/p/8806097661498"
+},
+{
+"t": "Olímpica",
+"p": 529900,
+"a": 0,
+"c": 0,
+"url": "https://www.olimpica.com/celular-samsung-a07-4gb-128gb-negro/p"
+}
+],
+"pruebas": [
+"Es $30.850 (5,8 %) más barato que en la siguiente tienda más barata (Olímpica, $529.900), con el mismo código de barras.",
+"El precio \"antes\" ($549.050) tiene respaldo: Olímpica lo cobra hoy a $529.900."
+],
+"ahorro": 30850
+},
+{
+"ean": "8806097661849",
+"v": "real",
+"tienda": "Alkosto",
+"cat": "Celulares",
+"nombre": "Celular Samsung Galaxy A07 4/128 GB Verde",
+"precio": 499050,
+"antes": 549050,
+"tarjeta": 0,
+"url": "https://www.alkosto.com/celular-samsung-galaxy-a07-128gb-4g-verde-ram-4gb-bateria/p/8806097661849",
+"tiendas": [
+{
+"t": "Alkosto",
+"p": 499050,
+"a": 549050,
+"c": 0,
+"url": "https://www.alkosto.com/celular-samsung-galaxy-a07-128gb-4g-verde-ram-4gb-bateria/p/8806097661849"
+},
+{
+"t": "Olímpica",
+"p": 529900,
+"a": 0,
+"c": 0,
+"url": "https://www.olimpica.com/celular-samsung--a07-4gb-128gb-verde/p"
+},
+{
+"t": "Jumbo",
+"p": 549900,
+"a": 589900,
+"c": 0,
+"url": "https://www.jumbocolombia.com/celular-samsung-galaxy-a07-4gb-128gb-verde-3706244/p"
+}
+],
+"pruebas": [
+"Es $30.850 (5,8 %) más barato que en la siguiente tienda más barata (Olímpica, $529.900), con el mismo código de barras.",
+"El precio \"antes\" ($549.050) tiene respaldo: Olímpica lo cobra hoy a $529.900."
+],
+"ahorro": 30850
+},
+{
+"ean": "8806097885306",
+"v": "real",
+"tienda": "Alkosto",
+"cat": "Celulares",
+"nombre": "Celular Samsung Galaxy S26 Ultra 12/512 GB Negro",
+"precio": 6599990,
+"antes": 7999990,
+"tarjeta": 0,
+"url": "https://www.alkosto.com/celular-samsung-galaxy-s26-ultra-512gb-5g-negro-ram-12gb/p/8806097885306",
+"tiendas": [
+{
+"t": "Alkosto",
+"p": 6599990,
+"a": 7999990,
+"c": 0,
+"url": "https://www.alkosto.com/celular-samsung-galaxy-s26-ultra-512gb-5g-negro-ram-12gb/p/8806097885306"
+},
+{
+"t": "Jumbo",
+"p": 7999900,
+"a": 0,
+"c": 0,
+"url": "https://www.jumbocolombia.com/celular-samsung-galaxy-s26-ultra-12gb-512gb-negro-3735705/p"
+}
+],
+"pruebas": [
+"Es $1.399.910 (17,5 %) más barato que en la siguiente tienda más barata (Jumbo, $7.999.900), con el mismo código de barras.",
+"El precio \"antes\" ($7.999.990) tiene respaldo: Jumbo lo cobra hoy a $7.999.900."
+],
+"ahorro": 1399910
+},
+{
+"ean": "8806097954774",
+"v": "dudosa",
+"tienda": "Jumbo",
+"cat": "Televisores",
+"nombre": "Televisor Samsung 85\" Crystal UHD UN85U8500H",
+"precio": 4799000,
+"antes": 9169900,
+"tarjeta": 0,
+"url": "https://www.jumbocolombia.com/televisor-samsung-85-pulgadas-led-uhd-4k-smart-tv-un85u8500hkxzl-3749798/p",
+"tiendas": [
+{
+"t": "Jumbo",
+"p": 4799000,
+"a": 9169900,
+"c": 0,
+"url": "https://www.jumbocolombia.com/televisor-samsung-85-pulgadas-led-uhd-4k-smart-tv-un85u8500hkxzl-3749798/p"
+},
+{
+"t": "Alkosto",
+"p": 4899900,
+"a": 7399900,
+"c": 0,
+"url": "https://www.alkosto.com/tv-samsung-85-pulgadas-2159-cm-85u8500h-4k-uhd-led-crystal/p/8806097954774"
+}
+],
+"pruebas": [
+"Jumbo dice que antes costaba $9.169.900, pero Alkosto lo vende hoy a $4.899.900 y su precio anterior más alto es $7.399.900.",
+"Solo lo comparamos con una tienda más: no basta para afirmar que es mentira."
+],
+"ahorro": 0
+},
+{
+"ean": "8806097960829",
+"v": "mentira",
+"tienda": "Jumbo",
+"cat": "Televisores",
+"nombre": "Televisor Samsung 50\" Mini LED UN50M75H",
+"precio": 1699900,
+"antes": 3249900,
+"tarjeta": 0,
+"url": "https://www.jumbocolombia.com/televisor-samsung-50-pulgadas-mini-led-smart-tv-un50m75hakxzl-3746505/p",
+"tiendas": [
+{
+"t": "Jumbo",
+"p": 1699900,
+"a": 3249900,
+"c": 0,
+"url": "https://www.jumbocolombia.com/televisor-samsung-50-pulgadas-mini-led-smart-tv-un50m75hakxzl-3746505/p"
+},
+{
+"t": "Alkosto",
+"p": 1699900,
+"a": 2799900,
+"c": 0,
+"url": "https://www.alkosto.com/tv-samsung-50-pulgadas-127-cm-50m75h-4k-uhd-mini-led-smart/p/8806097960829"
+},
+{
+"t": "Olímpica",
+"p": 1747136,
+"a": 2729900,
+"c": 0,
+"url": "https://www.olimpica.com/televisor-samsung-50-pulgadas-125cm-mini-led-4k-un50m75h/p"
+}
+],
+"pruebas": [
+"Jumbo dice que antes costaba $3.249.900.",
+"Ninguna de las otras 2 tiendas lo cobra a ese precio ni lo anuncia como precio anterior: lo más alto que vimos fue $2.799.900.",
+"El \"descuento\" real frente a las demás tiendas: cuesta lo mismo que en Alkosto."
+],
+"ahorro": 0
+},
+{
+"ean": "8806097960843",
+"v": "dudosa",
+"tienda": "Jumbo",
+"cat": "Televisores",
+"nombre": "Televisor Samsung 55\" Mini LED UN55M75H",
+"precio": 1899900,
+"antes": 3849900,
+"tarjeta": 0,
+"url": "https://www.jumbocolombia.com/televisor-samsung-55-pulgadas-mini-led-smart-tv-un55m75hakxzl-3746501/p",
+"tiendas": [
+{
+"t": "Olímpica",
+"p": 1899741,
+"a": 3219900,
+"c": 0,
+"url": "https://www.olimpica.com/televisor-samsung-55-pulgadas-138cm-mini-led-4k-un55m75h/p"
+},
+{
+"t": "Jumbo",
+"p": 1899900,
+"a": 3849900,
+"c": 0,
+"url": "https://www.jumbocolombia.com/televisor-samsung-55-pulgadas-mini-led-smart-tv-un55m75hakxzl-3746501/p"
+}
+],
+"pruebas": [
+"Jumbo dice que antes costaba $3.849.900, pero Olímpica lo vende hoy a $1.899.741 y su precio anterior más alto es $3.219.900.",
+"Solo lo comparamos con una tienda más: no basta para afirmar que es mentira."
+],
+"ahorro": 0
+},
+{
+"ean": "8806097960874",
+"v": "mentira",
+"tienda": "Jumbo",
+"cat": "Televisores",
+"nombre": "Televisor Samsung 75\" Mini LED UN75M75H",
+"precio": 3249900,
+"antes": 6999900,
+"tarjeta": 0,
+"url": "https://www.jumbocolombia.com/televisor-samsung-75-pulgadas-mini-led-4k-smart-tv-un75m75hakxzl-3749774/p",
+"tiendas": [
+{
+"t": "Olímpica",
+"p": 3175146,
+"a": 5879900,
+"c": 0,
+"url": "https://www.olimpica.com/televisor-samsung-75-pulgadas-189cm-mini-led-4k-un75m75h/p"
+},
+{
+"t": "Jumbo",
+"p": 3249900,
+"a": 6999900,
+"c": 0,
+"url": "https://www.jumbocolombia.com/televisor-samsung-75-pulgadas-mini-led-4k-smart-tv-un75m75hakxzl-3749774/p"
+},
+{
+"t": "Alkosto",
+"p": 3499900,
+"a": 5899900,
+"c": 0,
+"url": "https://www.alkosto.com/tv-samsung-75-pulgadas-1905-cm-75m75h-4k-uhd-mini-led/p/8806097960874"
+}
+],
+"pruebas": [
+"Jumbo dice que antes costaba $6.999.900.",
+"Ninguna de las otras 2 tiendas lo cobra a ese precio ni lo anuncia como precio anterior: lo más alto que vimos fue $5.899.900.",
+"El \"descuento\" real frente a las demás tiendas: en Olímpica cuesta $3.175.146, $74.754 menos."
+],
+"ahorro": 0
+},
+{
+"ean": "8806097960942",
+"v": "dudosa",
+"tienda": "Jumbo",
+"cat": "Televisores",
+"nombre": "Televisor Samsung 65\" Mini LED UN65M75H",
+"precio": 2699900,
+"antes": 4999900,
+"tarjeta": 0,
+"url": "https://www.jumbocolombia.com/televisor-samsung-65-pulgadas-mini-led-smart-tv-un65m75hakxzl-3746492/p",
+"tiendas": [
+{
+"t": "Olímpica",
+"p": 2687936,
+"a": 4199900,
+"c": 0,
+"url": "https://www.olimpica.com/televisor-samsung-65-pulgadas-163cm-mini-led-4k-un65m75h/p"
+},
+{
+"t": "Jumbo",
+"p": 2699900,
+"a": 4999900,
+"c": 0,
+"url": "https://www.jumbocolombia.com/televisor-samsung-65-pulgadas-mini-led-smart-tv-un65m75hakxzl-3746492/p"
+}
+],
+"pruebas": [
+"Jumbo dice que antes costaba $4.999.900, pero Olímpica lo vende hoy a $2.687.936 y su precio anterior más alto es $4.199.900.",
+"Solo lo comparamos con una tienda más: no basta para afirmar que es mentira."
+],
+"ahorro": 0
+},
+{
+"ean": "8806097960959",
+"v": "mentira",
+"tienda": "Jumbo",
+"cat": "Televisores",
+"nombre": "Televisor Samsung 85\" Mini LED UN85M75H",
+"precio": 5199900,
+"antes": 9999900,
+"tarjeta": 0,
+"url": "https://www.jumbocolombia.com/televisor-samsung-85-pulgadas-mini-led-4k-smart-tv-un85m75hakxzl-3749781/p",
+"tiendas": [
+{
+"t": "Jumbo",
+"p": 5199900,
+"a": 9999900,
+"c": 0,
+"url": "https://www.jumbocolombia.com/televisor-samsung-85-pulgadas-mini-led-4k-smart-tv-un85m75hakxzl-3749781/p"
+},
+{
+"t": "Olímpica",
+"p": 5291937,
+"a": 8399900,
+"c": 0,
+"url": "https://www.olimpica.com/televisor-samsung-85-pulgadas-215cm-mini-led-4k-un85m75h/p"
+},
+{
+"t": "Alkosto",
+"p": 5499900,
+"a": 8399900,
+"c": 0,
+"url": "https://www.alkosto.com/tv-samsung-85-pulgadas-2159-cm-85m75h-4k-uhd-mini-led/p/8806097960959"
+}
+],
+"pruebas": [
+"Jumbo dice que antes costaba $9.999.900.",
+"Ninguna de las otras 2 tiendas lo cobra a ese precio ni lo anuncia como precio anterior: lo más alto que vimos fue $8.399.900.",
+"El \"descuento\" real frente a las demás tiendas: lo deja más barato que Olímpica por $92.037."
+],
+"ahorro": 0
+},
+{
+"ean": "8806097977766",
+"v": "dudosa",
+"tienda": "Jumbo",
+"cat": "Televisores",
+"nombre": "Televisor Samsung 55\" Crystal UHD UN55U8000H",
+"precio": 1699900,
+"antes": 3169900,
+"tarjeta": 0,
+"url": "https://www.jumbocolombia.com/televisor-samsung-55-pulgadas-led-uhd-4k-smart-tv-un55u8000hkxzl-3749779/p",
+"tiendas": [
+{
+"t": "Alkosto",
+"p": 1649900,
+"a": 2599900,
+"c": 0,
+"url": "https://www.alkosto.com/tv-samsung-55-pulgadas-1397-cm-55u8000h-4k-uhd-led-crystal/p/8806097977766"
+},
+{
+"t": "Jumbo",
+"p": 1699900,
+"a": 3169900,
+"c": 0,
+"url": "https://www.jumbocolombia.com/televisor-samsung-55-pulgadas-led-uhd-4k-smart-tv-un55u8000hkxzl-3749779/p"
+}
+],
+"pruebas": [
+"Jumbo dice que antes costaba $3.169.900, pero Alkosto lo vende hoy a $1.649.900 y su precio anterior más alto es $2.599.900.",
+"Solo lo comparamos con una tienda más: no basta para afirmar que es mentira."
+],
+"ahorro": 0
+},
+{
+"ean": "8806097978336",
+"v": "mentira",
+"tienda": "Jumbo",
+"cat": "Televisores",
+"nombre": "Televisor Samsung 65\" Crystal UHD UN65U8000H",
+"precio": 2299900,
+"antes": 4169900,
+"tarjeta": 0,
+"url": "https://www.jumbocolombia.com/televisor-samsung-65-pulgadas-led-uhd-4k-smart-tv-un65u8000hkxzl-3749771/p",
+"tiendas": [
+{
+"t": "Olímpica",
+"p": 2183935,
+"a": 3359900,
+"c": 0,
+"url": "https://www.olimpica.com/televisor-samsung-65-pulgadas-163cm-uhd-4k-un65u8000h/p"
+},
+{
+"t": "Alkosto",
+"p": 2199900,
+"a": 3399900,
+"c": 0,
+"url": "https://www.alkosto.com/tv-samsung-65-pulgadas-1651-cm-65u8000h-4k-uhd-led-crystal/p/8806097978336"
+},
+{
+"t": "Jumbo",
+"p": 2299900,
+"a": 4169900,
+"c": 0,
+"url": "https://www.jumbocolombia.com/televisor-samsung-65-pulgadas-led-uhd-4k-smart-tv-un65u8000hkxzl-3749771/p"
+}
+],
+"pruebas": [
+"Jumbo dice que antes costaba $4.169.900.",
+"Ninguna de las otras 2 tiendas lo cobra a ese precio ni lo anuncia como precio anterior: lo más alto que vimos fue $3.399.900.",
+"El \"descuento\" real frente a las demás tiendas: en Olímpica cuesta $2.183.935, $115.965 menos."
+],
+"ahorro": 0
+},
+{
+"ean": "8806099025090",
+"v": "dudosa",
+"tienda": "Alkosto",
+"cat": "Televisores",
+"nombre": "Televisor Samsung 55\" Neo QLED 55QN70H",
+"precio": 2399900,
+"antes": 5339900,
+"tarjeta": 0,
+"url": "https://www.alkosto.com/tv-samsung-55-pulgadas-1397-cm-55qn70h-4k-uhd-mini-led/p/8806099025090",
+"tiendas": [
+{
+"t": "Alkosto",
+"p": 2399900,
+"a": 5339900,
+"c": 0,
+"url": "https://www.alkosto.com/tv-samsung-55-pulgadas-1397-cm-55qn70h-4k-uhd-mini-led/p/8806099025090"
+},
+{
+"t": "Olímpica",
+"p": 2643141,
+"a": 4479900,
+"c": 0,
+"url": "https://www.olimpica.com/televisor-samsung-55-pulgadas-138cm-neo-qled-4k-qn55qn70h/p"
+}
+],
+"pruebas": [
+"Alkosto dice que antes costaba $5.339.900, pero Olímpica lo vende hoy a $2.643.141 y su precio anterior más alto es $4.479.900.",
+"Solo lo comparamos con una tienda más: no basta para afirmar que es mentira."
+],
+"ahorro": 0
+},
+{
+"ean": "8806099123215",
+"v": "mentira",
+"tienda": "Jumbo",
+"cat": "Televisores",
+"nombre": "Televisor Samsung 75\" Crystal UHD UN75U8500H",
+"precio": 2999900,
+"antes": 5839900,
+"tarjeta": 0,
+"url": "https://www.jumbocolombia.com/televisor-samsung-75-pulgadas-led-uhd-4k-smart-tv-un75u8500hkxzl-3749789/p",
+"tiendas": [
+{
+"t": "Jumbo",
+"p": 2999900,
+"a": 5839900,
+"c": 0,
+"url": "https://www.jumbocolombia.com/televisor-samsung-75-pulgadas-led-uhd-4k-smart-tv-un75u8500hkxzl-3749789/p"
+},
+{
+"t": "Alkosto",
+"p": 2999900,
+"a": 4799900,
+"c": 0,
+"url": "https://www.alkosto.com/tv-samsung-75-pulgadas-1905-cm-75u8500h-4k-uhd-led-crystal/p/8806099123215"
+},
+{
+"t": "Olímpica",
+"p": 3013439,
+"a": 4899900,
+"c": 0,
+"url": "https://www.olimpica.com/televisor-samsung-75-pulgadas-189cm-uhd-4k-un75u8500h/p"
+}
+],
+"pruebas": [
+"Jumbo dice que antes costaba $5.839.900.",
+"Ninguna de las otras 2 tiendas lo cobra a ese precio ni lo anuncia como precio anterior: lo más alto que vimos fue $4.899.900.",
+"El \"descuento\" real frente a las demás tiendas: cuesta lo mismo que en Alkosto."
+],
+"ahorro": 0
+},
+{
+"ean": "8806099127183",
+"v": "dudosa",
+"tienda": "Alkosto",
+"cat": "Televisores",
+"nombre": "Televisor Samsung 98\" Crystal UHD 98U9500H",
+"precio": 7899900,
+"antes": 14999900,
+"tarjeta": 0,
+"url": "https://www.alkosto.com/tv-samsung-98-pulgadas-24892-cm-98u9500h-4k-uhd-led-smart/p/8806099127183",
+"tiendas": [
+{
+"t": "Alkosto",
+"p": 7899900,
+"a": 14999900,
+"c": 0,
+"url": "https://www.alkosto.com/tv-samsung-98-pulgadas-24892-cm-98u9500h-4k-uhd-led-smart/p/8806099127183"
+},
+{
+"t": "Olímpica",
+"p": 7937937,
+"a": 12599900,
+"c": 0,
+"url": "https://www.olimpica.com/televisor-samsung-98-pulgadas-249cm-uhd-4k-un98u9500h/p"
+}
+],
+"pruebas": [
+"Alkosto dice que antes costaba $14.999.900, pero Olímpica lo vende hoy a $7.937.937 y su precio anterior más alto es $12.599.900.",
+"Solo lo comparamos con una tienda más: no basta para afirmar que es mentira."
+],
+"ahorro": 0
+},
+{
+"ean": "8806099361082",
+"v": "dudosa",
+"tienda": "Alkosto",
+"cat": "Celulares",
+"nombre": "Celular Samsung Galaxy A27 5G 8/256 GB Negro",
+"precio": 1079050,
+"antes": 1499050,
+"tarjeta": 0,
+"url": "https://www.alkosto.com/celular-samsung-galaxy-a27-256gb-5g-negro-ram-8gb-bateria/p/8806099361082",
+"tiendas": [
+{
+"t": "Alkosto",
+"p": 1079050,
+"a": 1499050,
+"c": 0,
+"url": "https://www.alkosto.com/celular-samsung-galaxy-a27-256gb-5g-negro-ram-8gb-bateria/p/8806099361082"
+},
+{
+"t": "Jumbo",
+"p": 1149900,
+"a": 0,
+"c": 0,
+"url": "https://www.jumbocolombia.com/celular-samsung-galaxy-a27-5g-8gb-256gb-negro-443011/p"
+}
+],
+"pruebas": [
+"Alkosto dice que antes costaba $1.499.050, pero Jumbo lo vende hoy a $1.149.900 y su precio anterior más alto es $1.149.900.",
+"Solo lo comparamos con una tienda más: no basta para afirmar que es mentira."
+],
+"ahorro": 0
+},
+{
+"ean": "8806099361136",
+"v": "dudosa",
+"tienda": "Alkosto",
+"cat": "Celulares",
+"nombre": "Celular Samsung Galaxy A27 5G 8/256 GB Azul",
+"precio": 1079050,
+"antes": 1499050,
+"tarjeta": 0,
+"url": "https://www.alkosto.com/celular-samsung-galaxy-a27-256gb-5g-azul-ram-8gb-bateria/p/8806099361136",
+"tiendas": [
+{
+"t": "Alkosto",
+"p": 1079050,
+"a": 1499050,
+"c": 0,
+"url": "https://www.alkosto.com/celular-samsung-galaxy-a27-256gb-5g-azul-ram-8gb-bateria/p/8806099361136"
+},
+{
+"t": "Jumbo",
+"p": 1149900,
+"a": 0,
+"c": 0,
+"url": "https://www.jumbocolombia.com/celular-samsung-galaxy-a27-5g-8gb-256gb-azul-443016/p"
+}
+],
+"pruebas": [
+"Alkosto dice que antes costaba $1.499.050, pero Jumbo lo vende hoy a $1.149.900 y su precio anterior más alto es $1.149.900.",
+"Solo lo comparamos con una tienda más: no basta para afirmar que es mentira."
+],
+"ahorro": 0
+},
+{
+"ean": "883049602622",
+"v": "dudosa",
+"tienda": "Éxito",
+"cat": "Lavado",
+"nombre": "Lavadora secadora Whirlpool 20 kg 7MWFC6820LC",
+"precio": 6099900,
+"antes": 9242900,
+"tarjeta": 0,
+"url": "https://www.exito.com/lavasecadora-whirlpool-carga-frontal-20-kg-44lb-7mwfc6820lc-3075517/p",
+"tiendas": [
+{
+"t": "Éxito",
+"p": 6099900,
+"a": 9242900,
+"c": 0,
+"url": "https://www.exito.com/lavasecadora-whirlpool-carga-frontal-20-kg-44lb-7mwfc6820lc-3075517/p"
+},
+{
+"t": "Alkosto",
+"p": 6099900,
+"a": 7879900,
+"c": 0,
+"url": "https://www.alkosto.com/lavadora-secadora-whirlpool-carga-frontal-20-kilos/p/883049602622"
+}
+],
+"pruebas": [
+"Éxito dice que antes costaba $9.242.900, pero Alkosto lo vende hoy a $6.099.900 y su precio anterior más alto es $7.879.900.",
+"Solo lo comparamos con una tienda más: no basta para afirmar que es mentira."
+],
+"ahorro": 0
+}
+]
